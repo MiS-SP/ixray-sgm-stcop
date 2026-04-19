@@ -1,0 +1,346 @@
+; Пистолет-пулемет ПП-2000
+;-(TrickSR, Ga2z)-----------------------------------------
+; калибр 									9х19 мм
+; длина ствола 								182 мм
+; магазин									30
+; вес с пустым магазином и прикладом		1.66 кг
+; максимальная дальность стрельбы			1700 м
+; эффективная дальность стрельбы			100 м
+; прицельная дальность						200 м
+; дульная скорость пули						590 м/с
+; темп стрельбы								600-800 в/м
+;---------------------------------------------------
+[wpn_pp2000]:identity_immunities,weapon_probability,default_weapon_params,wpn_pp2000_sounds
+GroupControlSection 						= spawn_group
+$spawn										= "weapons\pp2000"
+$npc										= on
+$prefetch									= 8
+scheduled									= off
+cform										= skeleton
+class										= WP_LR300
+description 								= st_wpn_pp2000_descr
+
+scopes 										= ac10632,acog,aimpoint,eot,pn23
+parent_section  							= wpn_pp2000
+
+icons_texture								= ui\ui_icon_equipment_stcopwp
+upgr_icons_texture 							= ui\ui_actor_weapons_stcopwp
+
+ef_main_weapon_type							= 2
+ef_weapon_type								= 6
+
+inv_name									= st_wpn_pp2000
+inv_name_short								= st_wpn_pp2000
+
+inv_grid_width								= 4
+inv_grid_height								= 2
+inv_grid_x									= 20
+inv_grid_y									= 34
+
+upgr_icon_x									= 1150
+upgr_icon_y									= 400
+upgr_icon_width								= 200
+upgr_icon_height 							= 100
+
+kill_msg_x									= 72
+kill_msg_y									= 82
+kill_msg_width								= 56
+kill_msg_height								= 23
+
+cost										= 3200
+weapon_class								= assault_rifle
+inv_weight									= 1.66
+hud											= wpn_pp2000_hud
+visual										= dynamics\weapons\wpn_pp2000\wpn_pp2000.ogf
+
+upgrades                					= up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5, up_gr_fifthcd_mp5
+installed_upgrades      					=
+upgrade_scheme          					= upgrade_scheme_mp5
+
+ph_mass										= 2
+
+ammo_class									= ammo_9x19_fmj, ammo_9x19_pbp
+
+startup_ammo								= 90
+ammo_current		 						= 180
+ammo_elapsed		 						= 30
+ammo_limit		 							= 210
+ammo_mag_size		 						= 30
+
+fire_modes									= 1, -1
+
+grenade_class								= ammo_vog-25
+
+launch_speed								= 0
+hand_dependence								= 1
+single_handed								= 0
+
+hit_power									= 0.24
+;hit_impulse								= 10
+hit_type									= fire_wound
+fire_distance								= 1000
+bullet_speed								= 590
+rpm											= 700
+rpm_empty_click								= 200
+
+use_aim_bullet								= false
+time_to_aim									= 3.0
+misfire_probability							= 0.005
+misfire_start_condition						= 0.6
+misfire_end_condition						= 0.1
+misfire_start_prob	 						= 0.004
+misfire_end_prob	 						= 0.057
+condition_shot_dec 							= 0.0012
+condition_queue_shot_dec					= 0.0013
+
+zoom_dof									= 0.5, 1.0, 180
+reload_dof									= 0, 0.5, 5, 2
+
+fire_dispersion_base						= 0.32
+fire_dispersion_condition_factor			= 2.5
+control_inertion_factor						= 1.05f
+crosshair_inertion 							= 4.0
+
+cam_return									= 0
+cam_relax_speed								= 5
+cam_relax_speed_ai							= 120.75
+cam_dispersion								= 0.5
+cam_dispersion_inc							= 0.25
+cam_dispersion_frac							= 1.0
+cam_max_angle								= 50.0
+cam_max_angle_horz							= 50.0
+cam_step_angle_horz							= 1.5
+
+zoom_cam_relax_speed						= 10
+zoom_cam_relax_speed_ai						= 120.75
+zoom_cam_dispersion							= 0.5
+zoom_cam_dispersion_inc						= 0.25
+zoom_cam_dispersion_frac					= 1.0
+zoom_cam_max_angle							= 50.0
+zoom_cam_max_angle_horz						= 50.0
+zoom_cam_step_angle_horz					= 1.5
+
+PDM_disp_base 								= 0.5
+PDM_disp_vel_factor 						= 1.5
+PDM_disp_accel_factor 						= 1.5
+PDM_disp_crouch	 							= 1.0
+PDM_disp_crouch_no_acc 						= 1.0
+
+min_radius									= 30
+max_radius									= 40
+
+holder_range_modifier						= 1.00
+holder_fov_modifier							= 1.00
+
+slot										= 2
+animation_slot								= 1
+
+position									= -0.021,-0.085,-0.03
+orientation 								= 0,0,0
+
+fire_point									= 0,0.133,0.25
+fire_point2									= 0,0.133,0.25
+
+flame_particles         					= weapons\generic_weapon05
+smoke_particles         					= weapons\generic_shoot_00
+silencer_smoke_particles   					= weapons\generic_shoot_00
+
+shell_point		 							= 0,0.133,0.047
+shell_dir		 							= 0,0,0.4
+;shell_particles	 						= weapons\9x19
+
+strap_position 								= -0.16, -0.28, 0.15		; вперёд/назад; влево/вправо ;вверх/вниз
+strap_orientation 							= -10, -5, 10
+strap_bone0									= bip01_spine2
+strap_bone1									= bip01_spine1
+
+light_disabled								= false
+light_color									= 0.6,0.5,0.3
+light_range									= 5
+light_var_color								= 0.05
+light_var_range								= 0.5
+light_time									= 0.2
+
+scope_status								= 2
+silencer_status								= 2
+grenade_launcher_status						= 0
+
+zoom_enabled								= true
+zoom_rotate_time							= 0.15
+scope_zoom_factor							= 73.3
+
+scope_name 									= acog
+scope_x										= 56
+scope_y										= -2
+
+silencer_name								= sil_pp2000
+silencer_x                  				= 144
+silencer_y                  				= -4
+
+grenade_launcher_name						= 
+grenade_launcher_x							= 
+grenade_launcher_y							= 
+
+silencer_hit_power 							= 0.2
+;silencer_hit_impulse						= 10
+silencer_fire_distance 						= 500
+silencer_bullet_speed	 					= 290
+
+silencer_light_color						= 0.6,0.5,0.3
+silencer_light_range						= 0.01
+silencer_light_var_color					= 0.05
+silencer_light_var_range					= 0.5
+silencer_light_time							= 0.2
+
+[wpn_pp2000_hud]:hud_base
+zoom_hide_crosshair							= true
+attach_place_idx							= 0
+item_visual									= dynamics\weapons\wpn_pp2000\wpn_pp2000_hud.ogf
+
+hands_position								= 0.012591,-0.012336,-0.008000
+hands_orientation							= 2.294997,0.428524,0.487458
+
+hands_position_16x9							= 0.012591,-0.012336,-0.008000
+hands_orientation_16x9						= 2.294997,0.428524,0.487458
+
+item_position               				= 0, 0, 0
+item_orientation            				= 0, 0, 0
+
+aim_hud_offset_pos							= -0.067150,0.031551,-0.055865
+aim_hud_offset_rot							= 0.015451,0.013508,-0.000188
+
+aim_hud_offset_pos_16x9						= -0.067150,0.031551,-0.055865
+aim_hud_offset_rot_16x9						= 0.015451,0.013508,-0.000188
+
+shell_bone                 				 	= wpn_body
+shell_dir                   				= 0, 1, 0
+shell_point                      			= 0.028, 0, 0.113
+        
+fire_bone                   				= wpn_body
+fire_bone2                  				= wpn_body
+fire_point                  				= 0.005, 0.015, 0.4
+fire_point2                 				= 0, -0.009, 0.601
+ 
+anm_bore                   		 			= p_bore, idle
+anm_hide                    				= p_holster, idle
+anm_idle_aim                				= p_aim, idle
+anm_idle                    				= p_idle, idle
+anm_idle_moving             				= p_move, idle
+anm_idle_moving_slow             			= p_move, idle, 0.8
+anm_idle_moving_crouch           			= p_move, idle, 0.6
+anm_idle_moving_slow_crouch             	= p_move, idle, 0.4
+anm_idle_sprint             				= p_sprint, idle
+anm_reload                  				= p_r
+anm_reload_jammed         					= p_mis
+anm_reload_empty            				= p_re
+anm_shoot                  				 	= p_shot
+anm_show                    				= p_show, idle
+anm_firemode             					= p_mod_switch, idle
+anm_shoot_aim                             	= p_shot_aim
+anm_shoot_aim_jammed                     	= p_shot_aim, p_shot_jammed
+
+anm_bore_jammed             				= p_bore, idle_jammed
+anm_idle_aim_jammed                 		= p_aim, idle_jammed 
+anm_idle_jammed                     		= p_idle, idle_jammed 
+anm_idle_moving_jammed              		= p_move, idle_jammed 
+anm_idle_moving_slow_jammed             	= p_move, idle_jammed, 0.8
+anm_idle_moving_crouch_jammed            	= p_move, idle_jammed, 0.6
+anm_idle_moving_slow_crouch_jammed         	= p_move, idle_jammed, 0.4
+anm_idle_sprint_jammed      				= p_sprint, idle_jammed 
+anm_shoot_jammed            				= p_shot, p_shot_jammed 
+anm_show_jammed             				= p_show, idle_jammed
+anm_firemode_jammed      					= p_mod_switch, idle_jammed
+        
+anm_ammo_check                           	= p_mchek
+anm_ammo_check_empty                     	= p_mchek_emp
+anm_ammo_check_jammed                    	= p_mchek, p_mchek_jammed
+anm_ammo_check_empty_jammed              	= p_mchek_emp, , p_mchek_jammed_emp
+
+anm_idle_sprint_start            			= p_sprint_start, idle	
+anm_idle_sprint_end              			= p_sprint_end, idle, 0.9
+anm_idle_sprint_start_jammed     			= p_sprint_start, idle_jammed
+anm_idle_sprint_end_jammed       			= p_sprint_end, idle_jammed, 0.9
+;-----------------------------------------------------------------------------
+; Аддоны
+;-----------------------------------------------------------------------------
+[wpn_pp2000_ac10632]:wpn_pp2000
+$spawn             							= "weapons\pp2000_ac10632"
+visual										= dynamics\weapons\wpn_pp2000\wpn_pp2000_barska.ogf
+hud											= wpn_pp2000_ac10632_hud
+
+scope_x										= 79
+scope_y										= -21
+
+[wpn_pp2000_ac10632_hud]:wpn_pp2000_hud
+item_visual            	 					= dynamics\weapons\wpn_pp2000\wpn_pp2000_barska_hud.ogf
+
+aim_hud_offset_pos	        	 			= -0.067900, 0.003251, -0.018565
+aim_hud_offset_rot			       			= 0.016000, 0.013700, -0.015988
+
+aim_hud_offset_pos_16x9         	 		= -0.067900, 0.003251, -0.018565
+aim_hud_offset_rot_16x9          			= 0.016000, 0.013700, -0.015988
+
+[wpn_pp2000_acog]:wpn_pp2000
+$spawn										= "weapons\pp2000_acog"
+hud											= wpn_pp2000_acog_hud
+
+scope_x										= 73
+scope_y										= -22
+
+[wpn_pp2000_acog_hud]:wpn_pp2000_hud
+aim_hud_offset_pos							= -0.068050,0.002951,0.05313
+aim_hud_offset_rot							= 0.012451,0.013758,-0.007238
+
+aim_hud_offset_pos_16x9						= -0.068050,0.002951,0.05313
+aim_hud_offset_rot_16x9						= 0.012451,0.013758,-0.007238
+
+[wpn_pp2000_aimpoint]:wpn_pp2000
+$spawn             							= "weapons\pp2000_aimpoint"
+visual										= dynamics\weapons\wpn_pp2000\wpn_pp2000_aimpoint.ogf
+hud											= wpn_pp2000_aimpoint_hud
+
+scope_x										= 88
+scope_y										= -25
+
+[wpn_pp2000_aimpoint_hud]:wpn_pp2000_hud
+item_visual            	 					= dynamics\weapons\wpn_pp2000\wpn_pp2000_aimpoint_hud.ogf
+
+aim_hud_offset_pos	         				= -0.067600, -0.008149, -0.010000
+aim_hud_offset_rot			       			= 0.016000, 0.013600, -0.000188
+
+aim_hud_offset_pos_16x9          			= -0.067600, -0.008149, -0.010000
+aim_hud_offset_rot_16x9          			= 0.016000, 0.013600, -0.000188
+
+[wpn_pp2000_eot]:wpn_pp2000
+$spawn										= "weapons\pp2000_eot"
+visual										= dynamics\weapons\wpn_pp2000\wpn_pp2000_eot.ogf
+hud											= wpn_pp2000_eot_hud
+	
+scope_x										= 81
+scope_y										= -20
+
+[wpn_pp2000_eot_hud]:wpn_pp2000_hud
+item_visual									= dynamics\weapons\wpn_pp2000\wpn_pp2000_eot_hud.ogf
+
+aim_hud_offset_pos				   	 		= -0.067800, 0.001700, -0.069000
+aim_hud_offset_rot	        				= 0.015451, 0.013500, -0.000188
+
+aim_hud_offset_pos_16x9         	 		= -0.067800, 0.001700, -0.069000
+aim_hud_offset_rot_16x9          			= 0.015451, 0.013500, -0.000188
+
+[wpn_pp2000_pn23]:wpn_pp2000
+$spawn										= "weapons\pp2000_pn23"
+visual										= dynamics\weapons\wpn_pp2000\wpn_pp2000_pn23.ogf
+hud											= wpn_pp2000_pn23_hud
+
+scope_x										= 49
+scope_y										= -24
+
+[wpn_pp2000_pn23_hud]:wpn_pp2000_hud
+item_visual									= dynamics\weapons\wpn_pp2000\wpn_pp2000_pn23_hud.ogf
+
+aim_hud_offset_pos		        			= -0.067750, -0.011949, 0.092135
+aim_hud_offset_rot		        			= 0.016500, 0.0132, -0.000188
+
+aim_hud_offset_pos_16x9          			= -0.067750, -0.011949, 0.092135
+aim_hud_offset_rot_16x9          			= 0.016500, 0.0132, -0.000188
