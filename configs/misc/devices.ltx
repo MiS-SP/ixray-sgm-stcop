@@ -63,7 +63,7 @@ anm_idle						= flare_idle
 anm_drop						= flare_holster
 
 
-[detector_simple]:identity_immunities,detector_simple_af_base
+[detector_simple]:identity_immunities
 GroupControlSection	= spawn_group
 $spawn 			= "devices\detector_simple"
 $prefetch 		= 32
@@ -205,8 +205,8 @@ anm_idle_sprint_16x9		  			 = dev_detector_1_idle_sprint
 anm_idle_sprint_start_16x9      			= dev_detector_1_idle_sprint_start
 anm_idle_sprint_end_16x9        			= dev_detector_1_idle_sprint_end
 
-anm_aim_start							 = dev_detector_1_aim_start
-anm_aim_end								 = dev_detector_1_aim_end
+anm_idle_aim_start						 = dev_detector_1_aim_start
+anm_idle_aim_end						= dev_detector_1_aim_end
 anm_idle_aim							 = dev_detector_1_aim
 anm_idle_aim_moving						 = dev_detector_1_aim_walk
 anm_shoot_aim							 = dev_detector_1_aim_shoot
@@ -223,8 +223,8 @@ anm_bolt_end							 = dev_detector_1_bolt_end
 anm_knife_1								 = dev_detector_1_knife_kick_1
 anm_knife_2								 = dev_detector_1_knife_kick_2
 
-anm_aim_start_16x9						 = dev_detector_1_aim_start
-anm_aim_end_16x9						 = dev_detector_1_aim_end
+anm_idle_aim_start_16x9						 = dev_detector_1_aim_start
+anm_idle_aim_end_16x9						 = dev_detector_1_aim_end
 anm_idle_aim_16x9						 = dev_detector_1_aim
 anm_idle_aim_moving_16x9				 = dev_detector_1_aim_walk
 anm_shoot_aim_16x9						 = dev_detector_1_aim_shoot
@@ -244,7 +244,7 @@ anm_knife_2_16x9						 = dev_detector_1_knife_kick_2
 flash_light_range                        = 0.1
 onoff_light_range                        = 0.1
 
-[detector_advanced]:detector_simple, detector_advanced_af_base
+[detector_advanced]:detector_simple
 $spawn 			= "devices\detector_advanced"
 class			= DET_ADVA
 visual			= dynamics\devices\dev_detector_2\dev_detector_2.ogf
@@ -333,8 +333,8 @@ anm_idle_sprint_16x9					 = dev_detector_2_sprint
 anm_idle_sprint_end_16x9					     = dev_detector_2_sprint_end
 
 
-anm_aim_start							 = dev_detector_2_aim_start
-anm_aim_end								 = dev_detector_2_aim_end
+anm_idle_aim_start							 = dev_detector_2_aim_start
+anm_idle_aim_end								 = dev_detector_2_aim_end
 anm_idle_aim							 = dev_detector_2_aim
 anm_idle_aim_moving						 = dev_detector_2_aim_walk
 anm_shoot_aim							 = dev_detector_2_aim_shoot
@@ -351,8 +351,8 @@ anm_bolt_end							 = dev_detector_2_bolt_end
 anm_knife_1								 = dev_detector_2_knife_kick_1
 anm_knife_2								 = dev_detector_2_knife_kick_2
 
-anm_aim_start_16x9						 = dev_detector_2_aim_start
-anm_aim_end_16x9						 = dev_detector_2_aim_end
+anm_idle_aim_start_16x9						 = dev_detector_2_aim_start
+anm_idle_aim_end_16x9						 = dev_detector_2_aim_end
 anm_idle_aim_16x9						 = dev_detector_2_aim
 anm_idle_aim_moving_16x9				 = dev_detector_2_aim_walk
 anm_shoot_aim_16x9						 = dev_detector_2_aim_shoot
@@ -369,7 +369,7 @@ anm_bolt_end_16x9						 = dev_detector_2_bolt_end
 anm_knife_1_16x9						 = dev_detector_2_knife_kick_1
 anm_knife_2_16x9						 = dev_detector_2_knife_kick_2
 
-[detector_elite]:detector_advanced, detector_elite_af_base
+[detector_elite]:detector_advanced
 $spawn 			= "devices\detector_elite"
 class			= DET_ELIT
 visual			= dynamics\devices\dev_detector_3\dev_detector_3.ogf
@@ -463,8 +463,8 @@ anm_idle_sprint_16x9					 = veles_sprint
 anm_idle_sprint_end_16x9					     = veles_sprint_end
 
 
-anm_aim_start							 = veles_aim_start
-anm_aim_end								 = veles_aim_end
+anm_idle_aim_start							 = veles_aim_start
+anm_idle_aim_end								 = veles_aim_end
 anm_idle_aim							 = veles_aim
 anm_idle_aim_moving						 = veles_aim_walk
 anm_shoot_aim							 = veles_aim_shoot
@@ -499,7 +499,7 @@ anm_bolt_end_16x9						 = veles_bolt_end
 anm_knife_1_16x9						 = veles_knife_kick_1
 anm_knife_2_16x9						 = veles_knife_kick_2
 
-[detector_scientific]:detector_elite, detector_scientific_af_base, detector_scientific_anomaly_base
+[detector_scientific]:detector_elite
 $spawn 				= "devices\detector_scientific"
 class				= DET_SCIE
 
@@ -652,8 +652,8 @@ anm_idle_sprint_start_16x9					 = veles_sprint_start
 anm_idle_sprint_16x9					 = veles_sprint
 anm_idle_sprint_end_16x9					     = veles_sprint_end
 
-anm_aim_start							 = veles_aim_start
-anm_aim_end								 = veles_aim_end
+anm_idle_aim_start							 = veles_aim_start
+anm_idle_aim_end								 = veles_aim_end
 anm_idle_aim							 = veles_aim
 anm_idle_aim_moving						 = veles_aim_walk
 anm_shoot_aim							 = veles_aim_shoot
@@ -670,8 +670,8 @@ anm_bolt_end							 = veles_bolt_end
 anm_knife_1								 = veles_knife_kick_1
 anm_knife_2								 = veles_knife_kick_2
 
-anm_aim_start_16x9						 = veles_aim_start
-anm_aim_end_16x9						 = veles_aim_end
+anm_idle_aim_start_16x9						 = veles_aim_start
+anm_idle_aim_end_16x9						 = veles_aim_end
 anm_idle_aim_16x9						 = veles_aim
 anm_idle_aim_moving_16x9				 = veles_aim_walk
 anm_shoot_aim_16x9						 = veles_aim_shoot
@@ -687,4 +687,3 @@ anm_bolt_idle_16x9						 = veles_bolt_idle
 anm_bolt_end_16x9						 = veles_bolt_end
 anm_knife_1_16x9						 = veles_knife_kick_1
 anm_knife_2_16x9						 = veles_knife_kick_2
-
