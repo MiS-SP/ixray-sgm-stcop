@@ -52,7 +52,7 @@ weapon_class									=
 inv_weight										= 0.83
 hud												= wpn_fort_hud
 visual 											= dynamics\weapons\wpn_fort\wpn_fort.ogf
-	
+
 upgrades                						= up_gr_firstab_fort, up_gr_seconab_fort, up_gr_thirdab_fort, up_gr_fourtab_fort, up_gr_fifthab_fort, up_gr_fifthcd_fort
 installed_upgrades      						=
 upgrade_scheme          						= upgrade_scheme_fort
@@ -123,7 +123,7 @@ holder_fov_modifier								= 1.00
 slot 			 								= 1
 animation_slot									= 1
 
-position										= -0.021,-0.09,-0.005 ; -0.021,-0.087,-0.02
+position										= -0.021,-0.09,0
 orientation 									= 0,0,0
 
 fire_point										= 0,0.133,0.161
@@ -135,7 +135,6 @@ silencer_smoke_particles 						= weapons\generic_shoot_00
 
 shell_point		 								= 0,0.133,0.047
 shell_dir		 								= 0,0,0.4
-;shell_particles	 							= ghost_particles\weapons\shells\shells_9x18_right
 
 light_color		 								= 0.6,0.5,0.3
 light_range		 								= 3.0
@@ -238,3 +237,10 @@ anm_idle_sprint_start_jammed 					= fort12_old_walk2sprint, idle_jammed
 anm_idle_sprint_end            					= fort12_old_sprint2walk
 anm_idle_sprint_end_empty       				= fort12_old_sprint2walk, idle_empty
 anm_idle_sprint_end_jammed       				= fort12_old_sprint2walk, idle_jammed
+
+anm_prepare_detector                          	= fort12_hand_holster
+anm_prepare_detector_empty                    	= fort12_hand_holster, idle_empty
+anm_prepare_detector_jammed                   	= fort12_hand_holster, idle_jammed
+anm_finish_detector                           	= fort12_hand_draw
+anm_finish_detector_empty                     	= fort12_hand_draw, idle_empty
+anm_finish_detector_jammed                    	= fort12_hand_draw, idle_jammed

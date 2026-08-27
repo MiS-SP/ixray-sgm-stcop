@@ -151,7 +151,6 @@ silencer_smoke_particles   						= weapons\generic_shoot_00
 
 shell_point										= 0,0.128,0
 shell_dir		 								= 0,0,0.4
-;shell_particles								= ghost_particles\weapons\shells\shells_762_54_right
 
 strap_position									= -0.26,-0.11,0.25
 strap_orientation								= -15,-9,110
@@ -181,7 +180,7 @@ silencer_name									= wpn_addon_silencer
 silencer_x										= 224
 silencer_y										= 13
 
-silencer_hit_power 								= 0.8
+silencer_hit_power 								= 0.55
 silencer_hit_impulse	 						= 20
 silencer_fire_distance 							= 1000
 silencer_bullet_speed	 						= 798
@@ -191,101 +190,70 @@ zoom_hide_crosshair								= true
 attach_place_idx								= 0
 item_visual             						= dynamics\weapons\wpn_svu\wpn_svu_hud.ogf
 
-hands_position									= -0.074272,-0.165840,0.045192
-hands_orientation								= -0.190400,1.535421,-1.674137
+hands_position	 								= -0.072000,0.063500,-0.396973
+hands_position_16x9				            	= -0.072000,0.063500,-0.396973
 
-hands_position_16x9								= -0.074272,-0.165840,0.045192
-hands_orientation_16x9							= -0.190400,1.535421,-1.674137
+hands_orientation								= 0,0,0
+hands_orientation_16x9							= 0,0,0
 
 item_position 									= 0,0,0
 item_orientation 								= 0,0,0
 
-aim_hud_offset_pos								= -0.065652,0.025974,-0.181777
-aim_hud_offset_rot								= 0.033078,0.012301,-0.009458
+aim_hud_offset_pos			       				= -0.071150, 0.013300, -0.145800
+aim_hud_offset_rot			       				= 0.000000, 0.001000, 0
 
-aim_hud_offset_pos_16x9							= -0.065652,0.025974,-0.181777
-aim_hud_offset_rot_16x9							= 0.033078,0.012301,-0.009458
+aim_hud_offset_pos_16x9          				= -0.071150, 0.013300, -0.145800
+aim_hud_offset_rot_16x9          				= 0.000000, 0.001000, 0
 
-shell_bone										= casing
-shell_point										= 0,0,0
+shell_bone                                  	= shell
+shell_dir                                    	= 0,1,0
+shell_point                                  	= 0,0,0
 
-fire_bone										= wpn_body
-fire_point										= 0,0.036,0.43
+fire_bone                                     	= wpn_body
+fire_point                                   	= 0,0,0.536802
 
 disable_bore									= true
 
-anm_hide                         				= barry_holster_svu_hands, barry_holster_svu
-anm_idle                          				= barry_idle_svu_hands, barry_idle_svu
-anm_idle_aim                    				= barry_idle_aim_svu_hands, barry_idle_aim_svu
-anm_idle_moving                 				= barry_walk_svu_hands, barry_walk_svu
-anm_idle_moving_slow           					= barry_slow_svu, barry_walk_svu
-anm_idle_moving_crouch          				= barry_crouch_svu, barry_walk_svu
-anm_idle_moving_slow_crouch         			= barry_crouch_slow_svu, barry_walk_svu
-anm_idle_sprint                 				= barry_sprint_svu_hands, barry_sprint_svu
-anm_reload                       				= barry_reload_svu_hands, barry_reload_svu
-anm_reload_aim                    				= barry_reload_svu_hands_ads, barry_reload_svu_ads       
-anm_shoot                         				= barry_shoot_svu_hands, barry_shoot_svu
-anm_shoot_last                       			= barry_shoot_svu_hands, barry_shoot_svu_empty
-anm_shoot_aim                          			= svu_shoot_scope, barry_shoot_svu
-anm_shoot_aim_last                       		= svu_shoot_scope, barry_shoot_svu_empty
-anm_shoot_aim_scope                   			= svu_shoot_scope, barry_shoot_svu
-anm_shoot_aim_scope_last                   		= svu_shoot_scope, barry_shoot_svu_empty
-anm_show                          				= barry_draw_svu_hands, barry_draw_svu
-;anm_firemode                   				= barry_firemode_svu_hands, barry_idle_svu
+anm_hide                                    	= svu_iwp_holster
+anm_hide_empty                              	= svu_iwp_holster, idle_empty
+anm_idle                                    	= svu_iwp_idle
+anm_idle_empty                              	= svu_iwp_idle, idle_empty
+anm_idle_aim                                 	= svu_iwp_idle_aim
+anm_idle_aim_empty                           	= svu_iwp_idle_aim, idle_empty
+anm_idle_moving                              	= svu_iwp_moving
+anm_idle_moving_empty                        	= svu_iwp_moving, idle_empty
+anm_idle_moving_slow                         	= svu_iwp_moving_slow
+anm_idle_moving_slow_empty                   	= svu_iwp_moving_slow, idle_empty
+anm_idle_moving_crouch                       	= svu_iwp_crouch
+anm_idle_moving_crouch_empty                 	= svu_iwp_crouch, idle_empty
+anm_idle_moving_slow_crouch                		= svu_iwp_crouch,, 0.8
+anm_idle_moving_slow_crouch_empty          		= svu_iwp_crouch, idle_empty, 0.8
+anm_reload                                  	= svu_iwp_reload, reload
+anm_reload_empty                            	= svu_iwp_reload_empty, reload_empty
+anm_reload_jammed								= svu_iwp_misfire, misfire
+anm_shoot                                     	= svu_iwp_shoot, shoot
+anm_shoot_last                               	= svu_iwp_shoot, shoot_last
+anm_shoot_aim                                 	= svu_iwp_shoot_aim, shoot
+anm_shoot_aim_last                            	= svu_iwp_shoot_aim, shoot_last
+anm_show                                    	= svu_iwp_draw
+anm_show_empty                              	= svu_iwp_draw, idle_empty
 
-;  Empty Animation Variants
+anm_idle_aim_moving                           	= svu_iwp_moving_aim
+anm_idle_aim_moving_empty                     	= svu_iwp_moving_aim, idle_empty
+anm_idle_aim_moving_slow                    	= svu_iwp_moving_aim,, 0.8
+anm_idle_aim_moving_slow_empty              	= svu_iwp_moving_aim, idle_empty, 0.8
+anm_idle_aim_moving_crouch                 		= svu_iwp_moving_aim,, 0.6
+anm_idle_aim_moving_crouch_empty           		= svu_iwp_moving_aim, idle_empty, 0.6
+anm_idle_aim_moving_slow_crouch              	= svu_iwp_moving_aim,, 0.4
+anm_idle_aim_moving_slow_crouch_empty       	= svu_iwp_moving_aim, idle_empty, 0.4
 
-anm_show_empty                    				= barry_draw_svu_hands, barry_draw_svu_empty 
-anm_hide_empty                    				= barry_holster_svu_hands, barry_holster_svu_empty 
-anm_idle_aim_empty                				= barry_idle_aim_svu_hands, barry_idle_aim_svu_empty
-anm_idle_moving_slow_empty     					= barry_slow_svu, barry_walk_svu_empty
-anm_idle_moving_crouch_empty    				= barry_crouch_svu, barry_walk_svu_empty
-anm_idle_moving_slow_crouch_empty   			= barry_crouch_slow_svu, barry_walk_svu_empty
-anm_idle_moving_empty           				= barry_walk_svu_hands, barry_walk_svu_empty
-anm_idle_sprint_empty              				= barry_sprint_svu_hands, barry_sprint_svu_empty 
-anm_reload_empty            					= barry_reload_svu_hands_empty, barry_reload_svu_empty 
-anm_idle_empty				 					= barry_idle_svu_hands, barry_idle_svu_empty
-;anm_firemode_empty            					= barry_firemode_svu_hands, barry_idle_svu_empty
+anm_idle_sprint_start         					= svu_iwp_sprint_start
+anm_idle_sprint		       						= svu_iwp_sprint
+anm_idle_sprint_end         					= svu_iwp_sprint_end
 
-;   Jammed Animation Variants
-anm_idle_jammed  								= barry_idle_svu_hands, barry_idle_svu_jammed
-anm_shoot_jammed 								= barry_shoot_svu_hands, barry_shoot_svu_jammed
-anm_show_jammed  								= barry_draw_svu_hands, barry_idle_svu_jammed
-anm_hide_jammed  								= barry_holster_svu_hands, barry_idle_svu_jammed
-anm_idle_aim_jammed      						= barry_idle_aim_svu_hands, barry_idle_svu_jammed
-anm_idle_sprint_jammed   						= barry_sprint_svu_hands, barry_sprint_svu_jammed
-anm_idle_moving_jammed   						= barry_walk_svu_hands, barry_walk_svu_jammed
-anm_idle_moving_slow_jammed    					= barry_slow_svu, barry_walk_svu_jammed
-anm_idle_moving_crouch_jammed    				= barry_crouch_svu, barry_walk_svu_jammed
-anm_idle_moving_slow_crouch_jammed  			= barry_crouch_slow_svu, barry_walk_svu_jammed
-;anm_firemode_jammed            			= barry_firemode_svu_hands, barry_idle_svu_jammed
-anm_reload_jammed       						= barry_unjam_svu_hands, barry_unjam_svu
-anm_reload_jammed_jammed						= barry_unjam_svu_hands, barry_unjam_svu
-
-;   Empty Jammed Animation Variants
-anm_idle_empty_jammed    						= barry_idle_svu_hands, barry_idle_svu_jammed
-anm_shoot_jammed_last								= barry_shoot_svu_hands, barry_shoot_svu_jammed
-anm_show_empty_jammed    						= barry_draw_svu_hands, barry_idle_svu_jammed
-anm_hide_empty_jammed    						= barry_holster_svu_hands, barry_idle_svu_jammed
-anm_idle_aim_empty_jammed						= barry_idle_aim_svu_hands, barry_idle_svu_jammed
-anm_idle_sprint_empty_jammed     				= barry_sprint_svu_hands, barry_sprint_svu_jammed
-anm_idle_moving_empty_jammed     				= barry_walk_svu_hands, barry_walk_svu_jammed
-anm_idle_moving_slow_empty_jammed 				= barry_slow_svu, barry_walk_svu_jammed
-anm_idle_moving_crouch_empty_jammed 			= barry_crouch_svu, barry_walk_svu_jammed
-anm_idle_moving_slow_crouch_empty_jammed 		= barry_crouch_slow_svu, barry_walk_svu_jammed
-anm_reload_jammed_empty 						= barry_unjam_svu_hands_empty, barry_unjam_svu_empty
-
-;  Transition/Intermediate Animations
-anm_idle_sprint_start                      		= barry_trans1_svu_hands, barry_idle_svu
-anm_idle_sprint_start_empty               		= barry_trans1_svu_hands, barry_idle_svu_empty
-anm_idle_sprint_start_jammed            		= barry_trans1_svu_hands, barry_idle_svu_jammed
-
-anm_idle_sprint_end                        		= barry_trans2_svu_hands, barry_idle_svu
-anm_idle_sprint_end_empty                   	= barry_trans2_svu_hands, barry_idle_svu_empty
-anm_idle_sprint_end_jammed                  	= barry_trans2_svu_hands, barry_idle_svu_jammed
-
-anm_idle_aim_sprint_start                  		= barry_aim_trans1_hands, barry_idle_svu
-anm_idle_aim_sprint_start_empty                	= barry_aim_trans1_hands, barry_idle_svu_empty
+anm_idle_sprint_start_empty         			= svu_iwp_sprint_start, idle_empty
+anm_idle_sprint_empty         					= svu_iwp_sprint, idle_empty
+anm_idle_sprint_end_empty         				= svu_iwp_sprint_end, idle_empty
 ;-----------------------------------------------------------------------------
 ; Аддоны
 ;-----------------------------------------------------------------------------
@@ -300,11 +268,11 @@ scope_y											= 7
 [wpn_svu_1p78_hud]:wpn_svu_hud
 item_visual                						= dynamics\weapons\wpn_svu\wpn_svu_1p78_hud.ogf
 
-aim_hud_offset_pos								= -0.063000,0.019500,-0.01
-aim_hud_offset_rot								= 0.023828,0.015051,-0.025458
+aim_hud_offset_pos		        				= -0.070490, -0.002900, 0.021200
+aim_hud_offset_rot		        				= 0.000000, 0.001000, 0
 
-aim_hud_offset_pos_16x9							= -0.063000,0.019500,-0.01
-aim_hud_offset_rot_16x9							= 0.023828,0.015051,-0.025458
+aim_hud_offset_pos_16x9          				= -0.070490, -0.002900, 0.021200
+aim_hud_offset_rot_16x9          				= 0.000000, 0.001000, 0
 
 [wpn_svu_1pn93-4]:wpn_svu
 $spawn             								= "weapons\wpn_svu_1pn93-4"
@@ -317,11 +285,11 @@ scope_y											= 14
 [wpn_svu_1pn93-4_hud]:wpn_svu_hud
 item_visual                						= dynamics\weapons\wpn_svu\wpn_svu_1pn93-4_hud.ogf
 
-aim_hud_offset_pos								= -0.055000,0.012500,0
-aim_hud_offset_rot								= 0.025828,0.014301,-0.034708
+aim_hud_offset_pos			        			= -0.061177, -0.022390, 0.031200
+aim_hud_offset_rot			        			= 0, 0.001000, 0
 
-aim_hud_offset_pos_16x9							= -0.055000,0.012500,0
-aim_hud_offset_rot_16x9							= 0.025828,0.014301,-0.034708
+aim_hud_offset_pos_16x9          				= -0.061177, -0.022390, 0.031200
+aim_hud_offset_rot_16x9          				= 0, 0.001000, 0
 
 [wpn_svu_ekp]:wpn_svu
 $spawn             								= "weapons\wpn_svu_ekp"
@@ -334,11 +302,11 @@ scope_y											= 13
 [wpn_svu_ekp_hud]:wpn_svu_hud
 item_visual                						= dynamics\weapons\wpn_svu\wpn_svu_ekp_hud.ogf
 
-aim_hud_offset_pos	         					= -0.065500, 0.000000, -0.143000
-aim_hud_offset_rot			     				= 0.026800, 0.013000, -0.026208
+aim_hud_offset_pos		         				= -0.070750, -0.011700, -0.149800
+aim_hud_offset_rot		         				= 0.000700, 0.000300, 0
 
-aim_hud_offset_pos_16x9          				= -0.065500, 0.000000, -0.143000
-aim_hud_offset_rot_16x9          				= 0.026800, 0.013000, -0.026208
+aim_hud_offset_pos_16x9          				= -0.070750, -0.011700, -0.149800
+aim_hud_offset_rot_16x9          				= 0.000700, 0.000300, 0
 
 [wpn_svu_kobra]:wpn_svu
 $spawn                  						= "weapons\svu_kobra"
@@ -351,11 +319,11 @@ scope_y											= 16
 [wpn_svu_kobra_hud]:wpn_svu_hud
 item_visual                						= dynamics\weapons\wpn_svu\wpn_svu_kobra_hud.ogf
 
-aim_hud_offset_pos								= -0.0645,0.004974,-0.047
-aim_hud_offset_rot								= 0.026,0.0129,-0.028458
+aim_hud_offset_pos						        = -0.068900, -0.002700, -0.143800
+aim_hud_offset_rot						        = 0.000000, 0.000500, 0.000000
 
-aim_hud_offset_pos_16x9							= -0.0645,0.004974,-0.047
-aim_hud_offset_rot_16x9							= 0.026,0.0129,-0.028458
+aim_hud_offset_pos_16x9          				= -0.068900, -0.002700, -0.143800
+aim_hud_offset_rot_16x9          				= 0.000000, 0.000500, 0.000000
 
 [wpn_svu_pso1m2]:wpn_svu
 $spawn             								= "weapons\wpn_svu_pso1m2"
@@ -368,11 +336,11 @@ scope_y											= 13
 [wpn_svu_pso1m2_hud]:wpn_svu_hud
 item_visual                						= dynamics\weapons\wpn_svu\wpn_svu_pso1m2_hud.ogf
 
-aim_hud_offset_pos								= -0.056652,0.021974,0
-aim_hud_offset_rot								= 0.028628,0.013801,-0.027408
+aim_hud_offset_pos		        				= -0.061350, 0.009220, 0.019200
+aim_hud_offset_rot		        				= 0.000000, 0.001000, 0.000000
 
-aim_hud_offset_pos_16x9							= -0.056652,0.021974,0
-aim_hud_offset_rot_16x9							= 0.028628,0.013801,-0.027408
+aim_hud_offset_pos_16x9          				= -0.061350, 0.009220, 0.019200
+aim_hud_offset_rot_16x9          				= 0.000000, 0.001000, 0.000000
 
 [wpn_svu_okp]:wpn_svu
 $spawn             								= "weapons\wpn_svu_okp"
@@ -385,11 +353,11 @@ scope_y											= 11
 [wpn_svu_okp_hud]:wpn_svu_hud
 item_visual                						= dynamics\weapons\wpn_svu\wpn_svu_okp_hud.ogf
 
-aim_hud_offset_pos	          					= -0.058800, 0.026200, -0.170000
-aim_hud_offset_rot			       				= 0.026000, 0.012651, -0.030000
+aim_hud_offset_pos		        				= -0.066150, 0.004300, -0.158800
+aim_hud_offset_rot		        				= -0.000500, 0.000300, 0.000000
 
-aim_hud_offset_pos_16x9          				= -0.058800, 0.026200, -0.170000
-aim_hud_offset_rot_16x9          				= 0.026000, 0.012651, -0.030000
+aim_hud_offset_pos_16x9         				= -0.066150, 0.004300, -0.158800
+aim_hud_offset_rot_16x9         				= -0.000500, 0.000300, 0.000000
 ;-----------------------------------------------------------------------------
 ; Уникальные
 ;-----------------------------------------------------------------------------

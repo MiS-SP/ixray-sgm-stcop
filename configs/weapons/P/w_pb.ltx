@@ -122,7 +122,7 @@ holder_fov_modifier								= 1
 slot 			 								= 1
 animation_slot									= 1
 
-position                						= -0.021,-0.075,0
+position                						= -0.021,-0.088,-0.01
 orientation             						= 0,0,0
 
 fire_point              						= 0,0.104,0.15
@@ -134,7 +134,6 @@ silencer_smoke_particles 						= weapons\generic_shoot_00
 
 shell_point		 								= 0,0.133,0.047
 shell_dir		 								= 0,0,0.4
-;shell_particles	 							= ghost_particles\weapons\shells\shells_9x18_right
 
 light_color		 								= 0.6,0.5,0.3
 light_range		 								= 3.0
@@ -230,6 +229,11 @@ anm_shoot_aim									= pm_iwp_shoot_aim, shoot
 anm_shoot_aim_last								= pm_iwp_shoot_aim, shoot_last
 anm_show                                    	= pm_iwp_draw
 anm_show_empty                              	= pm_iwp_draw, idle_empty
+
+anm_prepare_detector                          	= pm_iwp_hand_holster
+anm_prepare_detector_empty                    	= pm_iwp_hand_holster, idle_empty
+anm_finish_detector                           	= pm_iwp_hand_draw
+anm_finish_detector_empty                     	= pm_iwp_hand_draw, idle_empty
 
 ammo_params_section 							= wpn_pb_ammo_bones
 

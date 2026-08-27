@@ -132,7 +132,7 @@ holder_fov_modifier								= 1
 slot 			 								= 1
 animation_slot									= 1
 
-position                						= -0.021,-0.087,-0.02
+position                						= -0.021,-0.099,-0.005
 orientation             						= 0,0,0
 
 fire_point              						= 0,0.133,0.179
@@ -143,7 +143,6 @@ silencer_smoke_particles 						= weapons\generic_shoot_00
 
 shell_point		 								= 0,0.133,0.047
 shell_dir		 								= 0,0,0.4
-;shell_particles	 							= weapons\9x19
 
 light_color		 								= 0.6,0.5,0.3
 light_range		 								= 2.0
@@ -282,3 +281,10 @@ anm_shoot_jammed                   	 			= fn57_new_idle, idle_jammed
 
 anm_idle_sprint_start_empty_jammed             	= fn57_new_walk2sprint, idle_jammed
 anm_idle_sprint_end_empty_jammed             	= fn57_new_sprint2walk, idle_jammed
+
+anm_prepare_detector                          	= fn57_hand_holster
+anm_prepare_detector_empty                    	= fn57_hand_holster, idle_empty
+anm_prepare_detector_jammed                   	= fn57_hand_holster, idle_jammed
+anm_finish_detector                           	= fn57_hand_draw
+anm_finish_detector_empty                     	= fn57_hand_draw, idle_empty
+anm_finish_detector_jammed                    	= fn57_hand_draw, idle_jammed

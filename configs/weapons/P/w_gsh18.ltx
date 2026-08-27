@@ -148,7 +148,6 @@ silencer_smoke_particles 						= weapons\generic_shoot_00
 
 shell_point		 								= 0,0.133,0.047
 shell_dir		 								= 0,0,0.4
-;shell_particles	 							= ghost_particles\weapons\shells\shells_9x19_right
 
 light_disabled									= false
 light_color		 								= 0.6,0.5,0.3
@@ -288,3 +287,10 @@ anm_shoot_jammed                   	 			= glock_new_idle, idle_jammed
 
 anm_idle_sprint_start_empty_jammed             	= glock_new_walk2sprint, idle_jammed
 anm_idle_sprint_end_empty_jammed             	= glock_new_sprint2walk, idle_jammed
+
+anm_prepare_detector                          	= glock_hand_holster
+anm_prepare_detector_empty                    	= glock_hand_holster, idle_empty
+anm_prepare_detector_jammed                    	= glock_hand_holster, idle_jammed
+anm_finish_detector                           	= glock_hand_draw
+anm_finish_detector_empty                     	= glock_hand_draw, idle_empty
+anm_finish_detector_jammed                    	= glock_hand_draw, idle_jammed

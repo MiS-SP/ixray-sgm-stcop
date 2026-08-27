@@ -160,45 +160,49 @@ splash_hit_divide_factor		= 0.75
 [wpn_knife_hud]:hud_base
 zoom_hide_crosshair				= true
 
-hands_position				= 0.043000,-0.174500,-0.055000
-hands_orientation			= 2.000000,0.800001,0.000000
+hands_position					= 0,0,0
+hands_orientation				= 0,0,0
 
-hands_position_16x9			= 0.043000,-0.174500,-0.055000
-hands_orientation_16x9		= 2.000000,0.800001,0.000000
+hands_position_16x9				= 0,0,0
+hands_orientation_16x9			= 0,0,0
 
-item_position				= 0,0,0
-item_orientation			= 0,0,0
+item_position					= 0,0,0
+item_orientation				= 0,0,0
 
-item_visual             	= dynamics\weapons\wpn_knife\wpn_knife_hud.ogf
-attach_place_idx			= 0
+item_visual             		= dynamics\weapons\wpn_knife\wpn_knife_hud.ogf
+attach_place_idx				= 0
 
-shell_point					= 0,0,0
-shell_bone              	= wpn_body
+shell_point						= 0,0,0
+shell_bone              		= wpn_body
 
-fire_point					= 0.0,0.0,0.0
-fire_bone               	= knife
+fire_point						= 0,0,0
+fire_bone               		= knife
 
-anm_show					= knife_ins_draw
-anm_show_empty				= knife_ins_draw
-anm_hide             		= knife_ins_hide
-anm_idle             		= knife_ins_idle, idle
-anm_idle_aim				= knife_ins_idle
-anm_attack					= knife_ins_attack_cut
-anm_attack_e				= knife_ins_attack_cut  ;--remove me
-anm_attack2 				= knife_ins_attack_stab
-anm_attack2_e				= knife_ins_attack_stab ;--remove me
-anm_idle_moving 			= knife_ins_idle_moving
-anm_idle_moving_slow		= knife_ins_idle_slow
-anm_idle_moving_crouch		= knife_ins_idle_crouch
-anm_idle_moving_slow_crouch	= knife_ins_idle_crouch_slow
-anm_idle_sprint				= knife_ins_idle_sprint
-anm_bore					= knife_ins_bore
+anm_hide                    	= liz_knife_hide
+anm_hide_fast               	= liz_knife_hide_quick
+anm_idle                    	= liz_knife_idle
+anm_idle_aim                	= liz_knife_idle
+anm_idle_moving             	= liz_knife_walk
+anm_idle_sprint             	= liz_knife_sprint_varried
+anm_show                    	= liz_knife_show
+anm_show_empty              	= liz_knife_show
+anm_show_fast               	= liz_knife_show_quick
+anm_bore                    	= liz_knife_bored
 
-aim_hud_offset_pos			= 0.0,0.0,0.0
-aim_hud_offset_rot			= 0.0,0.0,0.0
+anm_idle_sprint_start     		= liz_knife_walk2sprint
+anm_idle_sprint_end    			= liz_knife_sprint2walk
 
-gl_hud_offset_pos			= 0,0,0
-gl_hud_offset_rot			= 0,0,0
+anm_attack                  	= liz_knife_hit1
+anm_attack2                 	= liz_knife_stab
 
-lean_hud_offset_pos			= 0,0,0
-lean_hud_offset_rot			= 0,0,0
+anm_prepare_detector         	= knife_hand_holster
+anm_finish_detector          	= knife_hand_draw
+
+aim_hud_offset_pos				= 0,0,0
+aim_hud_offset_rot				= 0,0,0
+
+gl_hud_offset_pos				= 0,0,0
+gl_hud_offset_rot				= 0,0,0
+
+lean_hud_offset_pos				= 0,0,0
+lean_hud_offset_rot				= 0,0,0

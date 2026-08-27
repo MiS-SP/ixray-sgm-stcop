@@ -127,7 +127,7 @@ holder_fov_modifier								= 1
 slot 			 								= 1
 animation_slot									= 1
 
-position										= -0.021,-0.09,-0.02
+position										= -0.021,-0.09,-0.005
 orientation 									= 0,0,0
 
 fire_point										= 0,0.133,0.22
@@ -138,7 +138,6 @@ silencer_smoke_particles 						= weapons\generic_shoot_00
 
 shell_point		 								= 0,0,0
 shell_dir		 								= 0,0,0.4
-;shell_particles	 							= ghost_particles\weapons\shells\shells_9x18_right
 
 light_color		 								= 0.6,0.5,0.3
 light_range		 								= 3.0
@@ -237,6 +236,11 @@ anm_show_empty                              	= pm_iwp_draw, idle_empty
 anm_firemode		                  			= apb_iwp_firemode
 anm_firemode_empty                    			= apb_iwp_firemode, idle_empty
 
+anm_prepare_detector                          	= pm_iwp_hand_holster
+anm_prepare_detector_empty                    	= pm_iwp_hand_holster, idle_empty
+anm_finish_detector                           	= pm_iwp_hand_draw
+anm_finish_detector_empty                     	= pm_iwp_hand_draw, idle_empty
+
 ammo_params_section 							= wpn_aps_ammo_bones
 
 [wpn_aps_ammo_bones]
@@ -244,26 +248,26 @@ ammo_params_section 							= wpn_aps_ammo_bones
 all_bones = bullet1,bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,bullet20,bashmak1,bashmak3,bashmak5,bashmak7,bashmak9,bashmak11,bashmak13,bashmak15,bashmak17,bashmak19,bashmak21,prujina3,prujina5,prujina7,prujina9,prujina11,prujina13,prujina15,prujina17,prujina19
 
 ;конфигурации для каждого из значений счетчика патронов: какие из костей, указанных в all_bones, отображать при таком значении
-configuration_0 =  prujina5,prujina7,prujina9,prujina15,prujina17,bashmak1 
-configuration_1 =  prujina5,prujina7,prujina9,prujina15,prujina17,bashmak1 
-configuration_2 =  bullet2,prujina5,prujina7,prujina9,prujina15,prujina17,bashmak3
-configuration_3 =  bullet2,bullet3,prujina5,prujina7,prujina9,prujina15,prujina17,bashmak3
-configuration_4 =  bullet2,bullet3,bullet4,prujina5,prujina7,prujina9,prujina15,prujina17,bashmak5 
-configuration_5 =  bullet2,bullet3,bullet4,prujina5,prujina7,prujina9,prujina15,prujina17,bashmak5
-configuration_6 =  bullet2,bullet3,bullet4,bullet6,prujina7,prujina9,prujina15,prujina17,bashmak7
-configuration_7 =  bullet2,bullet3,bullet4,bullet6,prujina7,prujina9,prujina15,prujina17,bashmak7
-configuration_8 =  bullet2,bullet3,bullet4,bullet6,bullet8,prujina9,prujina15,prujina17,bashmak9
-configuration_9 =  bullet2,bullet3,bullet4,bullet6,bullet8,prujina9,prujina15,prujina17,bashmak9
-configuration_10 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,prujina15,prujina17,bashmak11 
-configuration_11 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,prujina15,prujina17,bashmak11
-configuration_12 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,prujina15,prujina17,bashmak13
-configuration_13 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,prujina15,prujina17,bashmak13
-configuration_14 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,prujina15,prujina17,bashmak15
-configuration_15 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,prujina15,prujina17,bashmak15
-configuration_16 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,prujina17,bashmak17
-configuration_17 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,prujina17,bashmak17
-configuration_18 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,prujina19,bashmak19
-configuration_19 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,prujina19,bashmak19
-configuration_20 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,bullet20,bashmak21
-configuration_21 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,bullet20,bashmak21
-configuration_22 = bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,bullet20,bashmak21
+configuration_0  		=  prujina5,prujina7,prujina9,prujina15,prujina17,bashmak1 
+configuration_1  		=  prujina5,prujina7,prujina9,prujina15,prujina17,bashmak1 
+configuration_2  		=  bullet2,prujina5,prujina7,prujina9,prujina15,prujina17,bashmak3
+configuration_3  		=  bullet2,bullet3,prujina5,prujina7,prujina9,prujina15,prujina17,bashmak3
+configuration_4  		=  bullet2,bullet3,bullet4,prujina5,prujina7,prujina9,prujina15,prujina17,bashmak5 
+configuration_5  		=  bullet2,bullet3,bullet4,prujina5,prujina7,prujina9,prujina15,prujina17,bashmak5
+configuration_6  		=  bullet2,bullet3,bullet4,bullet6,prujina7,prujina9,prujina15,prujina17,bashmak7
+configuration_7  		=  bullet2,bullet3,bullet4,bullet6,prujina7,prujina9,prujina15,prujina17,bashmak7
+configuration_8  		=  bullet2,bullet3,bullet4,bullet6,bullet8,prujina9,prujina15,prujina17,bashmak9
+configuration_9  		=  bullet2,bullet3,bullet4,bullet6,bullet8,prujina9,prujina15,prujina17,bashmak9
+configuration_10 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,prujina15,prujina17,bashmak11 
+configuration_11 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,prujina15,prujina17,bashmak11
+configuration_12 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,prujina15,prujina17,bashmak13
+configuration_13 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,prujina15,prujina17,bashmak13
+configuration_14 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,prujina15,prujina17,bashmak15
+configuration_15 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,prujina15,prujina17,bashmak15
+configuration_16 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,prujina17,bashmak17
+configuration_17 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,prujina17,bashmak17
+configuration_18 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,prujina19,bashmak19
+configuration_19 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,prujina19,bashmak19
+configuration_20 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,bullet20,bashmak21
+configuration_21 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,bullet20,bashmak21
+configuration_22 		= bullet2,bullet3,bullet4,bullet6,bullet8,bullet10,bullet12,bullet14,bullet16,bullet18,bullet20,bashmak21
