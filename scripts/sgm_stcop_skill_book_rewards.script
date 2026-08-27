@@ -42,7 +42,21 @@ local rewards = {
    { info = "stcop_zat_unique_treasure_1_opened", books = { "skill_book_scar", "skill_book_m98b" } },
    { info = "stcop_zat_unique_treasure_2_opened", books = { "skill_book_ak12", "skill_book_mk14" } },
    { info = "stcop_jup_unique_treasure_1_opened", books = { "skill_book_dvl10", "skill_book_l96" } },
-   { info = "stcop_jup_unique_treasure_2_opened", books = { "skill_book_ace52", "skill_book_fal" } }
+   { info = "stcop_jup_unique_treasure_2_opened", books = { "skill_book_ace52", "skill_book_fal" } },
+
+   -- Fixed rewards for weapons added by the updated STCOP package.
+   { info = "jup_b220_trapper_zaton_chimera_hunted_told", books = { "skill_book_fort500", "skill_book_m3super90" } },
+   { info = "jup_b46_task_done", books = { "skill_book_oc27", "skill_book_mr153" } },
+   { info = "jup_destroy_night_killers_complete", books = { "skill_book_ak74m", "skill_book_ak103" } },
+   { info = "val_assault_factory_complete", books = { "skill_book_rpk", "skill_book_rpk203" } },
+
+   -- Heavy weapons stay in the late restored-story locations.
+   { info = "mil_smash_monster_hole_done", books = { "skill_book_hk21", "skill_book_m60" } },
+   { info = "pri_zone_cleaning_complete", books = { "skill_book_pkp" } },
+
+   -- The strongest precision and western weapons are Pripyat rewards.
+   { info = "pri_a20_talk_with_colonel_complete", books = { "skill_book_sr25", "skill_book_vssk" } },
+   { info = "pri_fenix_vendetta_complete", books = { "skill_book_famas_f1", "skill_book_hk416" } }
 }
 
 local treasure_open_info = {
@@ -153,4 +167,3 @@ function on_game_start()
    RegisterScriptCallback("actor_on_item_take_from_box", on_take_item_from_box)
    process_rewards()
 end
-
