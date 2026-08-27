@@ -1,0 +1,156 @@
+-- Fixed STCOP skill-book rewards for SGM tasks and unique coded treasures.
+-- The script lives in the optional addon, so base SGM never references STCOP sections.
+
+local REGISTRY_KEY = SGM_SKILL_BOOK_REGISTRY_KEY or "sgm_skill_books"
+local SERVICE_KEY = SGM_SERVICE_KEY or "service"
+local EXTENSIONS_KEY = SGM_EXTENSIONS_KEY or "extensions"
+local EXTENSION_NAME = "stcop"
+local THROTTLER_NAME = "sgm_stcop_skill_book_rewards"
+
+local processing_rewards = false
+
+local rewards = {
+   { info = "esc_lull_before_borax_complete", books = { "skill_book_aps", "skill_book_tt33" } },
+   { info = "esc_blockpost_protection_complete", books = { "skill_book_kedr", "skill_book_kiparis" } },
+   { info = "mar_capture_church_complete", books = { "skill_book_cz75", "skill_book_gsh18" } },
+   { info = "mar_army_cargo_complete", books = { "skill_book_ppsh41", "skill_book_mosin" } },
+   { info = "zat_b33_package_returned", books = { "skill_book_glock", "skill_book_oc33" } },
+   { info = "zat_check_sbu_cell_complete", books = { "skill_book_bizon", "skill_book_uzi" } },
+   { info = "zat_b40_find_information_comlpete", books = { "skill_book_fnx45", "skill_book_ump45" } },
+   { info = "zat_assault_bandit_base_complete", books = { "skill_book_akm", "skill_book_sks" } },
+   { info = "zat_alfa_sabotage_complete", books = { "skill_book_ak104", "skill_book_vihr" } },
+   { info = "zat_monsters_wave_complete", books = { "skill_book_rpd", "skill_book_rpk74" } },
+   { info = "jup_beat_from_monsters_complete", books = { "skill_book_saiga", "skill_book_vepr" } },
+   { info = "jup_avoid_witnesses_complete", books = { "skill_book_sig552", "skill_book_famas" } },
+   { info = "jup_b47_task_end", books = { "skill_book_ak101", "skill_book_ak105" } },
+   { info = "jup_follow_scientists_complete", books = { "skill_book_fn57", "skill_book_p90" } },
+   { info = "jup_mercenary_check_plant_complete", books = { "skill_book_pp2000", "skill_book_vityaz" } },
+   { info = "val_kill_night_predator_complete", books = { "skill_book_vsk94", "skill_book_type63" } },
+   { info = "val_secret_development_complete", books = { "skill_book_aek971", "skill_book_kriss_vector" } },
+
+   -- mil_defence_b7_complete is also set on the failure path. Reward only the
+   -- real victory flag that is issued after all monster squads are destroyed.
+   { info = "mil_defence_b7_monsters_is_dead", books = { "skill_book_m16", "skill_book_m4" } },
+
+   { info = "pri_a19_lab_x8_investigation_done", books = { "skill_book_aug_a3", "skill_book_g3" } },
+   { info = "pri_assault_monolith_base_complete", books = { "skill_book_m4_tac", "skill_book_galil" } },
+
+   -- pri_b35_task_end is also set when the target escapes. The reward dialog
+   -- gives pri_b35_reward_given only on the successful reward path.
+   { info = "pri_b35_reward_given", books = { "skill_book_m24", "skill_book_sv98" } },
+
+   { info = "stcop_zat_unique_treasure_1_opened", books = { "skill_book_scar", "skill_book_m98b" } },
+   { info = "stcop_zat_unique_treasure_2_opened", books = { "skill_book_ak12", "skill_book_mk14" } },
+   { info = "stcop_jup_unique_treasure_1_opened", books = { "skill_book_dvl10", "skill_book_l96" } },
+   { info = "stcop_jup_unique_treasure_2_opened", books = { "skill_book_ace52", "skill_book_fal" } }
+}
+
+local treasure_open_info = {
+   zat_unique_treasure_1 = "stcop_zat_unique_treasure_1_opened",
+   zat_unique_treasure_2 = "stcop_zat_unique_treasure_2_opened",
+   jup_unique_treasure_1 = "stcop_jup_unique_treasure_1_opened",
+   jup_unique_treasure_2 = "stcop_jup_unique_treasure_2_opened"
+}
+
+local function get_skill_book_service()
+   if type(IsModuleLoaded) ~= "function" or not IsModuleLoaded("ixr_registry") then
+      return nil
+   end
+
+   local extensions = GetRegistryValue(REGISTRY_KEY, EXTENSIONS_KEY, {})
+   if type(extensions) ~= "table" or type(extensions[EXTENSION_NAME]) ~= "table" then
+      return nil
+   end
+
+   local service = GetRegistryValue(REGISTRY_KEY, SERVICE_KEY)
+   if type(service) ~= "table" or type(service.give_skill_book) ~= "function" then
+      return nil
+   end
+   return service
+end
+
+local function reward_is_resolved(reward)
+   for _, section in ipairs(reward.books) do
+      if dont_has_alife_info(section .. "_given") then
+         return false
+      end
+   end
+   return true
+end
+
+local function give_reward(service, reward)
+   for _, section in ipairs(reward.books) do
+      local given_info = section .. "_given"
+      if dont_has_alife_info(given_info) then
+         -- The service performs the same check again and always records the
+         -- *_given info portion, including when the actor already owns the book.
+         service.give_skill_book(section, true)
+      end
+   end
+   reward.resolved = reward_is_resolved(reward)
+end
+
+local function process_rewards()
+   if processing_rewards or db.actor == nil then
+      return false
+   end
+
+   local service = get_skill_book_service()
+   if service == nil then
+      return false
+   end
+
+   processing_rewards = true
+   for _, reward in ipairs(rewards) do
+      if not reward.resolved then
+         if has_alife_info(reward.info) then
+            give_reward(service, reward)
+         elseif reward_is_resolved(reward) then
+            reward.resolved = true
+         end
+      end
+   end
+   processing_rewards = false
+   return true
+end
+
+function on_actor_info()
+   process_rewards()
+end
+
+function on_actor_update()
+   if not IsModuleLoaded("ixr_throttlers") then
+      return
+   end
+
+   local throttlers = GetModule("ixr_throttlers")
+   if throttlers.is_action_throttled(THROTTLER_NAME, 1000) then
+      return
+   end
+   process_rewards()
+end
+
+function on_take_item_from_box(box)
+   if box == nil then
+      return
+   end
+
+   local story_id = get_object_story_id(box:id())
+   local open_info = treasure_open_info[story_id]
+   if open_info == nil or has_alife_info(open_info) then
+      return
+   end
+
+   -- Fallback for saves where another addon replaced the treasure custom_data:
+   -- taking the first item still records that the coded treasure was opened.
+   give_info(open_info)
+   process_rewards()
+end
+
+function on_game_start()
+   RegisterScriptCallback("actor_on_info_callback", on_actor_info)
+   RegisterScriptCallback("actor_on_update", on_actor_update)
+   RegisterScriptCallback("actor_on_item_take_from_box", on_take_item_from_box)
+   process_rewards()
+end
+

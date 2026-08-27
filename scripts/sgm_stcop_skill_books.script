@@ -2,30 +2,10 @@
 
 local EXTENSION_NAME = "stcop"
 
-local books_by_level = {
-   escape = {
-      "aps", "cz75", "glock", "gsh18", "oc33", "tt33", "kedr", "kiparis", "ppsh41", "uzi", "sks", "mosin"
-   },
-   marsh = {
-      "aps", "cz75", "glock", "gsh18", "oc33", "tt33", "bizon", "kedr", "kiparis", "ppsh41", "sks", "mosin"
-   },
-   zaton = {
-      "akm", "ak104", "ak105", "sig552", "type63", "vihr", "fn57", "fnx45", "saiga", "vepr",
-      "bizon", "pp2000", "p90", "ump45", "vityaz", "sks"
-   },
-   jupiter = {
-      "ace52", "aek971", "ak101", "ak12", "aug_a3", "fal", "famas", "g3", "galil", "m16",
-      "m4", "m4_tac", "scar", "vsk94", "rpd", "rpk74", "kriss_vector", "dvl10", "l96", "m24", "mk14", "sv98"
-   },
-   pripyat = {
-      "ace52", "ak12", "aug_a3", "fal", "g3", "m4_tac", "scar", "rpd", "rpk74",
-      "dvl10", "l96", "m24", "m98b", "mk14", "sv98"
-   },
-   darkvalley = { "aek971", "akm", "vihr", "vsk94", "saiga", "vepr" },
-   military = { "ace52", "ak12", "m16", "m4", "m4_tac", "scar", "rpd", "rpk74", "mk14" },
-   agroprom = { "akm", "aek971", "rpd", "rpk74", "ppsh41", "sks", "mosin" },
-   red_forest = { "fal", "g3", "scar", "rpd", "rpk74", "dvl10", "l96", "m24", "m98b", "sv98" }
-}
+-- STCOP books are fixed quest/treasure rewards. Keep the registered extension
+-- marker for addon discovery, but do not add these books to random location
+-- pools: an early random roll must not consume a late fixed reward.
+local books_by_level = {}
 
 local function queue_extension()
    local extensions = GetRegistryValue(SGM_SKILL_BOOK_REGISTRY_KEY, SGM_EXTENSIONS_KEY, {})
