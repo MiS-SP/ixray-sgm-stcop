@@ -1,6 +1,7 @@
 -- Modular STCOP extension for SGM skill-book rewards through IXR Framework.
 
 local EXTENSION_NAME = "stcop"
+local READY_EVENT = SGM_SKILL_BOOKS_READY_EVENT or "sgm_skill_books_on_ready"
 
 -- STCOP books are fixed quest/treasure rewards. Keep the registered extension
 -- marker for addon discovery, but do not add these books to random location
@@ -23,7 +24,12 @@ local function apply_extension()
       return false
    end
 
-   service.register_map(books_by_level)
+   local result = service.register_map(books_by_level)
+   if result == false then
+      return false
+   end
+
+   SendScriptCallback(READY_EVENT, service)
    return true
 end
 

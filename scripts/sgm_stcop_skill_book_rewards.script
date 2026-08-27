@@ -5,7 +5,7 @@ local REGISTRY_KEY = SGM_SKILL_BOOK_REGISTRY_KEY or "sgm_skill_books"
 local SERVICE_KEY = SGM_SERVICE_KEY or "service"
 local EXTENSIONS_KEY = SGM_EXTENSIONS_KEY or "extensions"
 local EXTENSION_NAME = "stcop"
-local THROTTLER_NAME = "sgm_stcop_skill_book_rewards"
+local READY_EVENT = SGM_SKILL_BOOKS_READY_EVENT or "sgm_skill_books_on_ready"
 
 local processing_rewards = false
 
@@ -132,15 +132,11 @@ function on_actor_info()
    process_rewards()
 end
 
-function on_actor_update()
-   if not IsModuleLoaded("ixr_throttlers") then
-      return
-   end
+function on_skill_books_ready()
+   process_rewards()
+end
 
-   local throttlers = GetModule("ixr_throttlers")
-   if throttlers.is_action_throttled(THROTTLER_NAME, 1000) then
-      return
-   end
+function on_game_load()
    process_rewards()
 end
 
@@ -162,8 +158,9 @@ function on_take_item_from_box(box)
 end
 
 function on_game_start()
+   RegisterScriptCallback(READY_EVENT, on_skill_books_ready)
+   RegisterScriptCallback("on_game_load", on_game_load)
    RegisterScriptCallback("actor_on_info_callback", on_actor_info)
-   RegisterScriptCallback("actor_on_update", on_actor_update)
    RegisterScriptCallback("actor_on_item_take_from_box", on_take_item_from_box)
    process_rewards()
 end
