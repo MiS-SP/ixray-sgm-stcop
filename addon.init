@@ -1,0 +1,4 @@
+name: stcop
+platform: cop
+depends:
+  - sgm
