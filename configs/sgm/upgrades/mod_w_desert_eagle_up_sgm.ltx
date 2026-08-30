@@ -1,0 +1,167 @@
+![up_sect_firsta_desert_eagle]
+cost		      		= 1800
+
+![up_sect_firstc_desert_eagle]
+cost		      		= 3600
+
+![up_sect_firste_desert_eagle]
+cost		      		= 5400
+
+![up_sect_firstf_desert_eagle]
+cost		      		= 5300
+
+![up_sect_secona_desert_eagle]
+cost		      		= 1800
+
+![up_sect_seconc_desert_eagle]
+cost		      		= 3600
+
+![up_sect_secone_desert_eagle]
+cost		      		= 5400
+
+![up_sect_seconf_desert_eagle]
+cost		      		= 5300
+
+![up_sect_thirda_desert_eagle]
+cost		      		= 1800
+
+![up_sect_thirdc_desert_eagle]
+cost		      		= 3600
+
+![up_sect_thirdd_desert_eagle]
+cost		      		= 3600
+
+![up_sect_thirde_desert_eagle]
+cost		      		= 5400
+
+![up_sect_fourta_desert_eagle]
+cost		      		= 1800
+
+![up_sect_fourtc_desert_eagle]
+cost		      		= 3600
+
+![up_sect_fiftha_desert_eagle]
+cost		      		= 5300
+
+![up_firsta_desert_eagle]
+effects                 = 
+
+![up_firstc_desert_eagle]
+effects                 = 
+
+![up_secona_desert_eagle]
+effects                 = 
+
+![up_seconc_desert_eagle]
+effects                 = 
+
+![up_thirda_desert_eagle]
+effects                 = 
+
+![up_thirdc_desert_eagle]
+effects                 = 
+
+![up_thirdd_desert_eagle]
+effects                 = 
+
+![up_fourta_desert_eagle]
+effects                 = 
+
+; !![up_gr_firstab_desert_eagle]
+; !elements
+
+; !![up_gr_firstcd_desert_eagle]
+; !elements 
+
+; !![up_gr_firstef_desert_eagle]
+; !elements
+
+; !![up_gr_seconab_desert_eagle]
+; !elements
+
+; !![up_gr_seconcd_desert_eagle]
+; !elements
+
+; !![up_gr_seconef_desert_eagle]
+; !elements
+
+; !![up_gr_thirdab_desert_eagle]
+; !elements
+
+; !![up_gr_thirdcd_desert_eagle]
+; !elements
+
+; !![up_gr_thirdef_desert_eagle]
+; !elements
+
+; !![up_gr_fourtab_desert_eagle]
+; !elements
+
+; !![up_gr_fourtcd_desert_eagle]
+; !elements
+
+; !![up_gr_fifthab_desert_eagle]
+; !elements
+
+[up_sect_change_components_desert_eagle]
+cost 		           = 25200
+condition_queue_shot_dec   = -0.0001
+condition_shot_dec         = -0.0001
+misfire_start_prob	   = -0.0015
+misfire_end_prob	   = -0.02
+fire_dispersion_base       = -0.02
+fire_dispersion_condition_factor = -1
+rpm                        = +30
+bullet_speed		   = +100
+ammo_mag_size	           = +2
+
+[up_change_components_desert_eagle]
+scheme_index            = 2, 5
+effects                 =
+section                 = up_sect_change_components_desert_eagle
+property                = prop_mod_weapon
+known                   = 1
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = 
+name                    = st_up_change_components_name
+description             = st_up_change_components_descr
+icon                    = ui_mod_up_instant_weapon
+
+[up_gr_change_components_desert_eagle]
+elements                = up_change_components_desert_eagle
+
+; [up_gr_firstab_desert_eagle]
+; elements                = up_firsta_desert_eagle
+; [up_gr_firstcd_desert_eagle]
+; elements                = up_firstc_desert_eagle
+[up_gr_firste_desert_eagle]
+elements                = up_firste_desert_eagle
+[up_gr_firstf_desert_eagle]
+elements                = up_firstf_desert_eagle
+; [up_gr_seconab_desert_eagle]
+; elements                = up_secona_desert_eagle
+; [up_gr_seconcd_desert_eagle]
+; elements                = up_seconc_desert_eagle
+[up_gr_secone_desert_eagle]
+elements                = up_secone_desert_eagle
+[up_gr_seconf_desert_eagle]
+elements                = up_seconf_desert_eagle
+[up_gr_thirda_desert_eagle]
+elements                = up_thirda_desert_eagle
+[up_gr_thirdc_desert_eagle]
+elements                = up_thirdc_desert_eagle
+[up_gr_thirdd_desert_eagle]
+elements                = up_thirdd_desert_eagle
+; [up_gr_thirdef_desert_eagle]
+; elements                = up_thirde_desert_eagle
+; [up_gr_fourtab_desert_eagle]
+; elements                = up_fourta_desert_eagle
+; [up_gr_fourtcd_desert_eagle]
+; elements                = up_fourtc_desert_eagle
+; [up_gr_fifthab_desert_eagle]
+; elements                = up_fiftha_desert_eagle

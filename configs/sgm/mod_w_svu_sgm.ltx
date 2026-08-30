@@ -1,0 +1,58 @@
+![wpn_svu]:mod_svu,mod_svu_damage,cost_wpn_svu
+!hit_power
+!hit_impulse
+!hit_type 
+!fire_distance
+!bullet_speed
+!rpm
+!rpm_empty_click
+!silencer_hit_power
+!silencer_hit_impulse
+!silencer_fire_distance
+!silencer_bullet_speed
+!cost
+upgrades                = up_gr_firstab_svu, up_gr_firstcd_svu, up_gr_firste_svu, up_gr_firstf_svu, up_gr_seconab_svu, up_gr_seconc_svu, up_gr_second_svu, up_gr_secone_svu, up_gr_seconf_svu, up_gr_thirdab_svu, up_gr_thirdcd_svu, up_gr_fourtab_svu, up_gr_fourtcd_svu, up_gr_fourte_svu, up_gr_fourtf_svu, up_gr_fifthab_svu, up_gr_change_components_svu
+upgrade_scheme          = upgrade_scheme_svu
+ammo_class		= ammo_7.62x54_7h1, ammo_dumdum
+; fire_dispersion_base    = 0.10
+; scope_zoom_factor       = 15
+
+![wpn_svu_nimble]:wpn_svu,mod_svu_nimble_damage,cost_wpn_svu_nimble
+!rpm
+$spawn                  = "weapons\wpn_svu_nimble"
+class                   = WP_SVU
+inv_name		= st_wpn_svu_nimble
+description		= st_wpn_svu_nimble_descr
+grenade_class           = ammo_vog-25 
+ammo_mag_size		= 10
+fire_modes              = 1
+scope_status            = 1
+silencer_status		= 0
+grenade_launcher_status	= 0
+launch_speed 		= 0
+fire_dispersion_base    = 0.12  
+control_inertion_factor = 1.6f
+cam_return		= 0
+cam_relax_speed         = 5
+cam_relax_speed_ai      = 360
+cam_dispersion          = 1.5 
+cam_dispersion_inc	= 1.5	
+cam_dispersion_frac	= 1.0	
+cam_max_angle           = 12.0   
+cam_max_angle_horz	= 3.0	
+cam_step_angle_horz     = 1.5 
+PDM_disp_base           = 1.8
+PDM_disp_vel_factor     = 3.5
+PDM_disp_accel_factor 	= 3.5
+PDM_disp_crouch	 	= 1.0
+PDM_disp_crouch_no_acc 	= 1.0
+zoom_cam_relax_speed    = 5
+zoom_cam_relax_speed_ai = 120.75
+zoom_cam_dispersion     = 0.45
+zoom_cam_dispersion_inc = 0.45
+zoom_cam_dispersion_frac= 1.0
+zoom_cam_max_angle      = 10.0
+zoom_cam_max_angle_horz = 5.0
+zoom_cam_step_angle_horz= 1.5
+fire_dispersion_condition_factor = 8
+grenade_flame_particles = weapons\generic_weapon01

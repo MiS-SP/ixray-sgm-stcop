@@ -1,0 +1,49 @@
+![wpn_sig550]:mod_sig550,mod_sig550_damage,cost_wpn_sig550
+!hit_power
+!hit_impulse
+!hit_type 
+!fire_distance
+!bullet_speed
+!rpm
+!rpm_empty_click
+!silencer_hit_power
+!silencer_hit_impulse
+!silencer_fire_distance
+!silencer_bullet_speed
+!cost
+ammo_elapsed            = 34
+ammo_mag_size           = 34
+
+ammo_class              = ammo_5.56x45_ss190, ammo_5.56x45_ap, ammo_dumdum
+grenade_class           = ammo_m209, ammo_box_10_m209
+
+upgrades                = up_gr_firstab_sig550, up_gr_firstc_sig550, up_gr_firstd_sig550, up_gr_firstef_sig550, up_gr_seconab_sig550, up_gr_seconcd_sig550, up_gr_secone_sig550, up_gr_seconf_sig550, up_gr_thirdab_sig550, up_gr_thirdc_sig550, up_gr_thirdd_sig550, up_gr_thirdef_sig550, up_gr_fourtab_sig550, up_gr_fourtcd_sig550, up_gr_fourte_sig550, up_gr_fourtf_sig550, up_gr_fifthab_sig550, up_gr_change_components_sig550
+upgrade_scheme          = upgrade_scheme_sig550
+
+scope_status            = 2
+silencer_status         = 2
+
+; silencer_name           = wpn_addon_silencer_5.56x45
+
+; cam_max_angle           = 10.0       
+; cam_max_angle_horz      = 10.0       
+
+condition_shot_dec      = 0.0006
+condition_queue_shot_dec= 0.0007
+
+; gl_hud_offset_pos       = -0.053,-0.059,0.0
+; gl_hud_offset_rot       = -0.145,0.0,0.0
+; gl_hud_offset_pos_16x9	= -0.053,-0.059,0.0
+; gl_hud_offset_rot_16x9	= -0.145,0.0,0.0
+
+
+![wpn_sig550_luckygun]:wpn_sig550,mod_sig550_luckygun_damage,cost_wpn_sig550_luckygun
+!hit_power
+!hit_impulse
+!silencer_hit_power
+
+$spawn                  = "weapons\wpn_sig550_luckygun"
+description             = st_wpn_sig550_strelok_descr
+inv_name                = st_wpn_sig550_strelok
+scope_status            = 2
+silencer_status		= 2

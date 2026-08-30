@@ -1,0 +1,234 @@
+![up_sect_firsta_hpsa]
+;Скорострельность(1)10%
+;----------------------
+cost		      		= 900
+
+![up_sect_firstc_hpsa]
+;Настильность(2)20%
+;------------------
+cost		      		= 1800
+
+![up_sect_firstd_hpsa]
+;Отдача(2)-20%
+;------------
+cost		      		= 1800
+
+![up_sect_firste_hpsa]
+;Отдача(3)-30%
+;------------
+cost		      		= 2700
+
+![up_sect_secona_hpsa]
+;Настильность(1)10%
+;------------------
+cost		      		= 600
+
+![up_sect_seconc_hpsa]
+;Надежность(2)15%
+;---------------
+cost		      		= 1800
+
+![up_sect_secone_hpsa]
+;Скорострельность(3)25%
+;----------------------
+cost		      		= 1800
+
+![up_sect_seconf_hpsa]
+;Настильность(1)10%
+;------------------
+cost		      		= 1800
+
+![up_sect_thirda_hpsa]
+;Вес
+;------------------
+cost		      		= 900
+
+![up_sect_thirdc_hpsa]
+;Удобство(2)15%
+;--------------
+cost		      		= 1800
+
+![up_sect_thirdd_hpsa]
+;Отдача(2)-20%
+;------------
+cost		      		= 1800
+
+![up_sect_fourta_hpsa]
+;Точность(1)10%
+;---------------
+cost		      		= 600
+
+![up_sect_fourtc_hpsa]
+;Надежность(2)15%
+;---------------
+cost		      		= 1800
+
+![up_sect_fourte_hpsa]
+;Удобство(3)25%
+;--------------
+cost		      		= 3000
+
+![up_sect_fiftha_hpsa]
+;Увеличенный объем магазина
+;---------------
+cost		      		= 1800
+
+![up_sect_fifthc_hpsa]
+;Смена калибра на 9х18
+;---------------
+cost		      		= 4500
+
+![up_firsta_hpsa]
+effects                 = 
+
+![up_firstc_hpsa]
+effects                 = 
+
+![up_firstd_hpsa]
+effects                 = 
+
+![up_firste_hpsa]
+effects                 =
+
+![up_secona_hpsa]
+effects                 = 
+
+![up_seconc_hpsa]
+effects                 = 
+
+![up_secone_hpsa]
+effects                 =
+
+![up_seconf_hpsa]
+effects                 =
+
+![up_thirda_hpsa]
+effects                 = 
+
+![up_thirdc_hpsa]
+effects                 =
+
+![up_thirdd_hpsa]
+effects                 =
+
+![up_fourta_hpsa]
+effects                 = 
+
+![up_fourtc_hpsa]
+effects                 = 
+
+![up_fourte_hpsa]
+effects                 =
+
+![up_fiftha_hpsa]
+effects                 =
+
+![up_fifthc_hpsa]
+effects                 =
+
+; Удаляем старую ветку
+
+; !![up_gr_firstab_hpsa]
+; !elements
+
+; !![up_gr_firstcd_hpsa]
+; !elements
+
+; !![up_gr_firstef_hpsa]
+; !elements
+
+; !![up_gr_seconab_hpsa]
+; !elements
+
+; !![up_gr_seconcd_hpsa]
+; !elements
+
+; !![up_gr_seconef_hpsa]
+; !elements
+
+; !![up_gr_thirdab_hpsa]
+; !elements
+
+; !![up_gr_thirdcd_hpsa]
+; elements
+
+; !![up_gr_fourtab_hpsa]
+; !elements
+
+; !![up_gr_fourtcd_hpsa]
+; !elements
+
+; !![up_gr_fourtef_hpsa]
+; !elements
+
+; !![up_gr_fifthab_hpsa]
+; !elements
+
+; !![up_gr_fifthcd_hpsa]
+; !elements
+
+
+[up_sect_change_components_hpsa]
+cost 		           = 18500
+condition_queue_shot_dec   = -0.0001
+condition_shot_dec         = -0.0001
+misfire_start_prob	   = -0.0015
+misfire_end_prob	   = -0.02
+fire_dispersion_base       = -0.02
+fire_dispersion_condition_factor = -1
+rpm                        = +20
+bullet_speed		   = +150
+ammo_mag_size	           = +2
+
+[up_change_components_hpsa]
+scheme_index            = 2, 4
+effects                 =
+section                 = up_sect_change_components_hpsa
+property                = prop_mod_weapon
+known                   = 1
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = 
+name                    = st_up_change_components_name
+description             = st_up_change_components_descr
+icon                    = ui_mod_up_instant_weapon
+
+[up_gr_change_components_hpsa]
+elements                = up_change_components_hpsa
+
+; [up_gr_firstab_hpsa]
+; elements                = up_firsta_hpsa
+[up_gr_firstc_hpsa]
+elements                = up_firstc_hpsa
+[up_gr_firstd_hpsa]
+elements                = up_firstd_hpsa
+; [up_gr_firstef_hpsa]
+; elements                = up_firste_hpsa
+; [up_gr_seconab_hpsa]
+; elements                = up_secona_hpsa
+; [up_gr_seconcd_hpsa]
+; elements                = up_seconc_hpsa
+[up_gr_secone_hpsa]
+elements                = up_secone_hpsa
+[up_gr_seconf_hpsa]
+elements                = up_seconf_hpsa
+; [up_gr_thirdab_hpsa]
+; elements                = up_thirda_hpsa
+[up_gr_thirdc_hpsa]
+elements                = up_thirdc_hpsa
+[up_gr_thirdd_hpsa]
+elements                = up_thirdd_hpsa
+; [up_gr_fourtab_hpsa]
+; elements                = up_fourta_hpsa
+; [up_gr_fourtcd_hpsa]
+; elements                = up_fourtc_hpsa
+; [up_gr_fourtef_hpsa]
+; elements                = up_fourte_hpsa
+; [up_gr_fifthab_hpsa]
+; elements                = up_fiftha_hpsa
+; [up_gr_fifthcd_hpsa]
+; elements                = up_fifthc_hpsa

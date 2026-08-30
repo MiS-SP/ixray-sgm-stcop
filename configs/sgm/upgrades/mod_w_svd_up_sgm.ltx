@@ -1,0 +1,162 @@
+![up_sect_firsta_svd]
+cost		      		= 5200
+
+![up_sect_firstc_svd]
+cost		      		= 6400
+
+![up_sect_firstd_svd]
+cost		      		= 6400
+
+![up_sect_firste_svd]
+cost		      		= 6600
+
+![up_sect_firstf_svd]
+cost		      		= 6600
+
+![up_sect_secona_svd]
+cost		      		= 5200
+
+![up_sect_seconc_svd]
+cost		      		= 6400
+
+![up_sect_second_svd]
+cost		      		= 6400
+
+![up_sect_thirda_svd]
+cost		      		= 6200
+
+![up_sect_thirdc_svd]
+cost		      		= 7100
+
+![up_sect_thirde_svd]
+cost		      		= 6800
+
+![up_sect_fourta_svd]
+cost		      		= 6300
+scope_zoom_factor       = -4
+
+![up_sect_fourtc_svd]
+cost		      		= 9600
+
+![up_sect_fourte_svd]
+cost		      		= 15000
+
+![up_sect_fourtf_svd]
+cost		      		= 26000
+
+![up_firsta_svd]
+effects                 = 
+
+![up_firstc_svd]
+effects                 = 
+
+![up_firstd_svd]
+effects                 = 
+
+![up_secona_svd]
+effects                 = 
+
+![up_thirda_svd]
+effects                 = 
+
+![up_thirdc_svd]
+effects                 = 
+
+; ������� ������ �����
+
+; !![up_gr_firstab_svd]
+; !elements
+
+; !![up_gr_firstcd_svd]
+; !elements
+
+; !![up_gr_firstef_svd]
+; !elements
+
+; !![up_gr_seconab_svd]
+; !elements
+
+; !![up_gr_seconcd_svd]
+; !elements
+
+; !![up_gr_thirdab_svd]
+; !elements
+
+; !![up_gr_thirdcd_svd]
+; !elements
+
+; !![up_gr_thirdef_svd]
+; !elements
+
+; !![up_gr_fourtab_svd]
+; !elements
+
+; !![up_gr_fourtcd_svd]
+; !elements
+
+; !![up_gr_fourtef_svd]
+; !elements
+
+
+[up_sect_change_components_svd]
+cost 		           = 37000
+misfire_start_prob	   = -0.0015
+misfire_end_prob	   = -0.02
+fire_dispersion_condition_factor = -1
+rpm                        = +25
+bullet_speed		   = +150
+ammo_mag_size	           = +2
+scope_dynamic_zoom         = on
+condition_queue_shot_dec   = -0.0002
+condition_shot_dec         = -0.0002
+
+[up_change_components_svd]
+scheme_index            = 2, 5
+effects                 =
+section                 = up_sect_change_components_svd
+property                = prop_mod_weapon
+known                   = 1
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = 
+name                    = st_up_change_components_name
+description             = st_up_change_components_descr
+icon                    = ui_mod_up_instant_weapon
+
+[up_gr_change_components_svd]
+elements                = up_change_components_svd
+
+; [up_gr_firstab_svd]
+; elements                = up_firsta_svd
+[up_gr_firstc_svd]
+elements                = up_firstc_svd
+[up_gr_firstd_svd]
+elements                = up_firstd_svd
+[up_gr_firste_svd]
+elements                = up_firste_svd
+[up_gr_firstf_svd]
+elements                = up_firstf_svd
+; [up_gr_seconab_svd]
+; elements                = up_secona_svd
+[up_gr_seconc_svd]
+elements                = up_seconc_svd
+[up_gr_second_svd]
+elements                = up_second_svd
+; [up_gr_thirdab_svd]
+; elements                = up_thirda_svd
+; [up_gr_thirdcd_svd]
+; elements                = up_thirdc_svd
+; [up_gr_thirdef_svd]
+; elements                = up_thirde_svd
+; [up_gr_fourtab_svd]
+; elements                = up_fourta_svd
+; [up_gr_fourtcd_svd]
+; elements                = up_fourtc_svd
+[up_gr_fourte_svd]
+elements                = up_fourte_svd
+[up_gr_fourtf_svd]
+elements                = up_fourtf_svd

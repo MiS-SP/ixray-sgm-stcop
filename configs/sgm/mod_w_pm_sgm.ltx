@@ -1,0 +1,29 @@
+![wpn_pm]:mod_pm,mod_pm_damage,cost_wpn_pm
+!hit_power
+!hit_impulse
+!hit_type 
+!fire_distance
+!bullet_speed
+!rpm
+!rpm_empty_click
+!silencer_hit_power
+!silencer_hit_impulse
+!silencer_fire_distance
+!silencer_bullet_speed
+!cost
+upgrades                = up_gr_firstab_pm, up_gr_firstc_pm, up_gr_firstd_pm, up_gr_firstef_pm, up_gr_seconab_pm, up_gr_seconcd_pm, up_gr_thirdab_pm, up_gr_thirdc_pm, up_gr_thirdd_pm, up_gr_fourtab_pm, up_gr_fourtcd_pm, up_gr_fifthab_pm, up_gr_fifthcd_pm, up_gr_change_components_pm
+upgrade_scheme          = upgrade_scheme_pm
+; silencer_status		= 2
+; silencer_name  		= wpn_addon_silencer
+; silencer_x 		= 39	
+; silencer_y 		= -16
+
+![wpn_pm_actor]:wpn_pm,cost_wpn_pm_actor
+$spawn                  = "weapons\pm_actor"	
+inv_name                = st_wpn_pm_actor
+description		= st_wpn_pm_actor_descr
+upgrades                = up_gr_firstab_pm, up_gr_firstc_pm, up_gr_firstd_pm, up_gr_firstef_pm, up_gr_seconab_pm, up_gr_seconcd_pm, up_gr_thirdab_pm, up_gr_thirdc_pm, up_gr_thirdd_pm, up_gr_fourtab_pm, up_gr_fourtcd_pm, up_gr_fifthab_pm, up_gr_fifthcd_pm, up_gr_change_components_pm
+installed_upgrades      = up_firste_pm,up_seconc_pm
+upgrade_scheme          = upgrade_scheme_pm
+condition_shot_dec      = 0.0015
+condition_queue_shot_dec= 0.0015

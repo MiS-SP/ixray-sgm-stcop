@@ -1,0 +1,227 @@
+![up_sect_firsta_abakan]
+cost = 4200
+
+![up_sect_firstc_abakan]
+cost = 6300
+
+![up_sect_firste_abakan]
+cost = 7800
+
+![up_sect_firstf_abakan]
+cost = 7800
+
+![up_sect_secona_abakan]
+cost = 4200
+
+![up_sect_seconc_abakan]
+cost = 5650
+
+![up_sect_second_abakan]
+cost = 3150
+
+![up_sect_secone_abakan]
+cost = 6500
+
+![up_sect_thirda_abakan]
+cost = 4200
+
+![up_sect_thirdc_abakan]
+cost = 6100
+
+![up_sect_thirdd_abakan]
+cost = 6100
+
+![up_sect_thirde_abakan]
+cost = 7100
+
+![up_sect_fourta_abakan]
+cost = 4200
+
+![up_sect_fourtc_abakan]
+cost = 6300
+
+![up_sect_fourte_abakan]
+cost = 6900
+
+![up_sect_fourtf_abakan]
+cost = 7400
+
+![up_sect_fiftha_abakan]
+cost = 8500
+
+![up_firsta_abakan]
+effects = 
+
+![up_firstc_abakan]
+effects = 
+
+![up_firste_abakan]
+effects = 
+
+![up_firstf_abakan]
+effects = 
+
+![up_secona_abakan]
+effects = 
+
+![up_seconc_abakan]
+effects = 
+
+![up_second_abakan]
+effects = 
+
+![up_secone_abakan]
+effects = 
+
+![up_thirda_abakan]
+effects = 
+
+![up_thirdc_abakan]
+effects = 
+
+![up_thirdd_abakan]
+effects = 
+
+![up_thirde_abakan]
+effects = 
+
+![up_fourta_abakan]
+effects = 
+
+![up_fourtc_abakan]
+effects = 
+
+![up_fourte_abakan]
+effects = 
+
+![up_fourtf_abakan]
+effects = 
+
+![up_fiftha_abakan]
+effects = 
+
+; Удаляем старую ветку
+
+; !![up_gr_firstab_abakan]
+; !elements
+
+; !![up_gr_firstcd_abakan]
+; !elements
+
+; !![up_gr_firstef_abakan]
+; !elements
+
+; !![up_gr_seconab_abakan]
+; !elements
+
+; !![up_gr_seconcd_abakan]
+; !elements
+
+; !![up_gr_seconef_abakan]
+; !elements
+
+; !![up_gr_thirdab_abakan]
+; !elements
+
+; !![up_gr_thirdcd_abakan]
+; !elements
+
+; !![up_gr_thirdef_abakan]
+; !elements
+
+; ![up_gr_fourtab_abakan]
+; !elements
+
+; !![up_gr_fourtcd_abakan]
+; !elements
+
+; !![up_gr_fourtef_abakan]
+; !elements
+
+; !![up_gr_fifthab_abakan]
+; !elements
+
+[up_sect_change_components_abakan]
+cost = 28000
+condition_queue_shot_dec = -0.0001
+condition_shot_dec = -0.0001
+misfire_start_prob = -0.0015
+misfire_end_prob = -0.02
+fire_dispersion_base = -0.02
+fire_dispersion_condition_factor = -1
+rpm = +50
+bullet_speed = +150
+fire_distance = 215
+ammo_mag_size = +2
+
+[up_change_components_abakan]
+scheme_index            = 2, 6
+effects                 =
+section                 = up_sect_change_components_abakan
+property                = prop_mod_weapon
+known                   = 1
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = 
+name                    = st_up_change_components_name
+description             = st_up_change_components_descr
+icon                    = ui_mod_up_instant_weapon
+
+
+[up_gr_change_components_abakan]
+elements = up_change_components_abakan
+
+; [up_gr_firstab_abakan]
+; elements = up_firsta_abakan
+
+; [up_gr_firstcd_abakan]
+; elements = up_firstc_abakan
+
+[up_gr_firste_abakan]
+elements = up_firste_abakan
+
+[up_gr_firstf_abakan]
+elements = up_firstf_abakan
+
+; [up_gr_seconab_abakan]
+; elements = up_secona_abakan
+
+[up_gr_seconc_abakan]
+elements = up_seconc_abakan
+
+[up_gr_second_abakan]
+elements = up_second_abakan
+
+; [up_gr_seconef_abakan]
+; elements = up_secone_abakan
+
+; [up_gr_thirdab_abakan]
+; elements = up_thirda_abakan
+
+[up_gr_thirdc_abakan]
+elements = up_thirdc_abakan
+
+[up_gr_thirdd_abakan]
+elements = up_thirdd_abakan
+
+; [up_gr_thirdef_abakan]
+; elements = up_thirde_abakan
+
+; [up_gr_fourtab_abakan]
+; elements = up_fourta_abakan
+
+; [up_gr_fourtcd_abakan]
+; elements = up_fourtc_abakan
+
+[up_gr_fourte_abakan]
+elements = up_fourte_abakan
+
+[up_gr_fourtf_abakan]
+elements = up_fourtf_abakan
+
+; [up_gr_fifthab_abakan]
+; elements = up_fiftha_abakan

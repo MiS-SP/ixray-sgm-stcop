@@ -1,0 +1,215 @@
+![up_sect_firsta_mp5]
+cost		      		= 1500
+
+![up_sect_firstc_mp5]
+cost		      		= 2400
+
+![up_sect_firstd_mp5]
+cost		      		= 2400
+
+![up_sect_firste_mp5]
+cost		      		= 3300
+
+![up_sect_secona_mp5]
+cost		      		= 1500
+
+![up_sect_seconc_mp5]
+cost		      		= 2400
+
+![up_sect_secone_mp5]
+cost		      		= 3300
+
+![up_sect_seconf_mp5]
+cost		      		= 3300
+
+![up_sect_thirda_mp5]
+cost		      		= 1500
+
+![up_sect_thirdc_mp5]
+cost		      		= 2400
+
+![up_sect_thirdd_mp5]
+cost		      		= 2400
+
+![up_sect_thirde_mp5]
+cost		      		= 3300
+
+![up_sect_fourta_mp5]
+cost		      		= 1500
+
+![up_sect_fourtc_mp5]
+cost		      		= 2400
+
+![up_sect_fourte_mp5]
+cost		      		= 3300
+
+![up_sect_fourtf_mp5]
+cost		      		= 3300
+
+![up_sect_fiftha_mp5]
+cost		      		= 3000
+
+![up_sect_fifthc_mp5]
+cost		      		= 7500
+
+; Удаляем старую ветку
+
+![up_firsta_mp5]
+effects                 = 
+
+![up_firstc_mp5]
+effects                 = 
+
+![up_firstd_mp5]
+effects                 = 
+
+![up_secona_mp5]
+effects                 = 
+
+![up_seconc_mp5]
+effects                 = 
+
+![up_thirda_mp5]
+effects                 = 
+
+![up_thirdc_mp5]
+effects                 = 
+
+![up_thirdd_mp5]
+effects                 = 
+
+![up_fourta_mp5]
+effects                 = 
+
+![up_fourtc_mp5]
+effects                 = 
+
+; Удаляем старую ветку
+
+; !![up_gr_firstab_mp5]
+; !elements
+
+; !![up_gr_firstcd_mp5]
+; !elements
+
+; !![up_gr_firstef_mp5]
+; !elements
+
+; !![up_gr_seconab_mp5]
+; !elements
+
+; !![up_gr_seconcd_mp5]
+; !elements
+
+; !![up_gr_seconef_mp5]
+; !elements
+
+; !![up_gr_thirdab_mp5]
+; !elements
+
+; !![up_gr_thirdcd_mp5]
+; !elements
+
+; !![up_gr_thirdef_mp5]
+; !elements
+
+; !![up_gr_fourtab_mp5]
+; !elements
+
+; !![up_gr_fourtcd_mp5]
+; !elements
+
+; !![up_gr_fourtef_mp5]
+; !elements
+
+; !![up_gr_fifthab_mp5]
+; !elements
+
+; !![up_gr_fifthcd_mp5]
+; !elements
+
+[up_sect_change_components_mp5]
+cost 		           = 18000
+condition_queue_shot_dec   = -0.0001
+condition_shot_dec         = -0.0001
+misfire_start_prob	   = -0.0015
+misfire_end_prob	   = -0.02
+fire_dispersion_base       = -0.02
+fire_dispersion_condition_factor = -1
+rpm                        = +60
+bullet_speed		   = +150
+ammo_mag_size	           = +4
+
+[up_change_components_mp5]
+scheme_index            = 2, 6
+effects                 =
+section                 = up_sect_change_components_mp5
+property                = prop_mod_weapon
+known                   = 1
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = 
+name                    = st_up_change_components_name
+description             = st_up_change_components_descr
+icon                    = ui_mod_up_instant_weapon
+
+[up_gr_change_components_mp5]
+elements                = up_change_components_mp5
+
+; [up_gr_firstab_mp5]
+; elements                = up_firsta_mp5
+
+[up_gr_firstc_mp5]
+elements                = up_firstc_mp5
+
+[up_gr_firstd_mp5]
+elements                = up_firstd_mp5
+
+; [up_gr_firstef_mp5]
+; elements                = up_firste_mp5
+
+; [up_gr_seconab_mp5]
+; elements                = up_secona_mp5
+
+; [up_gr_seconcd_mp5]
+; elements                = up_seconc_mp5
+
+[up_gr_secone_mp5]
+elements                = up_secone_mp5
+
+[up_gr_seconf_mp5]
+elements                = up_seconf_mp5
+
+; [up_gr_thirdab_mp5]
+; elements                = up_thirda_mp5
+
+[up_gr_thirdc_mp5]
+elements                = up_thirdc_mp5
+
+[up_gr_thirdd_mp5]
+elements                = up_thirdd_mp5
+
+; [up_gr_thirdef_mp5]
+; elements                = up_thirde_mp5
+
+; [up_gr_fourtab_mp5]
+; elements                = up_fourta_mp5
+
+; [up_gr_fourtcd_mp5]
+; elements                = up_fourtc_mp5
+
+[up_gr_fourte_mp5]
+elements                = up_fourte_mp5
+
+[up_gr_fourtf_mp5]
+elements                = up_fourtf_mp5
+
+; [up_gr_fifthab_mp5]
+; elements                = up_fiftha_mp5
+
+; [up_gr_fifthcd_mp5]
+; elements                = up_fifthc_mp5

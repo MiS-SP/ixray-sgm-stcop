@@ -1,0 +1,43 @@
+![wpn_fn2000]:mod_fn2000,mod_fn2000_damage,cost_wpn_fn2000
+!hit_power
+!hit_impulse
+!hit_type 
+!fire_distance
+!bullet_speed
+!rpm
+!rpm_empty_click
+!silencer_hit_power
+!silencer_hit_impulse
+!silencer_fire_distance
+!silencer_bullet_speed
+!cost
+; ammo_elapsed           	= 60
+; ammo_mag_size          	= 60
+grenade_class		= ammo_m209, ammo_box_10_m209
+;-------------[Модернизация]-------------------;
+upgrades                = up_gr_firstab_fn2000, up_gr_firstc_fn2000, up_gr_firstd_fn2000, up_gr_firste_fn2000, up_gr_firstf_fn2000, up_gr_seconab_fn2000, up_gr_seconc_fn2000, up_gr_second_fn2000, up_gr_secone_fn2000, up_gr_seconf_fn2000, up_gr_thirdab_fn2000, up_gr_thirdc_fn2000, up_gr_thirdd_fn2000, up_gr_thirde_fn2000, up_gr_thirdf_fn2000, up_gr_fourtab_fn2000, up_gr_fourtcd_fn2000, up_gr_fourte_fn2000, up_gr_fourtf_fn2000, up_gr_change_components_fn2000
+upgrade_scheme          = upgrade_scheme_fn2000
+silencer_status         = 2
+; scope_zoom_factor       = 30 
+; lens_texture		    = wpn\wpn_crosshair_4_lens
+; silencer_name           = wpn_addon_silencer_5.56x45
+;--------------[Дисперсия]---------------------;
+; fire_dispersion_base    = 0.12
+;-----------[Другие параметры]-----------------;
+condition_shot_dec      = 0.0008
+condition_queue_shot_dec= 0.0008
+
+; light_range             = 2
+
+; silencer_light_color    = 0.6,0.5,0.3
+; silencer_light_range    = 0.01
+; silencer_light_var_color= 0.05
+; silencer_light_var_range= 0.5
+; silencer_light_time     = 0.2
+
+
+[wpn_fn2000_nimble]:wpn_fn2000,cost_wpn_fn2000_nimble
+$spawn                 = "weapons\wpn_fn2000_nimble"
+installed_upgrades     = up_secone_fn2000
+inv_name               = st_wpn_fn2000_nimble
+inv_name_short         = st_wpn_fn2000_nimble
