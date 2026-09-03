@@ -1,7 +1,7 @@
 ; STCOP weapon DLTX layer.
 ; Generated category: smgs.
 ; Existing SGM sections are patched; STCOP-only sections are defined here.
-[wpn_bizon]:weapon_probability,default_weapon_params,wpn_bizon_sounds,mod_stcop_bizon,mod_stcop_bizon_damage,cost_stcop_bizon
+[wpn_bizon]:weapon_probability,stcop_default_weapon_params,wpn_bizon_sounds,mod_stcop_bizon,mod_stcop_bizon_damage,cost_stcop_bizon
 GroupControlSection = spawn_group
 $spawn = "weapons\bizon"
 $npc = on
@@ -35,7 +35,7 @@ inv_weight = 2.70
 hud = wpn_bizon_hud
 visual = dynamics\weapons\wpn_bizon\wpn_bizon.ogf
 upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_abakan
 ph_mass = 3
 ammo_class = ammo_9x18_fmj, ammo_9x18_pmm
@@ -244,7 +244,7 @@ aim_hud_offset_rot = -0.001000, -0.015000, -0.003000
 aim_hud_offset_pos_16x9 = -0.057700, 0.017800, -0.070000
 aim_hud_offset_rot_16x9 = -0.001000, -0.015000, -0.003000
 
-[wpn_kedr]:weapon_probability,default_weapon_params,wpn_kedr_sounds,mod_stcop_kedr,mod_stcop_kedr_damage,cost_stcop_kedr
+[wpn_kedr]:weapon_probability,stcop_default_weapon_params,wpn_kedr_sounds,mod_stcop_kedr,mod_stcop_kedr_damage,cost_stcop_kedr
 GroupControlSection = spawn_group
 $spawn = "weapons\kedr"
 $npc = on
@@ -278,7 +278,7 @@ inv_weight = 1.54
 hud = wpn_kedr_hud
 visual = dynamics\weapons\wpn_kedr\wpn_kedr.ogf
 upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_abakan
 ph_mass = 3
 ammo_class = ammo_9x18_fmj, ammo_9x18_pmm
@@ -454,7 +454,7 @@ anm_idle_sprint_end_empty_jammed = pp91b_sprint_end_sedzhimol, idle
 anm_idle_aim_start_empty_jammed = pp91b_aim_in_sedzhimol, idle
 anm_idle_aim_end_empty_jammed = pp91b_aim_in_sedzhimol, idle
 
-[wpn_kiparis]:weapon_probability,default_weapon_params,wpn_kiparis_sounds,mod_stcop_kiparis,mod_stcop_kiparis_damage,cost_stcop_kiparis
+[wpn_kiparis]:weapon_probability,stcop_default_weapon_params,wpn_kiparis_sounds,mod_stcop_kiparis,mod_stcop_kiparis_damage,cost_stcop_kiparis
 GroupControlSection = spawn_group
 $spawn = "weapons\kiparis"
 $npc = on
@@ -488,7 +488,7 @@ inv_weight = 1.60
 hud = wpn_kiparis_hud
 visual = dynamics\weapons\wpn_kiparis\wpn_kiparis.ogf
 upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_abakan
 ph_mass = 3
 ammo_class = ammo_9x18_fmj, ammo_9x18_pmm
@@ -642,7 +642,7 @@ anm_idle_sprint_end_empty = kiparis_sprint_end_sedzhimol
 anm_idle_aim_start_empty = kiparis_aim_in_sedzhimol
 anm_idle_aim_end_empty = kiparis_aim_in_sedzhimol
 
-[wpn_kriss_vector]:weapon_probability,default_weapon_params,wpn_kriss_vector_sounds,mod_stcop_kriss_vector,mod_stcop_kriss_vector_damage,cost_stcop_kriss_vector
+[wpn_kriss_vector]:weapon_probability,stcop_default_weapon_params,wpn_kriss_vector_sounds,mod_stcop_kriss_vector,mod_stcop_kriss_vector_damage,cost_stcop_kriss_vector
 GroupControlSection = spawn_group
 $spawn = "weapons\kriss_vector"
 $npc = on
@@ -676,7 +676,7 @@ inv_weight = 3.1
 hud = wpn_kriss_vector_hud
 visual = dynamics\weapons\wpn_kriss_vector\wpn_kriss_vector.ogf
 upgrades = up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5, up_gr_fifthcd_mp5
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_mp5
 ph_mass = 3
 ammo_class = ammo_11.43x23_fmj, ammo_11.43x23_hydro
@@ -903,93 +903,6 @@ aim_hud_offset_rot = -0.020300, 0.000280, 0.000000
 aim_hud_offset_pos_16x9 = -0.064700, -0.006700, 0.053099
 aim_hud_offset_rot_16x9 = -0.020300, 0.000280, 0.000000
 
-![wpn_mp5]
-scopes = ac10632,acog,aimpoint,eot,pn23
-parent_section = wpn_mp5
-icons_texture = ui\ui_icon_equipment_stcopwp
-upgr_icons_texture = ui\ui_actor_weapons_stcopwp
-inv_grid_width = 4
-inv_grid_height = 2
-inv_grid_x = 24
-inv_grid_y = 32
-upgr_icon_x = 1150
-upgr_icon_y = 300
-upgr_icon_width = 200
-upgr_icon_height = 100
-inv_weight = 3.1
-ammo_current = 180
-ammo_limit = 210
-fire_modes = 1, -1
-time_to_aim = 3
-zoom_dof = 0.5,1,180
-reload_dof = 0,0.5,5,2
-fire_dispersion_condition_factor = 2.5
-control_inertion_factor = 1.15f
-cam_dispersion_frac = 1
-zoom_cam_dispersion_frac = 1
-PDM_disp_crouch = 1
-PDM_disp_crouch_no_acc = 1
-min_radius = 30
-max_radius = 40
-holder_range_modifier = 1
-holder_fov_modifier = 1
-position = -0.026,-0.125,-0.015
-orientation = 0,-4,0
-fire_point = 0,0.195,0.392
-fire_point2 = 0,0.195,0.392
-shell_point = 0,0.188,0.082
-shell_dir = 0,1,0
-scope_status = 2
-zoom_rotate_time = 0.2
-scope_zoom_factor = 73.3
-scope_name = wpn_addon_scope_susat
-scope_x = 67
-scope_y = -1
-silencer_name = wpn_addon_silencer
-silencer_x = 171
-silencer_y = 16
-silencer_light_color = 0.6, 0.5, 0.3
-
-![wpn_mp5_hud]:hud_base
-hands_orientation = 0,0,0
-hands_orientation_16x9 = 0,0,0
-hands_position = -0.010000,0.001000,-0.034000
-hands_position_16x9 = -0.010000,0.001000,-0.034000
-item_position = 0,0,0
-item_orientation = 0,0,0
-aim_hud_offset_pos = -0.078910,0.034010,-0.109200
-aim_hud_offset_rot = -0.002500,0.000500,0.000000
-aim_hud_offset_pos_16x9 = -0.078910,0.034010,-0.109200
-aim_hud_offset_rot_16x9 = -0.002500,0.000500,0.000000
-shell_point = 0,0.02,-0.03
-fire_bone = muzzle
-fire_bone2 = muzzle
-fire_point = 0,0,0
-fire_point2 = 0,0,0
-disable_bore = true
-anm_hide = mp5_iwp_hide
-anm_idle = mp5_iwp_idle
-anm_idle_aim = mp5_iwp_idle_aim
-anm_idle_aim_moving = mp5_iwp_aim_walk
-anm_idle_aim_moving_slow = mp5_iwp_aim_walk,, 0.8
-anm_idle_aim_moving_crouch = mp5_iwp_aim_walk,, 0.6
-anm_idle_aim_moving_slow_crouch = mp5_iwp_aim_walk,, 0.4
-anm_idle_moving = mp5_iwp_walk
-anm_idle_moving_slow = mp5_iwp_walk_slow
-anm_idle_moving_crouch = mp5_iwp_walk_slow_down
-anm_idle_moving_slow_crouch = mp5_iwp_walk_slow_down,, 0.8
-anm_idle_sprint = mp5_iwp_sprint
-anm_reload = mp5_iwp_reload, reload
-anm_reload_empty = mp5_iwp_reload_empty, reload_empty
-anm_reload_jammed = mp5_iwp_revival, revival
-anm_shoot = mp5_iwp_shoot, shoot
-anm_show = mp5_iwp_draw
-anm_shoot_aim = mp5_iwp_aim_shoot, shoot
-anm_shoot_aim_scope = mp5_iwp_aim_shoot_scope, shoot
-anm_firemode = mp5_iwp_firemode
-anm_idle_sprint_start = mp5_iwp_sprint_start
-anm_idle_sprint_end = mp5_iwp_sprint_end
-
 [wpn_mp5_ac10632]:wpn_mp5
 $spawn = "weapons\mp5_ac10632"
 visual = dynamics\weapons\wpn_mp5\wpn_mp5_barska.ogf
@@ -1059,7 +972,7 @@ aim_hud_offset_rot = -0.004500, 0.0003, 0.000000
 aim_hud_offset_pos_16x9 = -0.078910, -0.001990, 0.010300
 aim_hud_offset_rot_16x9 = -0.004500, 0.0003, 0.000000
 
-[wpn_p90]:weapon_probability,default_weapon_params,wpn_p90_sounds,mod_stcop_p90,mod_stcop_p90_damage,cost_stcop_p90
+[wpn_p90]:weapon_probability,stcop_default_weapon_params,wpn_p90_sounds,mod_stcop_p90,mod_stcop_p90_damage,cost_stcop_p90
 GroupControlSection = spawn_group
 $spawn = "weapons\p90"
 $npc = on
@@ -1093,7 +1006,7 @@ inv_weight = 2.85
 hud = wpn_p90_hud
 visual = dynamics\weapons\wpn_p90\wpn_p90.ogf
 upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_abakan
 ph_mass = 3
 ammo_class = ammo_5.7x28_fmj, ammo_5.7x28_ap
@@ -1230,7 +1143,7 @@ anm_idle_sprint_start = p90_iwp_sprint_start
 anm_idle_sprint = p90_iwp_sprint
 anm_idle_sprint_end = p90_iwp_sprint_end
 
-[wpn_pp2000]:identity_immunities,weapon_probability,default_weapon_params,wpn_pp2000_sounds,mod_stcop_pp2000,mod_stcop_pp2000_damage,cost_stcop_pp2000
+[wpn_pp2000]:identity_immunities,weapon_probability,stcop_default_weapon_params,wpn_pp2000_sounds,mod_stcop_pp2000,mod_stcop_pp2000_damage,cost_stcop_pp2000
 GroupControlSection = spawn_group
 $spawn = "weapons\pp2000"
 $npc = on
@@ -1264,7 +1177,7 @@ inv_weight = 1.66
 hud = wpn_pp2000_hud
 visual = dynamics\weapons\wpn_pp2000\wpn_pp2000.ogf
 upgrades = up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5, up_gr_fifthcd_mp5
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_mp5
 ph_mass = 2
 ammo_class = ammo_9x19_fmj, ammo_9x19_pbp
@@ -1352,9 +1265,9 @@ scope_y = -2
 silencer_name = wpn_addon_silencer
 silencer_x = 85
 silencer_y = 6
-grenade_launcher_name = 
-grenade_launcher_x = 
-grenade_launcher_y = 
+grenade_launcher_name =
+grenade_launcher_x =
+grenade_launcher_y =
 silencer_light_color = 0.6,0.5,0.3
 silencer_light_range = 0.01
 silencer_light_var_color = 0.05
@@ -1471,7 +1384,7 @@ aim_hud_offset_rot = 0.017000, 0.000300, 0.000000
 aim_hud_offset_pos_16x9 = -0.065876, -0.006000, 0.071801
 aim_hud_offset_rot_16x9 = 0.017000, 0.000300, 0.000000
 
-[wpn_ppsh41]:weapon_probability,default_weapon_params,wpn_ppsh41_sounds,mod_stcop_ppsh41,mod_stcop_ppsh41_damage,cost_stcop_ppsh41
+[wpn_ppsh41]:weapon_probability,stcop_default_weapon_params,wpn_ppsh41_sounds,mod_stcop_ppsh41,mod_stcop_ppsh41_damage,cost_stcop_ppsh41
 GroupControlSection = spawn_group
 $spawn = "weapons\ppsh41"
 $npc = on
@@ -1505,7 +1418,7 @@ inv_weight = 3.60
 hud = wpn_ppsh41_hud
 visual = dynamics\weapons\wpn_ppsh41\wpn_ppsh41.ogf
 upgrades = up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5, up_gr_fifthcd_mp5
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_mp5
 ph_mass = 3
 ammo_class = ammo_7.62x25_p, ammo_7.62x25_ps
@@ -1655,7 +1568,7 @@ anm_idle_sprint_jammed = ppsh41_sprint, idle_jammed, 1.2
 anm_firemode_jammed = ppsh41_switch_mode, idle_jammed
 anm_idle_aim_jammed = ppsh41_aim, idle_jammed
 
-[wpn_ump45]:weapon_probability,default_weapon_params,wpn_ump45_sounds,mod_stcop_ump45,mod_stcop_ump45_damage,cost_stcop_ump45
+[wpn_ump45]:weapon_probability,stcop_default_weapon_params,wpn_ump45_sounds,mod_stcop_ump45,mod_stcop_ump45_damage,cost_stcop_ump45
 GroupControlSection = spawn_group
 $spawn = "weapons\ump45"
 $npc = on
@@ -1689,7 +1602,7 @@ inv_weight = 2.47
 hud = wpn_ump45_hud
 visual = dynamics\weapons\wpn_ump45\wpn_ump45.ogf
 upgrades = up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5, up_gr_fifthcd_mp5
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_mp5
 ph_mass = 3
 ammo_class = ammo_11.43x23_fmj, ammo_11.43x23_hydro
@@ -1777,9 +1690,9 @@ scope_y = -9
 silencer_name = sil_45
 silencer_x = 148
 silencer_y = 16
-grenade_launcher_name = 
-grenade_launcher_x = 
-grenade_launcher_y = 
+grenade_launcher_name =
+grenade_launcher_x =
+grenade_launcher_y =
 silencer_light_color = 0.6,0.5,0.3
 silencer_light_range = 0.01
 silencer_light_var_color = 0.05
@@ -1898,7 +1811,7 @@ aim_hud_offset_rot = 0.0031,-0.00028,0
 aim_hud_offset_pos_16x9 = -0.052130,0.000660,-0.007
 aim_hud_offset_rot_16x9 = 0.0031,-0.00028,0
 
-[wpn_uzi]:identity_immunities,weapon_probability,default_weapon_params,wpn_uzi_sounds,mod_stcop_uzi,mod_stcop_uzi_damage,cost_stcop_uzi
+[wpn_uzi]:identity_immunities,weapon_probability,stcop_default_weapon_params,wpn_uzi_sounds,mod_stcop_uzi,mod_stcop_uzi_damage,cost_stcop_uzi
 GroupControlSection = spawn_group
 $spawn = "weapons\uzi"
 $npc = on
@@ -1932,7 +1845,7 @@ inv_weight = 3.5
 hud = wpn_uzi_hud
 visual = dynamics\weapons\wpn_uzi\wpn_uzi.ogf
 upgrades = up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5, up_gr_fifthcd_mp5
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_mp5
 ph_mass = 2
 ammo_class = ammo_9x19_fmj, ammo_9x19_pbp
@@ -2020,9 +1933,9 @@ scope_y = -2
 silencer_name = sil_uzi
 silencer_x = 117
 silencer_y = 9
-grenade_launcher_name = 
-grenade_launcher_x = 
-grenade_launcher_y = 
+grenade_launcher_name =
+grenade_launcher_x =
+grenade_launcher_y =
 silencer_light_color = 0.6,0.5,0.3
 silencer_light_range = 0.01
 silencer_light_var_color = 0.05
@@ -2130,7 +2043,7 @@ anm_idle_sprint_end = h_uzi_mini_sprint2idle, uzi_mini_sprint2idle, 1.225
 anm_ammo_check = h_uzi_mini_magcheck, uzi_mini_magcheck
 anm_ammo_check_empty = h_uzi_mini_magcheck, uzi_mini_magcheck_empty
 
-[wpn_uzi_micro]:wpn_uzi,wpn_micro_uzi_sounds,mod_stcop_uzi_micro_damage,cost_stcop_uzi_micro
+[wpn_uzi_micro]:wpn_uzi,wpn_uzi_micro_sounds,mod_stcop_uzi_micro_damage,cost_stcop_uzi_micro
 $spawn = "weapons\uzi_micro"
 parent_section = wpn_uzi_micro
 inv_name = st_wpn_micro_uzi
@@ -2189,7 +2102,7 @@ anm_idle_sprint_end = h_uzi_micro_sprint2idle, uzi_micro_sprint2idle, 1.225
 anm_ammo_check = h_uzi_micro_magcheck, uzi_micro_magcheck
 anm_ammo_check_empty = h_uzi_micro_magcheck, uzi_micro_magcheck_empty
 
-[wpn_vityaz]:weapon_probability,default_weapon_params,wpn_vityaz_sounds,mod_stcop_vityaz,mod_stcop_vityaz_damage,cost_stcop_vityaz
+[wpn_vityaz]:weapon_probability,stcop_default_weapon_params,wpn_vityaz_sounds,mod_stcop_vityaz,mod_stcop_vityaz_damage,cost_stcop_vityaz
 GroupControlSection = spawn_group
 $spawn = "weapons\vityaz"
 $npc = on
@@ -2223,7 +2136,7 @@ inv_weight = 2.9
 hud = wpn_vityaz_hud
 visual = dynamics\weapons\wpn_vityaz\wpn_vityaz.ogf
 upgrades = up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5, up_gr_fifthcd_mp5
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_mp5
 ph_mass = 3
 ammo_class = ammo_9x19_fmj, ammo_9x19_pbp

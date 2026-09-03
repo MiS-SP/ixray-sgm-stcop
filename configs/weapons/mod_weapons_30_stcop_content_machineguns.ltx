@@ -1,7 +1,7 @@
 ; STCOP weapon DLTX layer.
 ; Generated category: machineguns.
 ; Existing SGM sections are patched; STCOP-only sections are defined here.
-[wpn_hk21]:weapon_probability,default_weapon_params,wpn_hk21_sounds,mod_stcop_hk21,mod_stcop_hk21_damage,cost_stcop_hk21
+[wpn_hk21]:weapon_probability,stcop_default_weapon_params,wpn_hk21_sounds,mod_stcop_hk21,mod_stcop_hk21_damage,cost_stcop_hk21
 GroupControlSection = spawn_group
 $spawn = "weapons\hk21"
 $npc = on
@@ -39,7 +39,7 @@ inv_weight = 9.30
 hud = wpn_hk21_hud
 visual = dynamics\weapons\wpn_hk21\wpn_hk21.ogf
 upgrades = up_gr_firstab_pkm, up_gr_seconab_pkm, up_gr_thirdab_pkm, up_gr_fourtab_pkm, up_gr_fifthab_pkm
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_pkm
 ph_mass = 7
 ammo_class = ammo_7.62x51_fmj, ammo_7.62x51_ap
@@ -176,7 +176,7 @@ anm_ammo_check = hk23_hand_magcheck, hk23_magcheck
 anm_idle_sprint_start = hk23_hand_sprint_start, hk23_sprint_start
 anm_idle_sprint_end = hk23_hand_sprint_end, hk23_sprint_end
 
-[wpn_hk21_ac10632]:wpn_hk21e
+[wpn_hk21_ac10632]:wpn_hk21
 $spawn = "weapons\hk21_ac10632"
 visual = dynamics\weapons\wpn_hk21\wpn_hk21_barska.ogf
 hud = wpn_hk21_ac10632_hud
@@ -244,7 +244,7 @@ aim_hud_offset_rot = -0.002500, 0.000600, 0.000000
 aim_hud_offset_pos_16x9 = -0.045650, -0.024980, 0.096320
 aim_hud_offset_rot_16x9 = -0.002500, 0.000600, 0.000000
 
-[wpn_m60]:weapon_probability,default_weapon_params,wpn_m60_sounds,mod_stcop_m60,mod_stcop_m60_damage,cost_stcop_m60
+[wpn_m60]:weapon_probability,stcop_default_weapon_params,wpn_m60_sounds,mod_stcop_m60,mod_stcop_m60_damage,cost_stcop_m60
 GroupControlSection = spawn_group
 $spawn = "weapons\m60"
 $npc = on
@@ -282,7 +282,7 @@ inv_weight = 10.5
 hud = wpn_m60_hud
 visual = dynamics\weapons\wpn_m60\wpn_m60.ogf
 upgrades = up_gr_firstab_pkm, up_gr_seconab_pkm, up_gr_thirdab_pkm, up_gr_fourtab_pkm, up_gr_fifthab_pkm
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_pkm
 ph_mass = 7
 ammo_class = ammo_7.62x51_fmj, ammo_7.62x51_ap
@@ -415,98 +415,7 @@ anm_idle_moving_slow = m60_hand_moving, m60_idle, 0.7
 anm_idle_moving_crouch = m60_hand_moving, m60_idle, 0.5
 anm_idle_moving_slow_crouch = m60_hand_moving, m60_idle, 0.3
 
-![wpn_pkm]
-description = st_wpn_pkm_descr
-icons_texture = ui\ui_icon_equipment_stcopwp
-upgr_icons_texture = ui\ui_actor_weapons_stcopwp
-scopes = none
-parent_section = wpn_pkm
-sprint_allowed = true
-bullet_scheme_disable_reload = false
-bullet_bone_name = bullet1_
-bullets_count = 11
-inv_name = st_wpn_pkm
-inv_name_short = st_wpn_pkm
-upgr_icon_x = 550
-upgr_icon_y = 1200
-upgr_icon_width = 300
-upgr_icon_height = 100
-weapon_class = heavy_weapon
-inv_weight = 8.1
-ph_mass = 8
-startup_ammo = 100
-ammo_current = 600
-ammo_limit = 700
-fire_modes = -1
-zoom_dof = 0.5,1,180
-reload_dof = 0,0.5,5,1.7
-fire_dispersion_base = 0.35
-fire_dispersion_condition_factor = 2
-crosshair_inertion = 7.7
-cam_dispersion = 0.75
-cam_dispersion_inc = 0.5
-cam_dispersion_frac = 1.2
-cam_max_angle = 50.0
-cam_step_angle_horz = 3.3
-zoom_cam_relax_speed = 15
-zoom_cam_relax_speed_ai = 360
-zoom_cam_dispersion = 0.23
-zoom_cam_dispersion_inc = 0.18
-zoom_cam_dispersion_frac = 0.7
-zoom_cam_max_angle = 10
-zoom_cam_max_angle_horz = 50
-zoom_cam_step_angle_horz = 0.3
-max_radius = 90
-holder_range_modifier = 1
-holder_fov_modifier = 1
-hit_probability_gd_novice = 0.45
-hit_probability_gd_stalker = 0.55
-hit_probability_gd_veteran = 0.65
-hit_probability_gd_master = 0.75
-position = -0.027, -0.105, 0.025
-shell_point = -0.02,0.167,0.082
-shell_dir = 0,0,0.4
-zoom_rotate_time = 0.3
-
-![wpn_pkm_hud]
-item_visual = dynamics\weapons\wpn_pkm\wpn_pkm_hud.ogf
-hands_position_16x9 = -0.216400,0.084000,-0.142
-hands_orientation_16x9 = 0.000000,-0.450000,0
-hands_position = -0.216400,0.084000,-0.142
-hands_orientation = 0.000000,-0.450000,0
-item_position = 0,0,0
-item_orientation = 0,0,0
-aim_hud_offset_pos = -0.069300, 0.040500, -0.005800
-aim_hud_offset_rot = -0.007000, 0.000500, -0.180000
-aim_hud_offset_pos_16x9 = -0.069300, 0.040500, -0.005800
-aim_hud_offset_rot_16x9 = -0.007000, 0.000500, -0.180000
-shell_point = 0,-0.15,-0.15
-fire_bone = muzzle
-fire_point = 0,0,0
-fire_point2 = 0,0,0
-disable_bore = true
-anm_hide = pkm_iwp_hide, hide
-anm_idle = pkm_iwp_idle, idle
-anm_idle_aim = pkm_iwp_idle_aim, idle
-anm_idle_aim_moving = pkm_iwp_walk_aim, idle
-anm_idle_aim_moving_slow = pkm_iwp_walk_aim, idle, 0.8
-anm_idle_aim_moving_crouch = pkm_iwp_walk_aim, idle, 0.6
-anm_idle_aim_moving_slow_crouch = pkm_iwp_walk_aim, idle, 0.4
-anm_idle_moving = pkm_iwp_walk, walk
-anm_idle_moving_slow = pkm_iwp_walk_slow, walk_slow
-anm_idle_moving_crouch = pkm_iwp_walk_down, walk_down
-anm_idle_moving_slow_crouch = pkm_iwp_walk_down, walk_down, 0.8
-anm_reload = pkm_iwp_reload, reload
-anm_reload_empty = pkm_iwp_reload_empty, reload_empty
-anm_reload_jammed = pkm_iwp_misfire, misfire
-anm_shoot = pkm_iwp_shoot
-anm_shoot_aim = pkm_iwp_shoot_aim
-anm_show = pkm_iwp_draw, draw
-anm_idle_sprint_start = pkm_iwp_sprint_start, sprint_start
-anm_idle_sprint = pkm_iwp_sprint, sprint
-anm_idle_sprint_end = pkm_iwp_sprint_end, sprint_end
-
-[wpn_pkp]:weapon_probability,default_weapon_params,wpn_pkp_sounds,mod_stcop_pkp,mod_stcop_pkp_damage,cost_stcop_pkp
+[wpn_pkp]:weapon_probability,stcop_default_weapon_params,wpn_pkp_sounds,mod_stcop_pkp,mod_stcop_pkp_damage,cost_stcop_pkp
 GroupControlSection = spawn_group
 $spawn = "weapons\pkp"
 $npc = on
@@ -544,7 +453,7 @@ inv_weight = 8.2
 hud = wpn_pkp_hud
 visual = dynamics\weapons\wpn_pkp\wpn_pkp.ogf
 upgrades = up_gr_firstab_pkm, up_gr_seconab_pkm, up_gr_thirdab_pkm, up_gr_fourtab_pkm, up_gr_fifthab_pkm
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_pkm
 ph_mass = 8
 ammo_class = ammo_pkm_100
@@ -791,7 +700,7 @@ aim_hud_offset_rot = -0.0005,0.0001,0
 aim_hud_offset_pos_16x9 = 0.016409,-0.012400,0.053
 aim_hud_offset_rot_16x9 = -0.0005,0.0001,0
 
-[wpn_rpd]:weapon_probability,default_weapon_params,wpn_rpd_sounds,mod_stcop_rpd,mod_stcop_rpd_damage,cost_stcop_rpd
+[wpn_rpd]:weapon_probability,stcop_default_weapon_params,wpn_rpd_sounds,mod_stcop_rpd,mod_stcop_rpd_damage,cost_stcop_rpd
 GroupControlSection = spawn_group
 $spawn = "weapons\rpd"
 $npc = on
@@ -827,7 +736,7 @@ inv_weight = 7.10
 hud = wpn_rpd_hud
 visual = dynamics\weapons\wpn_rpd\wpn_rpd.ogf
 upgrades = up_gr_firstab_pkm, up_gr_seconab_pkm, up_gr_thirdab_pkm, up_gr_fourtab_pkm, up_gr_fifthab_pkm
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_pkm
 ph_mass = 7
 ammo_class = ammo_7.62x39_fmj, ammo_7.62x39_ap
@@ -994,7 +903,7 @@ anm_idle_sprint_end = rpd_sedzhimol_sprite_end, rpd_sedzhimol_show
 anm_idle_aim_start = rpd_sedzhimol_aim_in, idle, 0.9
 anm_idle_aim_end = rpd_sedzhimol_aim_in, idle, 0.8
 
-[wpn_rpk]:weapon_probability,default_weapon_params,wpn_rpk_sounds,mod_stcop_rpk,mod_stcop_rpk_damage,cost_stcop_rpk
+[wpn_rpk]:weapon_probability,stcop_default_weapon_params,wpn_rpk_sounds,mod_stcop_rpk,mod_stcop_rpk_damage,cost_stcop_rpk
 GroupControlSection = spawn_group
 $spawn = "weapons\rpk"
 $npc = on
@@ -1028,7 +937,7 @@ inv_weight = 5.0
 hud = wpn_rpk_hud
 visual = dynamics\weapons\wpn_rpk\wpn_rpk.ogf
 upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_abakan
 ph_mass = 5
 ammo_class = ammo_7.62x39_fmj, ammo_7.62x39_ap
@@ -1241,7 +1150,7 @@ aim_hud_offset_rot = -0.000500, 0.000540, -0.002500
 aim_hud_offset_pos_16x9 = -0.058400, 0.007000, -0.080000
 aim_hud_offset_rot_16x9 = -0.000500, 0.000540, -0.002500
 
-[wpn_rpk203]:weapon_probability,default_weapon_params,wpn_rpk203_sounds,mod_stcop_rpk203,mod_stcop_rpk203_damage,cost_stcop_rpk203
+[wpn_rpk203]:weapon_probability,stcop_default_weapon_params,wpn_rpk203_sounds,mod_stcop_rpk203,mod_stcop_rpk203_damage,cost_stcop_rpk203
 GroupControlSection = spawn_group
 $spawn = "weapons\rpk-203"
 $npc = on
@@ -1275,7 +1184,7 @@ inv_weight = 4.7
 hud = wpn_rpk203_hud
 visual = dynamics\weapons\wpn_rpk203\wpn_rpk203.ogf
 upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_abakan
 ph_mass = 5
 ammo_class = ammo_7.62x39_fmj, ammo_7.62x39_ap
@@ -1416,7 +1325,7 @@ anm_idle_sprint_start = rpk16_iwp_sprint_start
 anm_idle_sprint = rpk16_iwp_sprint
 anm_idle_sprint_end = rpk16_iwp_sprint_end
 
-[wpn_rpk203_ac10632]:wpn_rpk203e
+[wpn_rpk203_ac10632]:wpn_rpk203
 $spawn = "weapons\rpk203_ac10632"
 visual = dynamics\weapons\wpn_rpk203\wpn_rpk203_barska.ogf
 hud = wpn_rpk203_ac10632_hud
@@ -1484,7 +1393,7 @@ aim_hud_offset_rot = 0.001000, 0.000000, 0.000000
 aim_hud_offset_pos_16x9 = -0.072680, -0.011700, 0.014000
 aim_hud_offset_rot_16x9 = 0.001000, 0.000000, 0.000000
 
-[wpn_rpk74]:weapon_probability,default_weapon_params,wpn_rpk74_sounds,mod_stcop_rpk74,mod_stcop_rpk74_damage,cost_stcop_rpk74
+[wpn_rpk74]:weapon_probability,stcop_default_weapon_params,wpn_rpk74_sounds,mod_stcop_rpk74,mod_stcop_rpk74_damage,cost_stcop_rpk74
 GroupControlSection = spawn_group
 $spawn = "weapons\rpk-74"
 $npc = on
@@ -1518,7 +1427,7 @@ inv_weight = 5.0
 hud = wpn_rpk74_hud
 visual = dynamics\weapons\wpn_rpk74\wpn_rpk74.ogf
 upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
-installed_upgrades = 
+installed_upgrades =
 upgrade_scheme = upgrade_scheme_abakan
 ph_mass = 5
 ammo_class = ammo_5.45x39_fmj, ammo_5.45x39_ap
