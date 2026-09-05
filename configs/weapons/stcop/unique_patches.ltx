@@ -1,0 +1,176 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![wpn_ak74u_snag]:wpn_ak105_snag_sounds
+$spawn = "weapons\wpn_ak74u"
+description = st_wpn_ak74u_snag_descr
+scopes = pso1m21,1p78,1pn93-1,ekp,okp,kobra,ac10632,acog,aimpoint,eot,pn23
+parent_section = wpn_ak74u_snag
+inv_weight = 3.77
+hud = wpn_ak74u_snag_hud
+visual = dynamics\weapons\wpn_ak74u\wpn_ak74u_snag.ogf
+inv_grid_width = 5
+inv_grid_x = 5
+inv_grid_y = 25
+upgr_icon_y = 100
+startup_ammo = 45
+ammo_mag_size = 45
+position = -0.026,-0.175,-0.01
+fire_point = 0,0.218,0.656
+fire_point2 = 0,0.161,0.583
+silencer_x = 205
+silencer_y = 0
+
+![wpn_groza_nimble]:wpn_groza_nimble_sounds
+scopes = wpn_addon_scope,ac10632,acog,aimpoint,eot,pn23
+parent_section = wpn_groza_nimble
+inv_name_short = st_wpn_groza_nimble
+visual = dynamics\weapons\wpn_groza\wpn_groza_nimble.ogf
+hud = wpn_groza_nimble_hud
+ammo_elapsed = 30
+inv_grid_x = 20
+inv_grid_y = 28
+upgr_icon_x = 1150
+upgr_icon_y = 900
+upgr_icon_width = 200
+upgr_icon_height = 100
+grenade_launcher_status = 0
+position = -0.026,-0.16,0
+orientation = 0,0,0
+fire_point = 0,0.194,0.274
+fire_point2 = 0,0.156,0.285
+silencer_name = sil_pbs4
+silencer_x = 138
+silencer_y = 10
+
+![wpn_sig550_luckygun]
+parent_section = wpn_sig550_luckygun
+inv_name_short = st_wpn_sig550_strelok
+inv_grid_x = 30
+inv_grid_y = 38
+upgr_icon_x = 550
+upgr_icon_y = 1700
+upgr_icon_width = 300
+upgr_icon_height = 100
+hud = wpn_sig550_luckygun_hud
+visual = dynamics\weapons\wpn_sig550\wpn_sig550_m1.ogf
+silencer_x = 189
+silencer_y = 18
+grenade_launcher_x = 116
+
+![wpn_pkm_zulus]:wpn_pkm_sounds
+$spawn = "weapons\pkm_zulus"
+scopes = ac10632,acog,aimpoint,eot,pn23
+parent_section = wpn_pkm_zulus
+hud = wpn_pkm_zulus_hud
+inv_name_short = st_wpn_pkm_zulus
+inv_grid_y = 32
+upgr_icon_x = 550
+upgr_icon_y = 1100
+ammo_mag_size_ui = 150
+cam_relax_speed = 12.5
+cam_dispersion = 0.65
+cam_dispersion_inc = 0.4
+cam_dispersion_frac = 1.05
+cam_max_angle = 50.0
+cam_max_angle_horz = 50.0
+cam_step_angle_horz = 3.1
+scope_status = 2
+
+![wpn_desert_eagle_nimble]
+scopes = none
+parent_section = wpn_desert_eagle_nimble
+inv_grid_width = 3
+inv_grid_height = 2
+inv_grid_x = 32
+inv_grid_y = 34
+upgr_icon_x = 1500
+upgr_icon_y = 200
+inv_weight = 2.048
+scope_zoom_factor = 73.3
+cam_dispersion = 2.0
+cam_dispersion_inc = 2.0
+hud = wpn_desert_eagle_nimble_hud
+visual = dynamics\weapons\wpn_desert_eagle\wpn_desert_eagle_nimble.ogf
+
+![wpn_fort_snag]:wpn_fort17_sounds
+description = st_wpn_fort17_descr
+scopes = none
+parent_section = wpn_fort_snag
+inv_grid_width = 2
+inv_grid_x = 10
+inv_grid_y = 28
+upgr_icon_x = 1500
+upgr_icon_y = 400
+condition_shot_dec = 0.0034
+condition_queue_shot_dec = 0.0034
+ammo_mag_size = 13
+ammo_elapsed = 13
+inv_weight = 0.680
+position = -0.021,-0.09,-0.013
+orientation = 0,0,0
+silencer_x = 79
+silencer_y = -19
+hud = wpn_fort17_hud
+visual = dynamics\weapons\wpn_fort\wpn_fort_snag.ogf
+
+![wpn_pm_actor]
+inv_name_short = st_wpn_pm_actor
+hud = wpn_pm_actor_hud
+visual = dynamics\weapons\wpn_pm\wpn_pm_actor.ogf
+scopes = none
+parent_section = wpn_pm_actor
+
+![wpn_sig220_nimble]
+hud = wpn_sig220_nimble_hud
+visual = dynamics\weapons\wpn_sig220\wpn_sig220_nimble.ogf
+scopes = none
+parent_section = wpn_sig220_nimble
+ammo_elapsed = 10
+inv_name_short = st_wpn_sig320
+inv_grid_x = 6
+upgr_icon_x = 1500
+upgr_icon_y = 800
+inv_weight = 0.68
+silencer_x = 65
+silencer_y = -18
+
+![wpn_wincheaster1300_trapper]:wpn_saiga
+description = st_wpn_saiga_trapper_descr
+hud = wpn_saiga_m1_hud
+visual = dynamics\weapons\wpn_saiga\wpn_saiga_m1.ogf
+scopes = ac10632,acog,aimpoint,eot,pn23
+parent_section = wpn_wincheaster1300_trapper
+crosshair_inertion = 6
+control_inertion_factor = 1.5f
+inv_name = st_wpn_saiga_trapper
+inv_name_short = st_wpn_saiga_trapper
+inv_grid_x = 20
+inv_grid_y = 38
+upgr_icon_x = 550
+upgr_icon_y = 100
+inv_weight = 4.1
+fire_point = 0,0.218,0.7
+flame_particles = weapons\generic_shoot_00
+
+![wpn_mp5_nimble]
+crosshair_inertion = 4.0
+
+![pri_a17_gauss_rifle]
+scopes = none
+parent_section = pri_a17_gauss_rifle
+
+![wpn_vintorez_nimble]
+$spawn = "weapons\vintorez_nimble"
+hud = wpn_vintorez_nimble_hud
+visual = dynamics\weapons\wpn_vintorez\wpn_vintorez_m1.ogf
+parent_section = wpn_vintorez_nimble
+fire_dispersion_base = 0.15
+crosshair_inertion = 5.5
+ammo_elapsed = 20
+ammo_mag_size = 20
+inv_grid_x = 25
+inv_grid_y = 38
+upgr_icon_x = 850
+upgr_icon_y = 1200
+inv_weight = 3.600

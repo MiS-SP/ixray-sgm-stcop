@@ -1,0 +1,154 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![wpn_addon_grenade_launcher]
+slot = -1
+icons_texture = ui\ui_icon_equipment_stcopwp
+cost = 1000
+inv_weight = 1.500
+grenade_vel = 76
+fire_distance = 400
+
+![wpn_addon_grenade_launcher_m203]
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_grid_x = 18
+grenade_vel = 76
+fire_distance = 400
+
+![wpn_addon_scope_x2.7]
+slot = -1
+icons_texture = ui\ui_icon_equipment_stcopwp
+holder_range_modifier = 1.25
+holder_fov_modifier = 0.75
+inv_weight = 0.580
+scope_texture = wpn_crosshair
+scope_zoom_factor = 26.2
+
+![wpn_addon_scope_night]
+slot = -1
+icons_texture = ui\ui_icon_equipment_stcopwp
+holder_range_modifier = 1.25
+holder_fov_modifier = 0.75
+inv_weight = 2.0
+scope_texture = wpn_crosshair
+scope_zoom_factor = 21
+
+![wpn_addon_scope_detector]
+slot = -1
+icons_texture = ui\ui_icon_equipment_stcopwp
+cost = 3000
+holder_range_modifier = 1.25
+holder_fov_modifier = 0.75
+inv_weight = 0.600
+scope_texture = wpn_crosshair
+scope_zoom_factor = 19
+
+![wpn_addon_scope_susat]
+$spawn = "weapons\addons\scope"
+$prefetch = 32
+cost = 1000
+holder_range_modifier = 1.2
+holder_fov_modifier = 0.3
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_weight = 0.35
+inv_grid_y = 2
+scope_texture = wpn_crosshair_susat
+scope_zoom_factor = 19
+3d_zoom_factor = 83.3
+3d_fov = 0.1
+
+![wpn_addon_scope_susat_x1.6]
+$prefetch = 32
+cost = 1500
+holder_range_modifier = 1.25
+holder_fov_modifier = 0.75
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_weight = 0.418
+scope_texture = wpn_crosshair_susat
+scope_zoom_factor = 45.8
+
+![wpn_addon_scope_susat_dusk]
+$prefetch = 32
+holder_range_modifier = 1.25
+holder_fov_modifier = 0.75
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_weight = 0.460
+scope_texture = wpn_crosshair_susat
+scope_zoom_factor = 21
+
+![wpn_addon_scope_susat_night]
+$prefetch = 32
+cost = 3000
+holder_range_modifier = 1.25
+holder_fov_modifier = 0.75
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_weight = 0.460
+scope_texture = wpn_crosshair_susat
+scope_zoom_factor = 21
+
+![wpn_addon_scope_susat_custom]
+$prefetch = 32
+cost = 10000
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_weight = 0.460
+scope_texture = wpn_crosshair_susat
+scope_zoom_factor = 19
+
+![wpn_addon_scope]
+description = st_addon_scope_4x34_descr
+slot = -1
+cost = 1000
+holder_range_modifier = 1.25
+holder_fov_modifier = 0.75
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_name = st_addon_scope_4x34
+inv_name_short = st_addon_scope_4x34
+inv_weight = 0.3
+scope_texture = wpn_crosshair_pu
+scope_zoom_factor = 19
+3d_zoom_factor = 83.3
+3d_fov = 0.12
+
+![scope_detector]
+vis_frame_speed = 6
+
+![wpn_addon_silencer]
+$spawn = "weapons\addons\silencer"
+inv_name = st_addon_silencer
+inv_name_short = st_addon_silencer
+inv_weight = 0.2
+inv_grid_width = 2
+inv_grid_x = 10
+inv_grid_y = 30
+bullet_hit_power_k = 1.0
+bullet_hit_impulse_k = 1.0
+bullet_speed_k = 1.0
+fire_dispersion_base_k = 1.2
+cam_dispersion_k = 0.85
+cam_dispersion_inc_k = 0.85
+icons_texture = ui\ui_icon_equipment_stcopwp
+
+![scope_susat_proecta]
+scope_name = wpn_addon_scope_susat
+scope_x = 95
+scope_y = -1
+
+![scope_susat_x1.6_proecta]
+scope_name = wpn_addon_scope_susat_x1.6
+scope_x = 95
+scope_y = -1
+
+![scope_susat_custom_proecta]
+scope_name = wpn_addon_scope_susat_custom
+scope_x = 95
+scope_y = -1
+
+![scope_susat_dusk_proecta]
+scope_name = wpn_addon_scope_susat_dusk
+scope_x = 95
+scope_y = -1
+
+![scope_susat_night_proecta]
+scope_name = wpn_addon_scope_susat_night
+scope_x = 95
+scope_y = -1

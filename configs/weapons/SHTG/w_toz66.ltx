@@ -1,0 +1,35 @@
+; STCOP owned definitions.
+; Loaded only through the explicit STCOP content manifest.
+; Original STCOP layout: SHTG/w_toz66.ltx.
+
+[mod_stcop_bm16_full_damage]
+hit_power = 0.64, 0.64, 0.64, 0.64
+hit_type = fire_wound
+fire_distance = 50
+bullet_speed = 250
+rpm = 400
+rpm_empty_click = 200
+
+[wpn_bm16_full]:wpn_bm16,mod_stcop_bm16_full_damage
+$spawn = "weapons\bm16_full"
+inv_weight = 3.35
+scopes = none
+parent_section = wpn_bm16_full
+inv_name = st_wpn_toz66_full
+inv_name_short = st_wpn_toz66_full
+inv_grid_width = 6
+inv_grid_height = 2
+inv_grid_x = 35
+inv_grid_y = 34
+upgr_icon_x = 550
+upgr_icon_y = 600
+hud = wpn_bm16_full_hud
+visual = dynamics\weapons\wpn_bm16\wpn_bm16_full.ogf
+
+[wpn_bm16_full_hud]:wpn_bm16_hud
+item_visual = dynamics\weapons\wpn_bm16\wpn_bm16_full_hud.ogf
+aim_hud_offset_pos = -0.065000, 0.030000, -0.004950
+aim_hud_offset_rot = -0.015500, -0.000550, 0.000000
+aim_hud_offset_pos_16x9 = -0.065000, 0.030000, -0.004950
+aim_hud_offset_rot_16x9 = -0.015500, -0.000550, 0.000000
+fire_point = 0,0.0077,0.510401

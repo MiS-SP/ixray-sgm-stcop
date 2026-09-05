@@ -1,0 +1,169 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![wpn_lr300]:!mod_lr300_sounds,wpn_lr300_sounds
+$spawn = "weapons\lr300"
+scopes = ac10632,acog,aimpoint,eot,pn23
+parent_section = wpn_lr300
+icons_texture = ui\ui_icon_equipment_stcopwp
+upgr_icons_texture = ui\ui_actor_weapons_stcopwp
+upgr_icon_x = 0
+upgr_icon_y = 1200
+upgr_icon_width = 300
+upgr_icon_height = 100
+inv_weight = 2.84
+ammo_current = 180
+ammo_limit = 210
+fire_modes = 1, -1
+grenade_vel = 76
+launch_speed = 76
+time_to_aim = 2
+zoom_dof = 0.5,1,180
+reload_dof = 0,0.5,5, 2
+fire_dispersion_condition_factor = 2
+control_inertion_factor = 1.15f
+zoom_cam_dispersion_frac = 1
+PDM_disp_vel_factor = 2
+PDM_disp_accel_factor = 2
+PDM_disp_crouch = 1
+PDM_disp_crouch_no_acc = 1
+min_radius = 30
+max_radius = 50
+holder_range_modifier = 1
+holder_fov_modifier = 1
+position = -0.026,-0.130,-0.005
+orientation = 0,0,0
+fire_point = 0,0.199,0.575
+fire_point2 = 0,0.199,0.575
+shell_point = 0.12,0,0.07
+shell_dir = 0,0,0.4
+grenade_launcher_status = 0
+zoom_rotate_time = 0.2
+scope_zoom_factor = 73.3
+scope_name = acog
+scope_x = 72
+scope_y = -7
+grenade_launcher_x = 122
+silencer_name = sil_556
+silencer_x = 177
+silencer_y = 12
+upgrades = up_gr_firstab_lr300, up_gr_firstc_lr300, up_gr_firstd_lr300, up_gr_firstef_lr300, up_gr_seconab_lr300, up_gr_seconcd_lr300, up_gr_secone_lr300, up_gr_seconf_lr300, up_gr_thirdab_lr300, up_gr_thirdc_lr300, up_gr_thirdd_lr300, up_gr_thirdef_lr300, up_gr_fourtab_lr300, up_gr_fourtcd_lr300, up_gr_fourte_lr300, up_gr_fourtf_lr300, up_gr_fifthab_lr300, up_gr_change_components_lr300
+upgrade_scheme = upgrade_scheme_lr300
+grenade_class = ammo_m209, ammo_box_10_m209
+cam_max_angle = 10.0
+cam_max_angle_horz = 10.0
+cam_step_angle_horz = 1.0
+zoom_cam_max_angle = 10.0
+zoom_cam_max_angle_horz = 10.0
+condition_shot_dec = 0.0008
+condition_queue_shot_dec = 0.0009
+ammo_elapsed = 31
+ammo_mag_size = 31
+
+![wpn_lr300_hud]:hud_base
+hands_position = 0,0,0
+hands_position_16x9 = 0,0,0
+hands_orientation = 0,0,0
+hands_orientation_16x9 = 0,0,0
+item_position = 0,0,0
+item_orientation = 0,0,0
+aim_hud_offset_pos = -0.06584, 0.017643, -0.061416
+aim_hud_offset_pos_16x9 = -0.06584, 0.017643, -0.061416
+aim_hud_offset_rot = -0.002914, 0.001992, 0
+aim_hud_offset_rot_16x9 = -0.002914, 0.001992, 0
+shell_dir = 0, 1, 0
+shell_point = 0.028, 0.078, 0.113
+fire_bone = muzzle
+fire_bone2 = muzzle
+fire_point = 0, 0, -0.0665
+fire_point2 = 0, 0, 0
+disable_bore = true
+anm_bore = lr3_sed_inspect
+anm_bore_empty = lr3_sed_inspect, idle_empty
+anm_bore_aim = lr3_sed_aim, idle
+anm_bore_empty_aim = lr3_sed_aim, idle_empty
+anm_hide = lr3_sed_hide, lr3_sed_hide
+anm_hide_empty = lr3_sed_hide, lr3_sed_hide_empty
+anm_show = lr3_sed_show, lr3_sed_show
+anm_show_empty = lr3_sed_show, lr3_sed_show_empty
+anm_idle = lr3_sed_idle, idle
+anm_idle_moving = lr3_sed_walk, idle, 0.7
+anm_idle_moving_slow = lr3_sed_walk, idle, 0.5
+anm_idle_moving_crouch = lr3_sed_walk, idle, 0.4
+anm_idle_moving_slow_crouch = lr3_sed_walk, idle, 0.3
+anm_idle_sprint = lr3_sed_sprint, idle
+anm_idle_empty = lr3_sed_idle, idle_empty
+anm_idle_moving_empty = lr3_sed_walk, idle_empty, 0.7
+anm_idle_moving_slow_empty = lr3_sed_walk, idle_empty, 0.5
+anm_idle_moving_crouch_empty = lr3_sed_walk, idle_empty, 0.4
+anm_idle_moving_slow_crouch_empty = lr3_sed_walk, idle_empty, 0.3
+anm_idle_sprint_empty = lr3_sed_sprint, idle_empty
+anm_idle_aim = lr3_sed_aim, idle
+anm_idle_aim_moving = lr3_sed_aim, idle
+anm_idle_aim_moving_crouch = lr3_sed_aim, idle
+anm_idle_aim_empty = lr3_sed_aim, idle_empty
+anm_idle_aim_moving_empty = lr3_sed_aim, idle_empty
+anm_idle_aim_moving_crouch_empty = lr3_sed_aim, idle_empty
+anm_bore_aim_empty = lr3_sed_aim, idle_empty
+anm_idle_empty_jammed = lr3_sed_idle, idle
+anm_idle_moving_empty_jammed = lr3_sed_walk, idle
+anm_idle_moving_crouch_empty_jammed = lr3_sed_walk, idle
+anm_idle_sprint_empty_jammed = lr3_sed_sprint, idle
+anm_idle_aim_empty_jammed = lr3_sed_aim, idle
+anm_idle_aim_moving_empty_jammed = lr3_sed_aim, idle
+anm_idle_aim_moving_crouch_empty_jammed = lr3_sed_aim, idle
+anm_idle_sprint_start_empty_jammed = lr3_sed_sprint_start, idle
+anm_idle_sprint_end_empty_jammed = lr3_sed_sprint_end, idle
+anm_bore_empty_jammed = lr3_sed_inspect
+anm_bore_aim_empty_jammed = lr3_sed_aim, idle
+anm_hide_empty_jammed = lr3_sed_hide, lr3_sed_hide
+anm_show_empty_jammed = lr3_sed_show, lr3_sed_show
+anm_idle_sprint_start = lr3_sed_sprint_start, idle
+anm_idle_sprint_end = lr3_sed_sprint_end, idle
+anm_idle_sprint_start_empty = lr3_sed_sprint_start, idle_empty
+anm_idle_sprint_end_empty = lr3_sed_sprint_end, idle_empty
+anm_reload = lr3_sed_reload, lr3_sed_reload
+anm_reload_empty = lr3_sed_reload_empty, lr3_sed_reload_empty
+anm_reload_jammed = lr3_sed_misfire, lr3_sed_misfire
+anm_reload_jammed_empty = lr3_sed_misfire_empty, lr3_sed_misfire_empty
+anm_ammo_check = lr3_sed_mag_check, lr3_sed_mag_check
+anm_ammo_check_ammo1 = lr3_sed_mag_check, lr3_sed_mag_check_am1
+anm_ammo_check_ammo2 = lr3_sed_mag_check, lr3_sed_mag_check_am2
+anm_ammo_check_empty = lr3_sed_mag_check, lr3_sed_mag_check_empty
+anm_ammo_check_aim = lr3_sed_aim, idle
+anm_ammo_check_empty_aim = lr3_sed_aim, idle_empty
+anm_firemode = lr3_sed_switch_fire_mode, idle
+anm_firemode_aim = lr3_sed_switch_fire_mode, idle
+anm_firemode_empty = lr3_sed_switch_fire_mode, idle_empty
+anm_firemode_empty_aim = lr3_sed_switch_fire_mode, idle_empty
+anm_shoot = lr3_sed_shot
+anm_shoot_aim = lr3_sed_shot
+anm_shoot_aim_scope = lr300_shoot_scope, lr3_sed_shot
+anm_shoot_last = lr3_sed_shot, lr3_sed_shot_last
+anm_shoot_aim_last = lr3_sed_shot, lr3_sed_shot_last
+anm_shoot_aim_scope_last = lr300_shoot_scope, lr3_sed_shot_last
+anm_shoot_jammed = lr3_sed_shot, idle
+anm_shoot_aim_jammed = lr3_sed_shot, idle
+anm_shoot_last_jammed = lr3_sed_shot, idle
+anm_shoot_aim_last_jammed = lr3_sed_shot, idle
+!anm_shots
+!anm_switch
+!anm_switch_g
+!anm_hide_w_gl
+!anm_show_w_gl
+!anm_idle_w_gl
+!anm_shots_w_gl
+!anm_reload_w_gl
+!anm_idle_w_gl_aim
+!anm_idle_sprint_w_gl
+!anm_idle_moving_w_gl
+!anm_bore_w_gl
+!anm_show_g
+!anm_hide_g
+!anm_idle_g
+!anm_reload_g
+!anm_idle_g_aim
+!anm_shots_g
+!anm_idle_sprint_g
+!anm_idle_moving_g
+!anm_bore_g

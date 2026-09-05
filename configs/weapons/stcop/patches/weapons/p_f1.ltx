@@ -1,0 +1,54 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![grenade_f1]:delayed_action_fuse,!mod_f1_sounds,grenade_f1_sounds
+ammo_in_chamber = false
+icons_texture = ui\ui_icon_equipment_stcopwp
+upgr_icons_texture = ui\ui_actor_weapons_stcopwp
+min_radius = 20
+max_radius = 50
+upgr_icon_x = 0
+upgr_icon_y = 0
+upgr_icon_width = 0
+upgr_icon_height = 0
+zoom_dof = 0.5, 1.0, 180
+reload_dof = 0, 0.5, 5, 1.7
+inv_weight = 0.6
+frags = 15
+frag_hit_impulse = 150
+frag_ap = 9.50
+fragment_speed = 150
+attach_position_offset = -0.053,-0.089,0
+bone_name = bip01_r_hand
+position_offset = 0, 0, 0
+angle_offset = 1.57079,1.57079,3.92699
+wm_size = 0.5
+blast = 3.80
+blast_r = 14
+frag_hit = 0.70
+frags_r = 22
+throw_point = 0.18, 1.636, -0.788
+
+![grenade_f1_hud]
+item_visual = dynamics\weapons\wpn_grenades\wpn_f1_hud.ogf
+hands_position = -0.016204,-0.102241,0.023000
+hands_position_16x9 = -0.016204,-0.102241,0.023000
+hands_orientation_16x9 = -0.500000,1.000000,-2.000000
+item_position = -0.001, 0.004, 0.009391
+item_orientation = 18.5, 1.5, 0
+disable_bore = true
+anm_hide = he_hide, idle
+anm_idle = he_idle, idle
+anm_idle_moving = he_walk, f1_walk
+anm_idle_moving_slow = he_slow, f1_walk
+anm_idle_moving_crouch = he_crouch, f1_walk
+anm_idle_moving_slow_crouch = he_crouch_slow, f1_walk
+anm_idle_sprint = he_sprint, f1_sprint
+anm_show = he_draw, idle
+anm_throw = he_throw_end, f1_throw_quick
+anm_throw_begin = he_throw_start, f1_throw_start
+anm_throw_idle = he_throw_idle, f1_throw_idle
+fire_point = 0, 0, 0
+throw_point = 0.4, 0.3, 0.1
+third_person_throw_point_offset = -0.198,1.8,-0.833
+!anm_bore

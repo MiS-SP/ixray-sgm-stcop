@@ -1,0 +1,52 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![ammo_7.62x54_7h1]:ammo_base
+k_air_resistance = 1.17
+description = ammo-7.62x54-7h14_descr
+$prefetch = 64
+cost = 400
+box_size = 10
+inv_name = ammo-7.62x54-7h14
+inv_name_short = ammo-7.62x54-7h14_s
+inv_weight = .23
+inv_grid_width = 2
+inv_grid_height = 1
+inv_grid_x = 10
+inv_grid_y = 8
+k_dist = 1
+k_disp = 1
+k_hit = 1
+k_impulse = 2.00
+k_pierce = 0.75
+k_ap = 0.75
+impair = 1
+buck_shot = 1
+tracer = on
+wm_size = 0.076
+explosive = off
+
+![ammo_pkm_100]:ammo_base
+description = ammo-7.62x54-pkm_descr
+$prefetch = 64
+cost = 5000
+box_size = 100
+inv_name = ammo-7.62x54-pkm
+inv_name_short = ammo-7.62x54-pkm_s
+inv_weight = 2.79
+inv_grid_width = 2
+inv_grid_height = 1
+inv_grid_x = 16
+inv_grid_y = 13
+hud_icon = ui_hud2_res_back
+k_dist = 1.00
+k_disp = 1.00
+k_hit = 1
+k_impulse = 10.14
+k_pierce = 1.20
+k_ap = 1.0
+impair = 1.0
+buck_shot = 1
+wm_size = 0.079
+tracer = off
+k_air_resistance = 1.17

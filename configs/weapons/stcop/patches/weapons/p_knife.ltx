@@ -1,0 +1,83 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![wpn_knife]:!mod_knife_sounds,wpn_knife_sounds
+icons_texture = ui\ui_icon_equipment_stcopwp
+ef_main_weapon_type = 0
+upgr_icon_x = 600
+upgr_icon_y = 1900
+upgr_icon_width = 300
+upgr_icon_height = 100
+inv_weight = 0.5
+ph_mass = 1
+ammo_class = ammo_9x18_fmj
+startup_ammo = 0
+ammo_current = 0
+ammo_elapsed = 0
+ammo_limit = 0
+ammo_mag_size = 0
+ammo_in_chamber = false
+hit_power_critical_2 = 0
+zoom_dof = 0.5,1,180
+reload_dof = 0,0.5,5,1.7
+cam_dispersion_inc = 0
+cam_dispersion_frac = 0
+cam_step_angle_horz = 0
+fire_dispersion_condition_factor = 0
+misfire_probability = 0
+misfire_start_condition = 0
+misfire_end_condition = 0
+misfire_start_prob = 0
+misfire_end_prob = 0
+condition_shot_dec = 0
+condition_queue_shot_dec = 0
+max_radius = 1
+holder_range_modifier = 1
+holder_fov_modifier = 1.5
+hit_probability_gd_novice = 0.80
+hit_probability_gd_stalker = 0.80
+hit_probability_gd_veteran = 0.80
+hit_probability_gd_master = 0.80
+position = -0.021,-0.085,0.024
+orientation = 0,90,0
+fire_point = 0,0.133,0.161
+shell_point = 0,0.133,0.047
+shell_dir = 0,0,0.4
+splash1_direction = 0,-0.3,1
+splash2_direction = 0,0,1
+spash2_dist = 1.6
+fire_dispersion_base = 0.2
+cam_dispersion = 0.45
+spash1_dist = 0.7
+spash2_radius = 0.3
+splash_bone = bip01_spine1
+activate_section = activate_knife
+
+![wpn_knife_hud]
+hands_position = 0,0,0
+hands_orientation = 0,0,0
+hands_position_16x9 = 0,0,0
+hands_orientation_16x9 = 0,0,0
+item_position = 0,0,0
+item_orientation = 0,0,0
+fire_point = 0,0,0
+anm_hide = liz_knife_hide
+anm_hide_fast = liz_knife_hide_quick
+anm_idle = liz_knife_idle
+anm_idle_aim = liz_knife_idle
+anm_idle_moving = liz_knife_walk
+anm_idle_sprint = liz_knife_sprint_varried
+anm_show = liz_knife_show
+anm_show_empty = liz_knife_show
+anm_show_fast = liz_knife_show_quick
+anm_bore = liz_knife_bored
+anm_idle_sprint_start = liz_knife_walk2sprint
+anm_idle_sprint_end = liz_knife_sprint2walk
+anm_attack = liz_knife_hit1
+anm_attack2 = liz_knife_stab
+anm_prepare_detector = knife_hand_holster
+anm_finish_detector = knife_hand_draw
+aim_hud_offset_pos = 0,0,0
+aim_hud_offset_rot = 0,0,0
+!anm_attack_e
+!anm_attack2_e

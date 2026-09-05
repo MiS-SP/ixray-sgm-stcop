@@ -1,0 +1,68 @@
+; STCOP owned definitions.
+; Loaded only through the explicit STCOP content manifest.
+
+[ammo_7.92x57_fmj]:ammo_base
+GroupControlSection = spawn_group
+discovery_dependency =
+class = AMMO_S
+cform = skeleton
+visual = dynamics\weapons\wpn_ammo\ammo_762x39_fmj.ogf
+description = ammo-7.92x57-fmj_descr
+$prefetch = 64
+cost = 1190
+box_size = 15
+inv_name = ammo-7.92x57-fmj
+inv_name_short = ammo-7.92x57-fmj_s
+inv_weight = .24
+inv_grid_width = 2
+inv_grid_height = 1
+inv_grid_x = 14
+inv_grid_y = 35
+k_hit_critical = 1
+k_dist = 0.7
+k_disp = 0.85
+k_hit = 1.00
+k_impulse = 0
+k_pierce = 0.78
+k_ap = 0.28
+impair = 1.05
+buck_shot = 1
+tracer = off
+wm_size = 0.066
+k_air_resistance = 2.3
+explosive = off
+; Final values consolidated from STCOP self-overrides.
+icons_texture = ui\ui_icon_equipment_stcopwp
+
+[ammo_7.92x57_ap]:ammo_base
+GroupControlSection = spawn_group
+discovery_dependency =
+class = AMMO_S
+cform = skeleton
+visual = dynamics\weapons\wpn_ammo\ammo_762x39_ap.ogf
+description = ammo-7.92x57-ap_descr
+$prefetch = 64
+cost = 3120
+box_size = 15
+inv_name = ammo-7.92x57-ap
+inv_name_short = ammo-7.92x57-ap_s
+inv_weight = .24
+inv_grid_width = 2
+inv_grid_height = 1
+inv_grid_x = 14
+inv_grid_y = 36
+k_hit_critical = 1
+k_dist = 0.9
+k_disp = 0.66
+k_hit = 1.00
+k_impulse = 0
+k_pierce = 1.48
+k_ap = 0.86
+impair = 1.05
+buck_shot = 1
+tracer = off
+wm_size = 0.057
+k_air_resistance = 1.8
+explosive = off
+; Final values consolidated from STCOP self-overrides.
+icons_texture = ui\ui_icon_equipment_stcopwp
