@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "repository": "ixray-sgm-stcop",
+  "commit": "1e5d232eca26d13ddcabcc140bda71d6b0965268",
+  "generated_on": "2026-09-06",
+  "scope": "filesystem snapshot; excludes documentation, known caches, agent config, symlinks; not effective mounted content",
+  "files_by_top_directory": {
+    "(root)": 4,
+    "anims": 1797,
+    "configs": 404,
+    "docs": 1,
+    "meshes": 1209,
+    "scripts": 4,
+    "sounds": 2541,
+    "textures": 2660,
+    "tools": 1
+  },
+  "script_count": 4,
+  "symbol_count": 26,
+  "scripts": [
+    {
+      "repository": "ixray-sgm-stcop",
+      "path": "scripts/sgm_stcop_bodyguards.script",
+      "namespace": "sgm_stcop_bodyguards",
+      "sha256": "8e4dcfa6ee944c176199a3470b0f9e13b16f7cb760c2402267d90b350ccc14e3",
+      "encoding": "UTF-8",
+      "lines": 146,
+      "symbols": [
+        {
+          "name": "build_catalogue",
+          "parameters": "",
+          "local": true,
+          "line": 118
+        },
+        {
+          "name": "on_game_start",
+          "parameters": "data",
+          "local": false,
+          "line": 135
+        }
+      ],
+      "literal_references": [
+        {
+          "operation": "IsModuleLoaded",
+          "value": "ixr_registry",
+          "line": 137
+        },
+        {
+          "operation": "GetRegistryValue",
+          "value": "sgm_bodyguards",
+          "line": 139
+        },
+        {
+          "operation": "SetRegistryValue",
+          "value": "sgm_bodyguards",
+          "line": 141
+        },
+        {
+          "operation": "GetRegistryValue",
+          "value": "sgm_bodyguards",
+          "line": 142
+        }
+      ],
+      "document": "reference/scripts/sgm_stcop_bodyguards.md"
+    },
+    {
+      "repository": "ixray-sgm-stcop",
+      "path": "scripts/sgm_stcop_skill_book_rewards.script",
+      "namespace": "sgm_stcop_skill_book_rewards",
+      "sha256": "5a2540bd1fc3c3d67d3bb9d8e18612fa8b7415b04bef668c3f3dc17e497fa1e1",
+      "encoding": "UTF-8",
+      "lines": 167,
+      "symbols": [
+        {
+          "name": "get_skill_book_service",
+          "parameters": "",
+          "local": true,
+          "line": 69
+        },
+        {
+          "name": "reward_is_resolved",
+          "parameters": "reward",
+          "local": true,
+          "line": 86
+        },
+        {
+          "name": "give_reward",
+          "parameters": "service, reward",
+          "local": true,
+          "line": 95
+        },
+        {
+          "name": "process_rewards",
+          "parameters": "",
+          "local": true,
+          "line": 107
+        },
+        {
+          "name": "on_actor_info",
+          "parameters": "",
+          "local": false,
+          "line": 131
+        },
+        {
+          "name": "on_skill_books_ready",
+          "parameters": "",
+          "local": false,
+          "line": 135
+        },
+        {
+          "name": "on_game_load",
+          "parameters": "",
+          "local": false,
+          "line": 139
+        },
+        {
+          "name": "on_take_item_from_box",
+          "parameters": "box",
+          "local": false,
+          "line": 143
+        },
+        {
+          "name": "on_game_start",
+          "parameters": "",
+          "local": false,
+          "line": 160
+        }
+      ],
+      "literal_references": [
+        {
+          "operation": "IsModuleLoaded",
+          "value": "ixr_registry",
+          "line": 70
+        },
+        {
+          "operation": "RegisterScriptCallback",
+          "value": "on_game_load",
+          "line": 162
+        },
+        {
+          "operation": "RegisterScriptCallback",
+          "value": "actor_on_info_callback",
+          "line": 163
+        },
+        {
+          "operation": "RegisterScriptCallback",
+          "value": "actor_on_item_take_from_box",
+          "line": 164
+        }
+      ],
+      "document": "reference/scripts/sgm_stcop_skill_book_rewards.md"
+    },
+    {
+      "repository": "ixray-sgm-stcop",
+      "path": "scripts/sgm_stcop_skill_books.script",
+      "namespace": "sgm_stcop_skill_books",
+      "sha256": "27c88d3ac71a8bb90edf63ab596b11bc9edb6dfb93ef447958cd9f5d248884f2",
+      "encoding": "UTF-8",
+      "lines": 54,
+      "symbols": [
+        {
+          "name": "queue_extension",
+          "parameters": "",
+          "local": true,
+          "line": 11
+        },
+        {
+          "name": "apply_extension",
+          "parameters": "",
+          "local": true,
+          "line": 21
+        },
+        {
+          "name": "register_skill_books",
+          "parameters": "",
+          "local": false,
+          "line": 36
+        },
+        {
+          "name": "on_game_start",
+          "parameters": "",
+          "local": false,
+          "line": 51
+        }
+      ],
+      "literal_references": [
+        {
+          "operation": "IsModuleLoaded",
+          "value": "ixr_registry",
+          "line": 37
+        }
+      ],
+      "document": "reference/scripts/sgm_stcop_skill_books.md"
+    },
+    {
+      "repository": "ixray-sgm-stcop",
+      "path": "scripts/sgm_stcop_trader_orders.script",
+      "namespace": "sgm_stcop_trader_orders",
+      "sha256": "c48bdd8bd54a9e26316c477eb0f569e6b8e0d249647ee0df84f6d4dc200cc99e",
+      "encoding": "UTF-8",
+      "lines": 61,
+      "symbols": [
+        {
+          "name": "select_order",
+          "parameters": "key",
+          "local": true,
+          "line": 14
+        },
+        {
+          "name": "select_kriss_vector",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 21
+        },
+        {
+          "name": "select_vihr",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 25
+        },
+        {
+          "name": "select_p90",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 29
+        },
+        {
+          "name": "select_protecta",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 33
+        },
+        {
+          "name": "select_m3super90",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 37
+        },
+        {
+          "name": "select_fn2000",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 41
+        },
+        {
+          "name": "select_vsk94",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 45
+        },
+        {
+          "name": "select_sr25",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 49
+        },
+        {
+          "name": "select_pkp",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 53
+        },
+        {
+          "name": "select_vssk",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 57
+        }
+      ],
+      "literal_references": [],
+      "document": "reference/scripts/sgm_stcop_trader_orders.md"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Local GitNexus database is rebuildable; documentation and JSONL stay versioned.
+.gitnexus/

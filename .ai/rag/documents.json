@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "doc_id": "stcop.arsenal-loadouts",
+      "path": "arsenal-and-loadouts.md",
+      "status": "verified-static",
+      "sha256": "b1d34360d66c31fad75647fcff09b87f4d58eb34b5a894492f95eca9806f88ce"
+    },
+    {
+      "doc_id": "stcop.overview",
+      "path": "README.md",
+      "status": "verified-static",
+      "sha256": "5713eee53d1e858841be954f2fbed6dd87fc34a29d419d934d5d70db00055db3"
+    },
+    {
+      "doc_id": "ixray-sgm-stcop.script.sgm_stcop_bodyguards",
+      "path": "reference/scripts/sgm_stcop_bodyguards.md",
+      "status": "extracted-static",
+      "sha256": "e30665b90fadf75f7a885d8956f98d139cb2edca9f7738ed94ada0d64336129b"
+    },
+    {
+      "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_book_rewards",
+      "path": "reference/scripts/sgm_stcop_skill_book_rewards.md",
+      "status": "extracted-static",
+      "sha256": "876083d347d232ef0a45ad3891c5b30cf65dd972c74c55dd3cbc5aa2fc212c7d"
+    },
+    {
+      "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_books",
+      "path": "reference/scripts/sgm_stcop_skill_books.md",
+      "status": "extracted-static",
+      "sha256": "67b2ebd3d8cc6a0560a9ad9145bc1cb2ec8857048f17631e5299c06791f5d9dd"
+    },
+    {
+      "doc_id": "ixray-sgm-stcop.script.sgm_stcop_trader_orders",
+      "path": "reference/scripts/sgm_stcop_trader_orders.md",
+      "status": "extracted-static",
+      "sha256": "d703120f3ba0bea8f25b4abadcf2487ee0de709ebefe69ecdd978c7b2eb63796"
+    },
+    {
+      "doc_id": "ixray-sgm-stcop.source-catalog",
+      "path": "reference/source-catalog.md",
+      "status": "extracted-static",
+      "sha256": "4655a904963cbfa77312dd2382a29f678383f8e3783b69ef02325c4b1c7fcb62"
+    },
+    {
+      "doc_id": "stcop.runtime-integration",
+      "path": "runtime-integration.md",
+      "status": "verified-static",
+      "sha256": "004499956402e5b05eaf0e04028292eddbfff73a5cef37f7067cb790a3720d50"
+    }
+  ],
+  "chunk_count": 40
+}

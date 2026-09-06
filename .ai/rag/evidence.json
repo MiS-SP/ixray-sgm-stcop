@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "repository": "ixray-sgm-stcop",
+  "snapshot_date": "2026-09-06",
+  "path_base": "source repository",
+  "sources": [
+    {
+      "path": "../ixray-sgm/scripts/sgm_bodyguards.script",
+      "sha256": "96504833bf0b45d8e9684f2ed13e20c11e6121868fec8eb003f6c67d9c0ef93e"
+    },
+    {
+      "path": "../ixray-sgm/scripts/sgm_g.script",
+      "sha256": "cf44ecefc9e0839c615eaaa92d0aa82cb7a4ab64ab0d72da88edfed96d54b268"
+    },
+    {
+      "path": "addon.init",
+      "sha256": "6a72289e3f3319ea8893ce602a2641a410806407b97b57cde19c5ca4a3914d4d"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "056499ff1d57154a606266e895c3755b1a56b6cd1a692d4b8dce7b3822f395d4"
+    },
+    {
+      "path": "configs/gameplay/loadouts/stalker/tier_1.ltx",
+      "sha256": "b825e5f4e4787d3d070fb2f71da7b8be7593aab402dc16292b6e407451119d28"
+    },
+    {
+      "path": "configs/gameplay/mod_character_desc_general_stcop_loadouts.xml",
+      "sha256": "1e7d924b24a954c0c835c02aa1c77c7b1783092e209f98f1fd0e2165498fae7a"
+    },
+    {
+      "path": "configs/mod_engine_external_stcop_loadout.ltx",
+      "sha256": "531ff3de51580284dbd80fcf9c2ec6730a4450d68d203de8b0551803f7a53126"
+    },
+    {
+      "path": "configs/weapons/AR/w_ak12.ltx",
+      "sha256": "08d0b85c81927c3d755ba3b8d2f681396e27d1ccb36836e3231d648819e011d6"
+    },
+    {
+      "path": "configs/weapons/stcop_content.ltx",
+      "sha256": "027fed3f6a220e7fd37cf243604dd0860c691f61391c92dbf789f4857ccea8d4"
+    },
+    {
+      "path": "configs/weapons/stcop_patches.ltx",
+      "sha256": "a1b6319fce011cc330dadfcf705462eb288a4d53ff80e0c183a69447d51ef2e3"
+    },
+    {
+      "path": "scripts/sgm_stcop_bodyguards.script",
+      "sha256": "8e4dcfa6ee944c176199a3470b0f9e13b16f7cb760c2402267d90b350ccc14e3"
+    },
+    {
+      "path": "scripts/sgm_stcop_skill_book_rewards.script",
+      "sha256": "5a2540bd1fc3c3d67d3bb9d8e18612fa8b7415b04bef668c3f3dc17e497fa1e1"
+    },
+    {
+      "path": "scripts/sgm_stcop_skill_books.script",
+      "sha256": "27c88d3ac71a8bb90edf63ab596b11bc9edb6dfb93ef447958cd9f5d248884f2"
+    },
+    {
+      "path": "scripts/sgm_stcop_trader_orders.script",
+      "sha256": "c48bdd8bd54a9e26316c477eb0f569e6b8e0d249647ee0df84f6d4dc200cc99e"
+    }
+  ]
+}

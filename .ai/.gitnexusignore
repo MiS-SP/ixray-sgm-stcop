@@ -1,0 +1,6 @@
+# This file applies when .ai itself is indexed with --skip-git.
+archive/
+tools/
+rag/*.json
+rag/*.jsonl
+reference/source-map.json
