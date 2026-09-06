@@ -1,0 +1,34 @@
+; STCOP additions to the SGM order trader.
+
+![trader]
+buy_supplies = {+stcop_pri_army_pkp_order =check_trader_order_item(wpn_pkp)} supplies_stcop_pkp,{+pri_army_trader_weapon =check_trader_order_item(wpn_weapon)} supplies_weapon,{+pri_army_trader_army_exo_outfit =check_trader_order_item(army_exo_outfit)} supplies_army_exo_outfit,{+pri_army_trader_military_outfit =check_trader_order_item(military_outfit)} supplies_military_outfit,order_trader_supplies
+
+![order_trader_supplies]
+wpn_aek971 = 1,0.50
+wpn_ak103 = 1,0.50
+wpn_ak12 = 1,0.50
+wpn_ak74m = 1,0.50
+wpn_dvl10 = 1,0.50
+wpn_sv98 = 1,0.50
+wpn_rpd = 1,0.50
+wpn_rpk = 1,0.50
+wpn_rpk203 = 1,0.50
+wpn_rpk74 = 1,0.50
+wpn_bizon = 1,0.50
+wpn_vityaz = 1,0.50
+
+ammo_7.62x51_fmj = 4,0.80
+ammo_7.62x51_ap = 2,0.50
+ammo_7.62x54_7h14 = 2,0.50
+ammo_7.62x54_ap = 2,0.50
+ammo_7.62x39_fmj = 4,0.80
+ammo_7.62x39_ap = 2,0.50
+ammo_9x18_fmj = 4,0.80
+ammo_9x18_pmm = 2,0.50
+ammo_9x19_fmj = 4,0.80
+ammo_9x19_pbp = 2,0.50
+ammo_vog-25p = 2,0.50
+
+[supplies_stcop_pkp]:order_trader_supplies
+wpn_pkp = 1,1.0
+

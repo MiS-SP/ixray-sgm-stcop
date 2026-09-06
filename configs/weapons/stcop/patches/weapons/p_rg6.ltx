@@ -1,0 +1,86 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![wpn_rg-6]:!mod_rg6_sounds,wpn_rg-6_sounds
+ammo_in_chamber = false
+icons_texture = ui\ui_icon_equipment_stcopwp
+upgr_icons_texture = ui\ui_actor_weapons_stcopwp
+upgr_icon_x = 1150
+upgr_icon_y = 800
+upgr_icon_width = 200
+upgr_icon_height = 100
+ph_mass = 6
+ammo_current = 60
+ammo_limit = 70
+launch_speed = 76
+misfire_start_prob = 0.0
+misfire_end_prob = 0.0
+condition_shot_dec = 0.000333
+condition_queue_shot_dec = 0.0004
+fire_dispersion_condition_factor = 2
+control_inertion_factor = 1.55f
+min_radius = 15
+max_radius = 90
+position = -0.026, -0.125, 0.005
+orientation = 0, 5, 0
+scope_zoom_factor = 73.3
+alternate_reload_scheme = true
+
+![wpn_rg-6_hud]
+hands_orientation = 0,0,0
+hands_orientation_16x9 = 0,0,0
+hands_position = -0.026400,-0.026400,-0.069400
+hands_position_16x9 = -0.026400,-0.026400,-0.069400
+item_position = 0,0,0
+item_orientation = 0,0,0
+aim_hud_offset_pos = -0.100000, 0.010500, -0.100000
+aim_hud_offset_rot = -0.020000, 0.005300, 0.130000
+aim_hud_offset_pos_16x9 = -0.100000, 0.010500, -0.100000
+aim_hud_offset_rot_16x9 = -0.020000, 0.005300, 0.130000
+fire_bone = sight_front
+fire_point = 0,-0.0341,0.0407
+disable_bore = true
+anm_add_cartridge_0_1 = rg6_iwp_reload1, reload1
+anm_add_cartridge_0_2 = rg6_iwp_reload6, reload6
+anm_add_cartridge_0_3 = rg6_iwp_reload5, reload5
+anm_add_cartridge_0_4 = rg6_iwp_reload4, reload4
+anm_add_cartridge_0_5 = rg6_iwp_reload3, reload3
+anm_add_cartridge_0_6 = rg6_iwp_reload2, reload2
+anm_add_cartridge_1_2 = rg6_iwp_reload6, reload6
+anm_add_cartridge_1_3 = rg6_iwp_reload5, reload5
+anm_add_cartridge_1_4 = rg6_iwp_reload4, reload4
+anm_add_cartridge_1_5 = rg6_iwp_reload3, reload3
+anm_add_cartridge_1_6 = rg6_iwp_reload2, reload2
+anm_add_cartridge_2_3 = rg6_iwp_reload5, reload5
+anm_add_cartridge_2_4 = rg6_iwp_reload4, reload4
+anm_add_cartridge_2_5 = rg6_iwp_reload3, reload3
+anm_add_cartridge_2_6 = rg6_iwp_reload2, reload2
+anm_add_cartridge_3_4 = rg6_iwp_reload4, reload4
+anm_add_cartridge_3_5 = rg6_iwp_reload3, reload3
+anm_add_cartridge_3_6 = rg6_iwp_reload2, reload2
+anm_add_cartridge_4_5 = rg6_iwp_reload3, reload3
+anm_add_cartridge_4_6 = rg6_iwp_reload2, reload2
+anm_add_cartridge_5_6 = rg6_iwp_reload2, reload2
+anm_empty_click = rg6_iwp_empty_click, empty_click
+anm_close = rg6_iwp_close, close
+anm_hide = rg6_iwp_holster
+anm_idle = rg6_iwp_idle
+anm_idle_aim = rg6_iwp_idle_aim
+anm_idle_aim_moving = rg6_iwp_moving_aim
+anm_idle_aim_moving_slow = rg6_iwp_moving_aim,, 0.8
+anm_idle_aim_moving_crouch = rg6_iwp_moving_aim,, 0.6
+anm_idle_aim_moving_slow_crouch = rg6_iwp_moving_aim,, 0.4
+anm_idle_moving = rg6_iwp_moving
+anm_idle_moving_slow = rg6_iwp_moving_slow
+anm_idle_moving_crouch = rg6_iwp_crouch
+anm_idle_moving_slow_crouch = rg6_iwp_crouch,, 0.8
+anm_open = rg6_iwp_open, open
+anm_shoot = rg6_iwp_shoot, shoot
+anm_shoot_aim = rg6_iwp_shoot, shoot
+anm_show = rg6_iwp_draw, draw
+anm_idle_sprint_start = rg6_iwp_sprint_start, sprint_start
+anm_idle_sprint = rg6_iwp_sprint, sprint
+anm_idle_sprint_end = rg6_iwp_sprint_end, sprint_end
+!anm_add_cartridge
+!anm_shots
+!anm_bore

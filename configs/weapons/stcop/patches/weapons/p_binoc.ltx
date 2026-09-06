@@ -1,0 +1,39 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![wpn_binoc]
+icons_texture = ui\ui_icon_equipment_stcopwp
+description = enc_equipment_devic_binocul1
+ammo_in_chamber = false
+inv_name = binocular
+inv_name_short = binocular
+condition_shot_dec = 0.00003
+snd_draw = weapons\generic_draw
+snd_holster = weapons\generic_holster
+snd_gyro = weapons\binoculars_gyro
+snd_zoomin = weapons\binoculars_zoomin
+snd_zoomout = weapons\binoculars_zoomout
+snd_shoot = weapons\n_pb_shot
+snd_empty = weapons\pistol_empty
+snd_reload = weapons\pm_reload, 0.8
+snd_close = weapons\generic_close
+found_snd = detectors\DA-2_beep1
+
+![wpn_binoc_hud]
+hands_position = 0,0.0,-0.025
+hands_orientation = 0,0,0
+hands_position_16x9 = 0,0.0,-0.025
+hands_orientation_16x9 = 0,0,0
+item_position = 0,0,0
+item_orientation = 0,0,0
+disable_bore = true
+anm_idle = binoculars_idle_1
+anm_idle_aim = binoculars_idle_1
+anm_idle_moving_slow = binoculars_idle_moving,, 0.8
+anm_idle_moving_crouch = binoculars_idle_moving,, 0.6
+anm_idle_moving_slow_crouch = binoculars_idle_moving,, 0.4
+aim_hud_offset_pos = 0,-0.14,-0.25
+aim_hud_offset_rot = -0.6,0,0
+aim_hud_offset_pos_16x9 = 0,-0.14,-0.25
+aim_hud_offset_rot_16x9 = -0.6,0,0
+!anm_bore

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_information_portions>
+    <info_portion id="skill_book_aps" override="add"></info_portion>
+    <info_portion id="skill_book_aps_given" override="add"></info_portion>
+    <info_portion id="skill_book_kedr" override="add"></info_portion>
+    <info_portion id="skill_book_kedr_given" override="add"></info_portion>
+    <info_portion id="skill_book_kiparis" override="add"></info_portion>
+    <info_portion id="skill_book_kiparis_given" override="add"></info_portion>
+    <info_portion id="skill_book_mosin" override="add"></info_portion>
+    <info_portion id="skill_book_mosin_given" override="add"></info_portion>
+    <info_portion id="skill_book_ppsh41" override="add"></info_portion>
+    <info_portion id="skill_book_ppsh41_given" override="add"></info_portion>
+    <info_portion id="skill_book_tt33" override="add"></info_portion>
+    <info_portion id="skill_book_tt33_given" override="add"></info_portion>
+    <info_portion id="stcop_jup_unique_treasure_1_opened" override="add"></info_portion>
+    <info_portion id="stcop_jup_unique_treasure_2_opened" override="add"></info_portion>
+    <info_portion id="stcop_zat_unique_treasure_1_opened" override="add"></info_portion>
+    <info_portion id="stcop_zat_unique_treasure_2_opened" override="add"></info_portion>
+</game_information_portions>

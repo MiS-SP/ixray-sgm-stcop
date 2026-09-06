@@ -1,0 +1,37 @@
+; STCOP additions to the SGM order trader.
+
+![trader]
+buy_supplies = {+stcop_zat_stalker_fn2000_order =check_trader_order_item(wpn_fn2000)} supplies_stcop_fn2000,{+zat_stalker_trader_weapon =check_trader_order_item(wpn_weapon)} supplies_weapon,{+zat_stalker_trader_helm_piranhas =check_trader_order_item(helm_piranhas)} supplies_helm_piranhas,{+zat_stalker_trader_heavy_stalker_outfit =check_trader_order_item(heavy_stalker_outfit)} supplies_heavy_stalker_outfit,order_trader_supplies
+
+![order_trader_supplies]
+wpn_ace52 = 1,0.50
+wpn_ak101 = 1,0.50
+wpn_ak103 = 1,0.50
+wpn_ak74m = 1,0.50
+wpn_fal = 1,0.50
+wpn_famas_f1 = 1,0.50
+wpn_galil = 1,0.50
+wpn_m16 = 1,0.50
+wpn_m4 = 1,0.50
+wpn_sig552 = 1,0.50
+wpn_fn57 = 1,0.50
+wpn_fnx45 = 1,0.50
+wpn_mk14 = 1,0.50
+
+ammo_7.62x51_fmj = 4,0.80
+ammo_7.62x51_ap = 2,0.50
+ammo_7.62x39_fmj = 4,0.80
+ammo_7.62x39_ap = 2,0.50
+ammo_5.56x45_ss190 = 4,0.80
+ammo_5.56x45_ap = 2,0.50
+ammo_5.45x39_fmj = 4,0.80
+ammo_5.45x39_ap = 2,0.50
+ammo_5.7x28_fmj = 4,0.80
+ammo_5.7x28_ap = 2,0.50
+ammo_11.43x23_fmj = 4,0.80
+ammo_11.43x23_hydro = 2,0.50
+ammo_9x39_sp5 = 2,0.50
+
+[supplies_stcop_fn2000]:order_trader_supplies
+wpn_fn2000 = 1,1.0
+

@@ -1,0 +1,60 @@
+local order_specs = {
+    kriss_vector = { item = "wpn_kriss_vector", cost = 3000, rank = 560 },
+    vihr = { item = "wpn_vihr", cost = 2000, rank = 590 },
+    p90 = { item = "wpn_p90", cost = 2000, rank = 610 },
+    protecta = { item = "wpn_protecta", cost = 7500, rank = 410 },
+    m3super90 = { item = "wpn_m3super90", cost = 1500, rank = 350 },
+    fn2000 = { item = "wpn_fn2000", cost = 11500, rank = 570 },
+    vsk94 = { item = "wpn_vsk94", cost = 2000, rank = 550 },
+    sr25 = { item = "wpn_sr25", cost = 4500, rank = 510 },
+    pkp = { item = "wpn_pkp", cost = 17500, rank = 650 },
+    vssk = { item = "wpn_vssk", cost = 8000, rank = 520 },
+}
+
+local function select_order(key)
+    local spec = order_specs[key]
+
+    sgm_dialogs.custom_order(spec.cost)
+    sgm_dialogs.choose_item(spec.item, spec.rank)
+end
+
+function select_kriss_vector(first_speaker, second_speaker)
+    select_order("kriss_vector")
+end
+
+function select_vihr(first_speaker, second_speaker)
+    select_order("vihr")
+end
+
+function select_p90(first_speaker, second_speaker)
+    select_order("p90")
+end
+
+function select_protecta(first_speaker, second_speaker)
+    select_order("protecta")
+end
+
+function select_m3super90(first_speaker, second_speaker)
+    select_order("m3super90")
+end
+
+function select_fn2000(first_speaker, second_speaker)
+    select_order("fn2000")
+end
+
+function select_vsk94(first_speaker, second_speaker)
+    select_order("vsk94")
+end
+
+function select_sr25(first_speaker, second_speaker)
+    select_order("sr25")
+end
+
+function select_pkp(first_speaker, second_speaker)
+    select_order("pkp")
+end
+
+function select_vssk(first_speaker, second_speaker)
+    select_order("vssk")
+end
+

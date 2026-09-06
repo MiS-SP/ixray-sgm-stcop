@@ -1,0 +1,161 @@
+; STCOP-owned upgrade tree for wpn_aps.
+; CoP pm branch choices; bonuses scaled to this weapon. Parent sections own shared text and behavior.
+; New-game tree IDs; existing installed upgrades are not migrated.
+
+[stcop_aps_up_sect_firsta_pm]:up_sect_firsta_pm
+sgm_upgrade_requirements = up_sect_firsta_pm
+cost = 2550
+rpm = +75.58139535
+
+[stcop_aps_up_firsta_pm]:up_firsta_pm
+section = stcop_aps_up_sect_firsta_pm
+effects = stcop_aps_up_gr_firstcd_pm
+
+[stcop_aps_up_sect_firstc_pm]:up_sect_firstc_pm
+sgm_upgrade_requirements = up_sect_firstc_pm
+cost = 5150
+bullet_speed = +105.51724138
+
+[stcop_aps_up_firstc_pm]:up_firstc_pm
+section = stcop_aps_up_sect_firstc_pm
+effects = stcop_aps_up_gr_firstef_pm
+
+[stcop_aps_up_sect_firstd_pm]:up_sect_firstd_pm
+sgm_upgrade_requirements = up_sect_firstd_pm
+cost = 5150
+
+[stcop_aps_up_firstd_pm]:up_firstd_pm
+section = stcop_aps_up_sect_firstd_pm
+effects = stcop_aps_up_gr_firstef_pm
+
+[stcop_aps_up_sect_firste_pm]:up_sect_firste_pm
+sgm_upgrade_requirements = up_sect_firste_pm
+cost = 7700
+rpm = +226.74418605
+
+[stcop_aps_up_firste_pm]:up_firste_pm
+section = stcop_aps_up_sect_firste_pm
+effects =
+
+[stcop_aps_up_sect_secona_pm]:up_sect_secona_pm
+sgm_upgrade_requirements = up_sect_secona_pm
+cost = 2550
+bullet_speed = +58.62068966
+
+[stcop_aps_up_secona_pm]:up_secona_pm
+section = stcop_aps_up_sect_secona_pm
+effects = stcop_aps_up_gr_seconcd_pm
+
+[stcop_aps_up_sect_seconc_pm]:up_sect_seconc_pm
+sgm_upgrade_requirements = up_sect_seconc_pm
+cost = 5150
+condition_queue_shot_dec = -0.00046667
+condition_shot_dec = -0.00036667
+misfire_start_prob = -0.00028571
+
+[stcop_aps_up_seconc_pm]:up_seconc_pm
+section = stcop_aps_up_sect_seconc_pm
+effects =
+
+[stcop_aps_up_sect_thirda_pm]:up_sect_thirda_pm
+sgm_upgrade_requirements = up_sect_thirda_pm
+cost = 2550
+value = -0.63
+inv_weight = -0.63287671
+crosshair_inertion = -0.35
+
+[stcop_aps_up_thirda_pm]:up_thirda_pm
+section = stcop_aps_up_sect_thirda_pm
+effects = stcop_aps_up_gr_thirdcd_pm
+
+[stcop_aps_up_sect_thirdc_pm]:up_sect_thirdc_pm
+sgm_upgrade_requirements = up_sect_thirdc_pm
+cost = 5150
+crosshair_inertion = -0.81666667
+
+[stcop_aps_up_thirdc_pm]:up_thirdc_pm
+section = stcop_aps_up_sect_thirdc_pm
+effects =
+
+[stcop_aps_up_sect_thirdd_pm]:up_sect_thirdd_pm
+sgm_upgrade_requirements = up_sect_thirdd_pm
+cost = 5150
+
+[stcop_aps_up_thirdd_pm]:up_thirdd_pm
+section = stcop_aps_up_sect_thirdd_pm
+effects =
+
+[stcop_aps_up_sect_fourta_pm]:up_sect_fourta_pm
+sgm_upgrade_requirements = up_sect_fourta_pm
+cost = 2550
+
+[stcop_aps_up_fourta_pm]:up_fourta_pm
+section = stcop_aps_up_sect_fourta_pm
+effects = stcop_aps_up_gr_fourtcd_pm
+
+[stcop_aps_up_sect_fourtc_pm]:up_sect_fourtc_pm
+sgm_upgrade_requirements = up_sect_fourtc_pm
+cost = 5150
+
+[stcop_aps_up_fourtc_pm]:up_fourtc_pm
+section = stcop_aps_up_sect_fourtc_pm
+effects =
+
+[stcop_aps_up_sect_fiftha_pm]:up_sect_fiftha_pm
+sgm_upgrade_requirements = up_sect_fiftha_pm
+cost = 4500
+ammo_mag_size = +10
+condition_queue_shot_dec = -0.00046667
+condition_shot_dec = -0.00036667
+misfire_start_prob = -0.00028571
+
+[stcop_aps_up_fiftha_pm]:up_fiftha_pm
+section = stcop_aps_up_sect_fiftha_pm
+effects =
+
+[stcop_aps_up_sect_change_components_pm]:up_sect_change_components_pm
+sgm_upgrade_requirements = up_sect_change_components_pm
+cost = 36450
+misfire_start_prob = -0.00021429
+rpm = +75.58139535
+bullet_speed = +351.72413793
+ammo_mag_size = +5
+condition_queue_shot_dec = -0.00009333
+condition_shot_dec = -0.00007333
+
+[stcop_aps_up_change_components_pm]:up_change_components_pm
+section = stcop_aps_up_sect_change_components_pm
+effects =
+
+[stcop_aps_up_gr_firstab_pm]
+elements = stcop_aps_up_firsta_pm
+
+[stcop_aps_up_gr_firstcd_pm]
+elements = stcop_aps_up_firstc_pm, stcop_aps_up_firstd_pm
+
+[stcop_aps_up_gr_firstef_pm]
+elements = stcop_aps_up_firste_pm
+
+[stcop_aps_up_gr_seconab_pm]
+elements = stcop_aps_up_secona_pm
+
+[stcop_aps_up_gr_seconcd_pm]
+elements = stcop_aps_up_seconc_pm
+
+[stcop_aps_up_gr_thirdab_pm]
+elements = stcop_aps_up_thirda_pm
+
+[stcop_aps_up_gr_thirdcd_pm]
+elements = stcop_aps_up_thirdc_pm, stcop_aps_up_thirdd_pm
+
+[stcop_aps_up_gr_fourtab_pm]
+elements = stcop_aps_up_fourta_pm
+
+[stcop_aps_up_gr_fourtcd_pm]
+elements = stcop_aps_up_fourtc_pm
+
+[stcop_aps_up_gr_fifthab_pm]
+elements = stcop_aps_up_fiftha_pm
+
+[stcop_aps_up_gr_change_components_pm]
+elements = stcop_aps_up_change_components_pm

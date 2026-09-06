@@ -1,0 +1,248 @@
+; STCOP-owned upgrade tree for wpn_p90.
+; CoP mp5 branch choices; bonuses scaled to this weapon. Parent sections own shared text and behavior.
+; New-game tree IDs; existing installed upgrades are not migrated.
+
+[stcop_p90_up_sect_firsta_mp5]:up_sect_firsta_mp5
+sgm_upgrade_requirements = up_sect_firsta_mp5
+cost = 2500
+cam_dispersion = -0.128
+cam_dispersion_inc = -0.064
+cam_step_angle_horz = -0.02
+zoom_cam_dispersion = -0.17
+zoom_cam_dispersion_inc = -0.07
+zoom_cam_step_angle_horz = -0.02
+
+[stcop_p90_up_firsta_mp5]:up_firsta_mp5
+section = stcop_p90_up_sect_firsta_mp5
+effects = stcop_p90_up_gr_firstcd_mp5
+
+[stcop_p90_up_sect_firstc_mp5]:up_sect_firstc_mp5
+sgm_upgrade_requirements = up_sect_firstc_mp5
+cost = 4000
+fire_dispersion_base = -0.05
+fire_dispersion_condition_factor = -0.19565217
+
+[stcop_p90_up_firstc_mp5]:up_firstc_mp5
+section = stcop_p90_up_sect_firstc_mp5
+effects = stcop_p90_up_gr_firstef_mp5
+
+[stcop_p90_up_sect_firstd_mp5]:up_sect_firstd_mp5
+sgm_upgrade_requirements = up_sect_firstd_mp5
+cost = 4000
+rpm = +174.19354839
+
+[stcop_p90_up_firstd_mp5]:up_firstd_mp5
+section = stcop_p90_up_sect_firstd_mp5
+effects = stcop_p90_up_gr_firstef_mp5
+
+[stcop_p90_up_sect_firste_mp5]:up_sect_firste_mp5
+sgm_upgrade_requirements = up_sect_firste_mp5
+cost = 5500
+rpm = +290.32258065
+
+[stcop_p90_up_firste_mp5]:up_firste_mp5
+section = stcop_p90_up_sect_firste_mp5
+effects =
+
+[stcop_p90_up_sect_secona_mp5]:up_sect_secona_mp5
+sgm_upgrade_requirements = up_sect_secona_mp5
+cost = 2500
+rpm = +72.58064516
+fire_dispersion_base = -0.025
+fire_dispersion_condition_factor = -0.09782609
+
+[stcop_p90_up_secona_mp5]:up_secona_mp5
+section = stcop_p90_up_sect_secona_mp5
+effects = stcop_p90_up_gr_seconcd_mp5
+
+[stcop_p90_up_sect_seconc_mp5]:up_sect_seconc_mp5
+sgm_upgrade_requirements = up_sect_seconc_mp5
+cost = 4000
+fire_dispersion_condition_factor = -0.19565217
+condition_queue_shot_dec = -0.00012727
+condition_shot_dec = -0.00013
+misfire_start_prob = -0.00070588
+misfire_end_prob = -0.01207059
+
+[stcop_p90_up_seconc_mp5]:up_seconc_mp5
+section = stcop_p90_up_sect_seconc_mp5
+effects = stcop_p90_up_gr_seconef_mp5
+
+[stcop_p90_up_sect_secone_mp5]:up_sect_secone_mp5
+sgm_upgrade_requirements = up_sect_secone_mp5
+cost = 5500
+fire_dispersion_base = -0.08
+fire_dispersion_condition_factor = -0.39130435
+
+[stcop_p90_up_secone_mp5]:up_secone_mp5
+section = stcop_p90_up_sect_secone_mp5
+effects =
+
+[stcop_p90_up_sect_seconf_mp5]:up_sect_seconf_mp5
+sgm_upgrade_requirements = up_sect_seconf_mp5
+cost = 5500
+cam_dispersion = -0.288
+cam_dispersion_inc = -0.128
+cam_step_angle_horz = -0.04
+zoom_cam_dispersion = -0.34
+zoom_cam_dispersion_inc = -0.14
+zoom_cam_step_angle_horz = -0.03333333
+bullet_speed = +317.77777778
+fire_dispersion_base = -0.03
+
+[stcop_p90_up_seconf_mp5]:up_seconf_mp5
+section = stcop_p90_up_sect_seconf_mp5
+effects =
+
+[stcop_p90_up_sect_thirda_mp5]:up_sect_thirda_mp5
+sgm_upgrade_requirements = up_sect_thirda_mp5
+cost = 2500
+cam_dispersion = -0.128
+cam_dispersion_inc = -0.064
+cam_step_angle_horz = -0.02
+zoom_cam_dispersion = -0.17
+zoom_cam_dispersion_inc = -0.07
+zoom_cam_step_angle_horz = -0.02
+
+[stcop_p90_up_thirda_mp5]:up_thirda_mp5
+section = stcop_p90_up_sect_thirda_mp5
+effects = stcop_p90_up_gr_thirdcd_mp5
+
+[stcop_p90_up_sect_thirdc_mp5]:up_sect_thirdc_mp5
+sgm_upgrade_requirements = up_sect_thirdc_mp5
+cost = 4000
+
+[stcop_p90_up_thirdc_mp5]:up_thirdc_mp5
+section = stcop_p90_up_sect_thirdc_mp5
+effects = stcop_p90_up_gr_thirdef_mp5
+
+[stcop_p90_up_sect_thirdd_mp5]:up_sect_thirdd_mp5
+sgm_upgrade_requirements = up_sect_thirdd_mp5
+cost = 4000
+fire_dispersion_condition_factor = -0.19565217
+condition_queue_shot_dec = -0.00012727
+condition_shot_dec = -0.00013
+misfire_start_prob = -0.00070588
+misfire_end_prob = -0.01207059
+
+[stcop_p90_up_thirdd_mp5]:up_thirdd_mp5
+section = stcop_p90_up_sect_thirdd_mp5
+effects = stcop_p90_up_gr_thirdef_mp5
+
+[stcop_p90_up_sect_thirde_mp5]:up_sect_thirde_mp5
+sgm_upgrade_requirements = up_sect_thirde_mp5
+cost = 5500
+rpm = +290.32258065
+
+[stcop_p90_up_thirde_mp5]:up_thirde_mp5
+section = stcop_p90_up_sect_thirde_mp5
+effects =
+
+[stcop_p90_up_sect_fourta_mp5]:up_sect_fourta_mp5
+sgm_upgrade_requirements = up_sect_fourta_mp5
+cost = 2500
+fire_dispersion_condition_factor = -0.19565217
+misfire_start_prob = -0.00056471
+misfire_end_prob = -0.00603529
+
+[stcop_p90_up_fourta_mp5]:up_fourta_mp5
+section = stcop_p90_up_sect_fourta_mp5
+effects = stcop_p90_up_gr_fourtcd_mp5
+
+[stcop_p90_up_sect_fourtc_mp5]:up_sect_fourtc_mp5
+sgm_upgrade_requirements = up_sect_fourtc_mp5
+cost = 4000
+rpm = +174.19354839
+
+[stcop_p90_up_fourtc_mp5]:up_fourtc_mp5
+section = stcop_p90_up_sect_fourtc_mp5
+effects = stcop_p90_up_gr_fourtef_mp5
+
+[stcop_p90_up_sect_fourte_mp5]:up_sect_fourte_mp5
+sgm_upgrade_requirements = up_sect_fourte_mp5
+cost = 5500
+
+[stcop_p90_up_fourte_mp5]:up_fourte_mp5
+section = stcop_p90_up_sect_fourte_mp5
+effects =
+
+[stcop_p90_up_sect_fourtf_mp5]:up_sect_fourtf_mp5
+sgm_upgrade_requirements = up_sect_fourtf_mp5
+cost = 5500
+bullet_speed = +317.77777778
+fire_dispersion_base = -0.03
+
+[stcop_p90_up_fourtf_mp5]:up_fourtf_mp5
+section = stcop_p90_up_sect_fourtf_mp5
+effects =
+
+[stcop_p90_up_sect_fiftha_mp5]:up_sect_fiftha_mp5
+sgm_upgrade_requirements = up_sect_fiftha_mp5
+cost = 5000
+ammo_mag_size = +17
+fire_dispersion_condition_factor = -0.19565217
+misfire_start_prob = -0.00056471
+misfire_end_prob = -0.00603529
+
+[stcop_p90_up_fiftha_mp5]:up_fiftha_mp5
+section = stcop_p90_up_sect_fiftha_mp5
+effects =
+
+[stcop_p90_up_sect_change_components_mp5]:up_sect_change_components_mp5
+sgm_upgrade_requirements = up_sect_change_components_mp5
+cost = 30000
+condition_queue_shot_dec = -0.00012727
+condition_shot_dec = -0.00013
+misfire_start_prob = -0.00105882
+misfire_end_prob = -0.01508824
+fire_dispersion_base = -0.02
+fire_dispersion_condition_factor = -0.7826087
+rpm = +87.09677419
+bullet_speed = +397.22222222
+ammo_mag_size = +7
+
+[stcop_p90_up_change_components_mp5]:up_change_components_mp5
+section = stcop_p90_up_sect_change_components_mp5
+effects =
+
+[stcop_p90_up_gr_firstab_mp5]
+elements = stcop_p90_up_firsta_mp5
+
+[stcop_p90_up_gr_firstcd_mp5]
+elements = stcop_p90_up_firstc_mp5, stcop_p90_up_firstd_mp5
+
+[stcop_p90_up_gr_firstef_mp5]
+elements = stcop_p90_up_firste_mp5
+
+[stcop_p90_up_gr_seconab_mp5]
+elements = stcop_p90_up_secona_mp5
+
+[stcop_p90_up_gr_seconcd_mp5]
+elements = stcop_p90_up_seconc_mp5
+
+[stcop_p90_up_gr_seconef_mp5]
+elements = stcop_p90_up_secone_mp5, stcop_p90_up_seconf_mp5
+
+[stcop_p90_up_gr_thirdab_mp5]
+elements = stcop_p90_up_thirda_mp5
+
+[stcop_p90_up_gr_thirdcd_mp5]
+elements = stcop_p90_up_thirdc_mp5, stcop_p90_up_thirdd_mp5
+
+[stcop_p90_up_gr_thirdef_mp5]
+elements = stcop_p90_up_thirde_mp5
+
+[stcop_p90_up_gr_fourtab_mp5]
+elements = stcop_p90_up_fourta_mp5
+
+[stcop_p90_up_gr_fourtcd_mp5]
+elements = stcop_p90_up_fourtc_mp5
+
+[stcop_p90_up_gr_fourtef_mp5]
+elements = stcop_p90_up_fourte_mp5, stcop_p90_up_fourtf_mp5
+
+[stcop_p90_up_gr_fifthab_mp5]
+elements = stcop_p90_up_fiftha_mp5
+
+[stcop_p90_up_gr_change_components_mp5]
+elements = stcop_p90_up_change_components_mp5

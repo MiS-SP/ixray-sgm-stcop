@@ -41,7 +41,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -51,7 +51,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -61,7 +61,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -71,7 +71,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -81,7 +81,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -92,7 +92,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_drugs_2.xml"
       #include "gameplay\character_sell_weapons.xml"
@@ -102,7 +102,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -113,7 +113,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -124,7 +124,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_drugs_2.xml"
       #include "gameplay\character_sell_weapons.xml"
@@ -134,7 +134,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -145,7 +145,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -156,7 +156,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -167,7 +167,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -179,7 +179,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -191,7 +191,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -203,7 +203,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -215,7 +215,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -227,7 +227,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -239,7 +239,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -251,7 +251,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -263,6 +263,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_5.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -274,7 +275,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -286,7 +287,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\duty\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -352,7 +353,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -362,7 +363,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -372,7 +373,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -382,7 +383,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -392,7 +393,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -402,7 +403,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -412,7 +413,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -422,7 +423,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -432,7 +433,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -443,7 +444,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -453,7 +454,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -464,7 +465,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -474,7 +475,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -484,7 +485,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -494,6 +495,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_4.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -505,7 +507,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -517,7 +519,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -529,7 +531,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -541,6 +543,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_4.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -552,6 +555,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_4.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -563,6 +567,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_5.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -574,6 +579,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_5.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -585,7 +591,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -597,7 +603,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -609,7 +615,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -621,7 +627,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\freedom\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -660,7 +666,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -670,7 +676,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -680,7 +686,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -690,7 +696,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -700,7 +706,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -710,7 +716,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -720,7 +726,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -730,7 +736,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -740,7 +746,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -750,7 +756,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -760,7 +766,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -770,7 +776,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -780,7 +786,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -791,7 +797,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -802,7 +808,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -813,7 +819,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -824,7 +830,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -835,7 +841,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -846,7 +852,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -857,7 +863,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -868,7 +874,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -879,7 +885,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\bandit\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -926,7 +932,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -936,7 +942,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -946,7 +952,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -956,7 +962,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -966,7 +972,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -976,7 +982,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -986,7 +992,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -996,7 +1002,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1006,7 +1012,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1016,6 +1022,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_3.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1025,7 +1032,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1035,6 +1042,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_3.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1044,7 +1052,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1054,7 +1062,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1066,7 +1074,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1078,7 +1086,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1090,7 +1098,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1102,7 +1110,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1114,7 +1122,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1126,7 +1134,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1138,7 +1146,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\killer\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1186,7 +1194,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1196,7 +1204,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1206,7 +1214,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1216,7 +1224,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1226,7 +1234,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1236,7 +1244,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1246,7 +1254,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1256,7 +1264,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1266,7 +1274,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1276,7 +1284,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1286,7 +1294,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1296,7 +1304,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1306,7 +1314,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1316,7 +1324,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1326,7 +1334,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1336,7 +1344,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1346,7 +1354,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1356,7 +1364,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1366,7 +1374,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1376,7 +1384,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1386,7 +1394,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1396,7 +1404,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1408,7 +1416,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1420,7 +1428,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1432,7 +1440,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 2 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1444,7 +1452,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1456,7 +1464,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1468,7 +1476,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1480,7 +1488,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1492,7 +1500,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1504,7 +1512,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1516,7 +1524,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1528,7 +1536,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_2.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1540,7 +1548,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1552,7 +1560,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1564,7 +1572,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1576,7 +1584,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1588,7 +1596,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\stalker\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1609,7 +1617,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\military\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -1619,7 +1627,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\military\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -1629,7 +1637,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\military\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -1639,7 +1647,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\military\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -1649,7 +1657,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\military\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -1659,7 +1667,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\military\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -1669,7 +1677,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\military\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_nd.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs.xml"
@@ -1715,7 +1723,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1725,7 +1733,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1735,7 +1743,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1745,7 +1753,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_2.ltx"
       [spawn] \n
-      grenade_rgd5 = 1 \n
+      #include "gameplay\loadouts\grenades\tier_2.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1755,7 +1763,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1765,7 +1773,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1775,7 +1783,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1785,7 +1793,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1795,7 +1803,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1805,7 +1813,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1815,7 +1823,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1825,7 +1833,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_3.ltx"
       [spawn] \n
-      grenade_rgd5 = 2 \n
+      #include "gameplay\loadouts\grenades\tier_3.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_2.xml"
@@ -1835,7 +1843,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1847,7 +1855,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1859,7 +1867,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1871,6 +1879,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_4.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1882,7 +1891,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_4.ltx"
       [spawn] \n
-      grenade_f1 = 3 \n
+      #include "gameplay\loadouts\grenades\tier_4.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_3.xml"
@@ -1894,6 +1903,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_5.ltx"
       [spawn] \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1905,7 +1915,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1917,7 +1927,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -1929,7 +1939,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\monolith\tier_5.ltx"
       [spawn] \n
-      grenade_f1 = 4 \n
+      #include "gameplay\loadouts\grenades\tier_5.ltx"
       #include "gameplay\character_items_monolith.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -2053,6 +2063,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\zombied\tier_5.ltx"
       [spawn]\n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3_nl.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -2063,6 +2074,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\zombied\tier_5.ltx"
       [spawn]\n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3_nl.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -2073,6 +2085,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\zombied\tier_5.ltx"
       [spawn]\n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3_nl.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"
@@ -2083,6 +2096,7 @@
     <supplies override="replace">
       #include "gameplay\loadouts\zombied\tier_5.ltx"
       [spawn]\n
+      #include "gameplay\loadouts\grenades\weak.ltx"
       #include "gameplay\character_items_3_nl.xml"
       #include "gameplay\character_food.xml"
       #include "gameplay\character_drugs_4.xml"

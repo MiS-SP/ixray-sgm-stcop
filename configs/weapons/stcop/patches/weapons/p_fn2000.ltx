@@ -1,0 +1,127 @@
+; STCOP patches for sections supplied by SGM.
+; Loaded only through the explicit STCOP patch manifest.
+
+![wpn_fn2000]:!mod_fn2000_sounds,wpn_fn2000_sounds
+scopes = none
+parent_section = wpn_fn2000
+icons_texture = ui\ui_icon_equipment_stcopwp
+upgr_icons_texture = ui\ui_actor_weapons_stcopwp
+upgr_icon_y = 300
+upgr_icon_width = 250
+upgr_icon_height = 100
+inv_weight = 3.6
+startup_ammo = 90
+ammo_current = 180
+ammo_elapsed = 30
+ammo_limit = 210
+ammo_mag_size = 30
+grenade_vel = 76
+launch_speed = 76
+fire_dispersion_base = 0.22
+fire_dispersion_condition_factor = 2
+crosshair_inertion = 6.25
+PDM_disp_vel_factor = 1.5
+PDM_disp_accel_factor = 1.5
+min_radius = 30
+max_radius = 90
+holder_range_modifier = 1.25
+light_range = 4
+scope_texture = wpn_crosshair_fn2000
+scope_zoom_factor = 50.0
+3d_zoom_factor = 50.0
+3d_fov = 0.2
+grenade_launcher_name = wpn_addon_grenade_launcher_m203
+silencer_name = sil_556
+silencer_x = 161
+
+![wpn_fn2000_hud]
+hands_orientation = 0.692911, 1.670257, -1.010909
+hands_orientation_16x9 = 0.692911, 1.670257, -1.010909
+hands_position = -0.001432, -0.001996, -0.04
+hands_position_16x9 = -0.001432, -0.001996, -0.04
+item_position = 0, 0, 0
+item_orientation = 0, 0, 0
+aim_hud_offset_pos = -0.070518,0.009152,-0.12
+aim_hud_offset_rot = 0.009350,-0.0017,0.000000
+aim_hud_offset_pos_16x9 = -0.070518,0.009152,-0.12
+aim_hud_offset_rot_16x9 = 0.009350,-0.0017,0.000000
+shell_bone = shell
+shell_dir = 0, 0, 0
+shell_point = 0, 0, 0
+fire_bone = muzzle
+fire_bone2 = mussle_gl
+fire_point = 0, 0, 0
+fire_point2 = 0, 0, 0
+use_firemode_change_anim = true
+anm_hide = fn_holster
+anm_bore = fn_bore
+anm_idle = fn_idle
+anm_idle_aim = fn_aim
+anm_idle_moving = fn_move
+anm_idle_moving_slow = fn_move,, 0.8
+anm_idle_moving_crouch = fn_move,, 0.6
+anm_idle_moving_slow_crouch = fn_move,, 0.4
+anm_idle_sprint = fn_sprint
+anm_reload = fn_r
+anm_reload_empty = fn_re
+anm_reload_jammed = fn_mis_gl_off
+anm_shoot = fn_shot
+anm_shoot_last = fn_shot
+anm_shoot_aim = fn_shot_aim
+anm_shoot_aim_last = fn_shot_aim
+anm_show = fn_draw
+anm_firemode = fn_mod_switch, idle
+anm_hide_w_gl = fn_holster_gl_off, idle_gl_off
+anm_bore_w_gl = fn_bore_gl_off, idle_gl_off
+anm_idle_w_gl = fn_idle_gl_off, idle_gl_off
+anm_idle_aim_w_gl = fn_aim_gl_off, idle_gl_off
+anm_idle_moving_w_gl = fn_move_gl_off, idle_gl_off
+anm_idle_moving_slow_w_gl = fn_move_gl_off, idle_gl_off, 0.8
+anm_idle_moving_crouch_w_gl = fn_move_gl_off, idle_gl_off, 0.6
+anm_idle_moving_slow_crouch_w_gl = fn_move_gl_off, idle_gl_off, 0.4
+anm_idle_sprint_w_gl = fn_sprint_gl_off, idle_gl_off
+anm_reload_w_gl = fn_r_gl_off
+anm_reload_empty_w_gl = fn_re_gl_off
+anm_reload_jammed_w_gl = fn_mis_gl_off
+anm_shoot_w_gl = fn_shot_gl_off
+anm_shoot_last_w_gl = fn_shot_gl_off
+anm_shoot_aim_w_gl = fn_shot_aim_w_gl
+anm_shoot_aim_last_w_gl = fn_shot_aim_w_gl
+anm_show_w_gl = fn_draw_gl_off, idle_gl_off
+anm_firemode_w_gl = fn_mod_switch_gl_off, idle_gl_off
+anm_hide_g = fn_gl_off_hide
+anm_bore_g = fn_gl_on_idle, idle_g
+anm_idle_g = fn_gl_on_idle, idle_g
+anm_idle_aim_g = fn_gl_on_aim, idle_g
+anm_idle_moving_g = fn_gl_on_move, idle_g
+anm_idle_moving_slow_g = fn_gl_on_move, idle_g, 0.8
+anm_idle_moving_crouch_g = fn_gl_on_move, idle_g, 0.6
+anm_idle_moving_slow_crouch_g = fn_gl_on_move, idle_g, 0.4
+anm_idle_sprint_g = fn_sprint_gl_off, idle_g
+anm_shoot_g = fn_gl_on_shot
+anm_shoot_aim_g = fn_gl_on_shot
+anm_reload_g = fn_gl_on_re
+anm_show_g = fn_gl_on_draw
+anm_switch = fn_gl_off
+anm_switch_g = fn_gl_on
+anm_ammo_check = fn_mag_check
+anm_ammo_check_empty = fn_mag_check, fn_mag_check_emp
+anm_ammo_check_w_gl = fn_mag_check_gl_off
+anm_ammo_check_empty_w_gl = fn_mag_check_gl_off, fn_mag_check_gl_off_emp
+anm_ammo_check_g = fn_gl_on_granade_check
+anm_ammo_check_empty_g = fn_gl_on_granade_check, fn_gl_on_granade_check_empty
+anm_idle_sprint_start = fn_spr_start, idle
+anm_idle_sprint_end = fn_spr_end, idle
+anm_idle_sprint_start_w_gl = fn_gl_off_spr_start, idle_gl_off
+anm_idle_sprint_end_w_gl = fn_gl_off_spr_end, idle_gl_off
+anm_idle_sprint_start_g = fn_gl_on_spr_start, idle_g
+anm_idle_sprint_end_g = fn_gl_on_spr_end, idle_g
+gl_hud_offset_pos = -0.168406,-0.099345,-0.150000
+gl_hud_offset_rot = -0.181121,0.105813,0.254940
+gl_hud_offset_pos_16x9 = -0.168406,-0.099345,-0.150000
+gl_hud_offset_rot_16x9 = -0.181121,0.105813,0.254940
+!anm_shots
+!anm_shots_w_gl
+!anm_idle_w_gl_aim
+!anm_idle_g_aim
+!anm_shots_g

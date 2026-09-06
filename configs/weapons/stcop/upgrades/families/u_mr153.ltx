@@ -1,0 +1,158 @@
+; STCOP-owned upgrade tree for wpn_mr153.
+; CoP spas12 branch choices; bonuses scaled to this weapon. Parent sections own shared text and behavior.
+; New-game tree IDs; existing installed upgrades are not migrated.
+
+[stcop_mr153_up_sect_firsta_spas12]:up_sect_firsta_spas12
+sgm_upgrade_requirements = up_sect_firsta_spas12
+cost = 3150
+
+[stcop_mr153_up_firsta_spas12]:up_firsta_spas12
+section = stcop_mr153_up_sect_firsta_spas12
+effects = stcop_mr153_up_gr_firstcd_spas12
+
+[stcop_mr153_up_sect_firstc_spas12]:up_sect_firstc_spas12
+sgm_upgrade_requirements = up_sect_firstc_spas12
+cost = 5000
+bullet_speed = +149.09090909
+hit_impulse = +5.83333333
+
+[stcop_mr153_up_firstc_spas12]:up_firstc_spas12
+section = stcop_mr153_up_sect_firstc_spas12
+effects = stcop_mr153_up_gr_firstef_spas12
+
+[stcop_mr153_up_sect_firstd_spas12]:up_sect_firstd_spas12
+sgm_upgrade_requirements = up_sect_firstd_spas12
+cost = 5000
+
+[stcop_mr153_up_firstd_spas12]:up_firstd_spas12
+section = stcop_mr153_up_sect_firstd_spas12
+effects = stcop_mr153_up_gr_firstef_spas12
+
+[stcop_mr153_up_sect_firste_spas12]:up_sect_firste_spas12
+sgm_upgrade_requirements = up_sect_firste_spas12
+cost = 5800
+
+[stcop_mr153_up_firste_spas12]:up_firste_spas12
+section = stcop_mr153_up_sect_firste_spas12
+effects =
+
+[stcop_mr153_up_firstf_spas12]:up_firstf_spas12
+section = stcop_mr153_up_sect_firste_spas12
+effects =
+
+[stcop_mr153_up_sect_secona_spas12]:up_sect_secona_spas12
+sgm_upgrade_requirements = up_sect_secona_spas12
+cost = 3450
+value = -1.15
+inv_weight = -1.14545455
+crosshair_inertion = -0.48275862
+
+[stcop_mr153_up_secona_spas12]:up_secona_spas12
+section = stcop_mr153_up_sect_secona_spas12
+effects = stcop_mr153_up_gr_seconcd_spas12
+
+[stcop_mr153_up_sect_seconc_spas12]:up_sect_seconc_spas12
+sgm_upgrade_requirements = up_sect_seconc_spas12
+cost = 5000
+crosshair_inertion = -1.44827586
+
+[stcop_mr153_up_seconc_spas12]:up_seconc_spas12
+section = stcop_mr153_up_sect_seconc_spas12
+effects =
+
+[stcop_mr153_up_sect_second_spas12]:up_sect_second_spas12
+sgm_upgrade_requirements = up_sect_second_spas12
+cost = 5000
+
+[stcop_mr153_up_second_spas12]:up_second_spas12
+section = stcop_mr153_up_sect_second_spas12
+effects =
+
+[stcop_mr153_up_sect_thirda_spas12]:up_sect_thirda_spas12
+sgm_upgrade_requirements = up_sect_thirda_spas12
+cost = 3650
+
+[stcop_mr153_up_thirda_spas12]:up_thirda_spas12
+section = stcop_mr153_up_sect_thirda_spas12
+effects = stcop_mr153_up_gr_thirdcd_spas12
+
+[stcop_mr153_up_sect_thirdc_spas12]:up_sect_thirdc_spas12
+sgm_upgrade_requirements = up_sect_thirdc_spas12
+cost = 5750
+
+[stcop_mr153_up_thirdc_spas12]:up_thirdc_spas12
+section = stcop_mr153_up_sect_thirdc_spas12
+effects = stcop_mr153_up_gr_thirdef_spas12
+
+[stcop_mr153_up_sect_thirdd_spas12]:up_sect_thirdd_spas12
+sgm_upgrade_requirements = up_sect_thirdd_spas12
+cost = 5750
+rpm = +43.47826087
+
+[stcop_mr153_up_thirdd_spas12]:up_thirdd_spas12
+section = stcop_mr153_up_sect_thirdd_spas12
+effects = stcop_mr153_up_gr_thirdef_spas12
+
+[stcop_mr153_up_sect_thirde_spas12]:up_sect_thirde_spas12
+sgm_upgrade_requirements = up_sect_thirde_spas12
+cost = 5600
+
+[stcop_mr153_up_thirde_spas12]:up_thirde_spas12
+section = stcop_mr153_up_sect_thirde_spas12
+effects =
+
+[stcop_mr153_up_sect_thirdf_spas12]:up_sect_thirdf_spas12
+sgm_upgrade_requirements = up_sect_thirdf_spas12
+cost = 6800
+
+[stcop_mr153_up_thirdf_spas12]:up_thirdf_spas12
+section = stcop_mr153_up_sect_thirdf_spas12
+effects =
+
+[stcop_mr153_up_sect_fourta_spas12]:up_sect_fourta_spas12
+sgm_upgrade_requirements = up_sect_fourta_spas12
+cost = 3400
+
+[stcop_mr153_up_fourta_spas12]:up_fourta_spas12
+section = stcop_mr153_up_sect_fourta_spas12
+effects =
+
+[stcop_mr153_up_sect_change_components_spas12]:up_sect_change_components_spas12
+sgm_upgrade_requirements = up_sect_change_components_spas12
+cost = 23350
+rpm = +43.47826087
+bullet_speed = +186.36363636
+
+[stcop_mr153_up_change_components_spas12]:up_change_components_spas12
+section = stcop_mr153_up_sect_change_components_spas12
+effects =
+
+[stcop_mr153_up_gr_firstab_spas12]
+elements = stcop_mr153_up_firsta_spas12
+
+[stcop_mr153_up_gr_firstcd_spas12]
+elements = stcop_mr153_up_firstc_spas12, stcop_mr153_up_firstd_spas12
+
+[stcop_mr153_up_gr_firstef_spas12]
+elements = stcop_mr153_up_firste_spas12, stcop_mr153_up_firstf_spas12
+
+[stcop_mr153_up_gr_seconab_spas12]
+elements = stcop_mr153_up_secona_spas12
+
+[stcop_mr153_up_gr_seconcd_spas12]
+elements = stcop_mr153_up_seconc_spas12, stcop_mr153_up_second_spas12
+
+[stcop_mr153_up_gr_thirdab_spas12]
+elements = stcop_mr153_up_thirda_spas12
+
+[stcop_mr153_up_gr_thirdcd_spas12]
+elements = stcop_mr153_up_thirdc_spas12, stcop_mr153_up_thirdd_spas12
+
+[stcop_mr153_up_gr_thirdef_spas12]
+elements = stcop_mr153_up_thirde_spas12, stcop_mr153_up_thirdf_spas12
+
+[stcop_mr153_up_gr_fourtab_spas12]
+elements = stcop_mr153_up_fourta_spas12
+
+[stcop_mr153_up_gr_change_components_spas12]
+elements = stcop_mr153_up_change_components_spas12

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_dialogs>
+    <dialog id="esc_stalker_trader_start_dialog">
+        <phrase_list>
+            <phrase id="132">
+                <disable_info override="add">stcop_esc_stalker_kriss_vector_order</disable_info>
+                <disable_info override="add">stcop_esc_stalker_vihr_order</disable_info>
+                <disable_info override="add">stcop_esc_stalker_p90_order</disable_info>
+            </phrase>
+            <phrase id="12902" override="replace">
+                <text>esc_stalker_trader_dialog_17</text>
+                <next>1200000</next>
+                <next>1200100</next>
+                <next>950100000</next>
+                <next>950100100</next>
+                <next>950100200</next>
+                <next>12888</next>
+            </phrase>
+            <phrase id="950100000" override="add">
+                <text>st_wpn_kriss_vector</text>
+                <action>sgm_stcop_trader_orders.select_kriss_vector</action>
+                <next>950100002</next>
+            </phrase>
+            <phrase id="950100002" override="add">
+                <text>esc_stalker_trader_dialog_16</text>
+                <action>sgm_dialogs.show_order_costs</action>
+                <next>831209900</next>
+                <next>950100003</next>
+                <next>950100004</next>
+                <next>950100007</next>
+            </phrase>
+            <phrase id="950100007" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>esc_stalker_trader_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950100004" override="add">
+                <precondition>sgm_dialogs.order_agree_less_money</precondition>
+                <text>esc_stalker_trader_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950100003" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>esc_stalker_trader_dialog_15</text>
+                <action>sgm_dialogs.order_agree_give_money</action>
+                <give_info>esc_stalker_trader_order</give_info>
+                <give_info>stcop_esc_stalker_kriss_vector_order</give_info>
+                <next>12005</next>
+            </phrase>
+            <phrase id="950100100" override="add">
+                <text>st_wpn_vihr</text>
+                <action>sgm_stcop_trader_orders.select_vihr</action>
+                <next>950100102</next>
+            </phrase>
+            <phrase id="950100102" override="add">
+                <text>esc_stalker_trader_dialog_16</text>
+                <action>sgm_dialogs.show_order_costs</action>
+                <next>831209900</next>
+                <next>950100103</next>
+                <next>950100104</next>
+                <next>950100107</next>
+            </phrase>
+            <phrase id="950100107" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>esc_stalker_trader_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950100104" override="add">
+                <precondition>sgm_dialogs.order_agree_less_money</precondition>
+                <text>esc_stalker_trader_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950100103" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>esc_stalker_trader_dialog_15</text>
+                <action>sgm_dialogs.order_agree_give_money</action>
+                <give_info>esc_stalker_trader_order</give_info>
+                <give_info>stcop_esc_stalker_vihr_order</give_info>
+                <next>12005</next>
+            </phrase>
+            <phrase id="950100200" override="add">
+                <text>st_wpn_p90</text>
+                <action>sgm_stcop_trader_orders.select_p90</action>
+                <next>950100202</next>
+            </phrase>
+            <phrase id="950100202" override="add">
+                <text>esc_stalker_trader_dialog_16</text>
+                <action>sgm_dialogs.show_order_costs</action>
+                <next>831209900</next>
+                <next>950100203</next>
+                <next>950100204</next>
+                <next>950100207</next>
+            </phrase>
+            <phrase id="950100207" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>esc_stalker_trader_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950100204" override="add">
+                <precondition>sgm_dialogs.order_agree_less_money</precondition>
+                <text>esc_stalker_trader_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950100203" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>esc_stalker_trader_dialog_15</text>
+                <action>sgm_dialogs.order_agree_give_money</action>
+                <give_info>esc_stalker_trader_order</give_info>
+                <give_info>stcop_esc_stalker_p90_order</give_info>
+                <next>12005</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>
+

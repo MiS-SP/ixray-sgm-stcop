@@ -1,0 +1,28 @@
+; STCOP additions to the SGM order trader.
+
+![trader]
+buy_supplies = {+stcop_mar_stalker_protecta_order =check_trader_order_item(wpn_protecta)} supplies_stcop_protecta,{+stcop_mar_stalker_m3super90_order =check_trader_order_item(wpn_m3super90)} supplies_stcop_m3super90,{+mar_stalker_trader_abakan =check_trader_order_item(wpn_abakan)} supplies_abakan,{+mar_stalker_trader_l85 =check_trader_order_item(wpn_l85)} supplies_l85,{+mar_stalker_trader_outfit =check_trader_order_item(outfit)} supplies_outfit,order_trader_supplies
+
+![order_trader_supplies]
+wpn_akm = 1,0.50
+wpn_type63 = 1,0.50
+wpn_mosin = 1,0.50
+wpn_sks = 1,0.50
+wpn_fort500 = 1,0.50
+wpn_mr153 = 1,0.50
+wpn_saiga = 1,0.50
+wpn_vepr = 1,0.50
+
+ammo_7.62x39_fmj = 4,0.80
+ammo_7.62x39_ap = 2,0.50
+ammo_7.62x54_7h1 = 4,0.80
+ammo_7.62x54_7h14 = 2,0.50
+ammo_7.62x54_ap = 2,0.50
+ammo_12x76_zhekan = 2,0.50
+
+[supplies_stcop_protecta]:order_trader_supplies
+wpn_protecta = 1,1.0
+
+[supplies_stcop_m3super90]:order_trader_supplies
+wpn_m3super90 = 1,1.0
+

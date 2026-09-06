@@ -1,0 +1,248 @@
+; STCOP-owned upgrade tree for wpn_bizon.
+; CoP mp5 branch choices; bonuses scaled to this weapon. Parent sections own shared text and behavior.
+; New-game tree IDs; existing installed upgrades are not migrated.
+
+[stcop_bizon_up_sect_firsta_mp5]:up_sect_firsta_mp5
+sgm_upgrade_requirements = up_sect_firsta_mp5
+cost = 2000
+cam_dispersion = -0.128
+cam_dispersion_inc = -0.08
+cam_step_angle_horz = -0.05
+zoom_cam_dispersion = -0.18
+zoom_cam_dispersion_inc = -0.08
+zoom_cam_step_angle_horz = -0.07
+
+[stcop_bizon_up_firsta_mp5]:up_firsta_mp5
+section = stcop_bizon_up_sect_firsta_mp5
+effects = stcop_bizon_up_gr_firstcd_mp5
+
+[stcop_bizon_up_sect_firstc_mp5]:up_sect_firstc_mp5
+sgm_upgrade_requirements = up_sect_firstc_mp5
+cost = 3200
+fire_dispersion_base = -0.05925926
+fire_dispersion_condition_factor = -0.19565217
+
+[stcop_bizon_up_firstc_mp5]:up_firstc_mp5
+section = stcop_bizon_up_sect_firstc_mp5
+effects = stcop_bizon_up_gr_firstef_mp5
+
+[stcop_bizon_up_sect_firstd_mp5]:up_sect_firstd_mp5
+sgm_upgrade_requirements = up_sect_firstd_mp5
+cost = 3200
+rpm = +131.61290323
+
+[stcop_bizon_up_firstd_mp5]:up_firstd_mp5
+section = stcop_bizon_up_sect_firstd_mp5
+effects = stcop_bizon_up_gr_firstef_mp5
+
+[stcop_bizon_up_sect_firste_mp5]:up_sect_firste_mp5
+sgm_upgrade_requirements = up_sect_firste_mp5
+cost = 4400
+rpm = +219.35483871
+
+[stcop_bizon_up_firste_mp5]:up_firste_mp5
+section = stcop_bizon_up_sect_firste_mp5
+effects =
+
+[stcop_bizon_up_sect_secona_mp5]:up_sect_secona_mp5
+sgm_upgrade_requirements = up_sect_secona_mp5
+cost = 2000
+rpm = +54.83870968
+fire_dispersion_base = -0.02962963
+fire_dispersion_condition_factor = -0.09782609
+
+[stcop_bizon_up_secona_mp5]:up_secona_mp5
+section = stcop_bizon_up_sect_secona_mp5
+effects = stcop_bizon_up_gr_seconcd_mp5
+
+[stcop_bizon_up_sect_seconc_mp5]:up_sect_seconc_mp5
+sgm_upgrade_requirements = up_sect_seconc_mp5
+cost = 3200
+fire_dispersion_condition_factor = -0.19565217
+condition_queue_shot_dec = -0.00010909
+condition_shot_dec = -0.00011
+misfire_start_prob = -0.00070588
+misfire_end_prob = -0.01207059
+
+[stcop_bizon_up_seconc_mp5]:up_seconc_mp5
+section = stcop_bizon_up_sect_seconc_mp5
+effects = stcop_bizon_up_gr_seconef_mp5
+
+[stcop_bizon_up_sect_secone_mp5]:up_sect_secone_mp5
+sgm_upgrade_requirements = up_sect_secone_mp5
+cost = 4400
+fire_dispersion_base = -0.09481481
+fire_dispersion_condition_factor = -0.39130435
+
+[stcop_bizon_up_secone_mp5]:up_secone_mp5
+section = stcop_bizon_up_sect_secone_mp5
+effects =
+
+[stcop_bizon_up_sect_seconf_mp5]:up_sect_seconf_mp5
+sgm_upgrade_requirements = up_sect_seconf_mp5
+cost = 4400
+cam_dispersion = -0.288
+cam_dispersion_inc = -0.16
+cam_step_angle_horz = -0.1
+zoom_cam_dispersion = -0.36
+zoom_cam_dispersion_inc = -0.16
+zoom_cam_step_angle_horz = -0.11666667
+bullet_speed = +151.11111111
+fire_dispersion_base = -0.03555556
+
+[stcop_bizon_up_seconf_mp5]:up_seconf_mp5
+section = stcop_bizon_up_sect_seconf_mp5
+effects =
+
+[stcop_bizon_up_sect_thirda_mp5]:up_sect_thirda_mp5
+sgm_upgrade_requirements = up_sect_thirda_mp5
+cost = 2000
+cam_dispersion = -0.128
+cam_dispersion_inc = -0.08
+cam_step_angle_horz = -0.05
+zoom_cam_dispersion = -0.18
+zoom_cam_dispersion_inc = -0.08
+zoom_cam_step_angle_horz = -0.07
+
+[stcop_bizon_up_thirda_mp5]:up_thirda_mp5
+section = stcop_bizon_up_sect_thirda_mp5
+effects = stcop_bizon_up_gr_thirdcd_mp5
+
+[stcop_bizon_up_sect_thirdc_mp5]:up_sect_thirdc_mp5
+sgm_upgrade_requirements = up_sect_thirdc_mp5
+cost = 3200
+
+[stcop_bizon_up_thirdc_mp5]:up_thirdc_mp5
+section = stcop_bizon_up_sect_thirdc_mp5
+effects = stcop_bizon_up_gr_thirdef_mp5
+
+[stcop_bizon_up_sect_thirdd_mp5]:up_sect_thirdd_mp5
+sgm_upgrade_requirements = up_sect_thirdd_mp5
+cost = 3200
+fire_dispersion_condition_factor = -0.19565217
+condition_queue_shot_dec = -0.00010909
+condition_shot_dec = -0.00011
+misfire_start_prob = -0.00070588
+misfire_end_prob = -0.01207059
+
+[stcop_bizon_up_thirdd_mp5]:up_thirdd_mp5
+section = stcop_bizon_up_sect_thirdd_mp5
+effects = stcop_bizon_up_gr_thirdef_mp5
+
+[stcop_bizon_up_sect_thirde_mp5]:up_sect_thirde_mp5
+sgm_upgrade_requirements = up_sect_thirde_mp5
+cost = 4400
+rpm = +219.35483871
+
+[stcop_bizon_up_thirde_mp5]:up_thirde_mp5
+section = stcop_bizon_up_sect_thirde_mp5
+effects =
+
+[stcop_bizon_up_sect_fourta_mp5]:up_sect_fourta_mp5
+sgm_upgrade_requirements = up_sect_fourta_mp5
+cost = 2000
+fire_dispersion_condition_factor = -0.19565217
+misfire_start_prob = -0.00056471
+misfire_end_prob = -0.00603529
+
+[stcop_bizon_up_fourta_mp5]:up_fourta_mp5
+section = stcop_bizon_up_sect_fourta_mp5
+effects = stcop_bizon_up_gr_fourtcd_mp5
+
+[stcop_bizon_up_sect_fourtc_mp5]:up_sect_fourtc_mp5
+sgm_upgrade_requirements = up_sect_fourtc_mp5
+cost = 3200
+rpm = +131.61290323
+
+[stcop_bizon_up_fourtc_mp5]:up_fourtc_mp5
+section = stcop_bizon_up_sect_fourtc_mp5
+effects = stcop_bizon_up_gr_fourtef_mp5
+
+[stcop_bizon_up_sect_fourte_mp5]:up_sect_fourte_mp5
+sgm_upgrade_requirements = up_sect_fourte_mp5
+cost = 4400
+
+[stcop_bizon_up_fourte_mp5]:up_fourte_mp5
+section = stcop_bizon_up_sect_fourte_mp5
+effects =
+
+[stcop_bizon_up_sect_fourtf_mp5]:up_sect_fourtf_mp5
+sgm_upgrade_requirements = up_sect_fourtf_mp5
+cost = 4400
+bullet_speed = +151.11111111
+fire_dispersion_base = -0.03555556
+
+[stcop_bizon_up_fourtf_mp5]:up_fourtf_mp5
+section = stcop_bizon_up_sect_fourtf_mp5
+effects =
+
+[stcop_bizon_up_sect_fiftha_mp5]:up_sect_fiftha_mp5
+sgm_upgrade_requirements = up_sect_fiftha_mp5
+cost = 4000
+ammo_mag_size = +21
+fire_dispersion_condition_factor = -0.19565217
+misfire_start_prob = -0.00056471
+misfire_end_prob = -0.00603529
+
+[stcop_bizon_up_fiftha_mp5]:up_fiftha_mp5
+section = stcop_bizon_up_sect_fiftha_mp5
+effects =
+
+[stcop_bizon_up_sect_change_components_mp5]:up_sect_change_components_mp5
+sgm_upgrade_requirements = up_sect_change_components_mp5
+cost = 24000
+condition_queue_shot_dec = -0.00010909
+condition_shot_dec = -0.00011
+misfire_start_prob = -0.00105882
+misfire_end_prob = -0.01508824
+fire_dispersion_base = -0.0237037
+fire_dispersion_condition_factor = -0.7826087
+rpm = +65.80645161
+bullet_speed = +188.88888889
+ammo_mag_size = +9
+
+[stcop_bizon_up_change_components_mp5]:up_change_components_mp5
+section = stcop_bizon_up_sect_change_components_mp5
+effects =
+
+[stcop_bizon_up_gr_firstab_mp5]
+elements = stcop_bizon_up_firsta_mp5
+
+[stcop_bizon_up_gr_firstcd_mp5]
+elements = stcop_bizon_up_firstc_mp5, stcop_bizon_up_firstd_mp5
+
+[stcop_bizon_up_gr_firstef_mp5]
+elements = stcop_bizon_up_firste_mp5
+
+[stcop_bizon_up_gr_seconab_mp5]
+elements = stcop_bizon_up_secona_mp5
+
+[stcop_bizon_up_gr_seconcd_mp5]
+elements = stcop_bizon_up_seconc_mp5
+
+[stcop_bizon_up_gr_seconef_mp5]
+elements = stcop_bizon_up_secone_mp5, stcop_bizon_up_seconf_mp5
+
+[stcop_bizon_up_gr_thirdab_mp5]
+elements = stcop_bizon_up_thirda_mp5
+
+[stcop_bizon_up_gr_thirdcd_mp5]
+elements = stcop_bizon_up_thirdc_mp5, stcop_bizon_up_thirdd_mp5
+
+[stcop_bizon_up_gr_thirdef_mp5]
+elements = stcop_bizon_up_thirde_mp5
+
+[stcop_bizon_up_gr_fourtab_mp5]
+elements = stcop_bizon_up_fourta_mp5
+
+[stcop_bizon_up_gr_fourtcd_mp5]
+elements = stcop_bizon_up_fourtc_mp5
+
+[stcop_bizon_up_gr_fourtef_mp5]
+elements = stcop_bizon_up_fourte_mp5, stcop_bizon_up_fourtf_mp5
+
+[stcop_bizon_up_gr_fifthab_mp5]
+elements = stcop_bizon_up_fiftha_mp5
+
+[stcop_bizon_up_gr_change_components_mp5]
+elements = stcop_bizon_up_change_components_mp5

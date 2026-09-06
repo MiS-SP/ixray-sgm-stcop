@@ -1,0 +1,37 @@
+; STCOP owned definitions.
+; Loaded only through the explicit STCOP content manifest.
+; Original STCOP layout: AR/w_groza.ltx.
+
+[wpn_groza_wpn_addon_scope]:wpn_groza_scope_sounds,wpn_groza
+$spawn = "weapons\wpn_groza_wpn_addon_scope"
+hud = wpn_groza_po4x34_hud
+scope_x = 82
+scope_y = -16
+
+[wpn_groza_po4x34_hud]:wpn_groza_hud
+anm_shoot_aim = groza_iwp_shoot_scope, shoot
+anm_shoot_aim_w_gl = groza_iwp_shoot_scope_w_gl, shoot
+anm_hide_g = groza_iwp_gl_holster, gl_idle_scope
+anm_idle_g = groza_iwp_gl_idle, gl_idle_scope
+anm_idle_aim_g = groza_iwp_gl_idle_aim, gl_idle_scope
+anm_idle_moving_g = groza_iwp_gl_moving, gl_idle_scope
+anm_idle_moving_slow_g = groza_iwp_gl_moving_slow, gl_idle_scope
+anm_idle_moving_crouch_g = groza_iwp_gl_crouch, gl_idle_scope
+anm_idle_moving_slow_crouch_g = groza_iwp_gl_crouch, gl_idle_scope, 0.8
+anm_idle_aim_moving_g = groza_iwp_gl_moving_aim, gl_idle_scope
+anm_reload_g = groza_iwp_gl_reload, gl_reload_scope
+anm_shoot_g = groza_iwp_gl_shoot, gl_idle_scope
+anm_show_g = groza_iwp_gl_draw, gl_idle_scope
+anm_switch = groza_iwp_gl_off_scope, gl_off_scope
+anm_switch_g = groza_iwp_gl_on_scope, gl_on_scope
+anm_idle_sprint_start_g = groza_iwp_sprint_g_start, gl_idle_scope
+anm_idle_sprint_g = groza_iwp_sprint_g, gl_idle_scope
+anm_idle_sprint_end_g = groza_iwp_sprint_g_end, gl_idle_scope
+aim_hud_offset_pos = -0.070260, -0.011750, -0.040000
+aim_hud_offset_rot = -0.003000, 0.000200, 0.000000
+aim_hud_offset_pos_16x9 = -0.070260, -0.011750, -0.040000
+aim_hud_offset_rot_16x9 = -0.003000, 0.000200, 0.000000
+gl_hud_offset_pos = -0.0865, -0.035, 0
+gl_hud_offset_rot = 0,0,0
+gl_hud_offset_pos_16x9 = -0.0865, -0.035, 0
+gl_hud_offset_rot_16x9 = 0,0,0
