@@ -11,17 +11,18 @@ increasing_skill_point = 0.10
 weapon_type = pistol
 
 [mod_stcop_fn57_damage]
-hit_power = 0.72
+hit_power = 0.32, 0.32, 0.32, 0.32
 hit_type = fire_wound
-fire_distance = 1000
+fire_distance = 70
 bullet_speed = 650
 rpm = 200
 rpm_empty_click = 120
-silencer_hit_power = 0.71
-silencer_fire_distance = 500
+silencer_hit_power = 0.30
+silencer_fire_distance = 70
 silencer_bullet_speed = 300
 
 [wpn_fn57]:weapon_probability,stcop_default_weapon_params,wpn_fiveseven_sounds,mod_stcop_fn57,mod_stcop_fn57_damage,cost_stcop_fn57
+sgm_upgrade_mechanic = wpn_colt1911
 GroupControlSection = spawn_group
 $spawn = "weapons\fn57"
 $npc = on
@@ -54,7 +55,7 @@ weapon_class =
 inv_weight = 1.35
 hud = wpn_fiveseven_hud
 visual = dynamics\weapons\wpn_fiveseven\wpn_fiveseven.ogf
-upgrades = up_gr_firstab_colt1911, up_gr_seconab_colt1911, up_gr_thirdab_colt1911, up_gr_fourtab_colt1911, up_gr_fifthab_colt1911
+upgrades = stcop_fn57_up_gr_firstab_colt1911, stcop_fn57_up_gr_seconab_colt1911, stcop_fn57_up_gr_thirdab_colt1911, stcop_fn57_up_gr_fourtab_colt1911, stcop_fn57_up_gr_fifthab_colt1911, stcop_fn57_up_gr_change_components_colt1911
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_colt1911
 ph_mass = 1

@@ -11,17 +11,18 @@ increasing_skill_point = 0.10
 weapon_type = pistol
 
 [mod_stcop_tt33_damage]
-hit_power = 0.69
+hit_power = 0.28, 0.28, 0.28, 0.28
 hit_type = fire_wound
-fire_distance = 1000
+fire_distance = 60
 bullet_speed = 430
 rpm = 200
 rpm_empty_click = 120
-silencer_hit_power = 0.67
-silencer_fire_distance = 500
+silencer_hit_power = 0.26, 0.26, 0.26, 0.26
+silencer_fire_distance = 60
 silencer_bullet_speed = 290
 
 [wpn_tt33]:weapon_probability,stcop_default_weapon_params,wpn_tt33_sounds,mod_stcop_tt33,mod_stcop_tt33_damage,cost_stcop_tt33
+sgm_upgrade_mechanic = wpn_colt1911
 GroupControlSection = spawn_group
 $spawn = "weapons\tt33"
 $npc = on
@@ -54,7 +55,7 @@ weapon_class =
 inv_weight = 0.854
 hud = wpn_tt33_hud
 visual = dynamics\weapons\wpn_tt33\wpn_tt33.ogf
-upgrades = up_gr_firstab_colt1911, up_gr_seconab_colt1911, up_gr_thirdab_colt1911, up_gr_fourtab_colt1911, up_gr_fifthab_colt1911
+upgrades = stcop_tt33_up_gr_firstab_colt1911, stcop_tt33_up_gr_seconab_colt1911, stcop_tt33_up_gr_thirdab_colt1911, stcop_tt33_up_gr_fourtab_colt1911, stcop_tt33_up_gr_fifthab_colt1911, stcop_tt33_up_gr_change_components_colt1911
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_colt1911
 ph_mass = 1

@@ -22,6 +22,7 @@ silencer_fire_distance = 400
 silencer_bullet_speed = 290
 
 [wpn_p90]:weapon_probability,stcop_default_weapon_params,wpn_p90_sounds,mod_stcop_p90,mod_stcop_p90_damage,cost_stcop_p90
+sgm_upgrade_mechanic = wpn_mp5
 GroupControlSection = spawn_group
 $spawn = "weapons\p90"
 $npc = on
@@ -54,9 +55,9 @@ weapon_class = assault_rifle
 inv_weight = 2.85
 hud = wpn_p90_hud
 visual = dynamics\weapons\wpn_p90\wpn_p90.ogf
-upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
+upgrades = stcop_p90_up_gr_firstab_mp5, stcop_p90_up_gr_seconab_mp5, stcop_p90_up_gr_thirdab_mp5, stcop_p90_up_gr_fourtab_mp5, stcop_p90_up_gr_fifthab_mp5, stcop_p90_up_gr_change_components_mp5
 installed_upgrades =
-upgrade_scheme = upgrade_scheme_abakan
+upgrade_scheme = upgrade_scheme_mp5
 ph_mass = 3
 ammo_class = ammo_5.7x28_fmj, ammo_5.7x28_ap
 startup_ammo = 90

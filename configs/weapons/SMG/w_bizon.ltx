@@ -22,6 +22,7 @@ silencer_fire_distance = 400
 silencer_bullet_speed = 290
 
 [wpn_bizon]:weapon_probability,stcop_default_weapon_params,wpn_bizon_sounds,mod_stcop_bizon,mod_stcop_bizon_damage,cost_stcop_bizon
+sgm_upgrade_mechanic = wpn_mp5
 GroupControlSection = spawn_group
 $spawn = "weapons\bizon"
 $npc = on
@@ -54,9 +55,9 @@ weapon_class = assault_rifle
 inv_weight = 2.70
 hud = wpn_bizon_hud
 visual = dynamics\weapons\wpn_bizon\wpn_bizon.ogf
-upgrades = up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
+upgrades = stcop_bizon_up_gr_firstab_mp5, stcop_bizon_up_gr_seconab_mp5, stcop_bizon_up_gr_thirdab_mp5, stcop_bizon_up_gr_fourtab_mp5, stcop_bizon_up_gr_fifthab_mp5, stcop_bizon_up_gr_change_components_mp5
 installed_upgrades =
-upgrade_scheme = upgrade_scheme_abakan
+upgrade_scheme = upgrade_scheme_mp5
 ph_mass = 3
 ammo_class = ammo_9x18_fmj, ammo_9x18_pmm
 startup_ammo = 90

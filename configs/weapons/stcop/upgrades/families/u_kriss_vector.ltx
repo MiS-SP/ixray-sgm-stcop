@@ -1,0 +1,252 @@
+; STCOP-owned upgrade tree for wpn_kriss_vector.
+; CoP mp5 branch choices; bonuses scaled to this weapon. Parent sections own shared text and behavior.
+; New-game tree IDs; existing installed upgrades are not migrated.
+
+[stcop_kriss_vector_up_sect_firsta_mp5]:up_sect_firsta_mp5
+sgm_upgrade_requirements = up_sect_firsta_mp5
+cost = 4000
+cam_dispersion = -0.048
+cam_dispersion_inc = -0.024
+cam_step_angle_horz = -0.3
+zoom_cam_dispersion = -0.05
+zoom_cam_dispersion_inc = -0.024
+zoom_cam_step_angle_horz = -0.4
+
+[stcop_kriss_vector_up_firsta_mp5]:up_firsta_mp5
+section = stcop_kriss_vector_up_sect_firsta_mp5
+effects = stcop_kriss_vector_up_gr_firstcd_mp5
+
+[stcop_kriss_vector_up_sect_firstc_mp5]:up_sect_firstc_mp5
+sgm_upgrade_requirements = up_sect_firstc_mp5
+cost = 6400
+fire_dispersion_base = -0.05185185
+fire_dispersion_condition_factor = -0.19565217
+
+[stcop_kriss_vector_up_firstc_mp5]:up_firstc_mp5
+section = stcop_kriss_vector_up_sect_firstc_mp5
+effects = stcop_kriss_vector_up_gr_firstef_mp5
+
+[stcop_kriss_vector_up_sect_firstd_mp5]:up_sect_firstd_mp5
+sgm_upgrade_requirements = up_sect_firstd_mp5
+cost = 6400
+rpm = +193.5483871
+
+[stcop_kriss_vector_up_firstd_mp5]:up_firstd_mp5
+section = stcop_kriss_vector_up_sect_firstd_mp5
+effects = stcop_kriss_vector_up_gr_firstef_mp5
+
+[stcop_kriss_vector_up_sect_firste_mp5]:up_sect_firste_mp5
+sgm_upgrade_requirements = up_sect_firste_mp5
+cost = 8800
+rpm = +322.58064516
+
+[stcop_kriss_vector_up_firste_mp5]:up_firste_mp5
+section = stcop_kriss_vector_up_sect_firste_mp5
+effects =
+
+[stcop_kriss_vector_up_sect_secona_mp5]:up_sect_secona_mp5
+sgm_upgrade_requirements = up_sect_secona_mp5
+cost = 4000
+rpm = +80.64516129
+fire_dispersion_base = -0.02592593
+fire_dispersion_condition_factor = -0.09782609
+
+[stcop_kriss_vector_up_secona_mp5]:up_secona_mp5
+section = stcop_kriss_vector_up_sect_secona_mp5
+effects = stcop_kriss_vector_up_gr_seconcd_mp5
+
+[stcop_kriss_vector_up_sect_seconc_mp5]:up_sect_seconc_mp5
+sgm_upgrade_requirements = up_sect_seconc_mp5
+cost = 6400
+fire_dispersion_condition_factor = -0.19565217
+condition_queue_shot_dec = -0.00014545
+condition_shot_dec = -0.00015
+misfire_start_prob = -0.00070588
+misfire_end_prob = -0.01207059
+
+[stcop_kriss_vector_up_seconc_mp5]:up_seconc_mp5
+section = stcop_kriss_vector_up_sect_seconc_mp5
+effects = stcop_kriss_vector_up_gr_seconef_mp5
+
+[stcop_kriss_vector_up_sect_secone_mp5]:up_sect_secone_mp5
+sgm_upgrade_requirements = up_sect_secone_mp5
+cost = 8800
+fire_dispersion_base = -0.08296296
+fire_dispersion_condition_factor = -0.39130435
+
+[stcop_kriss_vector_up_secone_mp5]:up_secone_mp5
+section = stcop_kriss_vector_up_sect_secone_mp5
+effects =
+
+[stcop_kriss_vector_up_sect_seconf_mp5]:up_sect_seconf_mp5
+sgm_upgrade_requirements = up_sect_seconf_mp5
+cost = 8800
+cam_dispersion = -0.108
+cam_dispersion_inc = -0.048
+cam_step_angle_horz = -0.6
+zoom_cam_dispersion = -0.1
+zoom_cam_dispersion_inc = -0.048
+zoom_cam_step_angle_horz = -0.66666667
+bullet_speed = +142.22222222
+fire_dispersion_base = -0.03111111
+
+[stcop_kriss_vector_up_seconf_mp5]:up_seconf_mp5
+section = stcop_kriss_vector_up_sect_seconf_mp5
+effects =
+
+[stcop_kriss_vector_up_sect_thirda_mp5]:up_sect_thirda_mp5
+sgm_upgrade_requirements = up_sect_thirda_mp5
+cost = 4000
+cam_dispersion = -0.048
+cam_dispersion_inc = -0.024
+cam_step_angle_horz = -0.3
+zoom_cam_dispersion = -0.05
+zoom_cam_dispersion_inc = -0.024
+zoom_cam_step_angle_horz = -0.4
+
+[stcop_kriss_vector_up_thirda_mp5]:up_thirda_mp5
+section = stcop_kriss_vector_up_sect_thirda_mp5
+effects = stcop_kriss_vector_up_gr_thirdcd_mp5
+
+[stcop_kriss_vector_up_sect_thirdc_mp5]:up_sect_thirdc_mp5
+sgm_upgrade_requirements = up_sect_thirdc_mp5
+cost = 6400
+PDM_disp_vel_factor = -0.33333333
+PDM_disp_accel_factor = -0.33333333
+
+[stcop_kriss_vector_up_thirdc_mp5]:up_thirdc_mp5
+section = stcop_kriss_vector_up_sect_thirdc_mp5
+effects = stcop_kriss_vector_up_gr_thirdef_mp5
+
+[stcop_kriss_vector_up_sect_thirdd_mp5]:up_sect_thirdd_mp5
+sgm_upgrade_requirements = up_sect_thirdd_mp5
+cost = 6400
+fire_dispersion_condition_factor = -0.19565217
+condition_queue_shot_dec = -0.00014545
+condition_shot_dec = -0.00015
+misfire_start_prob = -0.00070588
+misfire_end_prob = -0.01207059
+
+[stcop_kriss_vector_up_thirdd_mp5]:up_thirdd_mp5
+section = stcop_kriss_vector_up_sect_thirdd_mp5
+effects = stcop_kriss_vector_up_gr_thirdef_mp5
+
+[stcop_kriss_vector_up_sect_thirde_mp5]:up_sect_thirde_mp5
+sgm_upgrade_requirements = up_sect_thirde_mp5
+cost = 8800
+rpm = +322.58064516
+
+[stcop_kriss_vector_up_thirde_mp5]:up_thirde_mp5
+section = stcop_kriss_vector_up_sect_thirde_mp5
+effects =
+
+[stcop_kriss_vector_up_sect_fourta_mp5]:up_sect_fourta_mp5
+sgm_upgrade_requirements = up_sect_fourta_mp5
+cost = 4000
+fire_dispersion_condition_factor = -0.19565217
+misfire_start_prob = -0.00056471
+misfire_end_prob = -0.00603529
+
+[stcop_kriss_vector_up_fourta_mp5]:up_fourta_mp5
+section = stcop_kriss_vector_up_sect_fourta_mp5
+effects = stcop_kriss_vector_up_gr_fourtcd_mp5
+
+[stcop_kriss_vector_up_sect_fourtc_mp5]:up_sect_fourtc_mp5
+sgm_upgrade_requirements = up_sect_fourtc_mp5
+cost = 6400
+rpm = +193.5483871
+
+[stcop_kriss_vector_up_fourtc_mp5]:up_fourtc_mp5
+section = stcop_kriss_vector_up_sect_fourtc_mp5
+effects = stcop_kriss_vector_up_gr_fourtef_mp5
+
+[stcop_kriss_vector_up_sect_fourte_mp5]:up_sect_fourte_mp5
+sgm_upgrade_requirements = up_sect_fourte_mp5
+cost = 8800
+PDM_disp_vel_factor = -0.4
+PDM_disp_accel_factor = -0.4
+
+[stcop_kriss_vector_up_fourte_mp5]:up_fourte_mp5
+section = stcop_kriss_vector_up_sect_fourte_mp5
+effects =
+
+[stcop_kriss_vector_up_sect_fourtf_mp5]:up_sect_fourtf_mp5
+sgm_upgrade_requirements = up_sect_fourtf_mp5
+cost = 8800
+bullet_speed = +142.22222222
+fire_dispersion_base = -0.03111111
+
+[stcop_kriss_vector_up_fourtf_mp5]:up_fourtf_mp5
+section = stcop_kriss_vector_up_sect_fourtf_mp5
+effects =
+
+[stcop_kriss_vector_up_sect_fiftha_mp5]:up_sect_fiftha_mp5
+sgm_upgrade_requirements = up_sect_fiftha_mp5
+cost = 8000
+ammo_mag_size = +13
+fire_dispersion_condition_factor = -0.19565217
+misfire_start_prob = -0.00056471
+misfire_end_prob = -0.00603529
+
+[stcop_kriss_vector_up_fiftha_mp5]:up_fiftha_mp5
+section = stcop_kriss_vector_up_sect_fiftha_mp5
+effects =
+
+[stcop_kriss_vector_up_sect_change_components_mp5]:up_sect_change_components_mp5
+sgm_upgrade_requirements = up_sect_change_components_mp5
+cost = 48000
+condition_queue_shot_dec = -0.00014545
+condition_shot_dec = -0.00015
+misfire_start_prob = -0.00105882
+misfire_end_prob = -0.01508824
+fire_dispersion_base = -0.02074074
+fire_dispersion_condition_factor = -0.7826087
+rpm = +96.77419355
+bullet_speed = +177.77777778
+ammo_mag_size = +5
+
+[stcop_kriss_vector_up_change_components_mp5]:up_change_components_mp5
+section = stcop_kriss_vector_up_sect_change_components_mp5
+effects =
+
+[stcop_kriss_vector_up_gr_firstab_mp5]
+elements = stcop_kriss_vector_up_firsta_mp5
+
+[stcop_kriss_vector_up_gr_firstcd_mp5]
+elements = stcop_kriss_vector_up_firstc_mp5, stcop_kriss_vector_up_firstd_mp5
+
+[stcop_kriss_vector_up_gr_firstef_mp5]
+elements = stcop_kriss_vector_up_firste_mp5
+
+[stcop_kriss_vector_up_gr_seconab_mp5]
+elements = stcop_kriss_vector_up_secona_mp5
+
+[stcop_kriss_vector_up_gr_seconcd_mp5]
+elements = stcop_kriss_vector_up_seconc_mp5
+
+[stcop_kriss_vector_up_gr_seconef_mp5]
+elements = stcop_kriss_vector_up_secone_mp5, stcop_kriss_vector_up_seconf_mp5
+
+[stcop_kriss_vector_up_gr_thirdab_mp5]
+elements = stcop_kriss_vector_up_thirda_mp5
+
+[stcop_kriss_vector_up_gr_thirdcd_mp5]
+elements = stcop_kriss_vector_up_thirdc_mp5, stcop_kriss_vector_up_thirdd_mp5
+
+[stcop_kriss_vector_up_gr_thirdef_mp5]
+elements = stcop_kriss_vector_up_thirde_mp5
+
+[stcop_kriss_vector_up_gr_fourtab_mp5]
+elements = stcop_kriss_vector_up_fourta_mp5
+
+[stcop_kriss_vector_up_gr_fourtcd_mp5]
+elements = stcop_kriss_vector_up_fourtc_mp5
+
+[stcop_kriss_vector_up_gr_fourtef_mp5]
+elements = stcop_kriss_vector_up_fourte_mp5, stcop_kriss_vector_up_fourtf_mp5
+
+[stcop_kriss_vector_up_gr_fifthab_mp5]
+elements = stcop_kriss_vector_up_fiftha_mp5
+
+[stcop_kriss_vector_up_gr_change_components_mp5]
+elements = stcop_kriss_vector_up_change_components_mp5

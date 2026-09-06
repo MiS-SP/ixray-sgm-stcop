@@ -4,6 +4,8 @@
 ![wpn_desert_eagle]:!mod_desert_eagle_sounds,wpn_desert_eagle_sounds
 scopes = docter_sight
 parent_section = wpn_desert_eagle
+; STCOP Desert Eagle uses its .50 Action Express calibre.
+ammo_class = ammo_50ae
 bullet_scheme_disable_reload = false
 bullet_bone_name = bullet
 bullets_count = 9
@@ -22,7 +24,6 @@ startup_ammo = 90
 ammo_current = 42
 ammo_limit = 48
 single_handed = 0
-reload_dof = 0, 0.5, 5, 1.7
 fire_dispersion_base = 0.18
 fire_dispersion_condition_factor = 2.5
 crosshair_inertion = 4.3
@@ -38,21 +39,12 @@ zoom_cam_max_angle_horz = 10.0
 zoom_cam_step_angle_horz = 1.5
 PDM_disp_base = 0.5
 max_radius = 45
-holder_range_modifier = 1
-holder_fov_modifier = 1
 position = -0.021,-0.095,-0.01
-orientation = 0,0,0
-fire_point = 0,0.133,0.22
-shell_point = 0,0.133,0.047
-shell_dir = 0,0,0.4
 zoom_rotate_time = 0.15
 scope_zoom_factor = 73.3
 silencer_name = wpn_addon_silencer
 silencer_x = 73
 silencer_y = -13
-upgrades = up_gr_firstab_desert_eagle, up_gr_firstcd_desert_eagle, up_gr_firste_desert_eagle, up_gr_firstf_desert_eagle, up_gr_seconab_desert_eagle, up_gr_seconcd_desert_eagle, up_gr_secone_desert_eagle, up_gr_seconf_desert_eagle, up_gr_thirda_desert_eagle, up_gr_thirdc_desert_eagle, up_gr_thirdd_desert_eagle, up_gr_thirdef_desert_eagle, up_gr_fourtab_desert_eagle, up_gr_fourtcd_desert_eagle, up_gr_fifthab_desert_eagle, up_gr_change_components_desert_eagle
-upgrade_scheme = upgrade_scheme_desert_eagle
-ammo_class = ammo_11.43x23_fmj, ammo_11.43x23_hydro, ammo_dumdum
 
 ![wpn_desert_eagle_hud]
 hands_position_16x9 = 0,-0.077200,-0.008500
@@ -109,9 +101,3 @@ anm_finish_detector_empty = deagle_hand_draw, idle_empty
 !anm_shot_l
 !anm_bore
 !anm_bore_empty
-
-![wpn_desert_eagle_nimble]
-$spawn = "weapons\wpn_desert_eagle_nimble"
-inv_name = st_wpn_desert_eagle_nimble
-description = st_wpn_desert_eagle_nimble_descr
-fire_dispersion_base = 0.11

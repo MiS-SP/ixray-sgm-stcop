@@ -11,17 +11,18 @@ increasing_skill_point = 0.10
 weapon_type = pistol
 
 [mod_stcop_oc27_damage]
-hit_power = 0.63
+hit_power = 0.22, 0.22, 0.22, 0.22
 hit_type = fire_wound
-fire_distance = 500
+fire_distance = 45
 bullet_speed = 320
 rpm = 250
 rpm_empty_click = 120
-silencer_hit_power = 0.6
+silencer_hit_power = 0.21, 0.21, 0.21, 0.21
 silencer_fire_distance = 400
 silencer_bullet_speed = 290
 
 [wpn_oc27]:weapon_probability,stcop_default_weapon_params,wpn_oc27_sounds,mod_stcop_oc27,mod_stcop_oc27_damage,cost_stcop_oc27
+sgm_upgrade_mechanic = wpn_fort
 GroupControlSection = spawn_group
 $spawn = "weapons\oc27"
 $npc = on
@@ -54,7 +55,7 @@ weapon_class =
 inv_weight = 0.93
 hud = wpn_oc27_hud
 visual = dynamics\weapons\wpn_oc27\wpn_oc27.ogf
-upgrades = up_gr_firstab_fort, up_gr_seconab_fort, up_gr_thirdab_fort, up_gr_fourtab_fort, up_gr_fifthab_fort, up_gr_fifthcd_fort
+upgrades = stcop_oc27_up_gr_firstab_fort, stcop_oc27_up_gr_seconab_fort, stcop_oc27_up_gr_thirdab_fort, stcop_oc27_up_gr_fourtab_fort, stcop_oc27_up_gr_fifthab_fort, stcop_oc27_up_gr_change_components_fort
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_fort
 ph_mass = 1

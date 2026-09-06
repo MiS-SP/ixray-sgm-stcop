@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_dialogs>
+    <dialog id="zat_stalker_trader_start_dialog">
+        <phrase_list>
+            <phrase id="1210">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="133">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="132">
+                <disable_info override="add">stcop_zat_stalker_fn2000_order</disable_info>
+            </phrase>
+            <phrase id="12902" override="replace">
+                <text>zat_stalker_trader_dialog_17</text>
+                <next>950300000</next>
+                <next>12888</next>
+            </phrase>
+            <phrase id="950300000" override="add">
+                <text>st_wpn_fn2000</text>
+                <action>sgm_stcop_trader_orders.select_fn2000</action>
+                <next>950300002</next>
+            </phrase>
+            <phrase id="950300002" override="add">
+                <text>zat_stalker_trader_dialog_16</text>
+                <action>sgm_dialogs.show_order_costs</action>
+                <next>831209900</next>
+                <next>950300003</next>
+                <next>950300004</next>
+                <next>950300007</next>
+            </phrase>
+            <phrase id="950300007" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>zat_stalker_trader_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950300004" override="add">
+                <precondition>sgm_dialogs.order_agree_less_money</precondition>
+                <text>zat_stalker_trader_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950300003" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>zat_stalker_trader_dialog_15</text>
+                <action>sgm_dialogs.order_agree_give_money</action>
+                <give_info>zat_stalker_trader_order</give_info>
+                <give_info>stcop_zat_stalker_fn2000_order</give_info>
+                <next>12005</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="jup_rasvet_trader_start_dialog">
+        <phrase_list>
+            <phrase id="1210">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="133">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="132">
+                <disable_info override="add">stcop_jup_rasvet_vsk94_order</disable_info>
+            </phrase>
+            <phrase id="12902" override="replace">
+                <text>jup_rasvet_trader_dialog_17</text>
+                <next>950400000</next>
+                <next>12888</next>
+            </phrase>
+            <phrase id="950400000" override="add">
+                <text>st_wpn_vsk94</text>
+                <action>sgm_stcop_trader_orders.select_vsk94</action>
+                <next>950400002</next>
+            </phrase>
+            <phrase id="950400002" override="add">
+                <text>jup_rasvet_trader_dialog_16</text>
+                <action>sgm_dialogs.show_order_costs</action>
+                <next>831209900</next>
+                <next>950400003</next>
+                <next>950400004</next>
+                <next>950400007</next>
+            </phrase>
+            <phrase id="950400007" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>jup_rasvet_trader_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950400004" override="add">
+                <precondition>sgm_dialogs.order_agree_less_money</precondition>
+                <text>jup_rasvet_trader_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950400003" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>jup_rasvet_trader_dialog_15</text>
+                <action>sgm_dialogs.order_agree_give_money</action>
+                <give_info>jup_rasvet_trader_order</give_info>
+                <give_info>stcop_jup_rasvet_vsk94_order</give_info>
+                <next>12005</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="jup_killer_trader_start_dialog">
+        <phrase_list>
+            <phrase id="1210">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="133">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="132">
+                <disable_info override="add">stcop_jup_killer_sr25_order</disable_info>
+            </phrase>
+            <phrase id="12902" override="replace">
+                <text>jup_killer_trader_dialog_17</text>
+                <next>950500000</next>
+                <next>12888</next>
+            </phrase>
+            <phrase id="950500000" override="add">
+                <text>st_wpn_sr25</text>
+                <action>sgm_stcop_trader_orders.select_sr25</action>
+                <next>950500002</next>
+            </phrase>
+            <phrase id="950500002" override="add">
+                <text>jup_killer_trader_dialog_16</text>
+                <action>sgm_dialogs.show_order_costs</action>
+                <next>831209900</next>
+                <next>950500003</next>
+                <next>950500004</next>
+                <next>950500007</next>
+            </phrase>
+            <phrase id="950500007" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>jup_killer_trader_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950500004" override="add">
+                <precondition>sgm_dialogs.order_agree_less_money</precondition>
+                <text>jup_killer_trader_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950500003" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>jup_killer_trader_dialog_15</text>
+                <action>sgm_dialogs.order_agree_give_money</action>
+                <give_info>jup_killer_trader_order</give_info>
+                <give_info>stcop_jup_killer_sr25_order</give_info>
+                <next>12005</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pri_army_trader_start_dialog">
+        <phrase_list>
+            <phrase id="1210">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="133">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="132">
+                <disable_info override="add">stcop_pri_army_pkp_order</disable_info>
+            </phrase>
+            <phrase id="12902" override="replace">
+                <text>pri_army_trader_dialog_17</text>
+                <next>950600000</next>
+                <next>12888</next>
+            </phrase>
+            <phrase id="950600000" override="add">
+                <text>st_wpn_pkp</text>
+                <action>sgm_stcop_trader_orders.select_pkp</action>
+                <next>950600002</next>
+            </phrase>
+            <phrase id="950600002" override="add">
+                <text>pri_army_trader_dialog_16</text>
+                <action>sgm_dialogs.show_order_costs</action>
+                <next>831209900</next>
+                <next>950600003</next>
+                <next>950600004</next>
+                <next>950600007</next>
+            </phrase>
+            <phrase id="950600007" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>pri_army_trader_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950600004" override="add">
+                <precondition>sgm_dialogs.order_agree_less_money</precondition>
+                <text>pri_army_trader_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950600003" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>pri_army_trader_dialog_15</text>
+                <action>sgm_dialogs.order_agree_give_money</action>
+                <give_info>pri_army_trader_order</give_info>
+                <give_info>stcop_pri_army_pkp_order</give_info>
+                <next>12005</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pri_monolith_trader_start_dialog">
+        <phrase_list>
+            <phrase id="1210">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="133">
+                <next override="add">12901</next>
+            </phrase>
+            <phrase id="132">
+                <disable_info override="add">stcop_pri_monolith_vssk_order</disable_info>
+            </phrase>
+            <phrase id="12902" override="replace">
+                <text>pri_monolith_trader_dialog_17</text>
+                <next>950700000</next>
+                <next>12888</next>
+            </phrase>
+            <phrase id="950700000" override="add">
+                <text>st_wpn_vssk</text>
+                <action>sgm_stcop_trader_orders.select_vssk</action>
+                <next>950700002</next>
+            </phrase>
+            <phrase id="950700002" override="add">
+                <text>pri_monolith_trader_dialog_16</text>
+                <action>sgm_dialogs.show_order_costs</action>
+                <next>831209900</next>
+                <next>950700003</next>
+                <next>950700004</next>
+                <next>950700007</next>
+            </phrase>
+            <phrase id="950700007" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>pri_monolith_trader_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950700004" override="add">
+                <precondition>sgm_dialogs.order_agree_less_money</precondition>
+                <text>pri_monolith_trader_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="950700003" override="add">
+                <precondition>sgm_dialogs.order_has_money</precondition>
+                <text>pri_monolith_trader_dialog_15</text>
+                <action>sgm_dialogs.order_agree_give_money</action>
+                <give_info>pri_monolith_trader_order</give_info>
+                <give_info>stcop_pri_monolith_vssk_order</give_info>
+                <next>12005</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>
+

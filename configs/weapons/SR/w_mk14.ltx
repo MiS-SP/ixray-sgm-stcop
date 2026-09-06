@@ -23,6 +23,7 @@ silencer_fire_distance = 1000
 silencer_bullet_speed = 990
 
 [wpn_mk14]:weapon_probability,stcop_default_weapon_params,wpn_mk14_sounds,mod_stcop_mk14,mod_stcop_mk14_damage,cost_stcop_mk14
+sgm_upgrade_mechanic = wpn_svd
 GroupControlSection = spawn_group
 $spawn = "weapons\mk14"
 $npc = on
@@ -55,9 +56,9 @@ weapon_class = assault_rifle
 inv_weight = 5.10
 hud = wpn_mk14_hud
 visual = dynamics\weapons\wpn_mk14\wpn_mk14.ogf
-upgrades = up_gr_firstab_sig550, up_gr_seconab_sig550, up_gr_thirdab_sig550, up_gr_fourtab_sig550, up_gr_fifthab_sig550
+upgrades = stcop_mk14_up_gr_firstab_svd, stcop_mk14_up_gr_seconab_svd, stcop_mk14_up_gr_thirdab_svd, stcop_mk14_up_gr_fourtab_svd, stcop_mk14_up_gr_fourtcd_svd, stcop_mk14_up_gr_fourtef_svd, stcop_mk14_up_gr_change_components_svd
 installed_upgrades =
-upgrade_scheme = upgrade_scheme_sig550
+upgrade_scheme = upgrade_scheme_svd
 ph_mass = 3
 ammo_class = ammo_7.62x51_fmj, ammo_7.62x51_ap
 startup_ammo = 90

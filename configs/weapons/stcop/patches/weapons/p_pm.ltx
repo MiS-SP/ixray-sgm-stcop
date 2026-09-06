@@ -19,27 +19,12 @@ startup_ammo = 90
 ammo_current = 48
 ammo_limit = 56
 single_handed = 0
-time_to_aim = 1
-zoom_dof = -1000,1,1000
-reload_dof = 0,0.5,5,1.7
 fire_dispersion_condition_factor = 2.5
-cam_dispersion_frac = 1
-cam_max_angle = 5
-cam_max_angle_horz = 5
-cam_step_angle_horz = 1
-holder_range_modifier = 1
-holder_fov_modifier = 1
 position = -0.021,-0.092,-0.01
-orientation = 0,0,0
-fire_point = 0,0.133,0.161
-shell_point = 0,0.133,0.047
-shell_dir = 0,0,0.4
 silencer_status = 0
 zoom_rotate_time = 0.15
 scope_zoom_factor = 73.3
 silencer_x = 57
-upgrades = up_gr_firstab_pm, up_gr_firstc_pm, up_gr_firstd_pm, up_gr_firstef_pm, up_gr_seconab_pm, up_gr_seconcd_pm, up_gr_thirdab_pm, up_gr_thirdc_pm, up_gr_thirdd_pm, up_gr_fourtab_pm, up_gr_fourtcd_pm, up_gr_fifthab_pm, up_gr_fifthcd_pm, up_gr_change_components_pm
-upgrade_scheme = upgrade_scheme_pm
 
 ![wpn_pm_hud]
 hands_position = 0.000000,-0.077200,-0.008500
@@ -101,13 +86,3 @@ ammo_params_section = wpn_pm_ammo_bones
 !anm_shot_l
 !anm_bore
 !anm_bore_empty
-
-![wpn_pm_actor]
-$spawn = "weapons\pm_actor"
-inv_name = st_wpn_pm_actor
-description = st_wpn_pm_actor_descr
-upgrades = up_gr_firstab_pm, up_gr_firstc_pm, up_gr_firstd_pm, up_gr_firstef_pm, up_gr_seconab_pm, up_gr_seconcd_pm, up_gr_thirdab_pm, up_gr_thirdc_pm, up_gr_thirdd_pm, up_gr_fourtab_pm, up_gr_fourtcd_pm, up_gr_fifthab_pm, up_gr_fifthcd_pm, up_gr_change_components_pm
-installed_upgrades = up_firste_pm,up_seconc_pm
-upgrade_scheme = upgrade_scheme_pm
-condition_shot_dec = 0.0015
-condition_queue_shot_dec = 0.0015

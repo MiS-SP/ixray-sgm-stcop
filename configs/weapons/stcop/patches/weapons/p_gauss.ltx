@@ -17,12 +17,9 @@ ammo_current = 60
 ammo_elapsed = 10
 ammo_limit = 70
 use_aim_bullet = true
-reload_dof = 0,0.5,5,1.7
 control_inertion_factor = 2.0f
 crosshair_inertion = 7
 cam_return = 1
-cam_dispersion_frac = 1
-zoom_cam_dispersion_frac = 1
 PDM_disp_base = 1
 PDM_disp_vel_factor = 1.5
 PDM_disp_accel_factor = 1.5
@@ -37,12 +34,7 @@ hit_probability_gd_stalker = 0.65
 hit_probability_gd_veteran = 0.75
 hit_probability_gd_master = 0.85
 position = -0.026,-0.076,-0.01
-orientation = 0,0,0
-fire_point = 0,0.12,0.69
-fire_point2 = 0,0.12,0.69
 flame_particles =
-shell_point = 0,0.129,0.192
-shell_dir = 0,0,0.4
 zoom_rotate_time = 0.3
 scope_zoom_factor = 12.2
 3d_zoom_factor = 90
@@ -52,7 +44,7 @@ scope_texture = wpn_crosshair_gauss
 scope_name = wpn_addon_scope_susat
 upgrades =
 
-![wpn_gauss_hud]:hud_base
+![wpn_gauss_hud]
 hands_orientation = 0.000000, 0.000000, 0.000000
 hands_position = -0.005000, -0.030000, -0.022000
 hands_orientation_16x9 = 0.000000, 0.000000, 0.000000
@@ -98,30 +90,3 @@ anm_idle_sprint_end_empty = gauss_iwp_sprint_end, idle
 anm_idle_moving = gauss_iwp_walk, idle
 !anm_shots
 !anm_bore
-
-![pri_a17_gauss_rifle]
-$spawn = "weapons\uniq\pri_a17_gauss_rifle"
-quest_item = true
-story_id = pri_a17_gauss_rifle
-hud = wpn_gauss_hud
-inv_name = st_wpn_umirotvoritel
-description = st_wpn_umirotvoritel_descr
-upgr_icon_x = 298
-upgr_icon_y = 939
-upgr_icon_width = 297
-upgr_icon_height = 81
-hit_probability_gd_novice = 1
-hit_probability_gd_stalker = 1
-hit_probability_gd_veteran = 1
-hit_probability_gd_master = 1
-ammo_limit = 10
-ammo_current = 10
-ammo_elapsed = 0
-ammo_mag_size = 10
-ammo_class = ammo_gauss
-misfire_start_condition = 0.6
-misfire_end_condition = 0.3
-misfire_start_prob = 1
-misfire_end_prob = 1
-condition_shot_dec = 0.00001
-condition_queue_shot_dec = 0.00002

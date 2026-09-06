@@ -11,17 +11,18 @@ increasing_skill_point = 0.10
 weapon_type = pistol
 
 [mod_stcop_oc33_damage]
-hit_power = 0.65
+hit_power = 0.22, 0.22, 0.22, 0.22
 hit_type = fire_wound
-fire_distance = 500
+fire_distance = 55
 bullet_speed = 332
 rpm = 800
 rpm_empty_click = 120
-silencer_hit_power = 0.64
-silencer_fire_distance = 400
+silencer_hit_power = 0.21, 0.21, 0.21, 0.21
+silencer_fire_distance = 55
 silencer_bullet_speed = 290
 
 [wpn_oc33]:weapon_probability,stcop_default_weapon_params,wpn_oc33_sounds,mod_stcop_oc33,mod_stcop_oc33_damage,cost_stcop_oc33
+sgm_upgrade_mechanic = wpn_pm
 GroupControlSection = spawn_group
 $spawn = "weapons\oc33"
 $npc = on
@@ -54,7 +55,7 @@ weapon_class =
 inv_weight = 1.15
 hud = wpn_oc33_hud
 visual = dynamics\weapons\wpn_oc33\wpn_oc33.ogf
-upgrades = up_gr_firstab_pm, up_gr_seconab_pm, up_gr_thirdab_pm, up_gr_fourtab_pm, up_gr_fifthab_pm, up_gr_fifthcd_pm
+upgrades = stcop_oc33_up_gr_firstab_pm, stcop_oc33_up_gr_seconab_pm, stcop_oc33_up_gr_thirdab_pm, stcop_oc33_up_gr_fourtab_pm, stcop_oc33_up_gr_fifthab_pm, stcop_oc33_up_gr_change_components_pm
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_pm
 ph_mass = 1

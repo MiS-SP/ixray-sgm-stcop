@@ -11,18 +11,19 @@ increasing_skill_point = 0.10
 weapon_type = rifle
 
 [mod_stcop_vsk94_damage]
-hit_power = 0.4
+hit_power = 0.46, 0.46, 0.46, 0.46
 hit_type = fire_wound
-fire_distance = 800
+fire_distance = 90
 bullet_speed = 287
 rpm = 700
 rpm_empty_click = 200
-silencer_hit_power = 0.39
+silencer_hit_power = = 0.45, 0.45, 0.45, 0.45
 silencer_hit_impulse = 20
-silencer_fire_distance = 800
+silencer_fire_distance = 80
 silencer_bullet_speed = 287
 
 [wpn_vsk94]:weapon_probability,stcop_default_weapon_params,wpn_vsk94_sounds,mod_stcop_vsk94,mod_stcop_vsk94_damage,cost_stcop_vsk94
+sgm_upgrade_mechanic = wpn_val
 GroupControlSection = spawn_group
 $spawn = "weapons\vsk-94"
 $npc = off
@@ -55,7 +56,7 @@ weapon_class = assault_rifle
 inv_weight = 2.25
 hud = wpn_vsk94_hud
 visual = dynamics\weapons\wpn_vsk94\wpn_vsk94.ogf
-upgrades = up_gr_firstab_val, up_gr_seconab_val, up_gr_thirdab_val, up_gr_fourtab_val, up_gr_fifthab_val
+upgrades = stcop_vsk94_up_gr_firstab_val, stcop_vsk94_up_gr_seconab_val, stcop_vsk94_up_gr_thirdab_val, stcop_vsk94_up_gr_fourtab_val, stcop_vsk94_up_gr_fifthab_val, stcop_vsk94_up_gr_change_components_val
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_val
 ph_mass = 3

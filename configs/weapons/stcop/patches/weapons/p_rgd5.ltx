@@ -13,13 +13,16 @@ upgr_icon_width = 0
 upgr_icon_height = 0
 inv_weight = 0.4
 frag_ap = 9.50
-position_offset = 0.0, 0.0, 0.0
-angle_offset = 1.57079,1.57079,3.92699
 wm_size = 0.5
-blast = 2.60
-blast_r = 8
-frags_r = 17
-frag_hit = 0.65
+
+; Use the STCOP-rendered pair instead of SGM's legacy double-grenade icon with an upgrade badge.
+![grenade_rgd5_double]
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_grid_x = 33
+inv_grid_y = 26
+; STCOP supplies the original single-grenade world and HUD models, not SGM's dual meshes.
+visual = dynamics\weapons\wpn_grenades\wpn_rgd5.ogf
+hud = grenade_rgd5_hud
 
 ![grenade_rgd5_hud]
 hands_position = -0.016204,-0.102241,0.023000
@@ -38,7 +41,6 @@ anm_show = he_draw, rgd5_draw
 anm_throw = he_throw_end, rgd5_throw_quick
 anm_throw_begin = he_throw_start, rgd5_throw_start
 anm_throw_idle = he_throw_idle, rgd5_throw_idle
-fire_point = 0, 0, 0
 throw_point = 0.4, 0.3, 0.1
 third_person_throw_point_offset = -0.198,1.8,-0.833
 !anm_bore

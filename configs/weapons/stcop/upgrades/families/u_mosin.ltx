@@ -1,0 +1,214 @@
+; STCOP-owned upgrade tree for wpn_mosin.
+; CoP svd branch choices; bonuses scaled to this weapon. Parent sections own shared text and behavior.
+; New-game tree IDs; existing installed upgrades are not migrated.
+
+[stcop_mosin_up_sect_firsta_svd]:up_sect_firsta_svd
+sgm_upgrade_requirements = up_sect_firsta_svd
+cost = 600
+PDM_disp_base = -0.13
+PDM_disp_vel_factor = -0.075
+PDM_disp_accel_factor = -0.15
+
+[stcop_mosin_up_firsta_svd]:up_firsta_svd
+section = stcop_mosin_up_sect_firsta_svd
+effects = stcop_mosin_up_gr_firstcd_svd
+
+[stcop_mosin_up_sect_firstc_svd]:up_sect_firstc_svd
+sgm_upgrade_requirements = up_sect_firstc_svd
+cost = 750
+fire_dispersion_base = -0.03
+fire_dispersion_condition_factor = -0.15428571
+
+[stcop_mosin_up_firstc_svd]:up_firstc_svd
+section = stcop_mosin_up_sect_firstc_svd
+effects = stcop_mosin_up_gr_firstef_svd
+
+[stcop_mosin_up_sect_firstd_svd]:up_sect_firstd_svd
+sgm_upgrade_requirements = up_sect_firstd_svd
+cost = 750
+PDM_disp_base = -0.13
+PDM_disp_vel_factor = -0.075
+PDM_disp_accel_factor = -0.15
+
+[stcop_mosin_up_firstd_svd]:up_firstd_svd
+section = stcop_mosin_up_sect_firstd_svd
+effects = stcop_mosin_up_gr_firstef_svd
+
+[stcop_mosin_up_sect_firste_svd]:up_sect_firste_svd
+sgm_upgrade_requirements = up_sect_firste_svd
+cost = 800
+bullet_speed = +215.385
+fire_dispersion_base = -0.015
+
+[stcop_mosin_up_firste_svd]:up_firste_svd
+section = stcop_mosin_up_sect_firste_svd
+effects =
+
+[stcop_mosin_up_sect_firstf_svd]:up_sect_firstf_svd
+sgm_upgrade_requirements = up_sect_firstf_svd
+cost = 800
+rpm = +24.5
+fire_dispersion_condition_factor = -0.15428571
+condition_queue_shot_dec = -0.00063636
+condition_shot_dec = -0.00063636
+
+[stcop_mosin_up_firstf_svd]:up_firstf_svd
+section = stcop_mosin_up_sect_firstf_svd
+effects =
+
+[stcop_mosin_up_sect_secona_svd]:up_sect_secona_svd
+sgm_upgrade_requirements = up_sect_secona_svd
+cost = 600
+fire_dispersion_condition_factor = -0.15428571
+condition_queue_shot_dec = -0.00063636
+condition_shot_dec = -0.00063636
+
+[stcop_mosin_up_secona_svd]:up_secona_svd
+section = stcop_mosin_up_sect_secona_svd
+effects = stcop_mosin_up_gr_seconcd_svd
+
+[stcop_mosin_up_sect_seconc_svd]:up_sect_seconc_svd
+sgm_upgrade_requirements = up_sect_seconc_svd
+cost = 750
+zoom_cam_dispersion = -0.08
+zoom_cam_dispersion_inc = -0.08
+zoom_cam_relax_speed = +0.00583333
+
+[stcop_mosin_up_seconc_svd]:up_seconc_svd
+section = stcop_mosin_up_sect_seconc_svd
+effects =
+
+[stcop_mosin_up_sect_second_svd]:up_sect_second_svd
+sgm_upgrade_requirements = up_sect_second_svd
+cost = 750
+fire_dispersion_base = -0.03
+fire_dispersion_condition_factor = -0.15428571
+
+[stcop_mosin_up_second_svd]:up_second_svd
+section = stcop_mosin_up_sect_second_svd
+effects =
+
+[stcop_mosin_up_sect_thirda_svd]:up_sect_thirda_svd
+sgm_upgrade_requirements = up_sect_thirda_svd
+cost = 750
+zoom_cam_dispersion = -0.05333333
+zoom_cam_dispersion_inc = -0.05333333
+zoom_cam_relax_speed = +0.00333333
+
+[stcop_mosin_up_thirda_svd]:up_thirda_svd
+section = stcop_mosin_up_sect_thirda_svd
+effects = stcop_mosin_up_gr_thirdcd_svd
+
+[stcop_mosin_up_sect_thirdc_svd]:up_sect_thirdc_svd
+sgm_upgrade_requirements = up_sect_thirdc_svd
+cost = 850
+PDM_disp_base = -0.13
+PDM_disp_vel_factor = -0.075
+PDM_disp_accel_factor = -0.15
+
+[stcop_mosin_up_thirdc_svd]:up_thirdc_svd
+section = stcop_mosin_up_sect_thirdc_svd
+effects = stcop_mosin_up_gr_thirdef_svd
+
+[stcop_mosin_up_sect_thirde_svd]:up_sect_thirde_svd
+sgm_upgrade_requirements = up_sect_thirde_svd
+cost = 800
+zoom_cam_dispersion = -0.11111111
+zoom_cam_dispersion_inc = -0.11111111
+zoom_cam_relax_speed = +0.00833333
+
+[stcop_mosin_up_thirde_svd]:up_thirde_svd
+section = stcop_mosin_up_sect_thirde_svd
+effects =
+
+[stcop_mosin_up_sect_fourta_svd]:up_sect_fourta_svd
+sgm_upgrade_requirements = up_sect_fourta_svd
+cost = 750
+zoom_cam_dispersion = -0.05333333
+zoom_cam_dispersion_inc = -0.05333333
+zoom_cam_relax_speed = +0.00333333
+
+[stcop_mosin_up_fourta_svd]:up_fourta_svd
+section = stcop_mosin_up_sect_fourta_svd
+effects =
+
+[stcop_mosin_up_sect_fourtc_svd]:up_sect_fourtc_svd
+sgm_upgrade_requirements = up_sect_fourtc_svd
+cost = 1150
+bullet_speed = +215.385
+fire_dispersion_base = -0.015
+
+[stcop_mosin_up_fourtc_svd]:up_fourtc_svd
+section = stcop_mosin_up_sect_fourtc_svd
+effects =
+
+[stcop_mosin_up_sect_fourte_svd]:up_sect_fourte_svd
+sgm_upgrade_requirements = up_sect_fourte_svd
+cost = 1800
+zoom_cam_dispersion = -0.08
+zoom_cam_dispersion_inc = -0.08
+zoom_cam_relax_speed = +0.00583333
+
+[stcop_mosin_up_fourte_svd]:up_fourte_svd
+section = stcop_mosin_up_sect_fourte_svd
+effects =
+
+[stcop_mosin_up_sect_fourtf_svd]:up_sect_fourtf_svd
+sgm_upgrade_requirements = up_sect_fourtf_svd
+cost = 3100
+fire_dispersion_base = -0.03
+fire_dispersion_condition_factor = -0.15428571
+
+[stcop_mosin_up_fourtf_svd]:up_fourtf_svd
+section = stcop_mosin_up_sect_fourtf_svd
+effects =
+
+[stcop_mosin_up_sect_change_components_svd]:up_sect_change_components_svd
+sgm_upgrade_requirements = up_sect_change_components_svd
+cost = 4400
+fire_dispersion_condition_factor = -1.02857143
+rpm = +17.5
+bullet_speed = +129.75
+ammo_mag_size = +1
+condition_queue_shot_dec = -0.00018182
+condition_shot_dec = -0.00018182
+
+[stcop_mosin_up_change_components_svd]:up_change_components_svd
+section = stcop_mosin_up_sect_change_components_svd
+effects =
+
+[stcop_mosin_up_gr_firstab_svd]
+elements = stcop_mosin_up_firsta_svd
+
+[stcop_mosin_up_gr_firstcd_svd]
+elements = stcop_mosin_up_firstc_svd, stcop_mosin_up_firstd_svd
+
+[stcop_mosin_up_gr_firstef_svd]
+elements = stcop_mosin_up_firste_svd, stcop_mosin_up_firstf_svd
+
+[stcop_mosin_up_gr_seconab_svd]
+elements = stcop_mosin_up_secona_svd
+
+[stcop_mosin_up_gr_seconcd_svd]
+elements = stcop_mosin_up_seconc_svd, stcop_mosin_up_second_svd
+
+[stcop_mosin_up_gr_thirdab_svd]
+elements = stcop_mosin_up_thirda_svd
+
+[stcop_mosin_up_gr_thirdcd_svd]
+elements = stcop_mosin_up_thirdc_svd
+
+[stcop_mosin_up_gr_thirdef_svd]
+elements = stcop_mosin_up_thirde_svd
+
+[stcop_mosin_up_gr_fourtab_svd]
+elements = stcop_mosin_up_fourta_svd
+
+[stcop_mosin_up_gr_fourtcd_svd]
+elements = stcop_mosin_up_fourtc_svd
+
+[stcop_mosin_up_gr_fourtef_svd]
+elements = stcop_mosin_up_fourte_svd, stcop_mosin_up_fourtf_svd
+
+[stcop_mosin_up_gr_change_components_svd]
+elements = stcop_mosin_up_change_components_svd

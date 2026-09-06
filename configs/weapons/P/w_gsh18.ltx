@@ -11,17 +11,18 @@ increasing_skill_point = 0.10
 weapon_type = pistol
 
 [mod_stcop_gsh18_damage]
-hit_power = 0.64
+hit_power = 0.24, 0.24, 0.24, 0.24
 hit_type = fire_wound
-fire_distance = 1000
+fire_distance = 50
 bullet_speed = 570
 rpm = 200
 rpm_empty_click = 120
-silencer_hit_power = 0.64
-silencer_fire_distance = 500
+silencer_hit_power = 0.24, 0.24, 0.24, 0.24
+silencer_fire_distance = 50
 silencer_bullet_speed = 290
 
 [wpn_gsh18]:weapon_probability,stcop_default_weapon_params,wpn_gsh18_sounds,mod_stcop_gsh18,mod_stcop_gsh18_damage,cost_stcop_gsh18
+sgm_upgrade_mechanic = wpn_hpsa
 GroupControlSection = spawn_group
 $spawn = "weapons\gsh18"
 $npc = on
@@ -54,7 +55,7 @@ weapon_class =
 inv_weight = 0.65
 hud = wpn_gsh18_hud
 visual = dynamics\weapons\wpn_gsh18\wpn_gsh18.ogf
-upgrades = up_gr_firstab_hpsa, up_gr_seconab_hpsa, up_gr_thirdab_hpsa, up_gr_fourtab_hpsa, up_gr_fifthab_hpsa, up_gr_fifthcd_hpsa
+upgrades = stcop_gsh18_up_gr_firstab_hpsa, stcop_gsh18_up_gr_seconab_hpsa, stcop_gsh18_up_gr_thirdab_hpsa, stcop_gsh18_up_gr_fourtab_hpsa, stcop_gsh18_up_gr_fifthab_hpsa, stcop_gsh18_up_gr_change_components_hpsa
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_hpsa
 ph_mass = 1

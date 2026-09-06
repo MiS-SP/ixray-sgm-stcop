@@ -11,17 +11,18 @@ increasing_skill_point = 0.10
 weapon_type = pistol
 
 [mod_stcop_aps_damage]
-hit_power = 0.67
+hit_power           	= 0.20, 0.20, 0.20, 0.20
 hit_type = fire_wound
-fire_distance = 500
+fire_distance = 45
 bullet_speed = 340
 rpm = 650
 rpm_empty_click = 120
-silencer_hit_power = 0.66
+silencer_hit_power = 0.19, 0.19, 0.19, 0.19
 silencer_fire_distance = 400
 silencer_bullet_speed = 290
 
 [wpn_aps]:identity_immunities,weapon_probability,stcop_default_weapon_params,wpn_aps_sounds,mod_stcop_aps,mod_stcop_aps_damage,cost_stcop_aps
+sgm_upgrade_mechanic = wpn_pm
 GroupControlSection = spawn_group
 $spawn = "weapons\aps"
 $npc = on
@@ -54,7 +55,7 @@ weapon_class =
 inv_weight = 1.32
 hud = wpn_aps_hud
 visual = dynamics\weapons\wpn_aps\wpn_aps.ogf
-upgrades = up_gr_firstab_pm, up_gr_seconab_pm, up_gr_thirdab_pm, up_gr_fourtab_pm, up_gr_fifthab_pm, up_gr_fifthcd_pm
+upgrades = stcop_aps_up_gr_firstab_pm, stcop_aps_up_gr_seconab_pm, stcop_aps_up_gr_thirdab_pm, stcop_aps_up_gr_fourtab_pm, stcop_aps_up_gr_fifthab_pm, stcop_aps_up_gr_change_components_pm
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_pm
 ph_mass = 1

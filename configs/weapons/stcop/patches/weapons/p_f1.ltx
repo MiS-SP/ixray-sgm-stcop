@@ -18,16 +18,19 @@ frags = 15
 frag_hit_impulse = 150
 frag_ap = 9.50
 fragment_speed = 150
-attach_position_offset = -0.053,-0.089,0
 bone_name = bip01_r_hand
 position_offset = 0, 0, 0
 angle_offset = 1.57079,1.57079,3.92699
 wm_size = 0.5
-blast = 3.80
-blast_r = 14
-frag_hit = 0.70
-frags_r = 22
-throw_point = 0.18, 1.636, -0.788
+
+; Use the STCOP-rendered pair instead of SGM's legacy double-grenade icon with an upgrade badge.
+![grenade_f1_double]
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_grid_x = 32
+inv_grid_y = 26
+; STCOP supplies the original single-grenade world and HUD models, not SGM's dual meshes.
+visual = dynamics\weapons\wpn_grenades\wpn_f1.ogf
+hud = grenade_f1_hud
 
 ![grenade_f1_hud]
 item_visual = dynamics\weapons\wpn_grenades\wpn_f1_hud.ogf
@@ -48,7 +51,6 @@ anm_show = he_draw, idle
 anm_throw = he_throw_end, f1_throw_quick
 anm_throw_begin = he_throw_start, f1_throw_start
 anm_throw_idle = he_throw_idle, f1_throw_idle
-fire_point = 0, 0, 0
 throw_point = 0.4, 0.3, 0.1
 third_person_throw_point_offset = -0.198,1.8,-0.833
 !anm_bore

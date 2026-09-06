@@ -11,17 +11,18 @@ increasing_skill_point = 0.10
 weapon_type = pistol
 
 [mod_stcop_cz75_damage]
-hit_power = 0.63
+hit_power = 0.24, 0.24, 0.24, 0.24
 hit_type = fire_wound
-fire_distance = 1000
+fire_distance = 40
 bullet_speed = 375
 rpm = 200
 rpm_empty_click = 120
-silencer_hit_power = 0.61
-silencer_fire_distance = 500
+silencer_hit_power = 0.22, 0.22, 0.22, 0.22
+silencer_fire_distance = 40
 silencer_bullet_speed = 290
 
 [wpn_cz75]:weapon_probability,stcop_default_weapon_params,wpn_cz75_sounds,mod_stcop_cz75,mod_stcop_cz75_damage,cost_stcop_cz75
+sgm_upgrade_mechanic = wpn_hpsa
 GroupControlSection = spawn_group
 $spawn = "weapons\cz75"
 $npc = on
@@ -54,7 +55,7 @@ weapon_class =
 inv_weight = 1.12
 hud = wpn_cz75_hud
 visual = dynamics\weapons\wpn_cz75\wpn_cz75.ogf
-upgrades = up_gr_firstab_hpsa, up_gr_seconab_hpsa, up_gr_thirdab_hpsa, up_gr_fourtab_hpsa, up_gr_fifthab_hpsa, up_gr_fifthcd_hpsa
+upgrades = stcop_cz75_up_gr_firstab_hpsa, stcop_cz75_up_gr_seconab_hpsa, stcop_cz75_up_gr_thirdab_hpsa, stcop_cz75_up_gr_fourtab_hpsa, stcop_cz75_up_gr_fifthab_hpsa, stcop_cz75_up_gr_change_components_hpsa
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_hpsa
 ph_mass = 1

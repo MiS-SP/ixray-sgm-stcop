@@ -1,0 +1,158 @@
+; STCOP-owned upgrade tree for wpn_oc27.
+; CoP fort branch choices; bonuses scaled to this weapon. Parent sections own shared text and behavior.
+; New-game tree IDs; existing installed upgrades are not migrated.
+
+[stcop_oc27_up_sect_firsta_fort]:up_sect_firsta_fort
+sgm_upgrade_requirements = up_sect_firsta_fort
+cost = 150
+rpm = +40.98360656
+
+[stcop_oc27_up_firsta_fort]:up_firsta_fort
+section = stcop_oc27_up_sect_firsta_fort
+effects = stcop_oc27_up_gr_firstcd_fort
+
+[stcop_oc27_up_sect_firstc_fort]:up_sect_firstc_fort
+sgm_upgrade_requirements = up_sect_firstc_fort
+cost = 350
+bullet_speed = +91.42857143
+
+[stcop_oc27_up_firstc_fort]:up_firstc_fort
+section = stcop_oc27_up_sect_firstc_fort
+effects = stcop_oc27_up_gr_firstef_fort
+
+[stcop_oc27_up_sect_firstd_fort]:up_sect_firstd_fort
+sgm_upgrade_requirements = up_sect_firstd_fort
+cost = 350
+
+[stcop_oc27_up_firstd_fort]:up_firstd_fort
+section = stcop_oc27_up_sect_firstd_fort
+effects = stcop_oc27_up_gr_firstef_fort
+
+[stcop_oc27_up_sect_firste_fort]:up_sect_firste_fort
+sgm_upgrade_requirements = up_sect_firste_fort
+cost = 500
+
+[stcop_oc27_up_firste_fort]:up_firste_fort
+section = stcop_oc27_up_sect_firste_fort
+effects =
+
+[stcop_oc27_up_sect_secona_fort]:up_sect_secona_fort
+sgm_upgrade_requirements = up_sect_secona_fort
+cost = 150
+bullet_speed = +54.85714286
+
+[stcop_oc27_up_secona_fort]:up_secona_fort
+section = stcop_oc27_up_sect_secona_fort
+effects = stcop_oc27_up_gr_seconcd_fort
+
+[stcop_oc27_up_sect_seconc_fort]:up_sect_seconc_fort
+sgm_upgrade_requirements = up_sect_seconc_fort
+cost = 150
+rpm = +68.30601093
+
+[stcop_oc27_up_seconc_fort]:up_seconc_fort
+section = stcop_oc27_up_sect_seconc_fort
+effects =
+
+[stcop_oc27_up_sect_second_fort]:up_sect_second_fort
+sgm_upgrade_requirements = up_sect_second_fort
+cost = 350
+
+[stcop_oc27_up_second_fort]:up_second_fort
+section = stcop_oc27_up_sect_second_fort
+effects =
+
+[stcop_oc27_up_sect_thirda_fort]:up_sect_thirda_fort
+sgm_upgrade_requirements = up_sect_thirda_fort
+cost = 150
+value = -0.37
+inv_weight = -0.36975904
+
+[stcop_oc27_up_thirda_fort]:up_thirda_fort
+section = stcop_oc27_up_sect_thirda_fort
+effects = stcop_oc27_up_gr_thirdcd_fort
+
+[stcop_oc27_up_sect_thirdc_fort]:up_sect_thirdc_fort
+sgm_upgrade_requirements = up_sect_thirdc_fort
+cost = 350
+
+[stcop_oc27_up_thirdc_fort]:up_thirdc_fort
+section = stcop_oc27_up_sect_thirdc_fort
+effects =
+
+[stcop_oc27_up_sect_thirdd_fort]:up_sect_thirdd_fort
+sgm_upgrade_requirements = up_sect_thirdd_fort
+cost = 350
+
+[stcop_oc27_up_thirdd_fort]:up_thirdd_fort
+section = stcop_oc27_up_sect_thirdd_fort
+effects =
+
+[stcop_oc27_up_sect_fourta_fort]:up_sect_fourta_fort
+sgm_upgrade_requirements = up_sect_fourta_fort
+cost = 150
+
+[stcop_oc27_up_fourta_fort]:up_fourta_fort
+section = stcop_oc27_up_sect_fourta_fort
+effects = stcop_oc27_up_gr_fourtcd_fort
+
+[stcop_oc27_up_sect_fourtc_fort]:up_sect_fourtc_fort
+sgm_upgrade_requirements = up_sect_fourtc_fort
+cost = 350
+
+[stcop_oc27_up_fourtc_fort]:up_fourtc_fort
+section = stcop_oc27_up_sect_fourtc_fort
+effects =
+
+[stcop_oc27_up_sect_fiftha_fort]:up_sect_fiftha_fort
+sgm_upgrade_requirements = up_sect_fiftha_fort
+cost = 450
+ammo_mag_size = +5
+
+[stcop_oc27_up_fiftha_fort]:up_fiftha_fort
+section = stcop_oc27_up_sect_fiftha_fort
+effects =
+
+[stcop_oc27_up_sect_change_components_fort]:up_sect_change_components_fort
+sgm_upgrade_requirements = up_sect_change_components_fort
+cost = 3250
+rpm = +40.98360656
+bullet_speed = +274.28571429
+ammo_mag_size = +3
+
+[stcop_oc27_up_change_components_fort]:up_change_components_fort
+section = stcop_oc27_up_sect_change_components_fort
+effects =
+
+[stcop_oc27_up_gr_firstab_fort]
+elements = stcop_oc27_up_firsta_fort
+
+[stcop_oc27_up_gr_firstcd_fort]
+elements = stcop_oc27_up_firstc_fort, stcop_oc27_up_firstd_fort
+
+[stcop_oc27_up_gr_firstef_fort]
+elements = stcop_oc27_up_firste_fort
+
+[stcop_oc27_up_gr_seconab_fort]
+elements = stcop_oc27_up_secona_fort
+
+[stcop_oc27_up_gr_seconcd_fort]
+elements = stcop_oc27_up_seconc_fort, stcop_oc27_up_second_fort
+
+[stcop_oc27_up_gr_thirdab_fort]
+elements = stcop_oc27_up_thirda_fort
+
+[stcop_oc27_up_gr_thirdcd_fort]
+elements = stcop_oc27_up_thirdc_fort, stcop_oc27_up_thirdd_fort
+
+[stcop_oc27_up_gr_fourtab_fort]
+elements = stcop_oc27_up_fourta_fort
+
+[stcop_oc27_up_gr_fourtcd_fort]
+elements = stcop_oc27_up_fourtc_fort
+
+[stcop_oc27_up_gr_fifthab_fort]
+elements = stcop_oc27_up_fiftha_fort
+
+[stcop_oc27_up_gr_change_components_fort]
+elements = stcop_oc27_up_change_components_fort

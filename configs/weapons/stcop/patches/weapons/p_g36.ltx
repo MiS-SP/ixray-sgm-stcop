@@ -17,24 +17,15 @@ grenade_class = ammo_m209
 grenade_vel = 76
 launch_speed = 76
 condition_queue_shot_dec = 0.0009
-reload_dof = 0,0.5,5,2
 fire_dispersion_base = 0.23
 fire_dispersion_condition_factor = 2
 control_inertion_factor = 1.35f
-crosshair_inertion = 5.8
-cam_dispersion_frac = 1
 cam_max_angle = 50
 cam_max_angle_horz = 50
-zoom_cam_dispersion_frac = 1
 zoom_cam_max_angle = 50
 zoom_cam_max_angle_horz = 50
-PDM_disp_vel_factor = 2
-PDM_disp_accel_factor = 2
-PDM_disp_crouch = 1
-PDM_disp_crouch_no_acc = 1
 max_radius = 90
 holder_range_modifier = 1.25
-holder_fov_modifier = 1
 hit_probability_gd_novice = 0.55
 hit_probability_gd_stalker = 0.65
 hit_probability_gd_veteran = 0.75
@@ -42,9 +33,6 @@ hit_probability_gd_master = 0.85
 position = -0.026,-0.138,0.01
 orientation = 0,0,0
 fire_point = 0,0.21,0.8
-fire_point2 = 0,0.21,0.71
-shell_point = 0,0.21,0.13
-shell_dir = 0,0,0.4
 strap_position = -0.35,-0.11,0.25
 zoom_rotate_time = 0.2
 scope_zoom_factor = 50
@@ -60,9 +48,6 @@ silencer_y = 17
 restricted_gl_and_sil = true
 def_hide_bones_override_when_gl_attached = handguard
 def_show_bones = handguard
-upgrades = up_gr_firstab_g36, up_gr_firstcd_g36, up_gr_firste_g36, up_gr_firstf_g36, up_gr_seconab_g36, up_gr_seconc_g36, up_gr_second_g36, up_gr_seconef_g36, up_gr_thirdab_g36, up_gr_thirdcd_g36, up_gr_thirde_g36, up_gr_thirdf_g36, up_gr_fourtab_g36, up_gr_fourtcd_g36, up_gr_fourte_g36, up_gr_fourtf_g36, up_gr_change_components_g36
-upgrade_scheme = upgrade_scheme_g36
-condition_shot_dec = 0.0007
 
 ![wpn_g36_hud]
 hands_orientation = 0,0,0
@@ -214,9 +199,3 @@ gl_hud_offset_rot_16x9 = -0.092588,-0.000935,0.064756
 !anm_idle_g_aim
 !anm_shots_g
 !anm_bore_g
-
-![wpn_g36_nimble]
-$spawn = "weapons\wpn_g36_nimble"
-installed_upgrades = up_thirda_g36, up_secone_g36
-inv_name = st_wpn_g36_nimble
-inv_name_short = st_wpn_g36_nimble

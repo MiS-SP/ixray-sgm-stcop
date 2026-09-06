@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_information_portions>
+    <info_portion id="stcop_esc_stalker_kriss_vector_order" override="add"></info_portion>
+    <info_portion id="stcop_esc_stalker_vihr_order" override="add"></info_portion>
+    <info_portion id="stcop_esc_stalker_p90_order" override="add"></info_portion>
+    <info_portion id="stcop_mar_stalker_protecta_order" override="add"></info_portion>
+    <info_portion id="stcop_mar_stalker_m3super90_order" override="add"></info_portion>
+    <info_portion id="stcop_zat_stalker_fn2000_order" override="add"></info_portion>
+    <info_portion id="stcop_jup_rasvet_vsk94_order" override="add"></info_portion>
+    <info_portion id="stcop_jup_killer_sr25_order" override="add"></info_portion>
+    <info_portion id="stcop_pri_army_pkp_order" override="add"></info_portion>
+    <info_portion id="stcop_pri_monolith_vssk_order" override="add"></info_portion>
+</game_information_portions>
+

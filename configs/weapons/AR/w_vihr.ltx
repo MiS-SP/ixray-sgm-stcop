@@ -11,18 +11,19 @@ increasing_skill_point = 0.10
 weapon_type = rifle
 
 [mod_stcop_vihr_damage]
-hit_power = 0.4
+hit_power = 0.50,0.50, 0.50, 0.50
 hit_type = fire_wound
-fire_distance = 800
+fire_distance = 90
 bullet_speed = 280
 rpm = 900
 rpm_empty_click = 200
-silencer_hit_power = 0.39
+silencer_hit_power = 0.48,0.48, 0.48, 0.48
 silencer_hit_impulse = 20
-silencer_fire_distance = 800
+silencer_fire_distance = 80
 silencer_bullet_speed = 280
 
 [wpn_vihr]:weapon_probability,stcop_default_weapon_params,wpn_vihr_sounds,mod_stcop_vihr,mod_stcop_vihr_damage,cost_stcop_vihr
+sgm_upgrade_mechanic = wpn_val
 GroupControlSection = spawn_group
 $spawn = "weapons\vihr"
 $npc = off
@@ -55,7 +56,7 @@ weapon_class = assault_rifle
 inv_weight = 2.54
 hud = wpn_vihr_hud
 visual = dynamics\weapons\wpn_vihr\wpn_vihr.ogf
-upgrades = up_gr_firstab_val, up_gr_seconab_val, up_gr_thirdab_val, up_gr_fourtab_val, up_gr_fifthab_val
+upgrades = stcop_vihr_up_gr_firstab_val, stcop_vihr_up_gr_seconab_val, stcop_vihr_up_gr_thirdab_val, stcop_vihr_up_gr_fourtab_val, stcop_vihr_up_gr_fifthab_val, stcop_vihr_up_gr_change_components_val
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_val
 ph_mass = 3

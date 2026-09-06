@@ -11,17 +11,18 @@ increasing_skill_point = 0.10
 weapon_type = pistol
 
 [mod_stcop_glock_damage]
-hit_power = 0.6
+hit_power = 0.25, 0.25, 0.25, 0.25
 hit_type = fire_wound
-fire_distance = 1000
+fire_distance = 55
 bullet_speed = 360
 rpm = 600
 rpm_empty_click = 120
-silencer_hit_power = 0.59
-silencer_fire_distance = 500
+silencer_hit_power = 0.24, 0.24, 0.24, 0.24
+silencer_fire_distance = 55
 silencer_bullet_speed = 290
 
 [wpn_glock]:weapon_probability,stcop_default_weapon_params,wpn_glock19_sounds,mod_stcop_glock,mod_stcop_glock_damage,cost_stcop_glock
+sgm_upgrade_mechanic = wpn_hpsa
 GroupControlSection = spawn_group
 $spawn = "weapons\glock"
 $npc = on
@@ -54,7 +55,7 @@ weapon_class =
 inv_weight = 0.67
 hud = wpn_glock_hud
 visual = dynamics\weapons\wpn_glock19\wpn_glock19.ogf
-upgrades = up_gr_firstab_hpsa, up_gr_seconab_hpsa, up_gr_thirdab_hpsa, up_gr_fourtab_hpsa, up_gr_fifthab_hpsa, up_gr_fifthcd_hpsa
+upgrades = stcop_glock_up_gr_firstab_hpsa, stcop_glock_up_gr_seconab_hpsa, stcop_glock_up_gr_thirdab_hpsa, stcop_glock_up_gr_fourtab_hpsa, stcop_glock_up_gr_fifthab_hpsa, stcop_glock_up_gr_change_components_hpsa
 installed_upgrades =
 upgrade_scheme = upgrade_scheme_hpsa
 ph_mass = 1

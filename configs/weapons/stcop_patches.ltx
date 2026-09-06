@@ -1,21 +1,15 @@
 ; STCOP changes to SGM: common data, ammunition, upgrades, weapons; unique overrides last.
 ; Order is explicit; do not load these files through any other entrypoint.
+; Shared calibre definitions and balance belong to SGM. Include only non-empty, intentional deltas.
+; Delete an include in the same change that removes its empty patch file.
 #include "stcop\patches\common\p_addons.ltx"
 #include "stcop\patches\common\p_ballistics.ltx"
 #include "stcop\patches\common\p_explosives.ltx"
 #include "stcop\patches\common\p_projectiles.ltx"
-#include "stcop\patches\ammo\p_11_43x23.ltx"
-#include "stcop\patches\ammo\p_12x70.ltx"
 #include "stcop\patches\ammo\p_12x76.ltx"
-#include "stcop\patches\ammo\p_5_45x39.ltx"
-#include "stcop\patches\ammo\p_5_56x45.ltx"
 #include "stcop\patches\ammo\p_7_62x54.ltx"
-#include "stcop\patches\ammo\p_9x18.ltx"
-#include "stcop\patches\ammo\p_9x19.ltx"
-#include "stcop\patches\ammo\p_9x39.ltx"
 #include "stcop\patches\ammo\p_base.ltx"
 #include "stcop\patches\ammo\p_gauss.ltx"
-#include "stcop\patches\ammo\p_m209.ltx"
 #include "stcop\patches\ammo\p_og_7b.ltx"
 #include "stcop\patches\ammo\p_vog_25.ltx"
 #include "stcop\patches\ammo\p_sgm_extensions.ltx"
