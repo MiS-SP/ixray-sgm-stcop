@@ -3,7 +3,7 @@ doc_id: "ixray-sgm-stcop.script.sgm_stcop_trader_orders"
 title: "sgm_stcop_trader_orders: Lua declarations and literal API references"
 kind: "generated-reference"
 status: "extracted-static"
-updated: "2026-09-06"
+updated: "2026-09-12"
 topics: ["sgm_stcop_trader_orders","Lua","script","symbols","callbacks"]
 sources: ["../../../scripts/sgm_stcop_trader_orders.script"]
 source_sha256: "c48bdd8bd54a9e26316c477eb0f569e6b8e0d249647ee0df84f6d4dc200cc99e"

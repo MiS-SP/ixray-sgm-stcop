@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "ixray-sgm-stcop",
-  "snapshot_date": "2026-09-06",
+  "snapshot_date": "2026-09-12",
   "path_base": "source repository",
   "sources": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "path": "configs/weapons/AR/w_ak12.ltx",
-      "sha256": "08d0b85c81927c3d755ba3b8d2f681396e27d1ccb36836e3231d648819e011d6"
+      "sha256": "e89d548870fecd13eb4e58e4f5fa7f2c376912186f3acdbbf6329c906ae5be11"
     },
     {
       "path": "configs/weapons/stcop_content.ltx",

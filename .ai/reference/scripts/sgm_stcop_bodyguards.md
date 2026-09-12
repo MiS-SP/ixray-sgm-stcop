@@ -3,7 +3,7 @@ doc_id: "ixray-sgm-stcop.script.sgm_stcop_bodyguards"
 title: "sgm_stcop_bodyguards: Lua declarations and literal API references"
 kind: "generated-reference"
 status: "extracted-static"
-updated: "2026-09-06"
+updated: "2026-09-12"
 topics: ["sgm_stcop_bodyguards","Lua","script","symbols","callbacks"]
 sources: ["../../../scripts/sgm_stcop_bodyguards.script"]
 source_sha256: "8e4dcfa6ee944c176199a3470b0f9e13b16f7cb760c2402267d90b350ccc14e3"

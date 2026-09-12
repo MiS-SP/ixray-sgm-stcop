@@ -3,12 +3,12 @@ doc_id: "ixray-sgm-stcop.source-catalog"
 title: "ixray-sgm-stcop: source catalog"
 kind: "generated-reference"
 status: "extracted-static"
-updated: "2026-09-06"
+updated: "2026-09-12"
 ---
 
 # ixray-sgm-stcop: каталог исходников
 
-Снимок файлов рабочей копии; HEAD `1e5d232eca26d13ddcabcc140bda71d6b0965268`. Он не устанавливает активный слой монтирования. 4 скриптов, 26 обнаруженных объявлений. Поля и SHA-256: [source-map.json](source-map.json).
+Снимок файлов рабочей копии; HEAD `dff18c18bc6d21539df0de840f11edaad9b36f58`. Он не устанавливает активный слой монтирования. 4 скриптов, 26 обнаруженных объявлений. Поля и SHA-256: [source-map.json](source-map.json).
 
 ## Каталоги ixray-sgm-stcop
 

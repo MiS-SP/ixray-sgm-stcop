@@ -17,31 +17,31 @@
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_bodyguards",
       "path": "reference/scripts/sgm_stcop_bodyguards.md",
       "status": "extracted-static",
-      "sha256": "e30665b90fadf75f7a885d8956f98d139cb2edca9f7738ed94ada0d64336129b"
+      "sha256": "6888bd098e9bdcb7728e2c4b5650c9042ee5f22f5e7f2707ff5a547f48203d45"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_book_rewards",
       "path": "reference/scripts/sgm_stcop_skill_book_rewards.md",
       "status": "extracted-static",
-      "sha256": "876083d347d232ef0a45ad3891c5b30cf65dd972c74c55dd3cbc5aa2fc212c7d"
+      "sha256": "b84b88e60f2257e27c31843182fd696f11ed04efd769ff36c6e203d1d0c7f08e"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_books",
       "path": "reference/scripts/sgm_stcop_skill_books.md",
       "status": "extracted-static",
-      "sha256": "67b2ebd3d8cc6a0560a9ad9145bc1cb2ec8857048f17631e5299c06791f5d9dd"
+      "sha256": "d96ec926ab56ddaad38917091e17c5efea1f035936209ab170a9de897b8cb1a6"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_trader_orders",
       "path": "reference/scripts/sgm_stcop_trader_orders.md",
       "status": "extracted-static",
-      "sha256": "d703120f3ba0bea8f25b4abadcf2487ee0de709ebefe69ecdd978c7b2eb63796"
+      "sha256": "8132c4c3f5ca959745cc668855ac10c93a1265811e479142a7db644044d5ebea"
     },
     {
       "doc_id": "ixray-sgm-stcop.source-catalog",
       "path": "reference/source-catalog.md",
       "status": "extracted-static",
-      "sha256": "4655a904963cbfa77312dd2382a29f678383f8e3783b69ef02325c4b1c7fcb62"
+      "sha256": "2065b0a826283e0f7a63471959f23b006cb6ca2433dcad0effe206ec69d4a994"
     },
     {
       "doc_id": "stcop.runtime-integration",
