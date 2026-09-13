@@ -1,0 +1,122 @@
+<w>
+	<templates>
+		<!-- Widescreen counterpart of upgrade_scheme_stcop_wincheaster1300. -->
+		<template name="upgrade_scheme_stcop_wincheaster1300" override="add">
+			<column>
+				<cell x="0" y="24" point_x="230" point_y="205"/>
+				<cell x="0" y="126" point_x="30" point_y="200"/>
+				<cell x="0" y="228" point_x="45" point_y="200"/>
+				<cell x="0" y="330" point_x="85" point_y="200"/>
+			</column>
+			<column>
+				<cell x="80" y="0" point_x="265" point_y="210"/>
+				<cell x="80" y="49" point_x="265" point_y="210"/>
+				<cell x="80" y="102" point_x="30" point_y="220"/>
+				<cell x="80" y="151" point_x="65" point_y="190"/>
+				<cell x="80" y="204" point_x="110" point_y="205"/>
+				<cell x="80" y="253" point_x="40" point_y="190"/>
+			</column>
+			<column>
+				<cell x="160" y="24" point_x="115" point_y="190"/>
+				<cell x="160" y="126" point_x="100" point_y="190"/>
+				<cell x="160" y="204" point_x="50" point_y="190"/>
+				<cell x="160" y="330" point_x="156" point_y="172"/>
+			</column>
+		</template>
+		<!-- Widescreen counterpart of upgrade_scheme_stcop_ak74. -->
+		<template name="upgrade_scheme_stcop_ak74" override="add">
+			<column>
+				<cell x="0" y="24" point_x="80" point_y="185"/>
+				<cell x="0" y="126" point_x="101" point_y="183"/>
+				<cell x="0" y="228" point_x="112" point_y="186"/>
+				<cell x="0" y="330" point_x="105" point_y="193"/>
+			</column>
+			<column>
+				<cell x="80" y="24" point_x="137" point_y="189"/>
+				<cell x="80" y="102" point_x="89" point_y="194"/>
+				<cell x="80" y="151" point_x="146" point_y="196"/>
+				<cell x="80" y="204" point_x="229" point_y="205"/>
+				<cell x="80" y="253" point_x="158" point_y="194"/>
+				<cell x="80" y="330" point_x="122" point_y="194"/>
+			</column>
+			<column>
+				<cell x="160" y="0" point_x="90" point_y="179"/>
+				<cell x="160" y="49" point_x="72" point_y="193"/>
+				<cell x="160" y="126" point_x="135" point_y="199"/>
+				<cell x="160" y="228" point_x="185" point_y="193"/>
+				<cell x="160" y="330" point_x="82" point_y="211"/>
+				<cell x="160" y="409" point_x="156" point_y="172"/>
+			</column>
+		</template>
+		<!-- Widescreen counterpart of upgrade_scheme_stcop_hpsa. -->
+		<template name="upgrade_scheme_stcop_hpsa" override="add">
+			<column>
+				<cell x="0" y="24" point_x="125" point_y="165"/>
+				<cell x="0" y="126" point_x="225" point_y="175"/>
+				<cell x="0" y="228" point_x="105" point_y="185"/>
+				<cell x="0" y="330" point_x="140" point_y="205"/>
+				<cell x="0" y="409" point_x="90" point_y="260"/>
+			</column>
+			<column>
+				<cell x="80" y="0" point_x="100" point_y="165"/>
+				<cell x="80" y="49" point_x="175" point_y="170"/>
+				<cell x="80" y="126" point_x="255" point_y="175"/>
+				<cell x="80" y="204" point_x="95" point_y="225"/>
+				<cell x="80" y="253" point_x="90" point_y="195"/>
+				<cell x="80" y="330" point_x="130" point_y="190"/>
+			</column>
+			<column>
+				<cell x="160" y="24" point_x="225" point_y="190"/>
+				<cell x="160" y="102" point_x="205" point_y="170"/>
+				<cell x="160" y="151" point_x="205" point_y="170"/>
+				<cell x="160" y="330" point_x="145" point_y="185"/>
+				<cell x="160" y="409" point_x="156" point_y="172"/>
+			</column>
+		</template>
+		<!-- Widescreen counterpart of upgrade_scheme_stcop_pm. -->
+		<template name="upgrade_scheme_stcop_pm" override="add">
+			<column>
+				<cell x="0" y="24" point_x="130" point_y="160"/>
+				<cell x="0" y="126" point_x="190" point_y="170"/>
+				<cell x="0" y="228" point_x="125" point_y="185"/>
+				<cell x="0" y="330" point_x="165" point_y="200"/>
+				<cell x="0" y="409" point_x="120" point_y="255"/>
+			</column>
+			<column>
+				<cell x="80" y="0" point_x="115" point_y="155"/>
+				<cell x="80" y="49" point_x="150" point_y="160"/>
+				<cell x="80" y="126" point_x="225" point_y="170"/>
+				<cell x="80" y="204" point_x="120" point_y="220"/>
+				<cell x="80" y="253" point_x="115" point_y="200"/>
+				<cell x="80" y="330" point_x="105" point_y="170"/>
+			</column>
+			<column>
+				<cell x="160" y="24" point_x="150" point_y="160"/>
+				<cell x="160" y="102" point_x="156" point_y="172"/>
+			</column>
+		</template>
+		<!-- Widescreen counterpart of upgrade_scheme_stcop_fort. -->
+		<template name="upgrade_scheme_stcop_fort" override="add">
+			<column>
+				<cell x="0" y="24" point_x="135" point_y="160"/>
+				<cell x="0" y="126" point_x="200" point_y="170"/>
+				<cell x="0" y="228" point_x="115" point_y="185"/>
+				<cell x="0" y="330" point_x="160" point_y="205"/>
+				<cell x="0" y="409" point_x="100" point_y="260"/>
+			</column>
+			<column>
+				<cell x="80" y="0" point_x="110" point_y="165"/>
+				<cell x="80" y="49" point_x="180" point_y="165"/>
+				<cell x="80" y="102" point_x="215" point_y="175"/>
+				<cell x="80" y="151" point_x="240" point_y="175"/>
+				<cell x="80" y="204" point_x="110" point_y="225"/>
+				<cell x="80" y="253" point_x="115" point_y="200"/>
+				<cell x="80" y="330" point_x="95" point_y="160"/>
+			</column>
+			<column>
+				<cell x="160" y="24" point_x="140" point_y="175"/>
+				<cell x="160" y="151" point_x="156" point_y="172"/>
+			</column>
+		</template>
+	</templates>
+</w>

@@ -1,0 +1,31 @@
+<w>
+	<templates>
+		<!-- STCOP MP5-family trees intentionally omit the donor caliber-conversion node at 1,6. -->
+		<template name="upgrade_scheme_stcop_mp5" override="add">
+			<column>
+				<cell x="0" y="24" point_x="81" point_y="166"/>
+				<cell x="0" y="126" point_x="130" point_y="170"/>
+				<cell x="0" y="228" point_x="80" point_y="180"/>
+				<cell x="0" y="330" point_x="112" point_y="185"/>
+				<cell x="0" y="409" point_x="145" point_y="232"/>
+			</column>
+			<column>
+				<cell x="100" y="0" point_x="98" point_y="175"/>
+				<cell x="100" y="49" point_x="139" point_y="180"/>
+				<cell x="100" y="126" point_x="125" point_y="186"/>
+				<cell x="100" y="204" point_x="111" point_y="207"/>
+				<cell x="100" y="253" point_x="102" point_y="191"/>
+				<cell x="100" y="330" point_x="188" point_y="185"/>
+			</column>
+			<column>
+				<cell x="200" y="24" point_x="119" point_y="162"/>
+				<cell x="200" y="102" point_x="108" point_y="170"/>
+				<cell x="200" y="151" point_x="149" point_y="171"/>
+				<cell x="200" y="228" point_x="91" point_y="191"/>
+				<cell x="200" y="306" point_x="89" point_y="220"/>
+				<cell x="200" y="355" point_x="214" point_y="184"/>
+				<cell x="200" y="409" point_x="156" point_y="172"/>
+			</column>
+		</template>
+	</templates>
+</w>

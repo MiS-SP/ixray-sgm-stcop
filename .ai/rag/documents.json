@@ -5,50 +5,50 @@
       "doc_id": "stcop.arsenal-loadouts",
       "path": "arsenal-and-loadouts.md",
       "status": "verified-static",
-      "sha256": "b1d34360d66c31fad75647fcff09b87f4d58eb34b5a894492f95eca9806f88ce"
+      "sha256": "e5249a6d9f23da043d5e65ebc14b44c147b18bfa392aaeecf0decbddd1fd48db"
     },
     {
       "doc_id": "stcop.overview",
       "path": "README.md",
       "status": "verified-static",
-      "sha256": "5713eee53d1e858841be954f2fbed6dd87fc34a29d419d934d5d70db00055db3"
+      "sha256": "633e465e834427341ba8fe18b2d1f552e6089cce2a7f8a6a84b1637c9fc2ee39"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_bodyguards",
       "path": "reference/scripts/sgm_stcop_bodyguards.md",
       "status": "extracted-static",
-      "sha256": "6888bd098e9bdcb7728e2c4b5650c9042ee5f22f5e7f2707ff5a547f48203d45"
+      "sha256": "ef5fc1ca5d3e4f669ff825e75e89360bb7c53d8bc23b46fcabf03e1dbda9abb0"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_book_rewards",
       "path": "reference/scripts/sgm_stcop_skill_book_rewards.md",
       "status": "extracted-static",
-      "sha256": "b84b88e60f2257e27c31843182fd696f11ed04efd769ff36c6e203d1d0c7f08e"
+      "sha256": "41aba0aae687ce1251fe8941a1087444e3c0b133ec1b29461f9c5f5997a4f8e7"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_books",
       "path": "reference/scripts/sgm_stcop_skill_books.md",
       "status": "extracted-static",
-      "sha256": "d96ec926ab56ddaad38917091e17c5efea1f035936209ab170a9de897b8cb1a6"
+      "sha256": "43fc4f47bdee16bf42fcf92102987b30551494f7f96c13ad2c3a122546465c71"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_trader_orders",
       "path": "reference/scripts/sgm_stcop_trader_orders.md",
       "status": "extracted-static",
-      "sha256": "8132c4c3f5ca959745cc668855ac10c93a1265811e479142a7db644044d5ebea"
+      "sha256": "4ddd6665d8bd1fa2f1f5ce259643ce1c2d0fc155216cc3b85f0b9af69d26d746"
     },
     {
       "doc_id": "ixray-sgm-stcop.source-catalog",
       "path": "reference/source-catalog.md",
       "status": "extracted-static",
-      "sha256": "2065b0a826283e0f7a63471959f23b006cb6ca2433dcad0effe206ec69d4a994"
+      "sha256": "6764cc2178412d2728d4efa414cc5417e4435bb88e55128f84fa6ab1d35df569"
     },
     {
       "doc_id": "stcop.runtime-integration",
       "path": "runtime-integration.md",
       "status": "verified-static",
-      "sha256": "004499956402e5b05eaf0e04028292eddbfff73a5cef37f7067cb790a3720d50"
+      "sha256": "f16ce327478e5af2b3caf4743d3ad46545c36e507c744312a88306fc1eda9a35"
     }
   ],
-  "chunk_count": 40
+  "chunk_count": 42
 }

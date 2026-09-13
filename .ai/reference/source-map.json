@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "repository": "ixray-sgm-stcop",
-  "commit": "dff18c18bc6d21539df0de840f11edaad9b36f58",
-  "generated_on": "2026-09-12",
+  "commit": "d3c0218ac14a23cc5a196c38c5a6cdba6db31205",
+  "generated_on": "2026-09-13",
   "scope": "filesystem snapshot; excludes documentation, known caches, agent config, symlinks; not effective mounted content",
   "files_by_top_directory": {
     "(root)": 4,
@@ -16,7 +16,7 @@
     "tools": 1
   },
   "script_count": 4,
-  "symbol_count": 26,
+  "symbol_count": 40,
   "scripts": [
     {
       "repository": "ixray-sgm-stcop",
@@ -196,75 +196,159 @@
       "repository": "ixray-sgm-stcop",
       "path": "scripts/sgm_stcop_trader_orders.script",
       "namespace": "sgm_stcop_trader_orders",
-      "sha256": "c48bdd8bd54a9e26316c477eb0f569e6b8e0d249647ee0df84f6d4dc200cc99e",
+      "sha256": "1ba1486833b3b48eaf9ff07b461b135625c7a470eadcabf2db7982779593eea8",
       "encoding": "UTF-8",
-      "lines": 61,
+      "lines": 191,
       "symbols": [
         {
           "name": "select_order",
           "parameters": "key",
           "local": true,
-          "line": 14
+          "line": 68
+        },
+        {
+          "name": "build_trader_dialog",
+          "parameters": "dlg, trader_key",
+          "local": true,
+          "line": 75
+        },
+        {
+          "name": "select_dialog_item",
+          "parameters": "first_speaker, second_speaker, dialog_id, phrase_id",
+          "local": false,
+          "line": 128
+        },
+        {
+          "name": "init_esc_stalker_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 139
+        },
+        {
+          "name": "init_jup_ecolog_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 140
+        },
+        {
+          "name": "init_jup_freedom_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 141
+        },
+        {
+          "name": "init_jup_killer_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 142
+        },
+        {
+          "name": "init_jup_rasvet_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 143
+        },
+        {
+          "name": "init_mar_stalker_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 144
+        },
+        {
+          "name": "init_mil_night_stalker_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 145
+        },
+        {
+          "name": "init_pri_army_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 146
+        },
+        {
+          "name": "init_pri_monolith_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 147
+        },
+        {
+          "name": "init_val_night_stalker_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 148
+        },
+        {
+          "name": "init_zat_bandit_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 149
+        },
+        {
+          "name": "init_zat_stalker_dialog",
+          "parameters": "dlg",
+          "local": false,
+          "line": 150
         },
         {
           "name": "select_kriss_vector",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 21
+          "line": 152
         },
         {
           "name": "select_vihr",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 25
+          "line": 156
         },
         {
           "name": "select_p90",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 29
+          "line": 160
         },
         {
           "name": "select_protecta",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 33
+          "line": 164
         },
         {
           "name": "select_m3super90",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 37
+          "line": 168
         },
         {
           "name": "select_fn2000",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 41
+          "line": 172
         },
         {
           "name": "select_vsk94",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 45
+          "line": 176
         },
         {
           "name": "select_sr25",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 49
+          "line": 180
         },
         {
           "name": "select_pkp",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 53
+          "line": 184
         },
         {
           "name": "select_vssk",
           "parameters": "first_speaker, second_speaker",
           "local": false,
-          "line": 57
+          "line": 188
         }
       ],
       "literal_references": [],

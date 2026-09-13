@@ -1,14 +1,9 @@
 ; STCOP additions to the SGM order trader.
 
+![trader]
+buy_supplies = {=check_trader_order_item(wpn_aug_a3)} supplies_stcop_order_wpn_aug_a3,{=check_trader_order_item(wpn_famas)} supplies_stcop_order_wpn_famas,{=check_trader_order_item(wpn_hk416)} supplies_stcop_order_wpn_hk416,{=check_trader_order_item(wpn_m4_tac)} supplies_stcop_order_wpn_m4_tac,{=check_trader_order_item(wpn_scar)} supplies_stcop_order_wpn_scar,{=check_trader_order_item(wpn_sig552)} supplies_stcop_order_wpn_sig552,{=check_trader_order_item(wpn_ump45)} supplies_stcop_order_wpn_ump45,{=check_trader_order_item(wpn_mk14)} supplies_stcop_order_wpn_mk14,{+jup_freedom_trader_weapon =check_trader_order_item(wpn_weapon)} supplies_weapon,{+jup_freedom_trader_svoboda_army_outfit =check_trader_order_item(svoboda_army_outfit)} supplies_svoboda_army_outfit,{+jup_freedom_trader_freedom_exo_outfit =check_trader_order_item(freedom_exo_outfit)} supplies_freedom_exo_outfit,{+jup_freedom_trader_dolg_exo_outfit =check_trader_order_item(dolg_exo_outfit)} supplies_dolg_exo_outfit,order_trader_supplies
+
 ![order_trader_supplies]
-wpn_aug_a3 = 1,0.50
-wpn_famas = 1,0.50
-wpn_hk416 = 1,0.50
-wpn_m4_tac = 1,0.50
-wpn_scar = 1,0.50
-wpn_sig552 = 1,0.50
-wpn_ump45 = 1,0.50
-wpn_mk14 = 1,0.50
 
 ammo_5.56x45_ss190 = 4,0.80
 ammo_7.62x51_fmj = 4,0.80
@@ -16,4 +11,28 @@ ammo_7.62x51_ap = 2,0.50
 ammo_11.43x23_fmj = 4,0.80
 ammo_11.43x23_hydro = 2,0.50
 ammo_338_lapua = 1,0.35
+
+[supplies_stcop_order_wpn_aug_a3]:order_trader_supplies
+wpn_aug_a3 = 1,1.0
+
+[supplies_stcop_order_wpn_famas]:order_trader_supplies
+wpn_famas = 1,1.0
+
+[supplies_stcop_order_wpn_hk416]:order_trader_supplies
+wpn_hk416 = 1,1.0
+
+[supplies_stcop_order_wpn_m4_tac]:order_trader_supplies
+wpn_m4_tac = 1,1.0
+
+[supplies_stcop_order_wpn_scar]:order_trader_supplies
+wpn_scar = 1,1.0
+
+[supplies_stcop_order_wpn_sig552]:order_trader_supplies
+wpn_sig552 = 1,1.0
+
+[supplies_stcop_order_wpn_ump45]:order_trader_supplies
+wpn_ump45 = 1,1.0
+
+[supplies_stcop_order_wpn_mk14]:order_trader_supplies
+wpn_mk14 = 1,1.0
 

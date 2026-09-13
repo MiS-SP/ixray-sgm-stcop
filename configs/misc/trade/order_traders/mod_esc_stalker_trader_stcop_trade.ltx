@@ -1,19 +1,9 @@
 ; STCOP additions to the SGM order trader.
 
 ![trader]
-buy_supplies = {+stcop_esc_stalker_kriss_vector_order =check_trader_order_item(wpn_kriss_vector)} supplies_stcop_kriss_vector,{+stcop_esc_stalker_vihr_order =check_trader_order_item(wpn_vihr)} supplies_stcop_vihr,{+stcop_esc_stalker_p90_order =check_trader_order_item(wpn_p90)} supplies_stcop_p90,{+esc_stalker_trader_colt1911 =check_trader_order_item(wpn_colt1911)} supplies_colt1911,{+esc_stalker_trader_wincheaster1300 =check_trader_order_item(wpn_wincheaster1300)} supplies_wincheaster1300,{+esc_stalker_trader_outfit =check_trader_order_item(outfit)} supplies_outfit,order_trader_supplies
+buy_supplies = {=check_trader_order_item(wpn_aps)} supplies_stcop_order_wpn_aps,{=check_trader_order_item(wpn_cz75)} supplies_stcop_order_wpn_cz75,{=check_trader_order_item(wpn_gsh18)} supplies_stcop_order_wpn_gsh18,{=check_trader_order_item(wpn_kedr)} supplies_stcop_order_wpn_kedr,{=check_trader_order_item(wpn_kiparis)} supplies_stcop_order_wpn_kiparis,{=check_trader_order_item(wpn_ppsh41)} supplies_stcop_order_wpn_ppsh41,{=check_trader_order_item(wpn_tt33)} supplies_stcop_order_wpn_tt33,{=check_trader_order_item(wpn_uzi_micro)} supplies_stcop_order_wpn_uzi_micro,{=check_trader_order_item(wpn_bm16_full)} supplies_stcop_order_wpn_bm16_full,{=check_trader_order_item(wpn_toz34_obrez)} supplies_stcop_order_wpn_toz34_obrez,{+stcop_esc_stalker_kriss_vector_order =check_trader_order_item(wpn_kriss_vector)} supplies_stcop_kriss_vector,{+stcop_esc_stalker_vihr_order =check_trader_order_item(wpn_vihr)} supplies_stcop_vihr,{+stcop_esc_stalker_p90_order =check_trader_order_item(wpn_p90)} supplies_stcop_p90,{+esc_stalker_trader_colt1911 =check_trader_order_item(wpn_colt1911)} supplies_colt1911,{+esc_stalker_trader_wincheaster1300 =check_trader_order_item(wpn_wincheaster1300)} supplies_wincheaster1300,{+esc_stalker_trader_outfit =check_trader_order_item(outfit)} supplies_outfit,order_trader_supplies
 
 ![order_trader_supplies]
-wpn_aps = 1,0.50
-wpn_cz75 = 1,0.50
-wpn_gsh18 = 1,0.50
-wpn_kedr = 1,0.50
-wpn_kiparis = 1,0.50
-wpn_ppsh41 = 1,0.50
-wpn_tt33 = 1,0.50
-wpn_uzi_micro = 1,0.50
-wpn_bm16_full = 1,0.50
-wpn_toz34_obrez = 1,0.50
 
 ammo_9x18_pmm = 2,0.50
 ammo_9x19_pbp = 2,0.50
@@ -26,6 +16,36 @@ ammo_9x39_sp5 = 2,0.50
 ammo_9x39_ap = 2,0.50
 ammo_5.7x28_fmj = 4,0.80
 ammo_5.7x28_ap = 2,0.50
+
+[supplies_stcop_order_wpn_aps]:order_trader_supplies
+wpn_aps = 1,1.0
+
+[supplies_stcop_order_wpn_cz75]:order_trader_supplies
+wpn_cz75 = 1,1.0
+
+[supplies_stcop_order_wpn_gsh18]:order_trader_supplies
+wpn_gsh18 = 1,1.0
+
+[supplies_stcop_order_wpn_kedr]:order_trader_supplies
+wpn_kedr = 1,1.0
+
+[supplies_stcop_order_wpn_kiparis]:order_trader_supplies
+wpn_kiparis = 1,1.0
+
+[supplies_stcop_order_wpn_ppsh41]:order_trader_supplies
+wpn_ppsh41 = 1,1.0
+
+[supplies_stcop_order_wpn_tt33]:order_trader_supplies
+wpn_tt33 = 1,1.0
+
+[supplies_stcop_order_wpn_uzi_micro]:order_trader_supplies
+wpn_uzi_micro = 1,1.0
+
+[supplies_stcop_order_wpn_bm16_full]:order_trader_supplies
+wpn_bm16_full = 1,1.0
+
+[supplies_stcop_order_wpn_toz34_obrez]:order_trader_supplies
+wpn_toz34_obrez = 1,1.0
 
 [supplies_stcop_kriss_vector]:order_trader_supplies
 wpn_kriss_vector = 1,1.0

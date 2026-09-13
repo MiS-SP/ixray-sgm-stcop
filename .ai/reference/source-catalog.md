@@ -3,12 +3,12 @@ doc_id: "ixray-sgm-stcop.source-catalog"
 title: "ixray-sgm-stcop: source catalog"
 kind: "generated-reference"
 status: "extracted-static"
-updated: "2026-09-12"
+updated: "2026-09-13"
 ---
 
 # ixray-sgm-stcop: каталог исходников
 
-Снимок файлов рабочей копии; HEAD `dff18c18bc6d21539df0de840f11edaad9b36f58`. Он не устанавливает активный слой монтирования. 4 скриптов, 26 обнаруженных объявлений. Поля и SHA-256: [source-map.json](source-map.json).
+Снимок файлов рабочей копии; HEAD `d3c0218ac14a23cc5a6cdba6db31205`. Он не устанавливает активный слой монтирования. 4 скриптов, 40 обнаруженных объявлений. Поля и SHA-256: [source-map.json](source-map.json).
 
 ## Каталоги ixray-sgm-stcop
 
@@ -31,4 +31,4 @@ updated: "2026-09-12"
 | `sgm_stcop_bodyguards` | 2 | 4 | [scripts/sgm_stcop_bodyguards.script](scripts/sgm_stcop_bodyguards.md) |
 | `sgm_stcop_skill_book_rewards` | 9 | 4 | [scripts/sgm_stcop_skill_book_rewards.script](scripts/sgm_stcop_skill_book_rewards.md) |
 | `sgm_stcop_skill_books` | 4 | 1 | [scripts/sgm_stcop_skill_books.script](scripts/sgm_stcop_skill_books.md) |
-| `sgm_stcop_trader_orders` | 11 | 0 | [scripts/sgm_stcop_trader_orders.script](scripts/sgm_stcop_trader_orders.md) |
+| `sgm_stcop_trader_orders` | 25 | 0 | [scripts/sgm_stcop_trader_orders.script](scripts/sgm_stcop_trader_orders.md) |

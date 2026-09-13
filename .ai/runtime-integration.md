@@ -3,14 +3,14 @@ doc_id: stcop.runtime-integration
 title: "Runtime STCOP: книги, награды, телохранители и заказы"
 kind: reference
 status: verified-static
-updated: 2026-09-06
-topics: [runtime, IXR, registry, service, skill_books, rewards, bodyguards, trader_orders, callbacks]
-sources: [../scripts/sgm_stcop_skill_books.script, ../scripts/sgm_stcop_skill_book_rewards.script, ../scripts/sgm_stcop_bodyguards.script, ../scripts/sgm_stcop_trader_orders.script, ../../ixray-sgm/scripts/sgm_g.script, ../../ixray-sgm/scripts/sgm_bodyguards.script]
+updated: 2026-09-13
+topics: [runtime, IXR, registry, service, skill_books, rewards, bodyguards, trader_orders, nimble_orders, b52, robbery, callbacks]
+sources: [../scripts/sgm_stcop_skill_books.script, ../scripts/sgm_stcop_skill_book_rewards.script, ../scripts/sgm_stcop_bodyguards.script, ../scripts/sgm_stcop_trader_orders.script, ../scripts/sgm_stcop_nimble_orders.script, ../../ixray-sgm/scripts/sgm_g.script, ../../ixray-sgm/scripts/sgm_bodyguards.script]
 ---
 
 # Runtime STCOP: книги, награды, телохранители и заказы
 
-STCOP использует четыре Lua-скрипта. Код отдельного пакета хранит его weapon/book IDs; базовый SGM предоставляет расширяемые API. Это сохраняет работу SGM при отключённом STCOP. Ни один описанный registry-сервис не является постоянным save storage.
+STCOP использует пять Lua-скриптов. Код отдельного пакета хранит его weapon/book IDs; базовый SGM предоставляет расширяемые API. Это сохраняет работу SGM при отключённом STCOP. Ни один описанный registry-сервис не является постоянным save storage.
 
 Перед анализом/правкой Lua полностью прочитать [script-performance.md](../../ixray-sgm/.ai/script-performance.md) и правила [AGENTS.md](../AGENTS.md). Справочник функций со ссылками на source — [source-catalog.md](reference/source-catalog.md). Код искать с `repo: "ixray-sgm-stcop"`, эту страницу — с `repo: "ixray-sgm-stcop-docs"`, базовые реализации — с `repo: "ixray-sgm"`.
 
@@ -21,7 +21,8 @@ STCOP использует четыре Lua-скрипта. Код отдель�
 | [sgm_stcop_skill_books](../scripts/sgm_stcop_skill_books.script) | `on_game_start()`, публичная `register_skill_books()` | Registry marker STCOP и регистрация карты книг |
 | [sgm_stcop_skill_book_rewards](../scripts/sgm_stcop_skill_book_rewards.script) | `on_game_start()` → framework callbacks | Fixed quest/treasure rewards |
 | [sgm_stcop_bodyguards](../scripts/sgm_stcop_bodyguards.script) | `on_game_start(data)` | Оружейный catalogue extension для телохранителей |
-| [sgm_stcop_trader_orders](../scripts/sgm_stcop_trader_orders.script) | XML `action` → `select_*` | Адаптер выбора заказного оружия |
+| [sgm_stcop_trader_orders](../scripts/sgm_stcop_trader_orders.script) | XML `init_func`/`action` | Динамический список заказного оружия SGM traders |
+| [sgm_stcop_nimble_orders](../scripts/sgm_stcop_nimble_orders.script) | XML `action`/`precondition` | Ассортимент и цены заказов Шустрого |
 
 [mod_script_stcop_skill_books.ltx](../configs/mod_script_stcop_skill_books.ltx) также добавляет `sgm_stcop_skill_books` в `[common] script`. Это не устанавливает гарантированный порядок `on_game_start`. Обычные start-функции подхватывает IXR autoloader; hard dependency решается registry queue + immediate apply. После добавления script/start функции нужен полный перезапуск процесса из-за кэша автозагрузчика.
 
@@ -130,15 +131,25 @@ Setter возвращает число добавлений либо false с о
 
 ## Заказное оружие: публичные XML action wrappers
 
-`sgm_stcop_trader_orders` не регистрирует новый сервис или callback. Локальная `order_specs` задаёт item, cost, rank, а `select_order(key)` вызывает существующие `sgm_dialogs.custom_order(spec.cost)` и `sgm_dialogs.choose_item(spec.item, spec.rank)`.
+`sgm_stcop_trader_orders` не регистрирует новый сервис или callback. Локальная `order_specs` сохраняет десять специальных tier-5 заказов с индивидуальными item/cost/rank. Публичные `init_*_dialog(dlg)` через XML `init_func` однократно достраивают оружейные ветви двенадцати SGM order traders. Для 141 позиции прежнего прямого ассортимента залог вычисляется как 25% базового `cost`, дополнительный порог ранга не вводится; выбор вызывает существующие `sgm_dialogs.custom_order()` и `sgm_dialogs.choose_item()`.
 
 Публичные функции сохраняют XML-сигнатуру `(first_speaker, second_speaker)`:
 
 `select_kriss_vector`, `select_vihr`, `select_p90`, `select_protecta`, `select_m3super90`, `select_fn2000`, `select_vsk94`, `select_sr25`, `select_pkp`, `select_vssk`.
 
-Потребители — [mod_extended_dialogs_stcop_tier5_orders.xml](../configs/gameplay/mod_extended_dialogs_stcop_tier5_orders.xml), [mod_dialogs_escape_stcop_tier5_orders.xml](../configs/gameplay/mod_dialogs_escape_stcop_tier5_orders.xml), [mod_dialogs_marsh_stcop_tier5_orders.xml](../configs/gameplay/mod_dialogs_marsh_stcop_tier5_orders.xml). Флаги заказов объявлены в [mod_extended_portations_stcop_tier5_orders.xml](../configs/gameplay/mod_extended_portations_stcop_tier5_orders.xml).
+Потребители специальных wrappers — [mod_extended_dialogs_stcop_tier5_orders.xml](../configs/gameplay/mod_extended_dialogs_stcop_tier5_orders.xml), [mod_dialogs_escape_stcop_tier5_orders.xml](../configs/gameplay/mod_dialogs_escape_stcop_tier5_orders.xml), [mod_dialogs_marsh_stcop_tier5_orders.xml](../configs/gameplay/mod_dialogs_marsh_stcop_tier5_orders.xml). Пять `mod_*_stcop_weapon_orders.xml` подключают динамические init-функции ко всем двенадцати диалогам. У эколога скрипт создаёт отдельную оружейную категорию, потому что в базовом диалоге есть только категория бронекостюма. Флаги специальных заказов объявлены в [mod_extended_portations_stcop_tier5_orders.xml](../configs/gameplay/mod_extended_portations_stcop_tier5_orders.xml).
+
+Trader LTX в [configs/misc/trade/order_traders](../configs/misc/trade/order_traders/) больше не добавляют эти 141 оружейную позицию в постоянный `order_trader_supplies`. Для каждой позиции есть гарантированная supply-секция, которая выбирается только точным `check_trader_order_item(wpn_*)` после срока доставки. Патроны, устройства, броня и десять прежних специальных заказов не изменены. Соответствие Lua/LTX и построение диалоговых ветвей проверяет [run_sgm_stcop_trader_order_tests.lua](../tests/run_sgm_stcop_trader_order_tests.lua).
 
 Например XML `<action>sgm_stcop_trader_orders.select_fn2000</action>` выбирает spec для `wpn_fn2000`; далее диалог использует штатные cost/money/delivery действия SGM. Число `cost` этого spec нельзя автоматически считать полной магазинной ценой оружия: его семантика определяется `custom_order`. При изменении стоимости проверить все дальнейшие действия заказа.
+
+## Заказы Шустрого при активном STCOP
+
+`sgm_stcop_nimble_orders` переносит STCOP-вариант таблиц `zat_b51`: семь категорий, предоплату, остаточную стоимость и выдаваемые секции. [mod_dialogs_zaton_stcop_nimble_orders.xml](../configs/gameplay/mod_dialogs_zaton_stcop_nimble_orders.xml) точечно заменяет пять фраз двух диалогов Шустрого и направляет только их `action`/`precondition` в этот namespace. Остальные фразы и базовый `dialogs_zaton.script` остаются владельцу SGM.
+
+Для оружейных категорий ожидаются `wpn_fnx45`, `wpn_desert_eagle_nimble`, `wpn_sig220_nimble`; `wpn_pkp`, `wpn_m60`, `wpn_hk21`; `wpn_m4_tac`, `wpn_groza_nimble`, `wpn_vintorez_nimble`; `wpn_l96`, `wpn_vssk`, `wpn_m98b`. Категории брони сохраняют штатные STCOP-наборы. XML-обёртки имеют двухспикерную сигнатуру и загружаются по ссылке из диалога; отдельный startup callback им не нужен.
+
+Тот же XMLOverride перенаправляет четыре точки квеста Коряги/B52: проверку наличия заказного оружия, кражу одного такого оружия и две ветки общего ограбления. Список уникального оружия совпадает с четырьмя оружейными категориями Шустрого. Общее ограбление сохраняет штатные незаказные секции исходного STCoP и добавляет к ним эти двенадцать заказных секций; броня в этот оружейный список не входит.
 
 ## Обязательная матрица регрессии
 
@@ -157,4 +168,3 @@ Setter возвращает число добавлений либо false с о
 | XML заказ | Корректный item, ранг, проверка денег, оплата и дальнейшая выдача |
 
 LuaJIT `loadfile` проверяет синтаксис; stub-тесты проверяют API/порядок, но не движковые userdata или сохранение. Полный перезапуск, новая игра для новых upgrade trees, save/load и игровой сценарий выполняются человеком. Состояние `verified-static` не заявляет, что эти gameplay-сценарии уже пройдены.
-

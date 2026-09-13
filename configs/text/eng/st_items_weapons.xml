@@ -595,4 +595,7 @@
 	<string id="st_wpn_wincheaster1300_descr">
 		<text>A pump-action smoothbore shotgun of Western manufacture, widely popular thanks to its reliability and high reload speed. All components of this weapon are equipped with anti-corrosion</text>
 	</string>
+	<string id="st_wpn_desert_eagle_nimble_descr">
+		<text>A hand-made pistol based on the Black Kite design. The components are finely tuned to achieve incredible accuracy for a handgun of this type.</text>
+	</string>
 </string_table>

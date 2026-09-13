@@ -11,12 +11,143 @@ local order_specs = {
     vssk = { item = "wpn_vssk", cost = 8000, rank = 520 },
 }
 
+local trader_dialogs = {
+    esc_stalker = {
+        root = "12902", text_prefix = "esc_stalker_trader", order_info = "esc_stalker_trader_order",
+        items = { "wpn_aps", "wpn_cz75", "wpn_gsh18", "wpn_kedr", "wpn_kiparis", "wpn_ppsh41", "wpn_tt33", "wpn_uzi_micro", "wpn_bm16_full", "wpn_toz34_obrez" },
+    },
+    jup_ecolog = {
+        root = "stcop_order_jup_ecolog_root", back = "stcop_order_jup_ecolog_back",
+        entry_parents = { "1210", "133" }, text_prefix = "jup_ecolog_trader", order_info = "jup_ecolog_trader_order",
+        items = { "wpn_dvl10", "wpn_l96", "wpn_m24", "wpn_m98b", "wpn_mk14", "wpn_mosin", "wpn_sks", "wpn_sv98" },
+    },
+    jup_freedom = {
+        root = "12902", text_prefix = "jup_freedom_trader", order_info = "jup_freedom_trader_order",
+        items = { "wpn_aug_a3", "wpn_famas", "wpn_hk416", "wpn_m4_tac", "wpn_scar", "wpn_sig552", "wpn_ump45", "wpn_mk14" },
+    },
+    jup_killer = {
+        root = "12902", text_prefix = "jup_killer_trader", order_info = "jup_killer_trader_order",
+        items = { "wpn_fn57", "wpn_fnx45", "wpn_glock", "wpn_ace52", "wpn_fal", "wpn_g3", "wpn_hk416", "wpn_m4", "wpn_scar", "wpn_hk21", "wpn_m60", "wpn_l96", "wpn_m24", "wpn_m98b", "wpn_mk14" },
+    },
+    jup_rasvet = {
+        root = "12902", text_prefix = "jup_rasvet_trader", order_info = "jup_rasvet_trader_order",
+        items = { "wpn_aek971", "wpn_ak103", "wpn_ak12", "wpn_ak74m", "wpn_akm", "wpn_bizon", "wpn_pp2000", "wpn_vityaz", "wpn_rpd", "wpn_rpk", "wpn_rpk203", "wpn_rpk74", "wpn_saiga", "wpn_vepr" },
+    },
+    mar_stalker = {
+        root = "12902", text_prefix = "mar_stalker_trader", order_info = "mar_stalker_trader_order",
+        items = { "wpn_akm", "wpn_type63", "wpn_mosin", "wpn_sks", "wpn_fort500", "wpn_mr153", "wpn_saiga", "wpn_vepr" },
+    },
+    mil_night_stalker = {
+        root = "12902", text_prefix = "mil_night_stalker_trader", order_info = "mil_night_stalker_trader_order",
+        items = { "wpn_aek971", "wpn_ak12", "wpn_g3", "wpn_hk21", "wpn_m60", "wpn_rpk203", "wpn_dvl10", "wpn_l96", "wpn_m24", "wpn_m98b", "wpn_mk14", "wpn_sv98" },
+    },
+    pri_army = {
+        root = "12902", text_prefix = "pri_army_trader", order_info = "pri_army_trader_order",
+        items = { "wpn_aek971", "wpn_ak103", "wpn_ak12", "wpn_ak74m", "wpn_dvl10", "wpn_sv98", "wpn_rpd", "wpn_rpk", "wpn_rpk203", "wpn_rpk74", "wpn_bizon", "wpn_vityaz" },
+    },
+    pri_monolith = {
+        root = "12902", text_prefix = "pri_monolith_trader", order_info = "pri_monolith_trader_order",
+        items = { "wpn_ak12", "wpn_aug_a3", "wpn_famas", "wpn_g3", "wpn_hk416", "wpn_scar", "wpn_hk21", "wpn_m60", "wpn_rpk203", "wpn_dvl10", "wpn_l96", "wpn_m98b", "wpn_sv98", "wpn_vepr" },
+    },
+    val_night_stalker = {
+        root = "12902", text_prefix = "val_night_stalker_trader", order_info = "val_night_stalker_trader_order",
+        items = { "wpn_ace52", "wpn_fal", "wpn_galil", "wpn_type63", "wpn_aps", "wpn_cz75", "wpn_glock", "wpn_oc27", "wpn_oc33", "wpn_tt33", "wpn_ppsh41", "wpn_uzi", "wpn_uzi_micro", "wpn_uzi_mini", "wpn_mosin", "wpn_sks", "wpn_rpd" },
+    },
+    zat_bandit = {
+        root = "12902", text_prefix = "zat_bandit_trader", order_info = "zat_bandit_trader_order",
+        items = { "wpn_glock", "wpn_oc27", "wpn_oc33", "wpn_bizon", "wpn_pp2000", "wpn_uzi", "wpn_uzi_mini", "wpn_vityaz", "wpn_ak104", "wpn_ak105" },
+    },
+    zat_stalker = {
+        root = "12902", text_prefix = "zat_stalker_trader", order_info = "zat_stalker_trader_order",
+        items = { "wpn_ace52", "wpn_ak101", "wpn_ak103", "wpn_ak74m", "wpn_fal", "wpn_famas_f1", "wpn_galil", "wpn_m16", "wpn_m4", "wpn_sig552", "wpn_fn57", "wpn_fnx45", "wpn_mk14" },
+    },
+}
+
+local phrase_specs = {}
+
 local function select_order(key)
     local spec = order_specs[key]
 
     sgm_dialogs.custom_order(spec.cost)
     sgm_dialogs.choose_item(spec.item, spec.rank)
 end
+
+local function build_trader_dialog(dlg, trader_key)
+    local trader = trader_dialogs[trader_key]
+    local back = trader.back or "831209900"
+
+    if trader.entry_parents then
+        local category_id = "stcop_order_" .. trader_key .. "_category"
+        dlg:AddPhrase("zat_stalker_trader_dialog_20", category_id, trader.entry_parents[1], -10000)
+        for index = 2, #trader.entry_parents do
+            dlg:AddPhrase("zat_stalker_trader_dialog_20", category_id, trader.entry_parents[index], -10000)
+        end
+        dlg:AddPhrase(trader.text_prefix .. "_dialog_17", trader.root, category_id, -10000)
+        dlg:AddPhrase("", "12888", trader.root, -12000)
+    end
+
+    for index, item in ipairs(trader.items) do
+        local phrase_id = string.format("stcop_order_%s_%d", trader_key, index)
+        local details_id = phrase_id .. "_details"
+        local accept_id = phrase_id .. "_accept"
+        local less_money_id = phrase_id .. "_less_money"
+        local cancel_id = phrase_id .. "_cancel"
+        local caption_id = sgm_functions.ReadCaption(item)
+        local caption = caption_id and game.translate_string(caption_id) or item
+        local cost = math.max(1, math.floor(sgm_functions.ReadCost(item) * 0.25 + 0.5))
+        local priority = -10000 - index
+
+        phrase_specs[phrase_id] = { item = item, cost = cost, rank = 0 }
+
+        local choice = dlg:AddPhrase(caption, phrase_id, trader.root, priority)
+        choice:GetPhraseScript():AddAction("sgm_stcop_trader_orders.select_dialog_item")
+
+        local details = dlg:AddPhrase(trader.text_prefix .. "_dialog_16", details_id, phrase_id, priority)
+        details:GetPhraseScript():AddAction("sgm_dialogs.show_order_costs")
+        local back_phrase = dlg:AddPhrase("zat_trader_back_phrase", back, details_id, priority)
+        if back_phrase then
+            dlg:AddPhrase(trader.text_prefix .. "_dialog_17", trader.root, back, priority)
+        end
+
+        local accept = dlg:AddPhrase(trader.text_prefix .. "_dialog_15", accept_id, details_id, priority)
+        accept:GetPhraseScript():AddPrecondition("sgm_dialogs.order_has_money")
+        accept:GetPhraseScript():AddAction("sgm_dialogs.order_agree_give_money")
+        accept:GetPhraseScript():AddGiveInfo(trader.order_info)
+        dlg:AddPhrase("", "12005", accept_id, priority)
+
+        local less_money = dlg:AddPhrase(trader.text_prefix .. "_dialog_13", less_money_id, details_id, priority)
+        less_money:GetPhraseScript():AddPrecondition("sgm_dialogs.order_agree_less_money")
+        less_money:GetPhraseScript():AddAction("dialogs.break_dialog")
+
+        local cancel = dlg:AddPhrase(trader.text_prefix .. "_dialog_14", cancel_id, details_id, priority)
+        cancel:GetPhraseScript():AddPrecondition("sgm_dialogs.order_has_money")
+        cancel:GetPhraseScript():AddAction("dialogs.break_dialog")
+    end
+end
+
+function select_dialog_item(first_speaker, second_speaker, dialog_id, phrase_id)
+    local spec = phrase_specs[phrase_id]
+    if not spec then
+        printf("! [SGM STCOP] Unknown trader order phrase: %s", tostring(phrase_id))
+        return
+    end
+
+    sgm_dialogs.custom_order(spec.cost)
+    sgm_dialogs.choose_item(spec.item, spec.rank)
+end
+
+function init_esc_stalker_dialog(dlg) build_trader_dialog(dlg, "esc_stalker") end
+function init_jup_ecolog_dialog(dlg) build_trader_dialog(dlg, "jup_ecolog") end
+function init_jup_freedom_dialog(dlg) build_trader_dialog(dlg, "jup_freedom") end
+function init_jup_killer_dialog(dlg) build_trader_dialog(dlg, "jup_killer") end
+function init_jup_rasvet_dialog(dlg) build_trader_dialog(dlg, "jup_rasvet") end
+function init_mar_stalker_dialog(dlg) build_trader_dialog(dlg, "mar_stalker") end
+function init_mil_night_stalker_dialog(dlg) build_trader_dialog(dlg, "mil_night_stalker") end
+function init_pri_army_dialog(dlg) build_trader_dialog(dlg, "pri_army") end
+function init_pri_monolith_dialog(dlg) build_trader_dialog(dlg, "pri_monolith") end
+function init_val_night_stalker_dialog(dlg) build_trader_dialog(dlg, "val_night_stalker") end
+function init_zat_bandit_dialog(dlg) build_trader_dialog(dlg, "zat_bandit") end
+function init_zat_stalker_dialog(dlg) build_trader_dialog(dlg, "zat_stalker") end
 
 function select_kriss_vector(first_speaker, second_speaker)
     select_order("kriss_vector")

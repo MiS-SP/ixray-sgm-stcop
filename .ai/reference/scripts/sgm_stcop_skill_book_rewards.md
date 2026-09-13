@@ -3,7 +3,7 @@ doc_id: "ixray-sgm-stcop.script.sgm_stcop_skill_book_rewards"
 title: "sgm_stcop_skill_book_rewards: Lua declarations and literal API references"
 kind: "generated-reference"
 status: "extracted-static"
-updated: "2026-09-12"
+updated: "2026-09-13"
 topics: ["sgm_stcop_skill_book_rewards","Lua","script","symbols","callbacks"]
 sources: ["../../../scripts/sgm_stcop_skill_book_rewards.script"]
 source_sha256: "5a2540bd1fc3c3d67d3bb9d8e18612fa8b7415b04bef668c3f3dc17e497fa1e1"

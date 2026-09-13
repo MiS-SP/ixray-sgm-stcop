@@ -52,7 +52,7 @@ STCOP добавляет own sections и изменяет SGM, но не дол�
 
 Апгрейды дополнительно включены через `mod_item_upgrades_10_stcop_load.ltx` и `mod_item_upgrades_50_stcop_patches.ltx`: глобальный INI и отдельный Lua INI должны видеть одинаковые определения/patches.
 
-Скрипты `sgm_stcop_skill_books`, `sgm_stcop_skill_book_rewards`, `sgm_stcop_bodyguards` используют IXR Framework lifecycle; `sgm_stcop_trader_orders` вызывается из XML action. Файл script-набора не равен manifest-модулю Framework; все контракты разобраны в [runtime-integration.md](runtime-integration.md).
+Скрипты `sgm_stcop_skill_books`, `sgm_stcop_skill_book_rewards`, `sgm_stcop_bodyguards` используют IXR Framework lifecycle; `sgm_stcop_trader_orders` и `sgm_stcop_nimble_orders` вызываются из XML action/precondition. Файл script-набора не равен manifest-модулю Framework; все контракты разобраны в [runtime-integration.md](runtime-integration.md).
 
 ## Поиск GitNexus и RAG
 
@@ -74,4 +74,3 @@ GitNexus в этом проекте может возвращать File definit
 Для конфигов: SGM и SGM + STCOP, effective values и include closure; для upgrades — оба INI в каждом стеке. Для Lua: LuaJIT loadfile, все вызовы публичных функций, extension до/после service, повторная регистрация, отсутствие STCOP. Для ресурсов: виртуальные пути, XML/string/atlas IDs, кодировки и нужные варианты UI.
 
 Новые деревья STCOP рассчитаны на новую игру; миграции старых installed upgrade IDs не заявлено. Игровая проверка человеком после полного перезапуска остаётся отдельной от статической проверки.
-

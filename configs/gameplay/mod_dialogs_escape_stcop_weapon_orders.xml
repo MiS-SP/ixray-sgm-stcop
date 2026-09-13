@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_dialogs>
+    <dialog id="esc_stalker_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_esc_stalker_dialog</init_func>
+    </dialog>
+</game_dialogs>

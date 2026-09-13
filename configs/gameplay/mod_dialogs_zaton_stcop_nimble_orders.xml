@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_dialogs>
+    <dialog id="zat_b51_stalker_nimble_get_order">
+        <phrase_list>
+            <phrase id="1112" override="replace">
+                <text>zat_b51_stalker_nimble_get_order_1112</text>
+                <precondition>sgm_stcop_nimble_orders.hasnt_item_cost</precondition>
+                <next>11121</next>
+            </phrase>
+            <phrase id="1111" override="replace">
+                <text>zat_b51_stalker_nimble_get_order_1111</text>
+                <precondition>sgm_stcop_nimble_orders.has_item_cost</precondition>
+                <action>sgm_stcop_nimble_orders.buy_item</action>
+                <disable_info>zat_b51_order_refused</disable_info>
+                <disable_info>zat_b51_order_ready</disable_info>
+                <disable_info>zat_b51_order_in_process</disable_info>
+                <next>11111</next>
+            </phrase>
+            <phrase id="111311" override="replace">
+                <text>zat_b51_stalker_nimble_get_order_111311</text>
+                <action>sgm_stcop_nimble_orders.refuse_item</action>
+                <disable_info>zat_b51_order_in_process</disable_info>
+                <disable_info>zat_b51_order_ready</disable_info>
+                <give_info>zat_b51_order_refused</give_info>
+                <next>1113111</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="zat_b51_stalker_nimble_place_order">
+        <phrase_list>
+            <phrase id="1112" override="replace">
+                <text>zat_b51_stalker_nimble_place_order_1112</text>
+                <precondition>sgm_stcop_nimble_orders.hasnt_prepay</precondition>
+                <disable_info>zat_b51_processing_category_1</disable_info>
+                <disable_info>zat_b51_processing_category_2</disable_info>
+                <disable_info>zat_b51_processing_category_3</disable_info>
+                <disable_info>zat_b51_processing_category_4</disable_info>
+                <disable_info>zat_b51_processing_category_5</disable_info>
+                <disable_info>zat_b51_processing_category_6</disable_info>
+                <disable_info>zat_b51_processing_category_7</disable_info>
+                <next>11121</next>
+            </phrase>
+            <phrase id="1111" override="replace">
+                <text>zat_b51_stalker_nimble_place_order_1111</text>
+                <precondition>sgm_stcop_nimble_orders.has_prepay</precondition>
+                <action>sgm_stcop_nimble_orders.give_prepay</action>
+                <action>sgm_stcop_nimble_orders.randomize_item</action>
+                <give_info>zat_b51_order_in_process</give_info>
+                <next>11111</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="zat_b33_stalker_snag_b52_my_gun_dialog">
+        <precondition override="replace">sgm_stcop_nimble_orders.actor_has_nimble_weapon</precondition>
+        <phrase_list>
+            <phrase id="1111" override="replace">
+                <text>zat_b33_stalker_snag_b52_my_gun_dialog_1111</text>
+                <action>sgm_stcop_nimble_orders.rob_nimble_weapon</action>
+                <give_info>zat_b33_stalker_snag_b52_my_gun_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="zat_b52_robbery_port_bandits_1">
+        <phrase_list>
+            <phrase id="1111212" override="replace">
+                <text>zat_b52_robbery_port_bandits_1_1111212</text>
+                <action>sgm_stcop_nimble_orders.robbery</action>
+                <give_info>zat_b52_robbery_done</give_info>
+                <give_info>zat_b52_snag_jupiter</give_info>
+            </phrase>
+            <phrase id="11111" override="replace">
+                <text>zat_b52_robbery_port_bandits_1_11111</text>
+                <action>sgm_stcop_nimble_orders.robbery</action>
+                <next>111111</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

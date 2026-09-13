@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_dialogs>
+    <dialog id="zat_stalker_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_zat_stalker_dialog</init_func>
+    </dialog>
+    <dialog id="zat_bandit_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_zat_bandit_dialog</init_func>
+    </dialog>
+    <dialog id="jup_freedom_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_jup_freedom_dialog</init_func>
+    </dialog>
+    <dialog id="jup_rasvet_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_jup_rasvet_dialog</init_func>
+    </dialog>
+    <dialog id="jup_ecolog_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_jup_ecolog_dialog</init_func>
+    </dialog>
+    <dialog id="jup_killer_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_jup_killer_dialog</init_func>
+    </dialog>
+    <dialog id="pri_army_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_pri_army_dialog</init_func>
+    </dialog>
+    <dialog id="pri_monolith_trader_start_dialog">
+        <init_func override="add">sgm_stcop_trader_orders.init_pri_monolith_dialog</init_func>
+    </dialog>
+</game_dialogs>

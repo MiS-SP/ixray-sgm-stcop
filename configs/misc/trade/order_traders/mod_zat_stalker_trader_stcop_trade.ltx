@@ -1,22 +1,9 @@
 ; STCOP additions to the SGM order trader.
 
 ![trader]
-buy_supplies = {+stcop_zat_stalker_fn2000_order =check_trader_order_item(wpn_fn2000)} supplies_stcop_fn2000,{+zat_stalker_trader_weapon =check_trader_order_item(wpn_weapon)} supplies_weapon,{+zat_stalker_trader_helm_piranhas =check_trader_order_item(helm_piranhas)} supplies_helm_piranhas,{+zat_stalker_trader_heavy_stalker_outfit =check_trader_order_item(heavy_stalker_outfit)} supplies_heavy_stalker_outfit,order_trader_supplies
+buy_supplies = {=check_trader_order_item(wpn_ace52)} supplies_stcop_order_wpn_ace52,{=check_trader_order_item(wpn_ak101)} supplies_stcop_order_wpn_ak101,{=check_trader_order_item(wpn_ak103)} supplies_stcop_order_wpn_ak103,{=check_trader_order_item(wpn_ak74m)} supplies_stcop_order_wpn_ak74m,{=check_trader_order_item(wpn_fal)} supplies_stcop_order_wpn_fal,{=check_trader_order_item(wpn_famas_f1)} supplies_stcop_order_wpn_famas_f1,{=check_trader_order_item(wpn_galil)} supplies_stcop_order_wpn_galil,{=check_trader_order_item(wpn_m16)} supplies_stcop_order_wpn_m16,{=check_trader_order_item(wpn_m4)} supplies_stcop_order_wpn_m4,{=check_trader_order_item(wpn_sig552)} supplies_stcop_order_wpn_sig552,{=check_trader_order_item(wpn_fn57)} supplies_stcop_order_wpn_fn57,{=check_trader_order_item(wpn_fnx45)} supplies_stcop_order_wpn_fnx45,{=check_trader_order_item(wpn_mk14)} supplies_stcop_order_wpn_mk14,{+stcop_zat_stalker_fn2000_order =check_trader_order_item(wpn_fn2000)} supplies_stcop_fn2000,{+zat_stalker_trader_weapon =check_trader_order_item(wpn_weapon)} supplies_weapon,{+zat_stalker_trader_helm_piranhas =check_trader_order_item(helm_piranhas)} supplies_helm_piranhas,{+zat_stalker_trader_heavy_stalker_outfit =check_trader_order_item(heavy_stalker_outfit)} supplies_heavy_stalker_outfit,order_trader_supplies
 
 ![order_trader_supplies]
-wpn_ace52 = 1,0.50
-wpn_ak101 = 1,0.50
-wpn_ak103 = 1,0.50
-wpn_ak74m = 1,0.50
-wpn_fal = 1,0.50
-wpn_famas_f1 = 1,0.50
-wpn_galil = 1,0.50
-wpn_m16 = 1,0.50
-wpn_m4 = 1,0.50
-wpn_sig552 = 1,0.50
-wpn_fn57 = 1,0.50
-wpn_fnx45 = 1,0.50
-wpn_mk14 = 1,0.50
 
 ammo_7.62x51_fmj = 4,0.80
 ammo_7.62x51_ap = 2,0.50
@@ -31,6 +18,45 @@ ammo_5.7x28_ap = 2,0.50
 ammo_11.43x23_fmj = 4,0.80
 ammo_11.43x23_hydro = 2,0.50
 ammo_9x39_sp5 = 2,0.50
+
+[supplies_stcop_order_wpn_ace52]:order_trader_supplies
+wpn_ace52 = 1,1.0
+
+[supplies_stcop_order_wpn_ak101]:order_trader_supplies
+wpn_ak101 = 1,1.0
+
+[supplies_stcop_order_wpn_ak103]:order_trader_supplies
+wpn_ak103 = 1,1.0
+
+[supplies_stcop_order_wpn_ak74m]:order_trader_supplies
+wpn_ak74m = 1,1.0
+
+[supplies_stcop_order_wpn_fal]:order_trader_supplies
+wpn_fal = 1,1.0
+
+[supplies_stcop_order_wpn_famas_f1]:order_trader_supplies
+wpn_famas_f1 = 1,1.0
+
+[supplies_stcop_order_wpn_galil]:order_trader_supplies
+wpn_galil = 1,1.0
+
+[supplies_stcop_order_wpn_m16]:order_trader_supplies
+wpn_m16 = 1,1.0
+
+[supplies_stcop_order_wpn_m4]:order_trader_supplies
+wpn_m4 = 1,1.0
+
+[supplies_stcop_order_wpn_sig552]:order_trader_supplies
+wpn_sig552 = 1,1.0
+
+[supplies_stcop_order_wpn_fn57]:order_trader_supplies
+wpn_fn57 = 1,1.0
+
+[supplies_stcop_order_wpn_fnx45]:order_trader_supplies
+wpn_fnx45 = 1,1.0
+
+[supplies_stcop_order_wpn_mk14]:order_trader_supplies
+wpn_mk14 = 1,1.0
 
 [supplies_stcop_fn2000]:order_trader_supplies
 wpn_fn2000 = 1,1.0

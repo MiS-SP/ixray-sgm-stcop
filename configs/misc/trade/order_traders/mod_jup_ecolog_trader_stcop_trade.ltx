@@ -1,14 +1,9 @@
 ; STCOP additions to the SGM order trader.
 
+![trader]
+buy_supplies = {=check_trader_order_item(wpn_dvl10)} supplies_stcop_order_wpn_dvl10,{=check_trader_order_item(wpn_l96)} supplies_stcop_order_wpn_l96,{=check_trader_order_item(wpn_m24)} supplies_stcop_order_wpn_m24,{=check_trader_order_item(wpn_m98b)} supplies_stcop_order_wpn_m98b,{=check_trader_order_item(wpn_mk14)} supplies_stcop_order_wpn_mk14,{=check_trader_order_item(wpn_mosin)} supplies_stcop_order_wpn_mosin,{=check_trader_order_item(wpn_sks)} supplies_stcop_order_wpn_sks,{=check_trader_order_item(wpn_sv98)} supplies_stcop_order_wpn_sv98,{+jup_ecolog_trader_weapon =check_trader_order_item(wpn_weapon)} supplies_weapon,{+jup_ecolog_trader_ecolog_military_outfit =check_trader_order_item(ecolog_military_outfit)} supplies_ecolog_military_outfit,order_trader_supplies
+
 ![order_trader_supplies]
-wpn_dvl10 = 1,0.50
-wpn_l96 = 1,0.50
-wpn_m24 = 1,0.50
-wpn_m98b = 1,0.50
-wpn_mk14 = 1,0.50
-wpn_mosin = 1,0.50
-wpn_sks = 1,0.50
-wpn_sv98 = 1,0.50
 
 ammo_7.62x51_fmj = 4,0.80
 ammo_7.62x51_ap = 2,0.50
@@ -19,4 +14,28 @@ ammo_7.62x54_7h1 = 4,0.80
 ammo_7.62x54_7h14 = 2,0.50
 ammo_7.62x54_ap = 2,0.50
 ammo_50bmg = 1,0.35
+
+[supplies_stcop_order_wpn_dvl10]:order_trader_supplies
+wpn_dvl10 = 1,1.0
+
+[supplies_stcop_order_wpn_l96]:order_trader_supplies
+wpn_l96 = 1,1.0
+
+[supplies_stcop_order_wpn_m24]:order_trader_supplies
+wpn_m24 = 1,1.0
+
+[supplies_stcop_order_wpn_m98b]:order_trader_supplies
+wpn_m98b = 1,1.0
+
+[supplies_stcop_order_wpn_mk14]:order_trader_supplies
+wpn_mk14 = 1,1.0
+
+[supplies_stcop_order_wpn_mosin]:order_trader_supplies
+wpn_mosin = 1,1.0
+
+[supplies_stcop_order_wpn_sks]:order_trader_supplies
+wpn_sks = 1,1.0
+
+[supplies_stcop_order_wpn_sv98]:order_trader_supplies
+wpn_sv98 = 1,1.0
 

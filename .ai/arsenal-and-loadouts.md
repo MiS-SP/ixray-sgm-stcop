@@ -3,7 +3,7 @@ doc_id: stcop.arsenal-loadouts
 title: "Арсенал STCOP, профили оружия и доступность в мире"
 kind: reference
 status: verified-static
-updated: 2026-09-06
+updated: 2026-09-13
 topics: [arsenal, weapons, profiles, parent_section, loadout, spawn_supplies, trade, ammo, HUD]
 sources: [../configs/weapons/stcop_content.ltx, ../configs/weapons/stcop_patches.ltx, ../configs/weapons/AR/w_ak12.ltx, ../configs/mod_engine_external_stcop_loadout.ltx, ../configs/gameplay/mod_character_desc_general_stcop_loadouts.xml, ../configs/gameplay/loadouts/stalker/tier_1.ltx]
 ---
@@ -102,3 +102,7 @@ EnableSpawnOnceRandomitemByRandomLoadout = false
 
 RAG namespaces: `ixray-sgm-stcop` для source; `ixray-sgm-stcop-docs` для этой страницы. Искомые якоря: `parent_section`, `stcop_content`, `spawn_loadout`, `EnableSpawnOnceRandomItemPerEachLoadouts`, `sgm_ammo_extensions`.
 
+
+## HQ-иконки патронов и upscale существующего атласа
+
+Существующий `textures/ui/ui_icon_equipment_stcopwp.dds` увеличен до 4096×4096 RGBA32 без дополнительных mipmaps. Прежние иконки сохраняют координаты сетки и экранные слоты, получая удвоенную физическую сетку через inv_scale=2.0 из общей базы SGM. 18 HQ-областей STCOP, включая отдельный вариант ОГ-7В, перенесены в свободные области увеличенного атласа без ресемплинга. В `stcop/ammo/a_*.ltx` записаны путь этого атласа, inv_scale=2.0 и координаты новых ячеек; ОГ-7В настроен в существующем `stcop/patches/ammo/p_og_7b.ltx`. Отдельные `mod_system_stcop_ammo_hq.ltx` и `ui_icon_ammo_stcop_hq.dds` удалены. Общие патроны получают свой ресурс из SGM. Подробности, потребители масштаба и границы проверки — в [ресурсах SGM](../../ixray-sgm/.ai/configuration/resources-and-localization.md).

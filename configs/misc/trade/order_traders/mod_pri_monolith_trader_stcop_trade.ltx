@@ -1,23 +1,9 @@
 ; STCOP additions to the SGM order trader.
 
 ![trader]
-buy_supplies = {+stcop_pri_monolith_vssk_order =check_trader_order_item(wpn_vssk)} supplies_stcop_vssk,{+pri_monolith_trader_weapon =check_trader_order_item(wpn_weapon)} supplies_weapon,{+pri_monolith_trader_monolith_outfit =check_trader_order_item(monolith_outfit)} supplies_monolith_outfit,{+pri_monolith_trader_monolit_exo_outfit =check_trader_order_item(monolit_exo_outfit)} supplies_monolit_exo_outfit,order_trader_supplies
+buy_supplies = {=check_trader_order_item(wpn_ak12)} supplies_stcop_order_wpn_ak12,{=check_trader_order_item(wpn_aug_a3)} supplies_stcop_order_wpn_aug_a3,{=check_trader_order_item(wpn_famas)} supplies_stcop_order_wpn_famas,{=check_trader_order_item(wpn_g3)} supplies_stcop_order_wpn_g3,{=check_trader_order_item(wpn_hk416)} supplies_stcop_order_wpn_hk416,{=check_trader_order_item(wpn_scar)} supplies_stcop_order_wpn_scar,{=check_trader_order_item(wpn_hk21)} supplies_stcop_order_wpn_hk21,{=check_trader_order_item(wpn_m60)} supplies_stcop_order_wpn_m60,{=check_trader_order_item(wpn_rpk203)} supplies_stcop_order_wpn_rpk203,{=check_trader_order_item(wpn_dvl10)} supplies_stcop_order_wpn_dvl10,{=check_trader_order_item(wpn_l96)} supplies_stcop_order_wpn_l96,{=check_trader_order_item(wpn_m98b)} supplies_stcop_order_wpn_m98b,{=check_trader_order_item(wpn_sv98)} supplies_stcop_order_wpn_sv98,{=check_trader_order_item(wpn_vepr)} supplies_stcop_order_wpn_vepr,{+stcop_pri_monolith_vssk_order =check_trader_order_item(wpn_vssk)} supplies_stcop_vssk,{+pri_monolith_trader_weapon =check_trader_order_item(wpn_weapon)} supplies_weapon,{+pri_monolith_trader_monolith_outfit =check_trader_order_item(monolith_outfit)} supplies_monolith_outfit,{+pri_monolith_trader_monolit_exo_outfit =check_trader_order_item(monolit_exo_outfit)} supplies_monolit_exo_outfit,order_trader_supplies
 
 ![order_trader_supplies]
-wpn_ak12 = 1,0.50
-wpn_aug_a3 = 1,0.50
-wpn_famas = 1,0.50
-wpn_g3 = 1,0.50
-wpn_hk416 = 1,0.50
-wpn_scar = 1,0.50
-wpn_hk21 = 1,0.50
-wpn_m60 = 1,0.50
-wpn_rpk203 = 1,0.50
-wpn_dvl10 = 1,0.50
-wpn_l96 = 1,0.50
-wpn_m98b = 1,0.50
-wpn_sv98 = 1,0.50
-wpn_vepr = 1,0.50
 
 ammo_5.45x39_fmj = 4,0.80
 ammo_5.45x39_ap = 2,0.50
@@ -36,6 +22,48 @@ ammo_338_lapua = 1,0.35
 ammo_50bmg = 1,0.35
 ammo_12.7x55_fmj = 1,0.35
 ammo_vog-25p = 2,0.50
+
+[supplies_stcop_order_wpn_ak12]:order_trader_supplies
+wpn_ak12 = 1,1.0
+
+[supplies_stcop_order_wpn_aug_a3]:order_trader_supplies
+wpn_aug_a3 = 1,1.0
+
+[supplies_stcop_order_wpn_famas]:order_trader_supplies
+wpn_famas = 1,1.0
+
+[supplies_stcop_order_wpn_g3]:order_trader_supplies
+wpn_g3 = 1,1.0
+
+[supplies_stcop_order_wpn_hk416]:order_trader_supplies
+wpn_hk416 = 1,1.0
+
+[supplies_stcop_order_wpn_scar]:order_trader_supplies
+wpn_scar = 1,1.0
+
+[supplies_stcop_order_wpn_hk21]:order_trader_supplies
+wpn_hk21 = 1,1.0
+
+[supplies_stcop_order_wpn_m60]:order_trader_supplies
+wpn_m60 = 1,1.0
+
+[supplies_stcop_order_wpn_rpk203]:order_trader_supplies
+wpn_rpk203 = 1,1.0
+
+[supplies_stcop_order_wpn_dvl10]:order_trader_supplies
+wpn_dvl10 = 1,1.0
+
+[supplies_stcop_order_wpn_l96]:order_trader_supplies
+wpn_l96 = 1,1.0
+
+[supplies_stcop_order_wpn_m98b]:order_trader_supplies
+wpn_m98b = 1,1.0
+
+[supplies_stcop_order_wpn_sv98]:order_trader_supplies
+wpn_sv98 = 1,1.0
+
+[supplies_stcop_order_wpn_vepr]:order_trader_supplies
+wpn_vepr = 1,1.0
 
 [supplies_stcop_vssk]:order_trader_supplies
 wpn_vssk = 1,1.0

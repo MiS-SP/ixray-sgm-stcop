@@ -1,0 +1,271 @@
+local CATEGORY_COUNT = 7
+
+local item_count_by_category = {
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+}
+
+local costs_by_category = {
+    { prepay_agreed = 700, prepay_refused = 1400, cost = 2800 },
+    { prepay_agreed = 2000, prepay_refused = 4000, cost = 42000 },
+    { prepay_agreed = 4000, prepay_refused = 8000, cost = 16000 },
+    { prepay_agreed = 4000, prepay_refused = 8000, cost = 32000 },
+    { prepay_agreed = 8000, prepay_refused = 16000, cost = 32000 },
+    { prepay_agreed = 6000, prepay_refused = 12000, cost = 24000 },
+    { prepay_agreed = 12000, prepay_refused = 24000, cost = 48000 },
+}
+
+local items_by_category = {
+    {
+        { "wpn_fnx45" },
+        { "wpn_desert_eagle_nimble" },
+        { "wpn_sig220_nimble" },
+    },
+    {
+        { "wpn_pkp" },
+        { "wpn_m60" },
+        { "wpn_hk21" },
+    },
+    {
+        { "wpn_m4_tac" },
+        { "wpn_groza_nimble" },
+        { "wpn_vintorez_nimble" },
+    },
+    {
+        { "wpn_l96" },
+        { "wpn_vssk" },
+        { "wpn_m98b" },
+    },
+    {
+        { "helm_tactic", "cs_heavy_outfit" },
+    },
+    {
+        { "scientific_outfit" },
+    },
+    {
+        { "exo_outfit" },
+    },
+}
+
+local nimble_weapons = {}
+local nimble_weapon_set = {}
+for category = 1, 4 do
+    for item = 1, #items_by_category[category] do
+        local section = items_by_category[category][item][1]
+        nimble_weapons[#nimble_weapons + 1] = section
+        nimble_weapon_set[section] = true
+    end
+end
+
+local robbery_weapons = {
+    "wpn_usp",
+    "wpn_desert_eagle",
+    "wpn_protecta",
+    "wpn_sig550",
+    "wpn_fn2000",
+    "wpn_g36",
+    "wpn_val",
+    "wpn_vintorez",
+    "wpn_groza",
+    "wpn_svd",
+    "wpn_svu",
+    "wpn_pkm",
+    "wpn_sig550_luckygun",
+    "wpn_pkm_zulus",
+    "wpn_wincheaster1300_trapper",
+    "wpn_gauss",
+}
+
+local function processing_category()
+    for category = 1, CATEGORY_COUNT do
+        if has_alife_info("zat_b51_processing_category_" .. category) then
+            return category
+        end
+    end
+
+    return nil
+end
+
+local function ordered_item(category)
+    for item = 1, item_count_by_category[category] do
+        if has_alife_info("zat_b51_ordered_item_" .. category .. "_" .. item) then
+            return item
+        end
+    end
+
+    return nil
+end
+
+local function finish_item(category, item)
+    disable_info("zat_b51_processing_category_" .. category)
+    disable_info("zat_b51_ordered_item_" .. category .. "_" .. item)
+    give_info("zat_b51_done_item_" .. category .. "_" .. item)
+
+    for candidate = 1, item_count_by_category[category] do
+        if not has_alife_info("zat_b51_done_item_" .. category .. "_" .. candidate) then
+            return
+        end
+    end
+
+    give_info("zat_b51_finishing_category_" .. category)
+end
+
+function actor_has_nimble_weapon(first_speaker, second_speaker)
+    for index = 1, #nimble_weapons do
+        if db.actor:object(nimble_weapons[index]) ~= nil then
+            return true
+        end
+    end
+
+    return false
+end
+
+
+function robbery(first_speaker, second_speaker)
+    local actor_money = db.actor:money()
+    local amount = math.floor(actor_money * math.random(35, 50) / 100)
+    if amount > actor_money then
+        amount = actor_money
+    end
+
+    for index = 1, #robbery_weapons do
+        local section = robbery_weapons[index]
+        if db.actor:object(section) ~= nil then
+            dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, section, "all")
+        end
+    end
+
+    for index = 1, #nimble_weapons do
+        local section = nimble_weapons[index]
+        if db.actor:object(section) ~= nil then
+            dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, section, "all")
+        end
+    end
+
+    dialogs.relocate_money_from_actor(first_speaker, second_speaker, amount)
+end
+
+
+function rob_nimble_weapon(first_speaker, second_speaker)
+    local slot_2_item = db.actor:item_in_slot(2)
+    if slot_2_item ~= nil and nimble_weapon_set[slot_2_item:section()] then
+        dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, slot_2_item:section())
+        return
+    end
+
+    local slot_3_item = db.actor:item_in_slot(3)
+    if slot_3_item ~= nil and nimble_weapon_set[slot_3_item:section()] then
+        dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, slot_3_item:section())
+        return
+    end
+
+    local actor_weapons = {}
+    for index = 1, #nimble_weapons do
+        local section = nimble_weapons[index]
+        if db.actor:object(section) ~= nil then
+            actor_weapons[#actor_weapons + 1] = section
+        end
+    end
+
+    if #actor_weapons > 0 then
+        local section = actor_weapons[math.random(1, #actor_weapons)]
+        dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, section)
+    end
+end
+
+function randomize_item(first_speaker, second_speaker)
+    local category = processing_category()
+    if category == nil then
+        return
+    end
+
+    local available_items = {}
+    for item = 1, item_count_by_category[category] do
+        if not has_alife_info("zat_b51_done_item_" .. category .. "_" .. item) then
+            available_items[#available_items + 1] = item
+        end
+    end
+
+    if #available_items == 0 then
+        return
+    end
+
+    local item = available_items[math.random(1, #available_items)]
+    give_info("zat_b51_ordered_item_" .. category .. "_" .. item)
+end
+
+function give_prepay(first_speaker, second_speaker)
+    local category = processing_category()
+    if category == nil then
+        return
+    end
+
+    local cost = costs_by_category[category]
+    local prepay = has_alife_info("zat_b51_order_refused") and cost.prepay_refused or cost.prepay_agreed
+    dialogs.relocate_money_from_actor(first_speaker, second_speaker, prepay)
+end
+
+function has_prepay(first_speaker, second_speaker)
+    local category = processing_category()
+    if category == nil then
+        return false
+    end
+
+    local cost = costs_by_category[category]
+    local prepay = has_alife_info("zat_b51_order_refused") and cost.prepay_refused or cost.prepay_agreed
+    return db.actor:money() >= prepay
+end
+
+function hasnt_prepay(first_speaker, second_speaker)
+    return not has_prepay(first_speaker, second_speaker)
+end
+
+function buy_item(first_speaker, second_speaker)
+    local category = processing_category()
+    if category == nil then
+        return
+    end
+
+    local item = ordered_item(category)
+    if item == nil then
+        return
+    end
+
+    local sections = items_by_category[category][item]
+    for index = 1, #sections do
+        dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, sections[index])
+    end
+
+    dialogs.relocate_money_from_actor(first_speaker, second_speaker, costs_by_category[category].cost)
+    finish_item(category, item)
+end
+
+function refuse_item(first_speaker, second_speaker)
+    local category = processing_category()
+    if category == nil then
+        return
+    end
+
+    local item = ordered_item(category)
+    if item ~= nil then
+        finish_item(category, item)
+    end
+end
+
+function has_item_cost(first_speaker, second_speaker)
+    local category = processing_category()
+    if category == nil then
+        return false
+    end
+
+    return db.actor:money() >= costs_by_category[category].cost
+end
+
+function hasnt_item_cost(first_speaker, second_speaker)
+    return not has_item_cost(first_speaker, second_speaker)
+end
