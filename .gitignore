@@ -6,3 +6,5 @@ tests
 *.~*
 Thumbs.db
 [Dd]esktop.ini
+# Generated documentation; rebuild with the SGM .ai/tools/docs.mjs build command
+/.ai/reference/**/*.md
