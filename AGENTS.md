@@ -1,29 +1,30 @@
-# Правила AI-агента для STCOP
+# AI agent rules for STCOP
 
-## Обязательный вход через документацию
+## Mandatory documentation entry point
 
-Прочитать [правила установки](../../AGENTS.md) и выполнить
-[протокол изучения документации](../ixray-sgm/.ai/workflows/ai-documentation-protocol.md)
-до содержательного анализа, плана, ревью или изменения файлов.
-Обязательные входы: [SGM README](../ixray-sgm/.ai/README.md),
-[обзор проекта](../ixray-sgm/.ai/overview.md), [STCOP README](.ai/README.md)
-и профильные страницы обоих пакетов по матрице протокола.
-Кратко указать прочитанные источники и ограничения. Для Lua полный SGM
-`script-performance.md` обязателен; RAG-фрагмент не заменяет чтение документа.
-Эти требования действуют и при старте непосредственно из STCOP-репозитория.
+Read the [installation rules](../../AGENTS.md) and follow the
+[documentation reading protocol](../ixray-sgm/.ai/workflows/ai-documentation-protocol.md)
+before substantive analysis, planning, review, or file changes.
+Required entry points: [SGM README](../ixray-sgm/.ai/README.md),
+[project overview](../ixray-sgm/.ai/overview.md), [STCOP README](.ai/README.md),
+and the relevant pages from both packages selected by the protocol matrix.
+Briefly name the sources read and the applicable constraints. For Lua, reading
+the full SGM `script-performance.md` is mandatory; a RAG snippet does not
+replace reading a document. These requirements also apply when starting
+directly from the STCOP repository.
 
-## Обязательные правила конфигураций и DLTX
+## Mandatory configuration and DLTX rules
 
-Перед изменением оружейных LTX прочитать [правила владения данными и DLTX](../ixray-sgm/docs/weapon-dltx-layers.md). Они обязательны для оружия, патронов, HUD, профилей и апгрейдов.
+Before modifying weapon LTX files, read the [data ownership and DLTX rules](../ixray-sgm/docs/weapon-dltx-layers.md). They are mandatory for weapons, ammunition, HUD, profiles, and upgrades.
 
-- Собственные определения исправлять у владельца. DLTX использовать только для намеренного изменения чужой секции.
-- Общие калибры и их базовый баланс принадлежат SGM. Не копировать их параметры в STCOP для ручной синхронизации.
-- В патче оставлять только обоснованные отличия от эффективной базы с учётом наследования. Численно равные значения не дублировать. Старое скопированное число, перекрывающее новую пользовательскую правку базы, не считать намеренным отличием без подтверждения.
-- Причину настоящего отличия указывать рядом с полем или группой. Не повторять родителей без намеренного изменения наследования и не добавлять поздний патч для компенсации раннего дубликата.
-- Для возврата к базовому значению удалить присваивание из патча; не заменять его операцией удаления ключа или пустым значением.
-- Пустые секции удалять; пустой файл удалять одновременно с его точным include. Заглушки и широкие маски для сокрытия отсутствующих файлов запрещены.
-- После изменения проверить оба стека SGM и SGM + STCOP, итоговые значения и подключения; для апгрейдов — оба INI-контекста. При очистке копий проверить, что изменение общей базы проходит в STCOP без второй правки.
-- Сохранять локальные пользовательские изменения, кодировки и окончания строк. Оригинальный gamedata доступен только для чтения.
+- Fix owned definitions in the owner's file. Use DLTX only to intentionally change another owner's section.
+- Shared calibers and their base balance belong to SGM. Do not copy their parameters into STCOP for manual synchronization.
+- Keep only justified differences from the effective base in a patch, accounting for inheritance. Do not duplicate numerically equal values. Do not treat an old copied number overriding a newer user change to the base as an intentional difference without confirmation.
+- Document the reason for a real difference next to the field or group. Do not repeat parents without an intentional inheritance change or add a late patch to compensate for an earlier duplicate.
+- To restore the base value, remove the assignment from the patch; do not replace it with a key-deletion operation or an empty value.
+- Remove empty sections; remove an empty file together with its exact include. Stubs and broad patterns that hide missing files are prohibited.
+- After a change, verify both SGM and SGM + STCOP, effective values, and includes; for upgrades, verify both INI contexts. When removing copies, check that a shared-base change propagates to STCOP without a second edit.
+- Preserve local user changes, encodings, and line endings. The original gamedata is read-only.
 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
@@ -71,9 +72,9 @@ This project is indexed by GitNexus as **ixray-sgm-stcop** (4185 symbols, 4178 r
 
 <!-- gitnexus:end -->
 
-## Документация проекта и RAG
+## Project documentation and RAG
 
-- Актуальная документация: [.ai/README.md](.ai/README.md). Перед анализом использовать её навигацию и источники.
-- Документация индексируется отдельно как **ixray-sgm-stcop-docs**, исходники — как **ixray-sgm-stcop**. Во всех GitNexus запросах явно указывать repo.
-- Карты Lua в .ai/reference — лексическая навигация, не доказанный граф CALLS. Правила и команды: [GitNexus/RAG](../ixray-sgm/.ai/rag/gitnexus.md).
-- Обновлять профильные страницы .ai вместе с изменением контракта; проверять ссылки и SHA-256 через документационные инструменты.
+- Current documentation: [.ai/README.md](.ai/README.md). Use its navigation and sources before analysis.
+- Documentation is indexed separately as **ixray-sgm-stcop-docs**, and source code as **ixray-sgm-stcop**. Specify repo explicitly in every GitNexus query.
+- Lua maps in .ai/reference provide lexical navigation, not a proven CALLS graph. Rules and commands: [GitNexus/RAG](../ixray-sgm/.ai/rag/gitnexus.md).
+- Update the relevant .ai pages when a contract changes; check links and SHA-256 with the documentation tools.
