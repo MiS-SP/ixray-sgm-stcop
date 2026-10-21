@@ -20,6 +20,12 @@
       "sha256": "ef5fc1ca5d3e4f669ff825e75e89360bb7c53d8bc23b46fcabf03e1dbda9abb0"
     },
     {
+      "doc_id": "ixray-sgm-stcop.script.sgm_stcop_nimble_orders",
+      "path": "reference/scripts/sgm_stcop_nimble_orders.md",
+      "status": "extracted-static",
+      "sha256": "78cf1c4ca27f33d62f91cbbef78a6a6284e8c70deaae5f9a7becddad08236d3f"
+    },
+    {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_book_rewards",
       "path": "reference/scripts/sgm_stcop_skill_book_rewards.md",
       "status": "extracted-static",
@@ -41,7 +47,7 @@
       "doc_id": "ixray-sgm-stcop.source-catalog",
       "path": "reference/source-catalog.md",
       "status": "extracted-static",
-      "sha256": "6764cc2178412d2728d4efa414cc5417e4435bb88e55128f84fa6ab1d35df569"
+      "sha256": "20eb52fc7aae9d9c6864323cc0410a932b9ad31e3555991ef823654555b9779c"
     },
     {
       "doc_id": "stcop.runtime-integration",
@@ -50,5 +56,5 @@
       "sha256": "f16ce327478e5af2b3caf4743d3ad46545c36e507c744312a88306fc1eda9a35"
     }
   ],
-  "chunk_count": 42
+  "chunk_count": 45
 }

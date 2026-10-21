@@ -1,22 +1,23 @@
 {
   "schema_version": 1,
   "repository": "ixray-sgm-stcop",
-  "commit": "d3c0218ac14a23cc5a196c38c5a6cdba6db31205",
-  "generated_on": "2026-09-13",
+  "commit": "b985575ae6351d205da34cf18f828b57df610e0b",
+  "generated_on": "2026-10-21",
   "scope": "filesystem snapshot; excludes documentation, known caches, agent config, symlinks; not effective mounted content",
   "files_by_top_directory": {
-    "(root)": 4,
+    "(root)": 6,
     "anims": 1797,
-    "configs": 404,
+    "configs": 418,
     "docs": 1,
     "meshes": 1209,
-    "scripts": 4,
+    "scripts": 5,
     "sounds": 2541,
+    "tests": 1,
     "textures": 2660,
     "tools": 1
   },
-  "script_count": 4,
-  "symbol_count": 40,
+  "script_count": 5,
+  "symbol_count": 54,
   "scripts": [
     {
       "repository": "ixray-sgm-stcop",
@@ -62,6 +63,102 @@
         }
       ],
       "document": "reference/scripts/sgm_stcop_bodyguards.md"
+    },
+    {
+      "repository": "ixray-sgm-stcop",
+      "path": "scripts/sgm_stcop_nimble_orders.script",
+      "namespace": "sgm_stcop_nimble_orders",
+      "sha256": "eb38e0d9620bc382960bea69eb0836c2edfa7b6118acfc75ae885f6ec5e53ba7",
+      "encoding": "UTF-8",
+      "lines": 272,
+      "symbols": [
+        {
+          "name": "processing_category",
+          "parameters": "",
+          "local": true,
+          "line": 84
+        },
+        {
+          "name": "ordered_item",
+          "parameters": "category",
+          "local": true,
+          "line": 94
+        },
+        {
+          "name": "finish_item",
+          "parameters": "category, item",
+          "local": true,
+          "line": 104
+        },
+        {
+          "name": "actor_has_nimble_weapon",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 118
+        },
+        {
+          "name": "robbery",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 129
+        },
+        {
+          "name": "rob_nimble_weapon",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 154
+        },
+        {
+          "name": "randomize_item",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 181
+        },
+        {
+          "name": "give_prepay",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 202
+        },
+        {
+          "name": "has_prepay",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 213
+        },
+        {
+          "name": "hasnt_prepay",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 224
+        },
+        {
+          "name": "buy_item",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 228
+        },
+        {
+          "name": "refuse_item",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 248
+        },
+        {
+          "name": "has_item_cost",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 260
+        },
+        {
+          "name": "hasnt_item_cost",
+          "parameters": "first_speaker, second_speaker",
+          "local": false,
+          "line": 269
+        }
+      ],
+      "literal_references": [],
+      "document": "reference/scripts/sgm_stcop_nimble_orders.md"
     },
     {
       "repository": "ixray-sgm-stcop",
@@ -198,7 +295,7 @@
       "namespace": "sgm_stcop_trader_orders",
       "sha256": "1ba1486833b3b48eaf9ff07b461b135625c7a470eadcabf2db7982779593eea8",
       "encoding": "UTF-8",
-      "lines": 191,
+      "lines": 192,
       "symbols": [
         {
           "name": "select_order",

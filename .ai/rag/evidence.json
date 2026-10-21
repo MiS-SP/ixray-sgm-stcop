@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "ixray-sgm-stcop",
-  "snapshot_date": "2026-09-13",
+  "snapshot_date": "2026-10-21",
   "path_base": "source repository",
   "sources": [
     {
@@ -10,7 +10,7 @@
     },
     {
       "path": "../ixray-sgm/scripts/sgm_g.script",
-      "sha256": "26ce0aa88f0f320f63fb12edb24725bfcb91435fe57a9f554332bfae27aa29a1"
+      "sha256": "029f57e3f5d137f2627784276766d8ca86f8467a47e9df4c645c8e9545e068ac"
     },
     {
       "path": "addon.init",
@@ -18,7 +18,7 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "056499ff1d57154a606266e895c3755b1a56b6cd1a692d4b8dce7b3822f395d4"
+      "sha256": "6d2cbebe1e84320dd2cbc20db9a7cc6622bf251705cd760139ce76c8ddd3b8b1"
     },
     {
       "path": "configs/gameplay/loadouts/stalker/tier_1.ltx",
@@ -34,7 +34,7 @@
     },
     {
       "path": "configs/weapons/AR/w_ak12.ltx",
-      "sha256": "e89d548870fecd13eb4e58e4f5fa7f2c376912186f3acdbbf6329c906ae5be11"
+      "sha256": "9627cd29afdb25dddf00fb6a8299027c1f87468352c0c71cac88458eeb62e99c"
     },
     {
       "path": "configs/weapons/stcop_content.ltx",
