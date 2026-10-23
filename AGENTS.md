@@ -1,17 +1,9 @@
-# AI agent rules for STCOP
+# STCOP addon rules
 
-## Mandatory documentation entry point
-
-Read the [installation rules](../../AGENTS.md) and follow the
-[documentation reading protocol](../ixray-sgm/.ai/workflows/ai-documentation-protocol.md)
-before substantive analysis, planning, review, or file changes.
-Required entry points: [SGM README](../ixray-sgm/.ai/README.md),
-[project overview](../ixray-sgm/.ai/overview.md), [STCOP README](.ai/README.md),
-and the relevant pages from both packages selected by the protocol matrix.
-Briefly name the sources read and the applicable constraints. For Lua, reading
-the full SGM `script-performance.md` is mandatory; a RAG snippet does not
-replace reading a document. These requirements also apply when starting
-directly from the STCOP repository.
+Read the [installation rules](../../AGENTS.md) even when starting in this repo.
+Follow their [reading protocol](../ixray-sgm/.ai/workflows/ai-documentation-protocol.md),
+then use [STCOP documentation](.ai/README.md) and the affected SGM contract.
+STCOP is optional: its data and registrations must remain in this package.
 
 ## Mandatory configuration and DLTX rules
 
@@ -27,54 +19,21 @@ Before modifying weapon LTX files, read the [data ownership and DLTX rules](../i
 - Preserve local user changes, encodings, and line endings. The original gamedata is read-only.
 
 <!-- gitnexus:start -->
-# GitNexus — Code Intelligence
+## Code analysis and documentation
 
-This project is indexed by GitNexus as **ixray-sgm-stcop** (4185 symbols, 4178 relationships, 0 execution flows).
+Use the shared [GitNexus guide](../ixray-sgm/.ai/rag/gitnexus.md).
+Specify repo explicitly: ixray-sgm-stcop for source, ixray-sgm-stcop-docs for docs.
 
-> Index stale? Run `node .gitnexus/run.cjs analyze --index-only` from the project root — it auto-selects an available runner. No `.gitnexus/run.cjs` yet? Bootstrap with `npx`, `bunx`, or `pnpm dlx` — e.g. `bunx gitnexus@latest analyze` (npm 11 npx crash; #1939).
+- Before a symbol edit, run upstream impact and inspect callers/processes/risk.
+  Warn on HIGH/CRITICAL; UNKNOWN and empty results require source/text checks.
+- Use query for concepts and context for named symbols. Verify dynamic Lua,
+  XML and LTX consumers directly; a missing edge does not prove absence.
+- Use GitNexus rename for symbols instead of blind find-and-replace.
+- Before committing, run detect_changes for the intended scope. Re-run partial
+  or truncated results. For regression comparison, use the actual base ref
+  (this repository uses main), not the SGM branch name.
+- Text-only documentation edits do not require a symbol impact query.
 
-## Always Do
-
-- **MUST run impact analysis before editing.** Use `impact({target: "symbolName", direction: "upstream"})` (MCP) or `node .gitnexus/run.cjs impact "symbolName" --direction upstream --repo .` (CLI fallback); report callers, processes, and risk. Never substitute grep for graph analysis.
-- **MUST analyze graph changes before committing.** Use `detect_changes({scope: "all"})` (MCP) or `node .gitnexus/run.cjs detect-changes --scope all --repo .` (CLI fallback). `partial: true` or `truncated: true` is not a clean check — a zero means unseen, not unaffected; re-run it. For regression review: `detect_changes({scope: "compare", base_ref: "main"})` or `node .gitnexus/run.cjs detect-changes --scope compare --base-ref "main" --repo .`.
-- **MUST warn the user** if impact analysis returns HIGH or CRITICAL risk before proceeding with edits.
-- **MUST treat `risk: UNKNOWN` as unresolved, not as low.** An empty caller set is not evidence the symbol is unused — it can also mean the callers are not resolvable by the index (plain-object property access, dynamic dispatch, cross-language calls). `impact` pairs `UNKNOWN` with a `riskNote` saying so. Confirm with a text search before treating the symbol as safe to change or delete; do not proceed on the strength of a zero.
-- When exploring unfamiliar code, use `query({search_query: "concept"})` to find execution flows instead of grepping. It returns process-grouped results ranked by relevance.
-- When you need full context on a specific symbol — callers, callees, which execution flows it participates in — use `context({name: "symbolName"})`.
-- For security review, `explain({target: "fileOrSymbol"})` lists taint findings (source→sink flows; needs `analyze --pdg`).
-
-## Never Do
-
-- NEVER edit a function, class, or method before MCP/CLI impact analysis.
-- NEVER ignore HIGH or CRITICAL risk warnings from impact analysis, and never read `UNKNOWN` as an all-clear — it means the walk could not answer, which is the one verdict that requires confirming by other means.
-- NEVER rename symbols with find-and-replace — use `rename` which understands the call graph.
-- NEVER commit before MCP/CLI graph change analysis.
-
-## Resources
-
-| Resource | Use for |
-| --- | --- |
-| `gitnexus://repo/ixray-sgm-stcop/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/ixray-sgm-stcop/clusters` | All functional areas |
-| `gitnexus://repo/ixray-sgm-stcop/processes` | All execution flows |
-| `gitnexus://repo/ixray-sgm-stcop/process/{name}` | Step-by-step execution trace |
-
-## CLI
-
-| Task | Read this skill file |
-| --- | --- |
-| Understand architecture / "How does X work?" | `.claude/skills/gitnexus-exploring/SKILL.md` |
-| Blast radius / "What breaks if I change X?" | `.claude/skills/gitnexus-impact-analysis/SKILL.md` |
-| Trace bugs / "Why is X failing?" | `.claude/skills/gitnexus-debugging/SKILL.md` |
-| Rename / extract / split / refactor | `.claude/skills/gitnexus-refactoring/SKILL.md` |
-| Tools, resources, schema reference | `.claude/skills/gitnexus-guide/SKILL.md` |
-| Index, status, clean, wiki CLI commands | `.claude/skills/gitnexus-cli/SKILL.md` |
-
+Update relevant .ai pages when their contracts change and run the shared
+[documentation checks](../ixray-sgm/.ai/rag/maintenance.md).
 <!-- gitnexus:end -->
-
-## Project documentation and RAG
-
-- Current documentation: [.ai/README.md](.ai/README.md). Use its navigation and sources before analysis.
-- Documentation is indexed separately as **ixray-sgm-stcop-docs**, and source code as **ixray-sgm-stcop**. Specify repo explicitly in every GitNexus query.
-- Lua maps in .ai/reference provide lexical navigation, not a proven CALLS graph. Rules and commands: [GitNexus/RAG](../ixray-sgm/.ai/rag/gitnexus.md).
-- Update the relevant .ai pages when a contract changes; check links and SHA-256 with the documentation tools.

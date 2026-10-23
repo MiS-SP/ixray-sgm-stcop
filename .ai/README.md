@@ -3,7 +3,7 @@ doc_id: stcop.overview
 title: "STCOP для SGM: карта проекта и навигация"
 kind: reference
 status: verified-static
-updated: 2026-09-06
+updated: 2026-10-23
 topics: [STCOP, SGM, overview, addon, architecture, RAG, GitNexus]
 sources: [../addon.init, ../AGENTS.md, ../configs/weapons/stcop_content.ltx, ../configs/weapons/stcop_patches.ltx, ../scripts]
 ---
@@ -39,7 +39,7 @@ sources: [../addon.init, ../AGENTS.md, ../configs/weapons/stcop_content.ltx, ../
 | `configs/misc` | Торговля, ammunition loot и дополнительные предметные данные |
 | `configs/scripts/SGM` | Точечные патчи логики четырёх кодовых тайников |
 | `configs/text`, `configs/ui` | Локализация, прицелы и atlas descriptors |
-| `scripts` | Четыре модульных интеграционных скрипта |
+| `scripts` | Модульные интеграционные скрипты |
 | `meshes`, `textures`, `sounds`, `anims` | Бинарные ресурсы |
 | `tools` | Вспомогательные инструменты разработки |
 | `.ai` | Документация и retrieval artifacts |
@@ -63,7 +63,7 @@ STCOP добавляет own sections и изменяет SGM, но не дол�
 - `repo: "ixray-sgm-stcop-docs"` — отдельный индекс этой `.ai`.
 - `repo: "ixray-sgm-docs"` — общая документация SGM.
 
-Раздельный docs index нужен потому, что установленный scanner GitNexus не включает скрытую `.ai` при обычном source scan. Markdown находится в `.ai`; копии документации среди runtime-файлов не нужны.
+Раздельный docs index сохраняет явную область поиска. Исключение скрытой `.ai` наблюдалось в исторической проверке scanner; ограничения конкретной версии проверяются заново. Markdown находится в `.ai`; копии документации среди runtime-файлов не нужны.
 
 Рабочие запросы: `stcop skill_book rewards registry`, `parent_section bodyguards register_equipment`, `stcop_content ammo_class`, `sgm_upgrade_mechanic item_upgrades`. После retrieval перейти по ссылке в конкретный source. Имя файла может не совпадать с section ID: например `w_fiveseven.ltx` и `wpn_fn57`.
 

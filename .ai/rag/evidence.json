@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "ixray-sgm-stcop",
-  "snapshot_date": "2026-10-21",
+  "snapshot_date": "2026-10-23",
   "path_base": "source repository",
   "sources": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "6d2cbebe1e84320dd2cbc20db9a7cc6622bf251705cd760139ce76c8ddd3b8b1"
+      "sha256": "83f96146094f860f415cea2cb8ae4e02fce512772919df978af0278fb4da93b8"
     },
     {
       "path": "configs/gameplay/loadouts/stalker/tier_1.ltx",
