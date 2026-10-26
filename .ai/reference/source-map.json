@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "repository": "ixray-sgm-stcop",
-  "commit": "15d9428a75c158aac7deef7bd2dd8d45b24dd420",
-  "generated_on": "2026-10-23",
+  "commit": "beeb3bcada832cbc4eac73452a9bd665e823b205",
+  "generated_on": "2026-10-26",
   "scope": "filesystem snapshot; excludes documentation, known caches, agent config, symlinks; not effective mounted content",
   "files_by_top_directory": {
     "(root)": 6,
     "anims": 1797,
-    "configs": 418,
+    "configs": 421,
     "docs": 1,
     "meshes": 1209,
     "scripts": 5,
     "sounds": 2541,
     "tests": 1,
-    "textures": 2660,
+    "textures": 2661,
     "tools": 1
   },
   "script_count": 5,

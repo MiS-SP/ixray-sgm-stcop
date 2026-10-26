@@ -5,7 +5,7 @@
       "doc_id": "stcop.arsenal-loadouts",
       "path": "arsenal-and-loadouts.md",
       "status": "verified-static",
-      "sha256": "7470549030fc105007b4ae9f8c521202a740bb1f1db5228b03e888d9392736e7"
+      "sha256": "12109101d33035cfdcf1c8135eb4323184c997f681392484fa3cabfb6b5c8a9c"
     },
     {
       "doc_id": "stcop.overview",
@@ -17,37 +17,37 @@
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_bodyguards",
       "path": "reference/scripts/sgm_stcop_bodyguards.md",
       "status": "extracted-static",
-      "sha256": "ef5fc1ca5d3e4f669ff825e75e89360bb7c53d8bc23b46fcabf03e1dbda9abb0"
+      "sha256": "2d5c3161e98f2b1d7c2919c3f95c75fe8633132eab2075d24751a14d16ede9a3"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_nimble_orders",
       "path": "reference/scripts/sgm_stcop_nimble_orders.md",
       "status": "extracted-static",
-      "sha256": "78cf1c4ca27f33d62f91cbbef78a6a6284e8c70deaae5f9a7becddad08236d3f"
+      "sha256": "49b6db15c4558c7c9cc98e6138dc3317113c6cf3682fef70ce17041e715d1c4d"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_book_rewards",
       "path": "reference/scripts/sgm_stcop_skill_book_rewards.md",
       "status": "extracted-static",
-      "sha256": "41aba0aae687ce1251fe8941a1087444e3c0b133ec1b29461f9c5f5997a4f8e7"
+      "sha256": "651cdfbc5ddafb5fb6338be8ae4a07e32b48eb01c4ab658c60fe7649d514277c"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_skill_books",
       "path": "reference/scripts/sgm_stcop_skill_books.md",
       "status": "extracted-static",
-      "sha256": "43fc4f47bdee16bf42fcf92102987b30551494f7f96c13ad2c3a122546465c71"
+      "sha256": "0970deb4e1754dc96fa0a2c1626b479e1605319be654c529b5ae4176008356cc"
     },
     {
       "doc_id": "ixray-sgm-stcop.script.sgm_stcop_trader_orders",
       "path": "reference/scripts/sgm_stcop_trader_orders.md",
       "status": "extracted-static",
-      "sha256": "4ddd6665d8bd1fa2f1f5ce259643ce1c2d0fc155216cc3b85f0b9af69d26d746"
+      "sha256": "0620183b14c44738db6a5b907c3c105102f2be7b584ee91922950e3c8e4890a2"
     },
     {
       "doc_id": "ixray-sgm-stcop.source-catalog",
       "path": "reference/source-catalog.md",
       "status": "extracted-static",
-      "sha256": "115570f227549f244425c6a28805dd6735b8b493d26b4c30db05dc075a810f3d"
+      "sha256": "eb8975e150d5b369e06dbe0e86ce76e6bb02b3b28efbc011d790c1457cfbd12b"
     },
     {
       "doc_id": "stcop.runtime-integration",
@@ -56,5 +56,5 @@
       "sha256": "f16ce327478e5af2b3caf4743d3ad46545c36e507c744312a88306fc1eda9a35"
     }
   ],
-  "chunk_count": 46
+  "chunk_count": 47
 }

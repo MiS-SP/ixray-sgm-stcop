@@ -5,7 +5,7 @@ kind: reference
 status: verified-static
 updated: 2026-10-26
 topics: [arsenal, weapons, profiles, parent_section, loadout, spawn_supplies, trade, ammo, HUD]
-sources: [../configs/weapons/stcop_content.ltx, ../configs/weapons/stcop_patches.ltx, ../configs/weapons/AR/w_ak12.ltx, ../configs/mod_engine_external_stcop_loadout.ltx, ../configs/gameplay/mod_character_desc_general_stcop_loadouts.xml, ../configs/gameplay/loadouts/stalker/tier_1.ltx]
+sources: [../configs/weapons/stcop_content.ltx, ../configs/weapons/stcop_patches.ltx, ../configs/weapons/AR/w_ak12.ltx, ../configs/mod_engine_external_stcop_loadout.ltx, ../configs/gameplay/mod_character_desc_general_stcop_loadouts.xml, ../configs/gameplay/loadouts/stalker/tier_1.ltx, ../configs/weapons/stcop/patches/weapons/p_rpg7.ltx]
 ---
 
 # Арсенал STCOP, профили оружия и доступность в мире
@@ -90,9 +90,32 @@ EnableSpawnOnceRandomitemByRandomLoadout = false
 
 ## HUD и улучшения
 
-[mod_engine_external_stwpbase.ltx](../configs/mod_engine_external_stwpbase.ltx) включает `EnableWeaponInertion`, `EnableWeaponCollision`, `EnableDelayedWeaponActions`. HUD definitions находятся в [mod_defines_50_stcop_weapon_hud.ltx](../configs/mod_defines_50_stcop_weapon_hud.ltx); позднее исключение ограничено двумя forward position fields в [mod_system_stcop_hud.ltx](../configs/mod_system_stcop_hud.ltx).
+[mod_engine_external_stwpbase.ltx](../configs/mod_engine_external_stwpbase.ltx) включает `EnableWeaponInertion` и `EnableWeaponCollision`; `EnableDelayedWeaponActions` в текущем файле выключен (`false`). HUD definitions находятся в [mod_defines_50_stcop_weapon_hud.ltx](../configs/mod_defines_50_stcop_weapon_hud.ltx); позднее исключение ограничено двумя forward position fields в [mod_system_stcop_hud.ltx](../configs/mod_system_stcop_hud.ltx).
 
 Собственные upgrade trees расположены в [stcop/upgrades/families](../configs/weapons/stcop/upgrades/families), shared includes — в `stcop_upgrades.ltx`. Требования mechanic читаются через SGM aliases. Полный контракт и четыре сочетания проверок — в [SGM upgrades](../../ixray-sgm/.ai/configuration/upgrades.md).
+
+## РПГ-7: готовность после перезарядки
+
+[Существующий патч РПГ](../configs/weapons/stcop/patches/weapons/p_rpg7.ltx) задаёт
+`rpm = 12` только для STCOP. Без STCOP оружие наследует `rpm = 6` из
+`mod_rpg7_damage` в [базовом файле SGM](../../ixray-sgm/configs/weapons/weapons/w_rpg7.ltx).
+
+В движке `rel1.4-new` (`0fe174971`) интервал между выстрелами равен `60 / rpm`.
+Счётчик уменьшается при перезарядке, но её завершение не сбрасывает остаток.
+STCOP использует `rpg7_iwp_reload` / `reload`: в обоих OMF записан 141 кадр
+при 30 кадрах/с и скорости 1, то есть около 4,7 секунды. Старый интервал
+10 секунд мог сохранять запрет выстрела после завершения этой анимации.
+Выбранный интервал 5 секунд близок к длительности перезарядки и сохраняет
+более строгий предел темпа стрельбы, чем `rpm = 60`. При начале перезарядки
+сразу после выстрела после её завершения может оставаться около 0,3 секунды.
+Время до начала перезарядки уменьшает этот остаток. Сама перезарядка,
+боезапас и проверка занятости оружия продолжают ограничивать следующий выстрел.
+Настройка относится ко всем экземплярам `wpn_rpg7`, включая оружие NPC.
+
+Статически проверять подключение существующего патча, наследование в SGM
+и SGM + STCOP, а также оба варианта анимации перезарядки. Игровая приёмка
+остаётся отдельной: после полного перезапуска проверить повторный выстрел
+сразу после перезарядки, с прицеливанием и без него, обычный и улучшенный РПГ.
 
 ## Проверка арсенала
 

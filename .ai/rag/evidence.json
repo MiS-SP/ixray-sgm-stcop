@@ -45,6 +45,10 @@
       "sha256": "4c9b8026bf293b43f97e38bf036b36a555e38bc09ca4833244c511b01112601e"
     },
     {
+      "path": "configs/weapons/stcop/patches/weapons/p_rpg7.ltx",
+      "sha256": "06dd80b109fe7129f0ae644ad25ac017c8c6530e933af809b9c0a074870924da"
+    },
+    {
       "path": "scripts/sgm_stcop_bodyguards.script",
       "sha256": "8e4dcfa6ee944c176199a3470b0f9e13b16f7cb760c2402267d90b350ccc14e3"
     },
