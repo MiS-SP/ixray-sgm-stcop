@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "ixray-sgm-stcop",
-  "snapshot_date": "2026-10-23",
+  "snapshot_date": "2026-10-24",
   "path_base": "source repository",
   "sources": [
     {
@@ -42,7 +42,7 @@
     },
     {
       "path": "configs/weapons/stcop_patches.ltx",
-      "sha256": "a1b6319fce011cc330dadfcf705462eb288a4d53ff80e0c183a69447d51ef2e3"
+      "sha256": "4c9b8026bf293b43f97e38bf036b36a555e38bc09ca4833244c511b01112601e"
     },
     {
       "path": "scripts/sgm_stcop_bodyguards.script",
