@@ -3,7 +3,7 @@ doc_id: stcop.arsenal-loadouts
 title: "Арсенал STCOP, профили оружия и доступность в мире"
 kind: reference
 status: verified-static
-updated: 2026-09-13
+updated: 2026-10-26
 topics: [arsenal, weapons, profiles, parent_section, loadout, spawn_supplies, trade, ammo, HUD]
 sources: [../configs/weapons/stcop_content.ltx, ../configs/weapons/stcop_patches.ltx, ../configs/weapons/AR/w_ak12.ltx, ../configs/mod_engine_external_stcop_loadout.ltx, ../configs/gameplay/mod_character_desc_general_stcop_loadouts.xml, ../configs/gameplay/loadouts/stalker/tier_1.ltx]
 ---
@@ -106,3 +106,26 @@ RAG namespaces: `ixray-sgm-stcop` для source; `ixray-sgm-stcop-docs` для �
 ## HQ-иконки патронов и upscale существующего атласа
 
 Существующий `textures/ui/ui_icon_equipment_stcopwp.dds` увеличен до 4096×4096 RGBA32 без дополнительных mipmaps. Прежние иконки сохраняют координаты сетки и экранные слоты, получая удвоенную физическую сетку через inv_scale=2.0 из общей базы SGM. 18 HQ-областей STCOP, включая отдельный вариант ОГ-7В, перенесены в свободные области увеличенного атласа без ресемплинга. В `stcop/ammo/a_*.ltx` записаны путь этого атласа, inv_scale=2.0 и координаты новых ячеек; ОГ-7В настроен в существующем `stcop/patches/ammo/p_og_7b.ltx`. Отдельные `mod_system_stcop_ammo_hq.ltx` и `ui_icon_ammo_stcop_hq.dds` удалены. Общие патроны получают свой ресурс из SGM. Подробности, потребители масштаба и границы проверки — в [ресурсах SGM](../../ixray-sgm/.ai/configuration/resources-and-localization.md).
+
+## Иконки установленного обвеса АК-74
+
+В проверенной ветке движка `rel1.4-new` (`0fe174971`),
+`CUIWeaponCellItem::CreateIcon` и `CreateDragItem` выбирают `icons_texture`
+оружия, а `InitAddon` берёт прямоугольник и масштаб из секции обвеса.
+Поэтому оружие и его установленный глушитель, прицел или подствольник должны
+иметь совместимые области в одном атласе. Отдельная текстура только с оружием
+не удовлетворяет этому условию, даже если отдельный предмет обвеса отображается.
+
+[Патч АК-74](../configs/weapons/stcop/patches/weapons/p_ak74.ltx) использует
+`ui/ui_icon_equipment_stcopwp`, `inv_grid_x = 25`, `inv_grid_y = 12`.
+При сохранённых размере 5×2 клетки и `inv_scale = 2` это прямоугольник
+(2500, 1200, 500, 200) в пикселях DDS. В него точно скопирована очищенная
+иконка из `ui_icon_ak74_stcop.dds`; прежнее пересечение с ОГ-7В не используется.
+Другие области общего атласа и параметры обвесов не меняются. Варианты АК-74
+наследуют эти настройки. Отдельный DDS сохранён как исходник копирования.
+
+При дальнейших переносах проверять include-цепочку, наследуемые варианты,
+занятость атласа и реальные пиксели обвесов. Статическая проверка для SGM и
+SGM + STCOP не заменяет проверку человеком после полного перезапуска:
+АК-74 с ТГП-А в рюкзаке, оружейном слоте и при перетаскивании; отдельно прицел
+и подствольник. Поведение другой версии движка нужно сверять с её исходниками.

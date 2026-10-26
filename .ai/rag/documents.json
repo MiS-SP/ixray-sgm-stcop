@@ -5,7 +5,7 @@
       "doc_id": "stcop.arsenal-loadouts",
       "path": "arsenal-and-loadouts.md",
       "status": "verified-static",
-      "sha256": "e5249a6d9f23da043d5e65ebc14b44c147b18bfa392aaeecf0decbddd1fd48db"
+      "sha256": "7470549030fc105007b4ae9f8c521202a740bb1f1db5228b03e888d9392736e7"
     },
     {
       "doc_id": "stcop.overview",
@@ -56,5 +56,5 @@
       "sha256": "f16ce327478e5af2b3caf4743d3ad46545c36e507c744312a88306fc1eda9a35"
     }
   ],
-  "chunk_count": 45
+  "chunk_count": 46
 }
