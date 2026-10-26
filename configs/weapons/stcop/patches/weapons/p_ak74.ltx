@@ -4,10 +4,11 @@
 ![wpn_ak74]:!mod_ak74_sounds,wpn_ak74_sounds
 scopes = 1p78,1pn93-1,ekp,okp,kobra
 parent_section = wpn_ak74
-; Isolate AK-74 from the overlapping OG-7V atlas rectangle; preserve 5x2 slots and scale.
-icons_texture = ui\ui_icon_ak74_stcop
-inv_grid_x = 0
-inv_grid_y = 0
+; Keep AK-74 and attached addons in one atlas: native addon icons use the weapon texture.
+; The clean 5x2 copy at (25,12) avoids the overlapping OG-7V rectangle.
+icons_texture = ui\ui_icon_equipment_stcopwp
+inv_grid_x = 25
+inv_grid_y = 12
 upgr_icons_texture = ui\ui_actor_weapons_stcopwp
 upgr_icon_x = 0
 upgr_icon_y = 400
