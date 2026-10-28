@@ -47,7 +47,7 @@
       "doc_id": "ixray-sgm-stcop.source-catalog",
       "path": "reference/source-catalog.md",
       "status": "extracted-static",
-      "sha256": "eb8975e150d5b369e06dbe0e86ce76e6bb02b3b28efbc011d790c1457cfbd12b"
+      "sha256": "e1d5c86cb7752fb3fc843a690dc46b3eec51fd7f46dac06708146aba7a7f20d8"
     },
     {
       "doc_id": "stcop.runtime-integration",
